@@ -7,20 +7,16 @@
     <groupId>fr.inria.smilk.ws</groupId>
     <artifactId>RelationExtraction</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <dependencies>
 
-        <!--Renco-->
-        <dependency>
-            <groupId>org.jdom</groupId>
-            <artifactId>jdom2</artifactId>
-            <version>2.0.5</version>
-        </dependency>
+    <dependencies>
+        <!--ReNCO-->
+        <!--holmes-->
         <dependency>
             <groupId>fr.ho2s.holmes</groupId>
             <artifactId>holmes-ws-client</artifactId>
             <version>0.0.2-SNAPSHOT</version>
         </dependency>
-
+        <!--ReNCO-->
         <!--webService calling -->
         <dependency>
             <groupId>com.sun.jersey</groupId>
@@ -28,44 +24,26 @@
             <version>1.19</version>
         </dependency>
 
-            <!--SPARQL Queries-->
-        <dependency>
-            <groupId>org.apache.jena</groupId>
-            <artifactId>jena-arq</artifactId>
-            <version>2.12.1</version>
-        </dependency>
+    <!--opennlp-->
+    <dependency>
+        <groupId>org.apache.opennlp</groupId>
+        <artifactId>opennlp-tools</artifactId>
+        <version>1.5.3</version>
+    </dependency>
 
-        <!-- http://mvnrepository.com/artifact/org.apache.lucene/lucene-core
-        <dependency>
-            <groupId>org.apache.lucene</groupId>
-            <artifactId>lucene-core</artifactId>
-            <version>6.0.0</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.lucene</groupId>
-            <artifactId>lucene-analyzers-common</artifactId>
-            <version>6.0.0</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.lucene</groupId>
-            <artifactId>lucene-queryparser</artifactId>
-            <version>6.0.0</version>
-        </dependency>-->
-
-
-        <!-- https://mvnrepository.com/artifact/org.apache.lucene/lucene-core -->
-        <dependency>
-            <groupId>org.apache.lucene</groupId>
-            <artifactId>lucene-core</artifactId>
-            <version>3.6.0</version>
-        </dependency>
+    <!--SPARQL Queries-->
+    <dependency>
+        <groupId>org.apache.jena</groupId>
+        <artifactId>jena-arq</artifactId>
+        <version>2.12.1</version>
+    </dependency>
 
     </dependencies>
 
-
     <properties>
+    <!--<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>-->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>1.7</maven.compiler.source>
-        <maven.compiler.target>1.7</maven.compiler.target>
-    </properties>
+    <maven.compiler.source>1.7</maven.compiler.source>
+    <maven.compiler.target>1.7</maven.compiler.target>
+</properties>
 </project>

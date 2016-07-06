@@ -1,0 +1,18 @@
+ <http://ns.inria.fr/smilk/elements/1.0/La Vie est Belle>
+        <http://ns.inria.fr/smilk/elements/1.0/hasComponent>
+                <http://ns.inria.fr/smilk/elements/1.0/> .
+<http://ns.inria.fr/smilk/elements/1.0/Huile Extraordinaire>
+        <http://ns.inria.fr/smilk/elements/1.0/hasComponent>
+                <http://ns.inria.fr/smilk/elements/1.0/Or> .
+<http://ns.inria.fr/smilk/elements/1.0/Huile Merveilleuse>
+        <http://ns.inria.fr/smilk/elements/1.0/hasComponent>
+                <http://ns.inria.fr/smilk/elements/1.0/> .
+<http://ns.inria.fr/smilk/elements/1.0/Absolue Douceur>
+        <http://ns.inria.fr/smilk/elements/1.0/hasComponent>
+                <http://ns.inria.fr/smilk/elements/1.0/> .
+<http://ns.inria.fr/smilk/elements/1.0/Huile Extraordinaire>
+        <http://ns.inria.fr/smilk/elements/1.0/hasComponent>
+                <http://ns.inria.fr/smilk/elements/1.0/> .
+<http://ns.inria.fr/smilk/elements/1.0/BHA L'Huile d�maquillante sensationnelle Eclat sublime>
+        <http://ns.inria.fr/smilk/elements/1.0/hasComponent>
+                <http://ns.inria.fr/smilk/elements/1.0/> .

@@ -22,11 +22,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="RelationExtraction" />
+        <module name="smilk_relation_extraction" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="RelationExtraction" target="1.7" />
+      <module name="smilk_relation_extraction" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>
