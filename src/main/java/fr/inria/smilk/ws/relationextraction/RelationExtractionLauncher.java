@@ -18,10 +18,10 @@ public class RelationExtractionLauncher {
         RelationBelongsToDivisionExtraction relationBelongsToDivisionExtraction =new RelationBelongsToDivisionExtraction();
         RelationBelongsToGroupExtraction relationBelongsToGroupExtraction =new RelationBelongsToGroupExtraction();
         RelationhasComponentExtraction relationhasComponentExtraction=new RelationhasComponentExtraction();
-        relationhasComponentExtraction.process();
-       //relationBelongsToBrandExtraction.process();
-        //relationBelongsToDivisionExtraction.process();
-        //relationBelongsToGroupExtraction.process();
+        //relationhasComponentExtraction.process();
+       relationBelongsToBrandExtraction.process();
+        relationBelongsToDivisionExtraction.process();
+        relationBelongsToGroupExtraction.process();
     }
 
     private static void initRdfFile() throws IOException {

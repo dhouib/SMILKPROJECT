@@ -15,6 +15,16 @@ public class SentenceRelationId {
 
     private SentenceRelationType type;
 
+    public String getSentence_text() {
+        return sentence_text;
+    }
+
+    public void setSentence_text(String sentence_text) {
+        this.sentence_text = sentence_text;
+    }
+
+    private String sentence_text;
+
     public Token getSubject() {
         return subject;
     }
@@ -49,7 +59,7 @@ public class SentenceRelationId {
 
 
     public String toString(){
-        return  "Subject:"+subject.getForm()+",Object:"+object.getForm()+",relation:"+ relation+ ",type:"+type;
+        return  "Subject:"+subject.getForm()+",Object:"+object.getForm()+",relation:"+ relation+ ",type:"+type+"\nsentenceText:"+sentence_text;
     }
 
     @Override

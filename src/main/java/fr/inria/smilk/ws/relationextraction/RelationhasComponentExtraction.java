@@ -29,7 +29,8 @@ public class RelationhasComponentExtraction extends AbstractRelationExtraction {
     Set<String> listComponent = new HashSet<>();
     Set<String> listChimicalComponent = new HashSet<>();
     //SPARQL queries to extract chimical component from DBpedia
-    private  Set<String> hasChimicalComponentDbpedia (){
+    @Override
+    public void extractionFromDBpedia (){
         String Component_name;
         String queryString =  "PREFIX p: <http://dbpedia.org/property/>"+
                 "PREFIX dbpedia: <http://dbpedia.org/resource/>"+
@@ -65,7 +66,7 @@ public class RelationhasComponentExtraction extends AbstractRelationExtraction {
 
                 Component_name = Component_name.substring(0,indexproduct);
 
-                listChimicalComponent.add(Component_name);
+                listChimicalComponent.add(Component_name.toLowerCase());
 
 
             }
@@ -73,7 +74,7 @@ public class RelationhasComponentExtraction extends AbstractRelationExtraction {
         } finally {
             qexec.close();
         }
-        return listChimicalComponent;
+
     }
 
     //SPARQL queries to extract component (plante, arôme) from DBpedia
@@ -122,7 +123,7 @@ public class RelationhasComponentExtraction extends AbstractRelationExtraction {
                     indexproduct = Component_name.indexOf("@");
                 }
                 Component_name = Component_name.substring(0,indexproduct);
-                listComponent.add(Component_name);
+                listComponent.add(Component_name.toLowerCase());
             }
 
         } finally {
@@ -133,15 +134,16 @@ public class RelationhasComponentExtraction extends AbstractRelationExtraction {
 
 
     private  void verifyChimicalComponentDBpedia(NodeList nSentenceList, Set<String> listChimicalComponent) {
-        //listChimicalComponent.add("acide hyaluronique");
 
         for (String chimical_component : listChimicalComponent) {
             System.out.println(chimical_component);
             //parcourir la sortie de Renco
+
             for (int sent_temp = 0; sent_temp < nSentenceList.getLength(); sent_temp++) {
                 Node nSentNode = nSentenceList.item(sent_temp);
                 String sentence = sentenceToString(nSentNode);
                 if (sentence.contains(chimical_component)) {
+                    System.out.println("\nchimical_component:"+chimical_component+"\n");
                     SentenceRelation sentenceRelation = new SentenceRelation();
                     SentenceRelationId sentenceRelationId = new SentenceRelationId();
                     NodeList nTokensList = nSentNode.getChildNodes();
@@ -153,21 +155,18 @@ public class RelationhasComponentExtraction extends AbstractRelationExtraction {
                                 if (nTokenNode instanceof Element) {
 
                                     Element current_element = (Element) nTokenNode;
-
+                                    int index_Component, index_subject;
                                     if (current_element.hasAttribute("type")) {
-                                        if (current_element.getAttribute("type").equalsIgnoreCase("product")&&(sentence.contains(chimical_component))) {
+                                        if (current_element.getAttribute("type").equalsIgnoreCase("product")) {
                                             //construction de l'objet
                                             Token object = new Token();
-                                            object.setForm(chimical_component);
-                                            sentenceRelationId.setObject(object);
                                             //construction du sujet
                                             Token subject = new Token();
                                             //construction de la relation
-                                            int index_Component=0;
                                             index_Component= sentence.indexOf(chimical_component);
                                             System.out.println("indexComponent: " + index_Component);
 
-                                            int index_subject=0;
+
                                             sentenceRelationId.setType(SentenceRelationType.hasComponent);
                                             subject = elementToToken(current_element);
 
@@ -180,9 +179,10 @@ public class RelationhasComponentExtraction extends AbstractRelationExtraction {
                                                 sentenceRelationId.setRelation(SentenceRelation);
                                                 sentenceRelation.setSentenceRelationId(sentenceRelationId);
                                                 sentenceRelation.setMethod(SentenceRelationMethod.dbpedia_chimical_component);
+                                                object.setForm(chimical_component);
+                                                sentenceRelationId.setObject(object);
                                                 list_result.add(sentenceRelation);
                                                 System.out.println("Extracted: " + sentenceRelationId);
-
                                             }
                                             else if (index_Component>index_subject){
                                                 int indexRelation = index_subject + subject.getForm().length();
@@ -190,8 +190,10 @@ public class RelationhasComponentExtraction extends AbstractRelationExtraction {
                                                 sentenceRelationId.setRelation(SentenceRelation);
                                                 sentenceRelation.setSentenceRelationId(sentenceRelationId);
                                                 sentenceRelation.setMethod(SentenceRelationMethod.dbpedia_chimical_component);
+                                                object.setForm(chimical_component);
+                                                sentenceRelationId.setObject(object);
                                                 list_result.add(sentenceRelation);
-                                                System.out.println("Extracted: " + sentenceRelationId);
+                                                System.out.println("Extracted:index_component>index_subject " + sentenceRelationId);
                                             }
                                         }
                                     }
@@ -201,9 +203,7 @@ public class RelationhasComponentExtraction extends AbstractRelationExtraction {
                         }
                     }
                     }
-                else{
 
-                }
                 }
             }
         }
@@ -232,7 +232,7 @@ public class RelationhasComponentExtraction extends AbstractRelationExtraction {
                                     Element current_element = (Element) nTokenNode;
 
                                     if (current_element.hasAttribute("type")) {
-                                        if (current_element.getAttribute("type").equalsIgnoreCase("product")&&(sentence.contains(component))) {
+                                        if (current_element.getAttribute("type").equalsIgnoreCase("product")) {
                                             //construction de l'objet
                                             Token object = new Token();
                                             object.setForm(component);
@@ -291,10 +291,10 @@ public class RelationhasComponentExtraction extends AbstractRelationExtraction {
         Document doc = builder.parse(in);
         doc.getDocumentElement().normalize();
         NodeList nSentenceList = doc.getElementsByTagName("sentence");
-        hasChimicalComponentDbpedia();
+        extractionFromDBpedia();
         hasComponentDbpedia();
         verifyChimicalComponentDBpedia(nSentenceList, listChimicalComponent);
-        verifyComponentDBpedia (nSentenceList, listChimicalComponent);
+       // verifyComponentDBpedia (nSentenceList, listComponent);
     }
     @Override
     public  void annotationData(List<SentenceRelation> list_result) throws IOException {

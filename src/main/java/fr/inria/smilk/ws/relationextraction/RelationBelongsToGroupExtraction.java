@@ -32,6 +32,11 @@ import static fr.inria.smilk.ws.relationextraction.ExtractionHelper.writeRdf;
  */
 public class RelationBelongsToGroupExtraction extends AbstractRelationExtraction {
     @Override
+    protected void extractionFromDBpedia() throws Exception {
+
+    }
+
+    @Override
     public  void annotationData(List<SentenceRelation> list_result) throws IOException {
         // on construit un map (SentenceRelationId,List<SentenceRelationMethod>)
         Map<SentenceRelationId,List<SentenceRelationMethod>> relationMap = new HashMap<>();
@@ -87,6 +92,7 @@ public class RelationBelongsToGroupExtraction extends AbstractRelationExtraction
         for (int sent_temp = 0; sent_temp < nSentenceList.getLength(); sent_temp++) {
             Node nSentNode = nSentenceList.item(sent_temp);
             StringBuilder builder = new StringBuilder();
+            String sentence=builder.toString();
             System.out.println("sentence:"+builder.toString());
             NodeList nTokensList = nSentNode.getChildNodes();
             //parcourir l'arbre Renco
@@ -127,6 +133,7 @@ public class RelationBelongsToGroupExtraction extends AbstractRelationExtraction
                                             sentenceRelationId.setSubject(subjectToken);
                                             sentenceRelationId.setObject(objectToken);
                                             sentenceRelationId.setRelation(relation.toString());
+                                            sentenceRelationId.setSentence_text(sentence);
                                             sentenceRelationId.setType(SentenceRelationType.belongsToGroup);
                                             sentenceRelation.setSentenceRelationId(sentenceRelationId);
                                             sentenceRelation.setMethod(SentenceRelationMethod.rulesBelongsToGroup);
@@ -144,6 +151,7 @@ public class RelationBelongsToGroupExtraction extends AbstractRelationExtraction
                                             sentenceRelationId.setSubject(objectToken);
                                             sentenceRelationId.setObject(subjectToken);
                                             sentenceRelationId.setRelation(relation.toString());
+                                            sentenceRelationId.setSentence_text(sentence);
                                             sentenceRelationId.setType(SentenceRelationType.belongsToGroup);
                                             sentenceRelation.setSentenceRelationId(sentenceRelationId);
                                             sentenceRelation.setMethod(SentenceRelationMethod.rulesBelongsToGroup);

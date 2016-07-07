@@ -35,7 +35,8 @@ public class RelationBelongsToBrandExtraction extends AbstractRelationExtraction
 
     // méthode qui permet d'extraire les patterns de la relation belongsToBrand à partir
     // de l'abstract de DBpedia ainsi que les parfums et les marques
-    private  void belongsToBrandSPARQLBrand() throws Exception {
+    @Override
+    public void extractionFromDBpedia() throws Exception {
         List<String> listSentence = new ArrayList<>();
         String sentenceabstract = new String();
         String product = new String();
@@ -137,6 +138,7 @@ public class RelationBelongsToBrandExtraction extends AbstractRelationExtraction
                     Element token=searchToken(nTokensList, index_pattern);
                     subject= elementToToken(token);
                     sentenceRelationId.setSubject(subject);
+                    sentenceRelationId.setSentence_text(sentence);
                     sentenceRelation.setSentenceRelationId(sentenceRelationId);
                     sentenceRelation.setMethod(SentenceRelationMethod.dbpedia_patterns);
                     list_result.add(sentenceRelation);
@@ -162,6 +164,7 @@ public class RelationBelongsToBrandExtraction extends AbstractRelationExtraction
             for (int sent_temp = 0; sent_temp < nSentenceList.getLength(); sent_temp++) {
                 Node nSentNode = nSentenceList.item(sent_temp);
                 StringBuilder builder = new StringBuilder();
+                String sentence=builder.toString();
                 NodeList nTokensList = nSentNode.getChildNodes();
                 for (int token_temp = 0; token_temp < nTokensList.getLength(); token_temp++) {
                     Node nTokenNode = nTokensList.item(token_temp);
@@ -209,6 +212,7 @@ public class RelationBelongsToBrandExtraction extends AbstractRelationExtraction
                                                 sentenceRelationId.setSubject(subjectToken);
                                                 sentenceRelationId.setObject(objectToken);
                                                 sentenceRelationId.setRelation(relation.toString());
+                                                sentenceRelationId.setSentence_text(sentence);
                                                 sentenceRelationId.setType(SentenceRelationType.belongsToBrand);
                                                 sentenceRelation.setSentenceRelationId(sentenceRelationId);
                                                 sentenceRelation.setMethod(SentenceRelationMethod.dbpedia_namedEntity);
@@ -264,6 +268,7 @@ public class RelationBelongsToBrandExtraction extends AbstractRelationExtraction
         for (int sent_temp = 0; sent_temp < nSentenceList.getLength(); sent_temp++) {
             Node nSentNode = nSentenceList.item(sent_temp);
             StringBuilder builder = new StringBuilder();
+            String sentence =builder.toString();
             System.out.println("sentence:"+builder.toString());
             NodeList nTokensList = nSentNode.getChildNodes();
             //parcourir l'arbre Renco
@@ -309,6 +314,7 @@ public class RelationBelongsToBrandExtraction extends AbstractRelationExtraction
                                             sentenceRelationId.setSubject(subjectToken);
                                             sentenceRelationId.setObject(objectToken);
                                             sentenceRelationId.setRelation(relation.toString());
+                                            sentenceRelationId.setSentence_text(sentence);
                                             sentenceRelationId.setType(SentenceRelationType.belongsToBrand);
                                             sentenceRelation.setSentenceRelationId(sentenceRelationId);
                                             sentenceRelation.setMethod(SentenceRelationMethod.rulesbelongsToBrand);
@@ -326,6 +332,7 @@ public class RelationBelongsToBrandExtraction extends AbstractRelationExtraction
                                             sentenceRelationId.setSubject(objectToken);
                                             sentenceRelationId.setObject(subjectToken);
                                             sentenceRelationId.setRelation(relation.toString());
+                                            sentenceRelationId.setSentence_text(sentence);
                                             sentenceRelationId.setType(SentenceRelationType.belongsToBrand);
                                             sentenceRelation.setSentenceRelationId(sentenceRelationId);
                                             sentenceRelation.setMethod(SentenceRelationMethod.rulesbelongsToBrand);
@@ -399,7 +406,7 @@ public class RelationBelongsToBrandExtraction extends AbstractRelationExtraction
     @Override
     public void processExtraction(String line) throws Exception {
         RENCO renco = new RENCO();
-        belongsToBrandSPARQLBrand();
+
         rulesBelongsToBrand(renco.rencoByWebService(line));
     }
 

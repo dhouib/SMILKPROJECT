@@ -1,18 +1,120 @@
- <http://ns.inria.fr/smilk/elements/1.0/La Vie est Belle>
-        <http://ns.inria.fr/smilk/elements/1.0/hasComponent>
-                <http://ns.inria.fr/smilk/elements/1.0/> .
+ <http://ns.inria.fr/smilk/elements/1.0/Manifesto>
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Saint Laurent> .
+<http://ns.inria.fr/smilk/elements/1.0/Acqua>
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Viktor & Rolf> .
+<http://ns.inria.fr/smilk/elements/1.0/Color Show>
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Gemey-Maybelline> .
+<http://ns.inria.fr/smilk/elements/1.0/Mousse Absolue>
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Préférence> .
+<http://ns.inria.fr/smilk/elements/1.0/Rouge Caresse>
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/L'Oréal Paris> .
+<http://ns.inria.fr/smilk/elements/1.0/Le Beau Male>
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Male> .
+<http://ns.inria.fr/smilk/elements/1.0/Bio Beauté by Nuxe>
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Ushuaïa Bio> .
+<http://ns.inria.fr/smilk/elements/1.0/Blue Therapy ciblé>
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Oregon> .
+<http://ns.inria.fr/smilk/elements/1.0/Million>
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Paco Rabanne> .
+<http://ns.inria.fr/smilk/elements/1.0/Mousse Absolue>
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Préférence> .
+<http://ns.inria.fr/smilk/elements/1.0/Eyes>
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Méditerranée> .
+<http://ns.inria.fr/smilk/elements/1.0/Eau Ecarlate>
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Croc'Odor> .
+<http://ns.inria.fr/smilk/elements/1.0/Cologne �>
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Bulgari Man> .
+<http://ns.inria.fr/smilk/elements/1.0/Eau Sauvage>
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Dior> .
+<http://ns.inria.fr/smilk/elements/1.0/Spicebomb>
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Viktor & Rolf> .
+<http://ns.inria.fr/smilk/elements/1.0/Color Show>
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Gemey-Maybelline> .
+<http://ns.inria.fr/smilk/elements/1.0/Olia>
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/L'Oréal Paris> .
+<http://ns.inria.fr/smilk/elements/1.0/Bleu>
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Chanel> .
+<http://ns.inria.fr/smilk/elements/1.0/Catch Me>
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Facebook> .
+<http://ns.inria.fr/smilk/elements/1.0/� ongles Essie>
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/L'Oréal> .
+<http://ns.inria.fr/smilk/elements/1.0/Advanced G�nifique>
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Lanc�me> .
+<http://ns.inria.fr/smilk/elements/1.0/Rouge Caresse>
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/L'Oréal Paris> .
+<http://ns.inria.fr/smilk/elements/1.0/Génifique>
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Absolue> .
 <http://ns.inria.fr/smilk/elements/1.0/Huile Extraordinaire>
-        <http://ns.inria.fr/smilk/elements/1.0/hasComponent>
-                <http://ns.inria.fr/smilk/elements/1.0/Or> .
-<http://ns.inria.fr/smilk/elements/1.0/Huile Merveilleuse>
-        <http://ns.inria.fr/smilk/elements/1.0/hasComponent>
-                <http://ns.inria.fr/smilk/elements/1.0/> .
-<http://ns.inria.fr/smilk/elements/1.0/Absolue Douceur>
-        <http://ns.inria.fr/smilk/elements/1.0/hasComponent>
-                <http://ns.inria.fr/smilk/elements/1.0/> .
-<http://ns.inria.fr/smilk/elements/1.0/Huile Extraordinaire>
-        <http://ns.inria.fr/smilk/elements/1.0/hasComponent>
-                <http://ns.inria.fr/smilk/elements/1.0/> .
-<http://ns.inria.fr/smilk/elements/1.0/BHA L'Huile d�maquillante sensationnelle Eclat sublime>
-        <http://ns.inria.fr/smilk/elements/1.0/hasComponent>
-                <http://ns.inria.fr/smilk/elements/1.0/> .
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/L'Or�al Paris> .
+<http://ns.inria.fr/smilk/elements/1.0/Biotherm International>
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/L'Oréal Luxe> .
+<http://ns.inria.fr/smilk/elements/1.0/Opium>
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Yves Saint Laurent> .
+<http://ns.inria.fr/smilk/elements/1.0/Hydra v�g�tal>
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Yves Rocher> .
+<http://ns.inria.fr/smilk/elements/1.0/Bio Beauté by Nuxe>
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Sanoflore> .
+<http://ns.inria.fr/smilk/elements/1.0/Mennen>
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Roger & Gallet> .
+<http://ns.inria.fr/smilk/elements/1.0/� façon>
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Giorgio Armani> .
+<http://ns.inria.fr/smilk/elements/1.0/Amor Amor In a flash>
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Lanc \'f4me> .
+<http://ns.inria.fr/smilk/elements/1.0/Perfect Mousse>
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Schwarzkopf> .
+<http://ns.inria.fr/smilk/elements/1.0/Rouge Caresse>
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/� lèvres> .
+<http://ns.inria.fr/smilk/elements/1.0/Le Male>
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Jean Paul Gaultier> .
+<http://ns.inria.fr/smilk/elements/1.0/Eau Sauvage>
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Jean Paul Gaultier> .
+<http://ns.inria.fr/smilk/elements/1.0/La Vie est Belle>
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Lanc \'f4me> .
+<http://ns.inria.fr/smilk/elements/1.0/Autrepart>
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToDivision>
+                <http://ns.inria.fr/smilk/elements/1.0/Laboratoires Gilbert> .
+<http://ns.inria.fr/smilk/elements/1.0/Cerruti 1881>
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToDivision>
+                <http://ns.inria.fr/smilk/elements/1.0/Coty Prestige> .
+<http://ns.inria.fr/smilk/elements/1.0/Luxe>
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToGroup>
+                <http://ns.inria.fr/smilk/elements/1.0/L'Or \'e9al> .
+<http://ns.inria.fr/smilk/elements/1.0/Luxe>
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToGroup>
+                <http://ns.inria.fr/smilk/elements/1.0/L'Oréal> .

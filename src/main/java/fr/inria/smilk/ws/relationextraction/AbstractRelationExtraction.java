@@ -19,17 +19,18 @@ import static org.apache.jena.atlas.io.IO.close;
  */
 public abstract class AbstractRelationExtraction {
 
-     String folder = "C:/Users/dhouib/Desktop/SMILK_project_devpt/smilk_relation_extraction/src/main/resources/input/test1";
+     String folder = "C:/Users/DHOUIB/Desktop/molka/smilk_project_dev/src/main/resources/input/test1";
      protected List<SentenceRelation> list_result = new ArrayList<>();
 
 
 
      public void process() throws Exception {
         constructSentence(folder);
+         extractionFromDBpedia();
         annotationData(list_result);
     }
 
-
+    protected abstract void extractionFromDBpedia() throws Exception;
 
 
     public abstract void annotationData(List<SentenceRelation> list_result) throws IOException;
