@@ -28,9 +28,10 @@ import static fr.inria.smilk.ws.relationextraction.ExtractionHelper.*;
 public class RelationhasComponentExtraction extends AbstractRelationExtraction {
     Set<String> listComponent = new HashSet<>();
     Set<String> listChimicalComponent = new HashSet<>();
+    Set<String> listChimicalComponent_test = new HashSet<>();
     //SPARQL queries to extract chimical component from DBpedia
-    @Override
-    public void extractionFromDBpedia (){
+
+    public void extractionComponentFromDBpedia (){
         String Component_name;
         String queryString =  "PREFIX p: <http://dbpedia.org/property/>"+
                 "PREFIX dbpedia: <http://dbpedia.org/resource/>"+
@@ -68,7 +69,6 @@ public class RelationhasComponentExtraction extends AbstractRelationExtraction {
 
                 listChimicalComponent.add(Component_name.toLowerCase());
 
-
             }
 
         } finally {
@@ -76,6 +76,7 @@ public class RelationhasComponentExtraction extends AbstractRelationExtraction {
         }
 
     }
+
 
     //SPARQL queries to extract component (plante, arôme) from DBpedia
     private  Set<String> hasComponentDbpedia() throws Exception {
@@ -134,14 +135,21 @@ public class RelationhasComponentExtraction extends AbstractRelationExtraction {
 
 
     private  void verifyChimicalComponentDBpedia(NodeList nSentenceList, Set<String> listChimicalComponent) {
+        for (String chimical_component : listChimicalComponent) {
+            System.out.println("chimical_component: "+chimical_component );
+
+        }
+
 
         for (String chimical_component : listChimicalComponent) {
-            System.out.println(chimical_component);
+
             //parcourir la sortie de Renco
 
             for (int sent_temp = 0; sent_temp < nSentenceList.getLength(); sent_temp++) {
                 Node nSentNode = nSentenceList.item(sent_temp);
                 String sentence = sentenceToString(nSentNode);
+                //String sentence_text=line;
+             //   System.out.println("sentence_text: "+sentence_text);
                 if (sentence.contains(chimical_component)) {
                     System.out.println("\nchimical_component:"+chimical_component+"\n");
                     SentenceRelation sentenceRelation = new SentenceRelation();
@@ -177,6 +185,7 @@ public class RelationhasComponentExtraction extends AbstractRelationExtraction {
                                                 int indexRelation = index_Component + chimical_component.length();
                                                 String SentenceRelation = sentence.substring(indexRelation, index_subject);
                                                 sentenceRelationId.setRelation(SentenceRelation);
+                                               // sentenceRelationId.setSentence_text(sentence_text);
                                                 sentenceRelation.setSentenceRelationId(sentenceRelationId);
                                                 sentenceRelation.setMethod(SentenceRelationMethod.dbpedia_chimical_component);
                                                 object.setForm(chimical_component);
@@ -188,6 +197,7 @@ public class RelationhasComponentExtraction extends AbstractRelationExtraction {
                                                 int indexRelation = index_subject + subject.getForm().length();
                                                 String SentenceRelation = sentence.substring(indexRelation, index_Component);
                                                 sentenceRelationId.setRelation(SentenceRelation);
+                                               // sentenceRelationId.setSentence_text(sentence_text);
                                                 sentenceRelation.setSentenceRelationId(sentenceRelationId);
                                                 sentenceRelation.setMethod(SentenceRelationMethod.dbpedia_chimical_component);
                                                 object.setForm(chimical_component);
@@ -209,13 +219,14 @@ public class RelationhasComponentExtraction extends AbstractRelationExtraction {
         }
 
 
-    private  void verifyComponentDBpedia(NodeList nSentenceList, Set<String> listComponent) {
+    private  void verifyComponentDBpedia(String line,NodeList nSentenceList, Set<String> listComponent) {
        // listComponent.add("acide hyaluronique");
         for (String component : listComponent) {
             //parcourir la sortie de Renco
             for (int sent_temp = 0; sent_temp < nSentenceList.getLength(); sent_temp++) {
                 Node nSentNode = nSentenceList.item(sent_temp);
                 String sentence = sentenceToString(nSentNode);
+                String sentence_text=line;
                 //si la phrase contient le pattern
                 if (sentence.contains(component)) {
                     //construction de la SentenceRelation (id, subject, object, relation phrase, méthode, type)
@@ -254,7 +265,8 @@ public class RelationhasComponentExtraction extends AbstractRelationExtraction {
                                                 int indexRelation = index_Component + component.length();
                                                 String SentenceRelation = sentence.substring(indexRelation, index_subject);
                                                 sentenceRelationId.setRelation(SentenceRelation);
-                                                sentenceRelation.setSentenceRelationId(sentenceRelationId);
+                                                sentenceRelationId.setSentence_text(SentenceRelation);
+                                                sentenceRelationId.setSentence_text(sentence_text);
                                                 sentenceRelation.setMethod(SentenceRelationMethod.dbpedia_component);
                                                 list_result.add(sentenceRelation);
                                                 System.out.println("Extracted: " + sentenceRelationId);
@@ -264,6 +276,7 @@ public class RelationhasComponentExtraction extends AbstractRelationExtraction {
                                                 int indexRelation = index_subject + subject.getForm().length();
                                                 String SentenceRelation = sentence.substring(indexRelation, index_Component);
                                                 sentenceRelationId.setRelation(SentenceRelation);
+                                                sentenceRelationId.setSentence_text(sentence_text);
                                                 sentenceRelation.setSentenceRelationId(sentenceRelationId);
                                                 sentenceRelation.setMethod(SentenceRelationMethod.dbpedia_component);
                                                 list_result.add(sentenceRelation);
@@ -282,7 +295,7 @@ public class RelationhasComponentExtraction extends AbstractRelationExtraction {
         }
     }
 
-    private  void rulesBelongsToBrand(String input) throws Exception {
+    private  void ruleshasComponent(String input) throws Exception {
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         DocumentBuilder builder = factory.newDocumentBuilder();
         StringBuilder xmlStringBuilder = new StringBuilder();
@@ -291,8 +304,10 @@ public class RelationhasComponentExtraction extends AbstractRelationExtraction {
         Document doc = builder.parse(in);
         doc.getDocumentElement().normalize();
         NodeList nSentenceList = doc.getElementsByTagName("sentence");
-        extractionFromDBpedia();
-        hasComponentDbpedia();
+        //extractionFromDBpedia();
+        //hasComponentDbpedia();
+
+
         verifyChimicalComponentDBpedia(nSentenceList, listChimicalComponent);
        // verifyComponentDBpedia (nSentenceList, listComponent);
     }
@@ -330,8 +345,15 @@ public class RelationhasComponentExtraction extends AbstractRelationExtraction {
     @Override
     public void processExtraction(String line) throws Exception {
         RENCO renco = new RENCO();
-        rulesBelongsToBrand(renco.rencoByWebService(line));
+        ruleshasComponent(renco.rencoByWebService(line));
     }
+    @Override
+    public void processGlobal() throws Exception {
+        extractionComponentFromDBpedia();
+        super.processGlobal();
+    }
+
+
 }
 
 

@@ -8,9 +8,10 @@ import fr.inria.smilk.ws.relationextraction.util.ListFilesUtil;
 import fr.inria.smilk.ws.relationextraction.util.openNLP;
 
 import java.io.*;
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
+import java.nio.charset.Charset;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.*;
 
 import static org.apache.jena.atlas.io.IO.close;
 
@@ -19,26 +20,27 @@ import static org.apache.jena.atlas.io.IO.close;
  */
 public abstract class AbstractRelationExtraction {
 
-     String folder = "C:/Users/DHOUIB/Desktop/molka/smilk_project_dev/src/main/resources/input/test1";
+     String folder = "C:/Users/dhouib/Desktop/SMILK_project_devpt/RelationExtractionSMILK/src/main/resources/input/test1";
      protected List<SentenceRelation> list_result = new ArrayList<>();
 
 
 
-     public void process() throws Exception {
-        constructSentence(folder);
-         extractionFromDBpedia();
-        annotationData(list_result);
+     public void process(List<String> lines) throws Exception {
+       // constructSentence(folder);
+        //
+        //annotationData(list_result);
     }
 
-    protected abstract void extractionFromDBpedia() throws Exception;
 
-
+    public  void processGlobal() throws Exception{
+       annotationData(list_result);
+    }
     public abstract void annotationData(List<SentenceRelation> list_result) throws IOException;
     public abstract void processExtraction(String line) throws Exception;
 
-    public void constructSentence(String folder) throws Exception {
-
-        List<String> lines = readCorpus(folder);
+    public static void constructSentence( List<String> lines) throws Exception {
+        File file=new File("src/main/resources/manuel_annotation_Data.txt");
+      //  List<String> lines = readCorpus(folder);
         //System.out.println("Size of data: " + lines.size());
         // System.out.print("data: "+lines);
         int i = 0;
@@ -46,7 +48,35 @@ public abstract class AbstractRelationExtraction {
             i++;
             if (line.trim().length() > 1) {
                 System.out.println("\n line: " + i + " " + line);
-                processExtraction(line);
+                FileWriter out = null;
+
+                try {
+
+                    out = new FileWriter(file,true);
+                    try {
+                        out.append(line+"\n");
+
+                    } finally {
+                        try {
+                            out.flush();
+                            out.close();
+                        } catch (IOException closeException) {
+                            // ignore
+                        }
+                    }
+
+                } finally {
+
+                    try {
+                        out.flush();
+                        out.close();
+                    } catch (IOException ex) {
+
+                        // ignore
+                    }
+                }
+
+               // processExtraction(line);
 
             }
         }
@@ -63,7 +93,9 @@ public abstract class AbstractRelationExtraction {
         opennlp = new openNLP();
 
         int i = 0;
-        for (String file : files) {
+        String[] filesArray = files.toArray(new String[]{});
+        sortFiles(filesArray);
+        for (String file : filesArray) {
 
             System.out.println("Processing file #: "+ file +": "+ i);
             i++;
@@ -89,4 +121,31 @@ public abstract class AbstractRelationExtraction {
         return lines;
     }
 
+    /**
+     *
+     * @param path
+     * @param encoding
+     * @return
+     * @throws IOException
+     */
+    static String readFile(String path, Charset encoding)
+            throws IOException {
+        byte[] encoded = Files.readAllBytes(Paths.get(path));
+        return new String(encoded, encoding);
+    }
+
+
+    private static void sortFiles(String[] filenames) {
+        Arrays.sort(filenames, new Comparator<String>() {
+            public int compare(String f1, String f2) {
+                try {
+                    int i1 = Integer.parseInt(f1);
+                    int i2 = Integer.parseInt(f2);
+                    return i1 - i2;
+                } catch (NumberFormatException e) {
+                    throw new AssertionError(e);
+                }
+            }
+        });
+    }
 }

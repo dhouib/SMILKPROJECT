@@ -35,7 +35,7 @@ public class RelationBelongsToBrandExtraction extends AbstractRelationExtraction
 
     // méthode qui permet d'extraire les patterns de la relation belongsToBrand à partir
     // de l'abstract de DBpedia ainsi que les parfums et les marques
-    @Override
+
     public void extractionFromDBpedia() throws Exception {
         List<String> listSentence = new ArrayList<>();
         String sentenceabstract = new String();
@@ -106,8 +106,14 @@ public class RelationBelongsToBrandExtraction extends AbstractRelationExtraction
 
     }
 
+    @Override
+    public void processGlobal() throws Exception {
+        extractionFromDBpedia();
+        super.processGlobal();
+    }
+
     // recherche du pattern DBpedoa dans le data
-    private  void verifyPatternsDBpedia(NodeList nSentenceList, Set<String> patterns) {
+    private  void verifyPatternsDBpedia(String line,NodeList nSentenceList, Set<String> patterns) {
         //patterns.add("le parfum féminin de");
         for (String pattern : patterns) {
             //parcourir la sortie de Renco
@@ -150,7 +156,7 @@ public class RelationBelongsToBrandExtraction extends AbstractRelationExtraction
 
 
     // recherche des EN de DBpedia dans le data
-    private  void verifyENDBpedia(NodeList nSentenceList, Map<String, String> hmap) throws
+    private  void verifyENDBpedia(String line,NodeList nSentenceList, Map<String, String> hmap) throws
             ParserConfigurationException, IOException, SAXException {
 
        //hmap.put("La Vie est Belle","Lanc \\'f4me");
@@ -164,7 +170,7 @@ public class RelationBelongsToBrandExtraction extends AbstractRelationExtraction
             for (int sent_temp = 0; sent_temp < nSentenceList.getLength(); sent_temp++) {
                 Node nSentNode = nSentenceList.item(sent_temp);
                 StringBuilder builder = new StringBuilder();
-                String sentence=builder.toString();
+                String sentence=line;
                 NodeList nTokensList = nSentNode.getChildNodes();
                 for (int token_temp = 0; token_temp < nTokensList.getLength(); token_temp++) {
                     Node nTokenNode = nTokensList.item(token_temp);
@@ -246,7 +252,7 @@ public class RelationBelongsToBrandExtraction extends AbstractRelationExtraction
     }
 
     //recherche de la relation belongsToBrand
-    private  void rulesBelongsToBrand(String input) throws ParserConfigurationException, IOException, SAXException {
+    private  void rulesBelongsToBrand(String line,String input) throws ParserConfigurationException, IOException, SAXException {
         Map<String,String> productBrandMap = new HashMap<>();
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         DocumentBuilder builder = factory.newDocumentBuilder();
@@ -256,19 +262,19 @@ public class RelationBelongsToBrandExtraction extends AbstractRelationExtraction
         Document doc = builder.parse(in);
         doc.getDocumentElement().normalize();
         NodeList nSentenceList = doc.getElementsByTagName("sentence");
-        verifyPatternsDBpedia(nSentenceList, patterns);
-        verifyENDBpedia(nSentenceList,productBrandMap);
-        productBrandMap = findByTypes(nSentenceList,"product","Brand");
-        productBrandMap = findByTypes(nSentenceList,"range","Brand");
+        verifyPatternsDBpedia(line,nSentenceList, patterns);
+        verifyENDBpedia(line,nSentenceList,productBrandMap);
+        productBrandMap = findByTypes(line,nSentenceList,"product","Brand");
+        productBrandMap = findByTypes(line,nSentenceList,"range","Brand");
     }
 
     //recherche de la relation en se basant sur la règle belongsToBrand=product->brand
-    private  Map<String,String> findByTypes(NodeList nSentenceList,String firstType,String secondType) {
+    private  Map<String,String> findByTypes(String line,NodeList nSentenceList,String firstType,String secondType) {
         Map<String, String> firstTypeSecondTypeMap = new HashMap<>();
         for (int sent_temp = 0; sent_temp < nSentenceList.getLength(); sent_temp++) {
             Node nSentNode = nSentenceList.item(sent_temp);
             StringBuilder builder = new StringBuilder();
-            String sentence =builder.toString();
+            String sentence =line;
             System.out.println("sentence:"+builder.toString());
             NodeList nTokensList = nSentNode.getChildNodes();
             //parcourir l'arbre Renco
@@ -320,7 +326,8 @@ public class RelationBelongsToBrandExtraction extends AbstractRelationExtraction
                                             sentenceRelation.setMethod(SentenceRelationMethod.rulesbelongsToBrand);
                                             list_result.add(sentenceRelation);
                                         }else if (((xElement.getAttribute("type").equalsIgnoreCase(secondType)))&&
-                                                yElement.getAttribute("type").equalsIgnoreCase(firstType)) {
+                                                ((yElement.getAttribute("type").equalsIgnoreCase(firstType))||
+                                                        ((yElement.getAttribute("type").equalsIgnoreCase("not_identified"))&&(yElement.getAttribute("pos").equalsIgnoreCase("NPP") )))) {
                                             StringBuilder relation = new StringBuilder();
 
                                             for (Token t : relationTokens) {
@@ -406,8 +413,7 @@ public class RelationBelongsToBrandExtraction extends AbstractRelationExtraction
     @Override
     public void processExtraction(String line) throws Exception {
         RENCO renco = new RENCO();
-
-        rulesBelongsToBrand(renco.rencoByWebService(line));
+        rulesBelongsToBrand(line,renco.rencoByWebService(line));
     }
 
 

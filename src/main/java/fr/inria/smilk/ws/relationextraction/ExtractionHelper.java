@@ -31,10 +31,13 @@ public class ExtractionHelper {
         Resource subject = model.createResource(smilkprefix + sentenceRelationId.getSubject().getForm());
         Property belongs_to_group = model.createProperty(smilkprefix + sentenceRelationId.getType().name());
         Property  rdfs_type = model.createProperty(rdfsprefix + "a");
+        Property  hasText = model.createProperty("hasText");
         Resource object=model.createResource(smilkprefix + sentenceRelationId.getObject().getForm());
-        //Resource type=m.createResource(sentenceRelationId.getSubject().getType());
-        //  m.add(subject,rdfs_type,type).
-        model.add(subject, belongs_to_group, object);
+        Resource type_subject=model.createResource(sentenceRelationId.getSubject().getType());
+        Resource type_object=model.createResource(sentenceRelationId.getObject().getType());
+        Resource text_sources=model.createResource(sentenceRelationId.getSentence_text());
+        model.add(subject,rdfs_type,type_subject).add(subject, belongs_to_group, object).add(subject,hasText,text_sources);
+        model.add(object, rdfs_type,type_object);
         model.write(System.out, "N-TRIPLE");
 
         return model;
