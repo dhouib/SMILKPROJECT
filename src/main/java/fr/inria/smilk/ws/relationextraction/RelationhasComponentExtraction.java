@@ -3,21 +3,17 @@ package fr.inria.smilk.ws.relationextraction;
 import com.hp.hpl.jena.query.*;
 import com.hp.hpl.jena.rdf.model.Literal;
 import com.hp.hpl.jena.rdf.model.Model;
-import fr.inria.smilk.ws.relationextraction.bean.SentenceRelation;
-import fr.inria.smilk.ws.relationextraction.bean.SentenceRelationId;
-import fr.inria.smilk.ws.relationextraction.bean.SentenceRelationMethod;
-import fr.inria.smilk.ws.relationextraction.bean.SentenceRelationType;
+import fr.inria.smilk.ws.relationextraction.bean.*;
 import fr.inria.smilk.ws.relationextraction.renco.renco_simple.RENCO;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
-import org.xml.sax.SAXException;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
-import java.io.*;
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
 import java.util.*;
 
 import static fr.inria.smilk.ws.relationextraction.ExtractionHelper.*;
@@ -28,7 +24,7 @@ import static fr.inria.smilk.ws.relationextraction.ExtractionHelper.*;
 public class RelationhasComponentExtraction extends AbstractRelationExtraction {
     Set<String> listComponent = new HashSet<>();
     Set<String> listChimicalComponent = new HashSet<>();
-    Set<String> listChimicalComponent_test = new HashSet<>();
+    Set<String> listhuile = new HashSet<>();
     //SPARQL queries to extract chimical component from DBpedia
 
     public void extractionComponentFromDBpedia (){
@@ -76,7 +72,6 @@ public class RelationhasComponentExtraction extends AbstractRelationExtraction {
         }
 
     }
-
 
     //SPARQL queries to extract component (plante, arôme) from DBpedia
     private  Set<String> hasComponentDbpedia() throws Exception {
@@ -134,168 +129,177 @@ public class RelationhasComponentExtraction extends AbstractRelationExtraction {
     }
 
 
-    private  void verifyChimicalComponentDBpedia(NodeList nSentenceList, Set<String> listChimicalComponent) {
-        for (String chimical_component : listChimicalComponent) {
-            System.out.println("chimical_component: "+chimical_component );
+    //SPARQL queries to extract component (plante, arôme) from DBpedia
+    private  Set<String> hashuileDbpedia() throws Exception {
+        String Component_name;
+        String queryString =
+                "PREFIX p: <http://dbpedia.org/property/>"+
+                        "PREFIX dbpedia: <http://dbpedia.org/resource/>"+
+                        "PREFIX category: <http://dbpedia.org/resource/Category:>"+
+                        "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>"+
+                        "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>"+
+                        "PREFIX geo: <http://www.georss.org/georss/>"+
+                        "PREFIX dbpedia-owl: <http://dbpedia.org/ontology/>"+
+                        "PREFIX prop-fr: <http://fr.dbpedia.org/property/>"+
+                        "PREFIX dcterms:<http://purl.org/dc/terms/>"+
+                        "PREFIX dbpedia-fr:<http://fr.dbpedia.org/resource/>"+
+                        "select ?huile ?huile_name\n" +
+                        "where { \n" +
+                        "{?huile dcterms:subject ?x.\n" +
+                        "?x skos:subject  dbpedia-fr:Huile_essentielle.\n" +
+                        "?huile rdfs:label ?huile_name\n}" +
+                        "Union" +
+                        "{?huile dcterms:subject ?x.\n" +
+                        "?x skos:prefLabel  \"Composant de parfum\"@fr.\n" +
+                        "?huile rdfs:label ?huile_name}\n" +
+                        "Union\n" +
+                        "{?huile dcterms:subject ?x.\n" +
+                        "?x skos:prefLabel  \"Benzoate d'alkyle\"@fr.\n" +
+                        "?huile rdfs:label ?huile_name\n" +
+                        "}" +
+                        "FILTER ( LANG(?huile_name) = \"fr\" )\n" +
+                        " }\n";
 
-        }
+        Query query = QueryFactory.create(queryString);
+        QueryExecution qexec = QueryExecutionFactory.sparqlService("http://fr.dbpedia.org/sparql", query);
+        try {
+            ResultSet results = qexec.execSelect();
+            while (results.hasNext() ) {
+                QuerySolution soln = results.nextSolution();
+                Literal Component_name_DBpedia = soln.getLiteral("?huile_name");
+                Component_name = Component_name_DBpedia.toString();
 
-
-        for (String chimical_component : listChimicalComponent) {
-
-            //parcourir la sortie de Renco
-
-            for (int sent_temp = 0; sent_temp < nSentenceList.getLength(); sent_temp++) {
-                Node nSentNode = nSentenceList.item(sent_temp);
-                String sentence = sentenceToString(nSentNode);
-                //String sentence_text=line;
-             //   System.out.println("sentence_text: "+sentence_text);
-                if (sentence.contains(chimical_component)) {
-                    System.out.println("\nchimical_component:"+chimical_component+"\n");
-                    SentenceRelation sentenceRelation = new SentenceRelation();
-                    SentenceRelationId sentenceRelationId = new SentenceRelationId();
-                    NodeList nTokensList = nSentNode.getChildNodes();
-                    for (int currentTokensIndex = 0; currentTokensIndex < nTokensList.getLength(); currentTokensIndex++) {
-                        Node nTokensNode = nTokensList.item(currentTokensIndex);
-                        if (nTokensNode instanceof Element) {
-                            for (int currentChildIndex = 0; currentChildIndex < nTokensNode.getChildNodes().getLength(); currentChildIndex++) {
-                                Node nTokenNode = nTokensNode.getChildNodes().item(currentChildIndex);
-                                if (nTokenNode instanceof Element) {
-
-                                    Element current_element = (Element) nTokenNode;
-                                    int index_Component, index_subject;
-                                    if (current_element.hasAttribute("type")) {
-                                        if (current_element.getAttribute("type").equalsIgnoreCase("product")) {
-                                            //construction de l'objet
-                                            Token object = new Token();
-                                            //construction du sujet
-                                            Token subject = new Token();
-                                            //construction de la relation
-                                            index_Component= sentence.indexOf(chimical_component);
-                                            System.out.println("indexComponent: " + index_Component);
-
-
-                                            sentenceRelationId.setType(SentenceRelationType.hasComponent);
-                                            subject = elementToToken(current_element);
-
-                                            sentenceRelationId.setSubject(subject);
-                                            index_subject=sentence.indexOf(subject.getForm());
-                                            System.out.println("index_subject: "+ index_subject);
-                                            if(index_Component<index_subject) {
-                                                int indexRelation = index_Component + chimical_component.length();
-                                                String SentenceRelation = sentence.substring(indexRelation, index_subject);
-                                                sentenceRelationId.setRelation(SentenceRelation);
-                                               // sentenceRelationId.setSentence_text(sentence_text);
-                                                sentenceRelation.setSentenceRelationId(sentenceRelationId);
-                                                sentenceRelation.setMethod(SentenceRelationMethod.dbpedia_chimical_component);
-                                                object.setForm(chimical_component);
-                                                sentenceRelationId.setObject(object);
-                                                list_result.add(sentenceRelation);
-                                                System.out.println("Extracted: " + sentenceRelationId);
-                                            }
-                                            else if (index_Component>index_subject){
-                                                int indexRelation = index_subject + subject.getForm().length();
-                                                String SentenceRelation = sentence.substring(indexRelation, index_Component);
-                                                sentenceRelationId.setRelation(SentenceRelation);
-                                               // sentenceRelationId.setSentence_text(sentence_text);
-                                                sentenceRelation.setSentenceRelationId(sentenceRelationId);
-                                                sentenceRelation.setMethod(SentenceRelationMethod.dbpedia_chimical_component);
-                                                object.setForm(chimical_component);
-                                                sentenceRelationId.setObject(object);
-                                                list_result.add(sentenceRelation);
-                                                System.out.println("Extracted:index_component>index_subject " + sentenceRelationId);
-                                            }
-                                        }
-                                    }
-
-                                }
-                            }
-                        }
-                    }
-                    }
-
+                int indexproduct = 0;
+                if ((Component_name.contains("("))) {
+                    indexproduct = Component_name.indexOf("(");
                 }
-            }
-        }
-
-
-    private  void verifyComponentDBpedia(String line,NodeList nSentenceList, Set<String> listComponent) {
-       // listComponent.add("acide hyaluronique");
-        for (String component : listComponent) {
-            //parcourir la sortie de Renco
-            for (int sent_temp = 0; sent_temp < nSentenceList.getLength(); sent_temp++) {
-                Node nSentNode = nSentenceList.item(sent_temp);
-                String sentence = sentenceToString(nSentNode);
-                String sentence_text=line;
-                //si la phrase contient le pattern
-                if (sentence.contains(component)) {
-                    //construction de la SentenceRelation (id, subject, object, relation phrase, méthode, type)
-                    SentenceRelation sentenceRelation = new SentenceRelation();
-                    SentenceRelationId sentenceRelationId = new SentenceRelationId();
-                    NodeList nTokensList = nSentNode.getChildNodes();
-                    for (int currentTokensIndex = 0; currentTokensIndex < nTokensList.getLength(); currentTokensIndex++) {
-                        Node nTokensNode = nTokensList.item(currentTokensIndex);
-                        if (nTokensNode instanceof Element) {
-                            for (int currentChildIndex = 0; currentChildIndex < nTokensNode.getChildNodes().getLength(); currentChildIndex++) {
-                                Node nTokenNode = nTokensNode.getChildNodes().item(currentChildIndex);
-                                if (nTokenNode instanceof Element) {
-
-                                    Element current_element = (Element) nTokenNode;
-
-                                    if (current_element.hasAttribute("type")) {
-                                        if (current_element.getAttribute("type").equalsIgnoreCase("product")) {
-                                            //construction de l'objet
-                                            Token object = new Token();
-                                            object.setForm(component);
-                                            sentenceRelationId.setObject(object);
-                                            //construction du sujet
-                                            Token subject = new Token();
-                                            //construction de la relation
-                                            int index_Component = sentence.indexOf(component);
-                                            System.out.println("indexComponent: " + index_Component);
-
-                                            int index_subject;
-                                            sentenceRelationId.setType(SentenceRelationType.hasComponent);
-                                            subject = elementToToken(current_element);
-
-                                            sentenceRelationId.setSubject(subject);
-                                            index_subject=sentence.indexOf(subject.getForm());
-                                            System.out.println("index_subject: "+ index_subject);
-                                            if(index_Component<index_subject) {
-                                                int indexRelation = index_Component + component.length();
-                                                String SentenceRelation = sentence.substring(indexRelation, index_subject);
-                                                sentenceRelationId.setRelation(SentenceRelation);
-                                                sentenceRelationId.setSentence_text(SentenceRelation);
-                                                sentenceRelationId.setSentence_text(sentence_text);
-                                                sentenceRelation.setMethod(SentenceRelationMethod.dbpedia_component);
-                                                list_result.add(sentenceRelation);
-                                                System.out.println("Extracted: " + sentenceRelationId);
-
-                                            }
-                                            else if (index_Component>index_subject){
-                                                int indexRelation = index_subject + subject.getForm().length();
-                                                String SentenceRelation = sentence.substring(indexRelation, index_Component);
-                                                sentenceRelationId.setRelation(SentenceRelation);
-                                                sentenceRelationId.setSentence_text(sentence_text);
-                                                sentenceRelation.setSentenceRelationId(sentenceRelationId);
-                                                sentenceRelation.setMethod(SentenceRelationMethod.dbpedia_component);
-                                                list_result.add(sentenceRelation);
-                                                System.out.println("Extracted: " + sentenceRelationId);
-                                            }
-
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
+                else if(Component_name.contains("@")) {
+                    indexproduct = Component_name.indexOf("@");
                 }
-
+                Component_name = Component_name.substring(0,indexproduct);
+                listhuile.add(Component_name.toLowerCase());
             }
+
+        } finally {
+            qexec.close();
         }
+        return listhuile;
     }
 
-    private  void ruleshasComponent(String input) throws Exception {
+    //recherche de la relation en se basant sur la règle belongsToBrand=product->brand
+    private  Map<String,String> findByTypes(String line,NodeList nSentenceList, String firstType,String secondType) {
+        Map<String, String> firstTypeSecondTypeMap = new HashMap<>();
+
+            for (int sent_temp = 0; sent_temp < nSentenceList.getLength(); sent_temp++) {
+                Node nSentNode = nSentenceList.item(sent_temp);
+                StringBuilder builder = new StringBuilder();
+                String sentence = line;
+                NodeList nTokensList = nSentNode.getChildNodes();
+                //parcourir l'arbre Renco
+                for (int token_temp = 0; token_temp < nTokensList.getLength(); token_temp++) {
+
+                    Node nTokenNode = nTokensList.item(token_temp);
+                    NodeList nList = nTokenNode.getChildNodes();
+                    Node nNode = nList.item(token_temp);
+                    int x = 0, y = 0;
+                    while (x < nList.getLength()) {
+                        Node xNode = nList.item(x);
+                        if (xNode instanceof Element) {
+                            Element xElement = (Element) xNode;
+                            if ((xElement.hasAttribute("type") && !xElement.getAttribute("type").equalsIgnoreCase("not_identified") &&
+                                    (xElement.getAttribute("type").equalsIgnoreCase(firstType)))||(xElement.getAttribute("form").equalsIgnoreCase(secondType))) {
+
+
+                                y = x + 1;
+                                LinkedList<Token> relationTokens = new LinkedList<>();
+                                for (int j = y; j < nList.getLength(); j++) {
+                                    Node yNode = nList.item(j);
+
+                                    if (yNode instanceof Element) {
+                                        Element yElement = (Element) yNode;
+                                        //System.out.println("objectToken: "+objectToken.getForm());
+                                       // if (!yElement.getAttribute("form").equalsIgnoreCase(secondType))// ||
+                                       if ((!yElement.getAttribute("form").equalsIgnoreCase(secondType)) &&(!yElement.getAttribute("type").equalsIgnoreCase(firstType)))
+                                        {
+
+                                            Token relationToken = elementToToken(yElement);
+                                            relationTokens.add(relationToken);
+                                        } else {
+
+
+                                            if ((xElement.getAttribute("type").equalsIgnoreCase(firstType) &&
+                                                    yElement.getAttribute("form").equalsIgnoreCase(secondType)))
+                                            {
+                                                StringBuilder relation = new StringBuilder();
+
+                                                for (Token t : relationTokens) {
+                                                    relation.append(t.getForm()).append(" ");
+                                                }
+                                                Token subjectToken = elementToToken(xElement);
+                                                Token objectToken = elementToToken(yElement);
+                                                objectToken.setForm(secondType);
+                                                SentenceRelation sentenceRelation=new SentenceRelation();
+                                                SentenceRelationId sentenceRelationId = new SentenceRelationId();
+                                                sentenceRelationId.setSubject(subjectToken);
+                                                sentenceRelationId.setObject(objectToken);
+                                                sentenceRelationId.setRelation(relation.toString());
+                                                sentenceRelationId.setSentence_text(sentence);
+                                                sentenceRelationId.setType(SentenceRelationType.hasComponent);
+                                                sentenceRelation.setSentenceRelationId(sentenceRelationId);
+                                                sentenceRelation.setMethod(SentenceRelationMethod.dbpedia_component);
+                                                list_result.add(sentenceRelation);
+                                            } else if (xElement.getAttribute("form").equalsIgnoreCase(secondType) &&
+                                                    yElement.getAttribute("type").equalsIgnoreCase(firstType)) {
+                                                Token subjectToken = elementToToken(xElement);
+                                                subjectToken.setForm(secondType);
+                                                Token objectToken = elementToToken(yElement);
+                                                StringBuilder relation = new StringBuilder();
+
+                                                for (Token t : relationTokens) {
+                                                    relation.append(t.getForm()).append(" ");
+                                                }
+
+                                                SentenceRelation sentenceRelation=new SentenceRelation();
+                                                SentenceRelationId sentenceRelationId = new SentenceRelationId();
+                                                sentenceRelationId.setSubject(objectToken);
+                                                sentenceRelationId.setObject(subjectToken);
+                                                sentenceRelationId.setRelation(relation.toString());
+                                                sentenceRelationId.setSentence_text(sentence);
+                                                sentenceRelationId.setType(SentenceRelationType.hasComponent);
+                                                sentenceRelation.setSentenceRelationId(sentenceRelationId);
+                                                sentenceRelation.setMethod(SentenceRelationMethod.dbpedia_component);
+                                                list_result.add(sentenceRelation);
+                                            }
+                                            relationTokens = new LinkedList<>();
+                                            y = j;
+                                            break;
+                                        }
+                                    }
+
+                                }
+                                x = y;
+
+                            } else {
+
+                                x += 1;
+                            }
+
+                        } else {
+
+                            x += 1;
+
+                        }
+                    }
+
+                }
+            }
+
+        return firstTypeSecondTypeMap;
+    }
+
+
+
+    private  void ruleshasComponent(String line, String input) throws Exception {
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         DocumentBuilder builder = factory.newDocumentBuilder();
         StringBuilder xmlStringBuilder = new StringBuilder();
@@ -304,12 +308,21 @@ public class RelationhasComponentExtraction extends AbstractRelationExtraction {
         Document doc = builder.parse(in);
         doc.getDocumentElement().normalize();
         NodeList nSentenceList = doc.getElementsByTagName("sentence");
-        //extractionFromDBpedia();
-        //hasComponentDbpedia();
+        listComponent.remove("cosmétique");
+        listComponent.remove("acide");
+        listComponent.remove("parfum");
 
+        for (String component : listComponent) {
+        findByTypes (line,nSentenceList, "product",component);
+        }
 
-        verifyChimicalComponentDBpedia(nSentenceList, listChimicalComponent);
-       // verifyComponentDBpedia (nSentenceList, listComponent);
+        for (String component : listChimicalComponent) {
+            findByTypes (line,nSentenceList, "product",component);
+        }
+
+        for (String component : listhuile) {
+            findByTypes (line,nSentenceList, "product",component);
+        }
     }
     @Override
     public  void annotationData(List<SentenceRelation> list_result) throws IOException {
@@ -339,20 +352,27 @@ public class RelationhasComponentExtraction extends AbstractRelationExtraction {
                 Model model=constructModel (sentenceRelationId);
                 writeRdf(model);
             }
+            else if(relationMethods.contains(SentenceRelationMethod.dbpedia_parfum_component)){
+                System.out.println("Selected"+sentenceRelationId + "" + SentenceRelationMethod.dbpedia_parfum_component);
+                Model model=constructModel (sentenceRelationId);
+                writeRdf(model);
+            }
         }
     }
 
     @Override
     public void processExtraction(String line) throws Exception {
         RENCO renco = new RENCO();
-        ruleshasComponent(renco.rencoByWebService(line));
-    }
-    @Override
-    public void processGlobal() throws Exception {
-        extractionComponentFromDBpedia();
-        super.processGlobal();
+        ruleshasComponent(line,renco.rencoByWebService(line));
     }
 
+
+    @Override
+    public void init() throws Exception {
+        extractionComponentFromDBpedia();
+        hasComponentDbpedia();
+        hashuileDbpedia();
+    }
 
 }
 

@@ -1,8 +1,5 @@
 package fr.inria.smilk.ws.relationextraction.bean;
 
-import fr.inria.smilk.ws.relationextraction.Token;
-import org.w3c.dom.Node;
-
 /**
  * Created by dhouib on 02/07/2016.
  */

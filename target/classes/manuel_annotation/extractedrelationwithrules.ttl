@@ -1,0 +1,1110 @@
+ <http://ns.inria.fr/smilk/elements/1.0/VMor & Rolf>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Spicebomb>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <product> ;
+        <hasText>  <Son pendant masculin, Spicebomb de VMor & Rolf (L'Or�al Luxe) gagne deux fois : meilleur parfum masculin pour les pro et meilleur design alors que Only the Brave Tattoo de Diesel (L'Or�al Luxe) remporte les suffrages du public et que Kenzo Homme Sport (LVMH) est distingu� pour sa communication.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/VMor & Rolf> .
+<http://ns.inria.fr/smilk/elements/1.0/By Kilian>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Flower of Immortality>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <product> ;
+        <hasText>  <La collection Asian Tales de By Kilian accueille Flower of Immortality (cr�� par Calice Becker, Givaudan), autour d'un accord p�che, absolu de bourgeon de cassis, f�ve tonka et gousse de vanille.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/By Kilian> .
+<http://ns.inria.fr/smilk/elements/1.0/Chanel>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Coco Noir>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <product> ;
+        <hasText>  <Coco Noir de Chanel a �t� sacr� meilleur f�minin, tandis que La Petite Robe Noire de Guerlain (LVMH) remportait celui de l'audace.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Chanel> .
+<http://ns.inria.fr/smilk/elements/1.0/Marc Planchon PREND LA DIRECTION G�N�RALE>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> .
+
+<http://ns.inria.fr/smilk/elements/1.0/ET Didier Becchetti REMPLACE CE DERNIER COMME DIRECTEUR G�N�RAL>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <product> ;
+        <hasText>  <Marc Planchon PREND LA DIRECTION G�N�RALE DES MARQUES AM�RICAINES SUR LA ZONE GRANDE EUROPE DE L'OR�AL PRODUITS PROFESSIONNELS ET Didier Becchetti REMPLACE CE DERNIER COMME DIRECTEUR G�N�RAL DE MATRIX FRANCE.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Marc Planchon PREND LA DIRECTION G�N�RALE> .
+<http://ns.inria.fr/smilk/elements/1.0/Oregon>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <not_identified> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Blue Therapy>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <range> ;
+        <hasText>  <D'où le lancement, en septembre, de Blue Therapy ciblé sur les causes extérieures du vieillissement (UV, tabac, pollution, stress) et associant des organismes aquatiques issus de trois types d'eaux : algue bleue d'un lac de l'Oregon, macro-algue des côtes bretonnes, et le plancton thermal emblématique de la marque.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Oregon> .
+<http://ns.inria.fr/smilk/elements/1.0/Hermès>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Bleu>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <product> ;
+        <hasText>  <S'ils ne pèsent que 35% du marché mondial de la parfumerie, les masculins sont en croissance et montrent une vitalité que n'ont pas leurs consoeurs, comme l'a prouvé l'irruption de 1 Million, Terre d'Hermès ou Bleu de Chanel ces dernières années.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Hermès> .
+<http://ns.inria.fr/smilk/elements/1.0/Opium>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <product> ;
+        <hasText>  <Après Emily Blunt pour Opium, Yves Saint Laurent (L'Oréal Luxe) recrute une autre actrice en plein essor pour ses parfums : l'Américaine Jessica Chastain, vue dans «The Tree of Life», «Take Shelter» et «La Couleur des sentiments».> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Yves Saint Laurent> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Yves Saint Laurent>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> .
+<http://ns.inria.fr/smilk/elements/1.0/Maybelline>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> .
+
+<http://ns.inria.fr/smilk/elements/1.0/L'Oréal Paris>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <not_identified> ;
+        <hasText>  <Elle en est aussi le leader mondial avec Maybelline en numéro un du maquillage, suivi par L'Oréal Paris et, côté coloration, L'Oréal Paris puis Garnier.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Maybelline> .
+<http://ns.inria.fr/smilk/elements/1.0/L'Oréal Luxe>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <not_identified> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Catch Me>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <product> ;
+        <hasText>  <Pour accompagner le lancement de son parfum Catch Me, la marque de L'Oréal Luxe mène une campagne originale sur Facebook.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/L'Oréal Luxe> .
+<http://ns.inria.fr/smilk/elements/1.0/L'Oréal Luxe>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <not_identified> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Eyes>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <range> ;
+        <hasText>  <La ligne Eyes to Kill Acqua d'Armani (L'Oréal Luxe) accueille pour les yeux des teintes métallisées oxydées mêlées aux couleurs de la Méditerranée.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/L'Oréal Luxe> .
+<http://ns.inria.fr/smilk/elements/1.0/Jean Paul Gaultier>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Eau Sauvage>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <product> ;
+        <hasText>  <En parfum, une déferlante d'initiatives entend troubler le jeu des 1 Million de Paco Rabanne (Puig), Le Male de Jean Paul Gaultier (BPI) et Eau Sauvage de Dior (LVMH), trio de tête français.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Jean Paul Gaultier> .
+<http://ns.inria.fr/smilk/elements/1.0/Chanel>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Bleu>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <product> ;
+        <hasText>  <S'ils ne pèsent que 35% du marché mondial de la parfumerie, les masculins sont en croissance et montrent une vitalité que n'ont pas leurs consoeurs, comme l'a prouvé l'irruption de 1 Million, Terre d'Hermès ou Bleu de Chanel ces dernières années.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Chanel> .
+<http://ns.inria.fr/smilk/elements/1.0/Huile Extraordinaire>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <product> ;
+        <hasText>  <Et l'Huile Extraordinaire (prix moyen : 12,30) a permis � L'Or�al Paris de voir ses ventes bondir de 41,5% en soins.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/L'Or�al Paris> .
+
+<http://ns.inria.fr/smilk/elements/1.0/L'Or�al Paris>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <not_identified> .
+<http://ns.inria.fr/smilk/elements/1.0/Jean Paul Gaultier>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Le Male>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <product> ;
+        <hasText>  <En parfum, une déferlante d'initiatives entend troubler le jeu des 1 Million de Paco Rabanne (Puig), Le Male de Jean Paul Gaultier (BPI) et Eau Sauvage de Dior (LVMH), trio de tête français.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Jean Paul Gaultier> .
+<http://ns.inria.fr/smilk/elements/1.0/Playboy>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> .
+
+<http://ns.inria.fr/smilk/elements/1.0/The Essence>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <product> ;
+        <hasText>  <C�t� grande distribution, Coty Beauty rafle la mise avec VIP pour Elle de Playboy et The Essence de David Beckham.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Playboy> .
+<http://ns.inria.fr/smilk/elements/1.0/Only°the°Brave Tattoo>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <product> ;
+        <hasText>  <Son pendant masculin, Spicebomb de VMor & Rolf (L'Or�al Luxe) gagne deux fois : meilleur parfum masculin pour les pro et meilleur design alors que Only the Brave Tattoo de Diesel (L'Or�al Luxe) remporte les suffrages du public et que Kenzo Homme Sport (LVMH) est distingu� pour sa communication.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Diesel> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Diesel>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> .
+<http://ns.inria.fr/smilk/elements/1.0/Florabotanica>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <product> ;
+        <hasText>  <Plus confidentiels, Florabotanica de Balenciaga (Coty Prestige) a �t� r�compens�e pour son flacon et Beach Walk, dans la collection Replica de Maison Martin Margiela (L'Or�al Luxe), a gagn� le prix France.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Balenciaga> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Balenciaga>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> .
+<http://ns.inria.fr/smilk/elements/1.0/Yves Rocher>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Hydra v�g�tal>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <range> ;
+        <hasText>  <De son c�t�, Yves Rocher enrichit sa ligne Hydra v�g�tal, avec une eau micellaire hydratante 2 en 1 pour peaux normales � mixtes (200 ml, 4,90 prix de lancement), comprenant, comme les autres r�f�rences, des s�ves v�g�tales d'�rable du Canada et d'agave bleu du Mexique.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Yves Rocher> .
+<http://ns.inria.fr/smilk/elements/1.0/Lancôme>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> .
+
+<http://ns.inria.fr/smilk/elements/1.0/L'Oréal Paris>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <product> ;
+        <hasText>  <C'est un pur produit de la division des Produits Grand Public, ayant notamment dirigé L'Oréal Paris, qui en 2009 devient président monde de Lancôme.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Lancôme> .
+<http://ns.inria.fr/smilk/elements/1.0/David Beckham>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> .
+
+<http://ns.inria.fr/smilk/elements/1.0/The Essence>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <product> ;
+        <hasText>  <C�t� grande distribution, Coty Beauty rafle la mise avec VIP pour Elle de Playboy et The Essence de David Beckham.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/David Beckham> .
+<http://ns.inria.fr/smilk/elements/1.0/Caudalie>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Huile divine>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <product> ;
+        <hasText>  <Dans le sillage de l'historique Huile prodigieuse de Nuxe, Vichy et Caudalie lui ont embo�t� le pas, cette derni�re revendiquant avoir �coul� 34 000 unit�s de son Huile divine les deux premiers mois du lancement (mai et juin 2012).> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Caudalie> .
+<http://ns.inria.fr/smilk/elements/1.0/Target Red Lipstick>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <product> ;
+        <hasText>  <A cela s'ajoutent quelques exclusivit�s, tels les cosm�tiques Sonia Kashuk ou Target Red Lipstick, un rouge � l�vres propre � l'enseigne, con�u par L'Or�al Paris.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/L'Or�al Paris> .
+
+<http://ns.inria.fr/smilk/elements/1.0/L'Or�al Paris>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <not_identified> .
+<http://ns.inria.fr/smilk/elements/1.0/Playboy>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> .
+
+<http://ns.inria.fr/smilk/elements/1.0/VIP pour Elle>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <product> ;
+        <hasText>  <C�t� grande distribution, Coty Beauty rafle la mise avec VIP pour Elle de Playboy et The Essence de David Beckham.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Playboy> .
+<http://ns.inria.fr/smilk/elements/1.0/Acqua for life>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <product> ;
+        <hasText>  <Dans le cadre de son programme Acqua for life, Giorgio Armani (L'Or�al Luxe) soutient l'association J/P Haitian Relief pr�sid�e par Sean Penn et a vers� en mars 500 000$ au profit d'un projet d'assainissement d'eau � Port-au-Prince en Ha�ti.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Giorgio Armani> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Giorgio Armani>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> .
+<http://ns.inria.fr/smilk/elements/1.0/Tattoo>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <not_identified> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Acqua>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <range> ;
+        <hasText>  <Toujours en parfum, la division a mené une double action avec des lancements (Manifesto chez Saint Laurent, Spicebomb de Viktor & Rolf...) et un travail sur catalogue (Essenza dans la gamme Acqua di Gio, Tattoo pour Only The Brave, Vapeur d'Opium).> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Tattoo> .
+<http://ns.inria.fr/smilk/elements/1.0/So Elixir Purple>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <product> ;
+        <hasText>  <Enfin, dans la cat�gorie parfum sous enseigne propre, Yves Rocher s'impose avec son f�minin So Elixir Purple et L'Occitane, avec LEau de Provence Eau Unverselle, un mixte.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Yves Rocher> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Yves Rocher>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> .
+<http://ns.inria.fr/smilk/elements/1.0/Mousse Absolue>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <product> ;
+        <hasText>  <Nous proposons de nouvelles textures, des produits plus faciles à utiliser avec, par exemple, Rouge Caresse (L'Oréal Paris), Super Stay de Gemey-Maybelline ou, côté coloration, Olia (Garnier) qui doit recruter ou prochainement Mousse Absolue de Préférence (L'Oréal Paris), la première mousse sans mélange».> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Préférence> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Préférence>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> .
+<http://ns.inria.fr/smilk/elements/1.0/Gold Generation>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <range> ;
+        <hasText>  <Coup sur coup, Les Cosm�tiques Design Paris, marque commercialis�e en exclusivit� chez Carrefour, a sorti la gamme Gold Generation, � base d'or 24 carats et L'Or�al Paris a lanc� Nutrilift Gold, un s�rum de teint enrichi en microparticules d'or.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/L'Or�al Paris> .
+
+<http://ns.inria.fr/smilk/elements/1.0/L'Or�al Paris>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <not_identified> .
+<http://ns.inria.fr/smilk/elements/1.0/Hydreane>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <range> ;
+        <hasText>  <Innoxa a ainsi lanc� sa BB Cr�me, Cr�me de teint, sur un axe maquillage, tandis que La Roche-Posay en propose une sous sa franchise Hydreane en version soin.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/La Roche-Posay> .
+
+<http://ns.inria.fr/smilk/elements/1.0/La Roche-Posay>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> .
+<http://ns.inria.fr/smilk/elements/1.0/Cologne>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <not_identified> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Dior Homme>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <product> ;
+        <hasText>  <Dior Homme lance en février une Cologne à l'odeur de linge propre, Bulgari Man une version Extrême.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Cologne> .
+<http://ns.inria.fr/smilk/elements/1.0/Rouge Caresse>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <product> ;
+        <hasText>  <Nous proposons de nouvelles textures, des produits plus faciles à utiliser avec, par exemple, Rouge Caresse (L'Oréal Paris), Super Stay de Gemey-Maybelline ou, côté coloration, Olia (Garnier) qui doit recruter ou prochainement Mousse Absolue de Préférence (L'Oréal Paris), la première mousse sans mélange».> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/L'Oréal Paris> .
+
+<http://ns.inria.fr/smilk/elements/1.0/L'Oréal Paris>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> .
+<http://ns.inria.fr/smilk/elements/1.0/Viktor & Rolf>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Acqua>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <range> ;
+        <hasText>  <Toujours en parfum, la division a mené une double action avec des lancements (Manifesto chez Saint Laurent, Spicebomb de Viktor & Rolf...) et un travail sur catalogue (Essenza dans la gamme Acqua di Gio, Tattoo pour Only The Brave, Vapeur d'Opium).> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Viktor & Rolf> .
+<http://ns.inria.fr/smilk/elements/1.0/Absolue>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Génifique>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <range> ;
+        <hasText>  <La filiale américaine de la marque de L'Oréal Luxe s'est engagée à répondre à la FDA (Food and Drug Administration) à la suite de l'envoi d'une lettre d'avertissement le 7 septembre concernant des produits de ses lignes Génifique, Absolue et Rénergie.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Absolue> .
+<http://ns.inria.fr/smilk/elements/1.0/Color Show>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <range> ;
+        <hasText>  <Ainsi, à l'occasion du prochain lancement de Color Show et de ses 50 nuances chez Gemey-Maybelline, la division veut implanter dans les grands hypers - Auchan a déjà signé - des mobiliers permanents consacrés aux vernis à ongles présentés en nu (un nouvel antivol est en cours de finalisation).> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Gemey-Maybelline> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Gemey-Maybelline>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <not_identified> .
+<http://ns.inria.fr/smilk/elements/1.0/Eau dynamisante>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <product> ;
+        <hasText>  <63% : consommation d'eau �conomis�e gr�ce � l'utilisation d'une recharge 500 ml avec le flacon 100 ml de l'Eau dynamisante de Clarins.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Clarins> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Clarins>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> .
+<http://ns.inria.fr/smilk/elements/1.0/Viktor & Rolf>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Spicebomb>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <product> ;
+        <hasText>  <Toujours en parfum, la division a mené une double action avec des lancements (Manifesto chez Saint Laurent, Spicebomb de Viktor & Rolf...) et un travail sur catalogue (Essenza dans la gamme Acqua di Gio, Tattoo pour Only The Brave, Vapeur d'Opium).> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Viktor & Rolf> .
+<http://ns.inria.fr/smilk/elements/1.0/Dior>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Eau Sauvage>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <product> ;
+        <hasText>  <En parfum, une déferlante d'initiatives entend troubler le jeu des 1 Million de Paco Rabanne (Puig), Le Male de Jean Paul Gaultier (BPI) et Eau Sauvage de Dior (LVMH), trio de tête français.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Dior> .
+<http://ns.inria.fr/smilk/elements/1.0/Auri�ge>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Ari�ge>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <not_identified> ;
+        <hasText>  <�La marque Auri�ge tire son origine de l'Ari�ge, riche, � l'origine, de sources aurif�res, rappelle Nicole Gagne, directrice marketing et commerciale du groupe.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Auri�ge> .
+<http://ns.inria.fr/smilk/elements/1.0/Nuxe>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Huile prodigieuse>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <product> ;
+        <hasText>  <Dans le sillage de l'historique Huile prodigieuse de Nuxe, Vichy et Caudalie lui ont embo�t� le pas, cette derni�re revendiquant avoir �coul� 34 000 unit�s de son Huile divine les deux premiers mois du lancement (mai et juin 2012).> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Nuxe> .
+<http://ns.inria.fr/smilk/elements/1.0/La Phocéenne de Cosmétique>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Autrepart>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <not_identified> ;
+        <hasText>  <Pionnier du naturel dans les rayons des grandes surfaces, le co-fondateur de La Phocéenne de Cosmétique se lance à l'assaut du circuit sélectif avec une marque récemment acquise, Autrepart.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/La Phocéenne de Cosmétique> .
+<http://ns.inria.fr/smilk/elements/1.0/By Kilian>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Asian Tales>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <range> ;
+        <hasText>  <La collection Asian Tales de By Kilian accueille Flower of Immortality (cr�� par Calice Becker, Givaudan), autour d'un accord p�che, absolu de bourgeon de cassis, f�ve tonka et gousse de vanille.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/By Kilian> .
+<http://ns.inria.fr/smilk/elements/1.0/Bio Beauté by Nuxe>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <product> ;
+        <hasText>  <Hauschka, Melvita, Sanoflore, Cattier), des marques qui ont su créer la différence par leur approche (Bio Beauté by Nuxe, Ekia, Aïny...) ou enfin qui ont démocratisé le bio (Ushuaïa Bio, Mixa Bio, Lovea, So' Bio...), notamment dans les GMS.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Sanoflore> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Sanoflore>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> .
+<http://ns.inria.fr/smilk/elements/1.0/Guerlain>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> .
+
+<http://ns.inria.fr/smilk/elements/1.0/La Petite Robe Noire>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <product> ;
+        <hasText>  <Coco Noir de Chanel a �t� sacr� meilleur f�minin, tandis que La Petite Robe Noire de Guerlain (LVMH) remportait celui de l'audace.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Guerlain> .
+<http://ns.inria.fr/smilk/elements/1.0/Guerlain>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Petite Robe Noire>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <product> ;
+        <hasText>  <La Petite Robe Noire (Guerlain/ LVMH) est la star de ce palmar�s, r�v�l� le 11 avril avec tous les prix (parfum de l'ann�e pour les pro comme pour le public, design et communication), dans sa cat�gorie parfum f�minin en s�lectif.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Guerlain> .
+<http://ns.inria.fr/smilk/elements/1.0/Biotherm International>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <product> ;
+        <hasText>  <Elle était jusqu'ici directrice générale Biotherm International (L'Oréal Luxe) où elle a dirigé le repositionnement de la marque.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/L'Oréal Luxe> .
+
+<http://ns.inria.fr/smilk/elements/1.0/L'Oréal Luxe>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> .
+<http://ns.inria.fr/smilk/elements/1.0/L'Or�al Paris>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <not_identified> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Nutrilift Gold>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <product> ;
+        <hasText>  <Avec Nutrilift Gold, L'Or�al Paris concilie dans une seule formule la gal�nique du fond de teint et celle du soin.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/L'Or�al Paris> .
+<http://ns.inria.fr/smilk/elements/1.0/Chanel>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> .
+
+<http://ns.inria.fr/smilk/elements/1.0/BPI>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <not_identified> ;
+        <hasText>  <«Nous avons déjà réalisé beaucoup de podiums sous la coupole, pour LVMH, L'Oréal, Puig, Chanel et déjà BPI avec Kokorico.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Chanel> .
+<http://ns.inria.fr/smilk/elements/1.0/Hermès>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Terre>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <product> ;
+        <hasText>  <S'ils ne pèsent que 35% du marché mondial de la parfumerie, les masculins sont en croissance et montrent une vitalité que n'ont pas leurs consoeurs, comme l'a prouvé l'irruption de 1 Million, Terre d'Hermès ou Bleu de Chanel ces dernières années.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Hermès> .
+<http://ns.inria.fr/smilk/elements/1.0/L'Or�al Professionnel>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Natural Liss Tecniart>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <product> ;
+        <hasText>  <De m�me, l'organisation pointe la pr�sence de 180 g de cyclopentasiloxane dans le d�odorant Nivea Dry Comfort 48 h soin douceur stick, de 41,4 g de cette substance dans le lait corporel Dove Nutrition essentielle pour peau s�che et de 18,4 g dans le lait thermolissant pour cheveux Natural Liss Tecniart de L'Or�al Professionnel.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/L'Or�al Professionnel> .
+<http://ns.inria.fr/smilk/elements/1.0/Mousse Absolue>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <product> ;
+        <hasText>  <Nous proposons de nouvelles textures, des produits plus faciles à utiliser avec, par exemple, Rouge Caresse (L'Oréal Paris), Super Stay de Gemey-Maybelline ou, côté coloration, Olia (Garnier) qui doit recruter ou prochainement Mousse Absolue de Préférence (L'Oréal Paris), la première mousse sans mélange».> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/L'Oréal Paris> .
+
+<http://ns.inria.fr/smilk/elements/1.0/L'Oréal Paris>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> .
+<http://ns.inria.fr/smilk/elements/1.0/Elie Saab>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Paris>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <product> ;
+        <hasText>  <Du 18 au 30 juin, les Galeries Lafayette Haussmann, à Paris, accueillaient un podium Elie Saab de 8 mètres de haut sous la coupole.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Elie Saab> .
+<http://ns.inria.fr/smilk/elements/1.0/Lovea>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <not_identified> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Mixa Bio>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <product> ;
+        <hasText>  <Hauschka, Melvita, Sanoflore, Cattier), des marques qui ont su créer la différence par leur approche (Bio Beauté by Nuxe, Ekia, Aïny...) ou enfin qui ont démocratisé le bio (Ushuaïa Bio, Mixa Bio, Lovea, So' Bio...), notamment dans les GMS.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Lovea> .
+<http://ns.inria.fr/smilk/elements/1.0/Nuxellence>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <not_identified> ;
+        <hasText>  <Nuxe en profite pour prendre la premi�re place du segment de l'anti-�ge, gr�ce notamment au lancement du s�rum Nuxellence.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Nuxe> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Nuxe>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> .
+<http://ns.inria.fr/smilk/elements/1.0/Multi-R�g�n�rante>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <range> ;
+        <hasText>  <�L'anti-�ge a propos� des produits innovants et sophistiqu�s, comme la nouvelle gamme Est�e Lauder Revitalizing Supreme ou encore le relancement de la ligne Multi-R�g�n�rante de Clarins, pr�cise NPD.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Clarins> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Clarins>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> .
+<http://ns.inria.fr/smilk/elements/1.0/La Vie est Belle>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <product> ;
+        <hasText>  <Alors qu'il a perdu sa place de premier parfum de la division Luxe de L'Or\'e9al au profit de La Vie est Belle de Lanc\'f4me, Amor Amor de Cacharel revient sur le devant de la sc\'e8ne en avril avec> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Lanc \'f4me> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Lanc \'f4me>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> .
+<http://ns.inria.fr/smilk/elements/1.0/Diesel>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Spicebomb>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <product> ;
+        <hasText>  <C�t� maisons de composition, Firmenich et IFF sont prim�es trois fois avec Yves Rocher, Diptyque et Diesel pour le premier, Spicebomb et les deux Coty pour IFF.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Diesel> .
+<http://ns.inria.fr/smilk/elements/1.0/CC Crème HD>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <product> ;
+        <hasText>  <La CC Crème HD de la marque, qui a fait connaître la BB crème en France, contient de la Centella asiatica aux propriétés anti-âge, alliée à de l'adénosine, de la vitamine B3 et un SPF 45.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Centella> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Centella>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <not_identified> .
+<http://ns.inria.fr/smilk/elements/1.0/Roger & Gallet>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Mennen>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <range> ;
+        <hasText>  <Depuis dix ans dans le groupe L'Oréal (L'Oréal Paris, Mennen, Garnier), il vient d'être nommé directeur général de Roger & Gallet et Skinceuticals France.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Roger & Gallet> .
+<http://ns.inria.fr/smilk/elements/1.0/Mousse Absolue>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <product> ;
+        <hasText>  <Ou encore, prochainement, la Mousse Absolue de Préférence (L'Oréal Paris), la première mousse sans mélange, réutilisable et prête à l'emploi».> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Préférence> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Préférence>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> .
+<http://ns.inria.fr/smilk/elements/1.0/Eau Ecarlate>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <product> ;
+        <hasText>  <Le groupe, qui a repris la société Cadum&Iba en avril, vient de céder à l'Eau Ecarlate l'activité entretien de la maison et ses marques Croc'Odor, Iba, Zensect etDr.Optic (CA 2011 : 17 M€) qui faisait partie de la corbeille de la mariée.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Croc'Odor> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Croc'Odor>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> .
+<http://ns.inria.fr/smilk/elements/1.0/Paco Rabanne>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Million>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <product> ;
+        <hasText>  <En parfum, une déferlante d'initiatives entend troubler le jeu des 1 Million de Paco Rabanne (Puig), Le Male de Jean Paul Gaultier (BPI) et Eau Sauvage de Dior (LVMH), trio de tête français.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Paco Rabanne> .
+<http://ns.inria.fr/smilk/elements/1.0/Satine>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <product> ;
+        <hasText>  <Ces pays auront donc l'exclusivit� d'un film publicitaire pour le nouveau parfum Satine, dans lequel une femme danse en jupe pliss�e, �cho au motif du flacon (design Aesth�te, verrier Brosse).> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Aesth�te> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Aesth�te>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <not_identified> .
+<http://ns.inria.fr/smilk/elements/1.0/Chanel>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> .
+
+<http://ns.inria.fr/smilk/elements/1.0/La Petite Robe Noire>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <product> ;
+        <hasText>  <Coco Noir de Chanel a �t� sacr� meilleur f�minin, tandis que La Petite Robe Noire de Guerlain (LVMH) remportait celui de l'audace.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Chanel> .
+<http://ns.inria.fr/smilk/elements/1.0/Rouge Caresse>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <product> ;
+        <hasText>  <Nous proposons des produits agréables à utiliser comme Rouge Caresse (L'Oréal Paris), Super Stay de Gemey-Maybelline ou Olia (Garnier), pour que la coloration devienne un moment plaisir et qui va certainement recruter.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/L'Oréal Paris> .
+
+<http://ns.inria.fr/smilk/elements/1.0/L'Oréal Paris>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> .
+<http://ns.inria.fr/smilk/elements/1.0/Cils>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> .
+
+<http://ns.inria.fr/smilk/elements/1.0/L'Or�al Paris>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <not_identified> ;
+        <hasText>  <Pour son dernier mascara Volume Millions de Cils, L'Or�al Paris a choisi la flaconnette et le capot d'Oekabeauty, qui se distinguent par leur forme particuli�re et une m�tallisation argent brillant.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Cils> .
+<http://ns.inria.fr/smilk/elements/1.0/Color Show>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <range> ;
+        <hasText>  <Ainsi, à l'occasion du prochain lancement de Color Show avec ses 50 nuances chez Gemey-Maybelline, la division veut implanter dans les grands hypermarchés - Auchan a déjà signé - des mobiliers permanents consacrés aux vernis à ongles présentés en nu (un nouvel antivol est en cours de finalisation).> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Gemey-Maybelline> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Gemey-Maybelline>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <not_identified> .
+<http://ns.inria.fr/smilk/elements/1.0/Even Better>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <range> ;
+        <hasText>  <Les marques ont aussi beaucoup investi sur les produits sp�cifiques pour les yeux, notamment Clinique avec sa gamme Even Better, Dior avec Capture Totale et Capture XP ou Lanc�me avec G�nifique et R�nergie Multi-Lift.�> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Dior> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Dior>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> .
+<http://ns.inria.fr/smilk/elements/1.0/Maison Martin Margiela>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Replica>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <product> ;
+        <hasText>  <Plus confidentiels, Florabotanica de Balenciaga (Coty Prestige) a �t� r�compens�e pour son flacon et Beach Walk, dans la collection Replica de Maison Martin Margiela (L'Or�al Luxe), a gagn� le prix France.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Maison Martin Margiela> .
+<http://ns.inria.fr/smilk/elements/1.0/Saint Laurent>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <not_identified> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Manifesto>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <range> ;
+        <hasText>  <Toujours en parfum, la division a mené une double action avec des lancements (Manifesto chez Saint Laurent, Spicebomb de Viktor & Rolf...) et un travail sur catalogue (Essenza dans la gamme Acqua di Gio, Tattoo pour Only The Brave, Vapeur d'Opium).> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Saint Laurent> .
+<http://ns.inria.fr/smilk/elements/1.0/Paris>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <product> ;
+        <hasText>  <Les participants recueillant le plus de points de leurs amis pourront gagner un week-end pour deux à Paris et des flacons Catch Me.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Catch Me> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Catch Me>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> .
+<http://ns.inria.fr/smilk/elements/1.0/Roger & Gallet>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Cologne>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <not_identified> ;
+        <hasText>  <Comme Roger & Gallet, Bien-�tre (Lascad, L'Or�al DPGP) a son figuier, � travers ses bourgeons et du lait de figue pr�sents dans la Cologne de l'Herboriste, sign�e Michel Almairac et Sidonie Lancesseur de Robertet (250 ml, 6,30 �).> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Roger & Gallet> .
+<http://ns.inria.fr/smilk/elements/1.0/Perfect Mousse>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <product> ;
+        <hasText>  <Ainsi Agnès Thée, directrice marketing de Henkel Cosmétiques France, insiste sur «la demande des consommatrices», qui a poussé à la conception de la coloration Perfect Mousse de Schwarzkopf.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Schwarzkopf> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Schwarzkopf>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> .
+<http://ns.inria.fr/smilk/elements/1.0/Maybelline>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> ;
+        <hasText>  <Elle en est aussi le leader mondial avec Maybelline en numéro un du maquillage, suivi par L'Oréal Paris et, côté coloration, L'Oréal Paris puis Garnier.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToDivision>
+                <http://ns.inria.fr/smilk/elements/1.0/L'Oréal Paris> .
+
+<http://ns.inria.fr/smilk/elements/1.0/L'Oréal Paris>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <not_identified> .
+<http://ns.inria.fr/smilk/elements/1.0/Lancôme>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> ;
+        <hasText>  <Le groupe annonce que les performances de la division Luxe sont soutenues par la dynamique de Lancôme.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToDivision>
+                <http://ns.inria.fr/smilk/elements/1.0/Luxe> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Luxe>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <division> .
+<http://ns.inria.fr/smilk/elements/1.0/La Phocéenne de Cosmétique>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> ;
+        <hasText>  <Pionnier du naturel dans les rayons des grandes surfaces, le co-fondateur de La Phocéenne de Cosmétique se lance à l'assaut du circuit sélectif avec une marque récemment acquise, Autrepart.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToDivision>
+                <http://ns.inria.fr/smilk/elements/1.0/Autrepart> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Autrepart>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <not_identified> .
+<http://ns.inria.fr/smilk/elements/1.0/Nuxellence>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <not_identified> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Nuxe>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> ;
+        <hasText>  <Nuxe en profite pour prendre la premi�re place du segment de l'anti-�ge, gr�ce notamment au lancement du s�rum Nuxellence.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToDivision>
+                <http://ns.inria.fr/smilk/elements/1.0/Nuxellence> .
+<http://ns.inria.fr/smilk/elements/1.0/L'Oréal Luxe>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <not_identified> ;
+        <hasText>  <Antoine Vanlaeys, directeur des opérations de L'Oréal Luxe, nous explique pourquoi la division privilégie la présence de son outil industriel sur notre territoire.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToDivision>
+                <http://ns.inria.fr/smilk/elements/1.0/Antoine Vanlaeys> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Antoine Vanlaeys>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <division> .
+<http://ns.inria.fr/smilk/elements/1.0/Chanel>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> ;
+        <hasText>  <«Nous avons déjà réalisé beaucoup de podiums sous la coupole, pour LVMH, L'Oréal, Puig, Chanel et déjà BPI avec Kokorico.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToDivision>
+                <http://ns.inria.fr/smilk/elements/1.0/BPI> .
+
+<http://ns.inria.fr/smilk/elements/1.0/BPI>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <not_identified> .
+<http://ns.inria.fr/smilk/elements/1.0/Cils>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> ;
+        <hasText>  <Pour son dernier mascara Volume Millions de Cils, L'Or�al Paris a choisi la flaconnette et le capot d'Oekabeauty, qui se distinguent par leur forme particuli�re et une m�tallisation argent brillant.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToDivision>
+                <http://ns.inria.fr/smilk/elements/1.0/L'Or�al Paris> .
+
+<http://ns.inria.fr/smilk/elements/1.0/L'Or�al Paris>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <not_identified> .
+<http://ns.inria.fr/smilk/elements/1.0/Coty Prestige>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <division> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Balenciaga>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> ;
+        <hasText>  <Plus confidentiels, Florabotanica de Balenciaga (Coty Prestige) a �t� r�compens�e pour son flacon et Beach Walk, dans la collection Replica de Maison Martin Margiela (L'Or�al Luxe), a gagn� le prix France.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToDivision>
+                <http://ns.inria.fr/smilk/elements/1.0/Coty Prestige> .
+<http://ns.inria.fr/smilk/elements/1.0/Beach Walk>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <not_identified> ;
+        <hasText>  <Plus confidentiels, Florabotanica de Balenciaga (Coty Prestige) a �t� r�compens�e pour son flacon et Beach Walk, dans la collection Replica de Maison Martin Margiela (L'Or�al Luxe), a gagn� le prix France.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToDivision>
+                <http://ns.inria.fr/smilk/elements/1.0/Coty Prestige> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Coty Prestige>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <division> .
+<http://ns.inria.fr/smilk/elements/1.0/Cerruti 1881>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> ;
+        <hasText>  <Cerruti 1881 (Coty Prestige) prévoit une déclinaison Acqua Forte avec le chanteur Thomas Dutronc.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToDivision>
+                <http://ns.inria.fr/smilk/elements/1.0/Coty Prestige> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Coty Prestige>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <division> .
+<http://ns.inria.fr/smilk/elements/1.0/Giorgio Armani>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> ;
+        <hasText>  <Par ailleurs, Giorgio Armani renouvelle son engagement aupr�s de Green Cross International pour financer l'installation d'eau potable dans des villages et des �coles de Bolivie et du Ghana.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToDivision>
+                <http://ns.inria.fr/smilk/elements/1.0/Green Cross International> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Green Cross International>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <division> .
+<http://ns.inria.fr/smilk/elements/1.0/Roger & Gallet>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> ;
+        <hasText>  <Comme Roger & Gallet, Bien-�tre (Lascad, L'Or�al DPGP) a son figuier, � travers ses bourgeons et du lait de figue pr�sents dans la Cologne de l'Herboriste, sign�e Michel Almairac et Sidonie Lancesseur de Robertet (250 ml, 6,30 �).> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToDivision>
+                <http://ns.inria.fr/smilk/elements/1.0/Cologne> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Cologne>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <not_identified> .
+<http://ns.inria.fr/smilk/elements/1.0/Laboratoires Gilbert>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <division> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Autrepart>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> ;
+        <hasText>  <En 2011, la société a repris aux Laboratoires Gilbert la marque de cosmétiques et senteurs pour la maison Autrepart, qu'elle relance en septembre dans le réseau sélectif.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToDivision>
+                <http://ns.inria.fr/smilk/elements/1.0/Laboratoires Gilbert> .
+<http://ns.inria.fr/smilk/elements/1.0/Auri�ge>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> ;
+        <hasText>  <�La marque Auri�ge tire son origine de l'Ari�ge, riche, � l'origine, de sources aurif�res, rappelle Nicole Gagne, directrice marketing et commerciale du groupe.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToDivision>
+                <http://ns.inria.fr/smilk/elements/1.0/Ari�ge> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Ari�ge>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <not_identified> .
+<http://ns.inria.fr/smilk/elements/1.0/L'Or \'e9al>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <group> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Luxe>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <division> ;
+        <hasText>  <Alors qu'il a perdu sa place de premier parfum de la division Luxe de L'Or\'e9al au profit de La Vie est Belle de Lanc\'f4me, Amor Amor de Cacharel revient sur le devant de la sc\'e8ne en avril avec> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToGroup>
+                <http://ns.inria.fr/smilk/elements/1.0/L'Or \'e9al> .
+<http://ns.inria.fr/smilk/elements/1.0/Beach Walk>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <not_identified> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Coty Prestige>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <division> ;
+        <hasText>  <Plus confidentiels, Florabotanica de Balenciaga (Coty Prestige) a �t� r�compens�e pour son flacon et Beach Walk, dans la collection Replica de Maison Martin Margiela (L'Or�al Luxe), a gagn� le prix France.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToGroup>
+                <http://ns.inria.fr/smilk/elements/1.0/Beach Walk> .
+<http://ns.inria.fr/smilk/elements/1.0/L'Or�al>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <group> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Luxe>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <division> ;
+        <hasText>  <Forte d'une croissance en 2012 de 8,3% � donn�es comparables et de 16% � donn�es publi�es, la division Luxe de L'Or�al (5,56 milliards d'euros de chiffre d'affaires, dix-huit marques mondiales) profite de la bonne sant� du march� du prestige au niveau international (voir ci-dessous).> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToGroup>
+                <http://ns.inria.fr/smilk/elements/1.0/L'Or�al> .
+<http://ns.inria.fr/smilk/elements/1.0/Produits professionnels>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <division> ;
+        <hasText>  <M�me la division Produits professionnels de L'Or�al entend red�velopper la manucure en salon de coiffure avec Essie.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToGroup>
+                <http://ns.inria.fr/smilk/elements/1.0/L'Or�al> .
+
+<http://ns.inria.fr/smilk/elements/1.0/L'Or�al>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <group> .
+<http://ns.inria.fr/smilk/elements/1.0/L'Oréal Luxe>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <group> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Américaine Jessica Chastain>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <not_identified> ;
+        <hasText>  <Après Emily Blunt pour Opium, Yves Saint Laurent (L'Oréal Luxe) recrute une autre actrice en plein essor pour ses parfums : l'Américaine Jessica Chastain, vue dans «The Tree of Life», «Take Shelter» et «La Couleur des sentiments».> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToGroup>
+                <http://ns.inria.fr/smilk/elements/1.0/L'Oréal Luxe> .
+<http://ns.inria.fr/smilk/elements/1.0/Takasago>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <not_identified> ;
+        <hasText>  <Pour Fleur de Figuier de Roger & Gallet (L'Or�al Cosm�tique active), Francis Kurkdjian, parfumeur chez Takasago, a cr�� un accord inspir� de ce fruit qui n'existe pas dans la palette naturelle (lire p.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToGroup>
+                <http://ns.inria.fr/smilk/elements/1.0/L'Or�al Cosm�tique active> .
+
+<http://ns.inria.fr/smilk/elements/1.0/L'Or�al Cosm�tique active>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <group> .
+<http://ns.inria.fr/smilk/elements/1.0/Commission>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <not_identified> ;
+        <hasText>  <Celui-ci pourrait s'achever avec l'article 20 du nouveau Règlement, rappelé par Emmanuelle Devaux, de l'évaluation de la communication produits et responsable soins solaires pour le groupe L'Oréal, qui est revenue sur le souhait des Etats membres et de la Commission de réglementer l'allégation ''sans'', trop dénigrante.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToGroup>
+                <http://ns.inria.fr/smilk/elements/1.0/L'Oréal> .
+
+<http://ns.inria.fr/smilk/elements/1.0/L'Oréal>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <group> .
+<http://ns.inria.fr/smilk/elements/1.0/L'Oréal>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <group> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Luxe>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <division> ;
+        <hasText>  <Forte d'une croissance en 2012 de 8,3% à données comparables et de 16% à données publiées, la division Luxe de L'Oréal (5,56 milliards d'euros de chiffre d'affaires, dix-huit marques mondiales) profite de la bonne santé du marché du prestige au niveau international (voir ci-dessous).> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToGroup>
+                <http://ns.inria.fr/smilk/elements/1.0/L'Oréal> .
+<http://ns.inria.fr/smilk/elements/1.0/L'Oréal Luxe>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <not_identified> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Antoine Vanlaeys>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <division> ;
+        <hasText>  <Antoine Vanlaeys, directeur des opérations de L'Oréal Luxe, nous explique pourquoi la division privilégie la présence de son outil industriel sur notre territoire.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToGroup>
+                <http://ns.inria.fr/smilk/elements/1.0/L'Oréal Luxe> .
+<http://ns.inria.fr/smilk/elements/1.0/Huile Extraordinaire>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <product> ;
+        <hasText>  <Et l'Huile Extraordinaire (prix moyen : 12,30) a permis � L'Or�al Paris de voir ses ventes bondir de 41,5% en soins.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToProductOrServiceRange>
+                <http://ns.inria.fr/smilk/elements/1.0/L'Or�al Paris> .
+
+<http://ns.inria.fr/smilk/elements/1.0/L'Or�al Paris>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <not_identified> .
+<http://ns.inria.fr/smilk/elements/1.0/Oregon>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <not_identified> ;
+        <hasText>  <D'où le lancement, en septembre, de Blue Therapy ciblé sur les causes extérieures du vieillissement (UV, tabac, pollution, stress) et associant des organismes aquatiques issus de trois types d'eaux : algue bleue d'un lac de l'Oregon, macro-algue des côtes bretonnes, et le plancton thermal emblématique de la marque.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToProductOrServiceRange>
+                <http://ns.inria.fr/smilk/elements/1.0/Blue Therapy> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Blue Therapy>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <range> .
+<http://ns.inria.fr/smilk/elements/1.0/CC Crème HD>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <product> ;
+        <hasText>  <La CC Crème HD de la marque, qui a fait connaître la BB crème en France, contient de la Centella asiatica aux propriétés anti-âge, alliée à de l'adénosine, de la vitamine B3 et un SPF 45.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToProductOrServiceRange>
+                <http://ns.inria.fr/smilk/elements/1.0/Centella> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Centella>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <not_identified> .
+<http://ns.inria.fr/smilk/elements/1.0/Lovea>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <not_identified> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Mixa Bio>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <product> ;
+        <hasText>  <Hauschka, Melvita, Sanoflore, Cattier), des marques qui ont su créer la différence par leur approche (Bio Beauté by Nuxe, Ekia, Aïny...) ou enfin qui ont démocratisé le bio (Ushuaïa Bio, Mixa Bio, Lovea, So' Bio...), notamment dans les GMS.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToProductOrServiceRange>
+                <http://ns.inria.fr/smilk/elements/1.0/Lovea> .
+<http://ns.inria.fr/smilk/elements/1.0/Gold Generation>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <range> .
+
+<http://ns.inria.fr/smilk/elements/1.0/L'Or�al Paris>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <not_identified> ;
+        <hasText>  <Coup sur coup, Les Cosm�tiques Design Paris, marque commercialis�e en exclusivit� chez Carrefour, a sorti la gamme Gold Generation, � base d'or 24 carats et L'Or�al Paris a lanc� Nutrilift Gold, un s�rum de teint enrichi en microparticules d'or.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToProductOrServiceRange>
+                <http://ns.inria.fr/smilk/elements/1.0/Gold Generation> .
+<http://ns.inria.fr/smilk/elements/1.0/Saint Laurent>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <not_identified> ;
+        <hasText>  <Toujours en parfum, la division a mené une double action avec des lancements (Manifesto chez Saint Laurent, Spicebomb de Viktor & Rolf...) et un travail sur catalogue (Essenza dans la gamme Acqua di Gio, Tattoo pour Only The Brave, Vapeur d'Opium).> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToProductOrServiceRange>
+                <http://ns.inria.fr/smilk/elements/1.0/Manifesto> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Manifesto>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <range> .
+<http://ns.inria.fr/smilk/elements/1.0/Or�al Paris>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <product> ;
+        <hasText>  <Afin d'apporter une r�ponse aux cheveux secs et ab�m�s, l'Or�al Paris enrichit sa gamme capillaire Haute expertise d'une 4e franchise, EverRiche, dont le lancement sera soutenu � partir de juin par une campagne de communication en t�l�vision et sur le web.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToProductOrServiceRange>
+                <http://ns.inria.fr/smilk/elements/1.0/Haute expertise> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Haute expertise>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <range> .
+<http://ns.inria.fr/smilk/elements/1.0/Color Show>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <range> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Gemey-Maybelline>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <not_identified> ;
+        <hasText>  <Ainsi, à l'occasion du prochain lancement de Color Show et de ses 50 nuances chez Gemey-Maybelline, la division veut implanter dans les grands hypers - Auchan a déjà signé - des mobiliers permanents consacrés aux vernis à ongles présentés en nu (un nouvel antivol est en cours de finalisation).> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToProductOrServiceRange>
+                <http://ns.inria.fr/smilk/elements/1.0/Color Show> .
+<http://ns.inria.fr/smilk/elements/1.0/Satine>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <product> ;
+        <hasText>  <Ces pays auront donc l'exclusivit� d'un film publicitaire pour le nouveau parfum Satine, dans lequel une femme danse en jupe pliss�e, �cho au motif du flacon (design Aesth�te, verrier Brosse).> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToProductOrServiceRange>
+                <http://ns.inria.fr/smilk/elements/1.0/Aesth�te> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Aesth�te>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <not_identified> .
+<http://ns.inria.fr/smilk/elements/1.0/Target Red Lipstick>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <product> ;
+        <hasText>  <A cela s'ajoutent quelques exclusivit�s, tels les cosm�tiques Sonia Kashuk ou Target Red Lipstick, un rouge � l�vres propre � l'enseigne, con�u par L'Or�al Paris.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToProductOrServiceRange>
+                <http://ns.inria.fr/smilk/elements/1.0/L'Or�al Paris> .
+
+<http://ns.inria.fr/smilk/elements/1.0/L'Or�al Paris>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <not_identified> .
+<http://ns.inria.fr/smilk/elements/1.0/L'Or�al Paris>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <not_identified> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Nutrilift Gold>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <product> ;
+        <hasText>  <Avec Nutrilift Gold, L'Or�al Paris concilie dans une seule formule la gal�nique du fond de teint et celle du soin.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToProductOrServiceRange>
+                <http://ns.inria.fr/smilk/elements/1.0/L'Or�al Paris> .
+<http://ns.inria.fr/smilk/elements/1.0/L'Oréal Luxe>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <not_identified> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Catch Me>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <product> ;
+        <hasText>  <Pour accompagner le lancement de son parfum Catch Me, la marque de L'Oréal Luxe mène une campagne originale sur Facebook.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToProductOrServiceRange>
+                <http://ns.inria.fr/smilk/elements/1.0/L'Oréal Luxe> .
+<http://ns.inria.fr/smilk/elements/1.0/Color Show>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <range> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Gemey-Maybelline>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <not_identified> ;
+        <hasText>  <Ainsi, à l'occasion du prochain lancement de Color Show avec ses 50 nuances chez Gemey-Maybelline, la division veut implanter dans les grands hypermarchés - Auchan a déjà signé - des mobiliers permanents consacrés aux vernis à ongles présentés en nu (un nouvel antivol est en cours de finalisation).> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToProductOrServiceRange>
+                <http://ns.inria.fr/smilk/elements/1.0/Color Show> .
+<http://ns.inria.fr/smilk/elements/1.0/Tattoo>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <not_identified> ;
+        <hasText>  <Toujours en parfum, la division a mené une double action avec des lancements (Manifesto chez Saint Laurent, Spicebomb de Viktor & Rolf...) et un travail sur catalogue (Essenza dans la gamme Acqua di Gio, Tattoo pour Only The Brave, Vapeur d'Opium).> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToProductOrServiceRange>
+                <http://ns.inria.fr/smilk/elements/1.0/Acqua> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Acqua>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <range> .
+<http://ns.inria.fr/smilk/elements/1.0/Cologne>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <not_identified> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Dior Homme>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <product> ;
+        <hasText>  <Dior Homme lance en février une Cologne à l'odeur de linge propre, Bulgari Man une version Extrême.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToProductOrServiceRange>
+                <http://ns.inria.fr/smilk/elements/1.0/Cologne> .
+<http://ns.inria.fr/smilk/elements/1.0/Eyes>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <range> .
+
+<http://ns.inria.fr/smilk/elements/1.0/L'Oréal Luxe>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <not_identified> ;
+        <hasText>  <La ligne Eyes to Kill Acqua d'Armani (L'Oréal Luxe) accueille pour les yeux des teintes métallisées oxydées mêlées aux couleurs de la Méditerranée.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToProductOrServiceRange>
+                <http://ns.inria.fr/smilk/elements/1.0/Eyes> .

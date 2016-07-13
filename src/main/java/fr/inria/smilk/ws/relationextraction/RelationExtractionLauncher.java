@@ -11,12 +11,18 @@ import java.util.List;
 public class RelationExtractionLauncher {
     public static void main(String[] args) throws Exception {
         initRdfFile();
-        String folder = "C:/Users/dhouib/Desktop/SMILK_project_devpt/RelationExtractionSMILK/src/main/resources/input/test";
+        String folder = "C:/Users/dhouib/Desktop/SMILK_project_devpt/RelationExtractionSMILK/src/main/resources/input/test1";
         RelationBelongsToBrandExtraction relationBelongsToBrandExtraction =new RelationBelongsToBrandExtraction();
         RelationBelongsToDivisionExtraction relationBelongsToDivisionExtraction =new RelationBelongsToDivisionExtraction();
         RelationBelongsToGroupExtraction relationBelongsToGroupExtraction =new RelationBelongsToGroupExtraction();
         RelationBelongsToProductOrServiceRange relationBelongsToProductOrServiceRange=new RelationBelongsToProductOrServiceRange();
-       // RelationhasComponentExtraction relationhasComponentExtraction=new RelationhasComponentExtraction();
+        RelationhasComponentExtraction relationhasComponentExtraction=new RelationhasComponentExtraction();
+
+        relationBelongsToBrandExtraction.init();
+        relationBelongsToDivisionExtraction.init();
+        relationBelongsToGroupExtraction.init();
+        relationBelongsToProductOrServiceRange.init();
+        relationhasComponentExtraction.init();
 
 
         List<String> lines= AbstractRelationExtraction.readCorpus(folder);
@@ -25,14 +31,14 @@ public class RelationExtractionLauncher {
             relationBelongsToDivisionExtraction.processExtraction(line);
             relationBelongsToGroupExtraction.processExtraction(line);
             relationBelongsToProductOrServiceRange.processExtraction(line);
-            //relationhasComponentExtraction.processExtraction(line);
+            relationhasComponentExtraction.processExtraction(line);
 
         }
         relationBelongsToBrandExtraction.processGlobal();
         relationBelongsToDivisionExtraction.processGlobal();
         relationBelongsToGroupExtraction.processGlobal();
         relationBelongsToProductOrServiceRange.processGlobal();
-        //relationhasComponentExtraction.processGlobal();
+        relationhasComponentExtraction.processGlobal();
 
         AbstractRelationExtraction.constructSentence(lines);
     }

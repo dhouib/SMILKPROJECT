@@ -1,1 +1,40 @@
- 
+ <http://ns.inria.fr/smilk/elements/1.0/Lancï¿½me>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> .
+
+<http://ns.inria.fr/smilk/elements/1.0/La Vie est Belle>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <product> ;
+        <hasText>  <Alors qu'il a perdu sa place de premier parfum de la division Luxe de L'Orï¿½al au profit de La Vie est Belle de Lancï¿½me, Amor Amor de Cacharel revient sur le devant de la scï¿½ne en avrilavec une ï¿½dition Amor Amor In a flash.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Lancï¿½me> .
+<http://ns.inria.fr/smilk/elements/1.0/Lancï¿½me>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Amor Amor In a flash>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <product> ;
+        <hasText>  <Alors qu'il a perdu sa place de premier parfum de la division Luxe de L'Orï¿½al au profit de La Vie est Belle de Lancï¿½me, Amor Amor de Cacharel revient sur le devant de la scï¿½ne en avrilavec une ï¿½dition Amor Amor In a flash.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Lancï¿½me> .
+<http://ns.inria.fr/smilk/elements/1.0/L'Orï¿½al>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <group> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Luxe>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <division> ;
+        <hasText>  <Alors qu'il a perdu sa place de premier parfum de la division Luxe de L'Orï¿½al au profit de La Vie est Belle de Lancï¿½me, Amor Amor de Cacharel revient sur le devant de la scï¿½ne en avrilavec une ï¿½dition Amor Amor In a flash.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToGroup>
+                <http://ns.inria.fr/smilk/elements/1.0/L'Orï¿½al> .
+<http://ns.inria.fr/smilk/elements/1.0/ananas>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <> .
+
+<http://ns.inria.fr/smilk/elements/1.0/EdT vapo 50>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <product> ;
+        <hasText>  <La ligne s'anime ï¿½galement en mai avec une ï¿½dition limitï¿½e Summer, rafraï¿½chie d'ananas, crï¿½ation dAnne Flipo et de Carlos Benam (IFF), dans un flacon orange (EdT vapo 50 et 100 ml, 42 et 48).> ;
+        <http://ns.inria.fr/smilk/elements/1.0/hasComponent>
+                <http://ns.inria.fr/smilk/elements/1.0/ananas> .

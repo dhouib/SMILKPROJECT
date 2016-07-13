@@ -2,10 +2,7 @@ package fr.inria.smilk.ws.relationextraction;
 
 import com.hp.hpl.jena.query.*;
 import com.hp.hpl.jena.rdf.model.*;
-import fr.inria.smilk.ws.relationextraction.bean.SentenceRelation;
-import fr.inria.smilk.ws.relationextraction.bean.SentenceRelationId;
-import fr.inria.smilk.ws.relationextraction.bean.SentenceRelationMethod;
-import fr.inria.smilk.ws.relationextraction.bean.SentenceRelationType;
+import fr.inria.smilk.ws.relationextraction.bean.*;
 import fr.inria.smilk.ws.relationextraction.renco.renco_simple.RENCO;
 
 import org.w3c.dom.Document;
@@ -24,14 +21,13 @@ import static fr.inria.smilk.ws.relationextraction.ExtractionHelper.*;
 
 /**
  * Created by dhouib on 30/06/2016.
+ * Extraction of the relation belongsToBrand
  */
 public class RelationBelongsToBrandExtraction extends AbstractRelationExtraction {
-    //stocker les EN de DBpedia (product, brand)
+    //store the NE DBpedia (product, brand)
      HashMap<String, String> hmap = new HashMap<String, String>();
-    //stocker les patterns de DBpedia
+    //store patterns extracted from DBpedia
      Set<String> patterns = new HashSet<>();
-
-
 
     // méthode qui permet d'extraire les patterns de la relation belongsToBrand à partir
     // de l'abstract de DBpedia ainsi que les parfums et les marques
@@ -103,18 +99,11 @@ public class RelationBelongsToBrandExtraction extends AbstractRelationExtraction
         } finally {
             qexec.close();
         }
-
     }
 
-    @Override
-    public void processGlobal() throws Exception {
-        extractionFromDBpedia();
-        super.processGlobal();
-    }
 
     // recherche du pattern DBpedoa dans le data
     private  void verifyPatternsDBpedia(String line,NodeList nSentenceList, Set<String> patterns) {
-        //patterns.add("le parfum féminin de");
         for (String pattern : patterns) {
             //parcourir la sortie de Renco
             for (int sent_temp = 0; sent_temp < nSentenceList.getLength(); sent_temp++) {
@@ -131,11 +120,6 @@ public class RelationBelongsToBrandExtraction extends AbstractRelationExtraction
                     sentenceRelationId.setType(SentenceRelationType.belongsToBrand);
                     // trouver l'index de l'objet
                     int index_pattern = sentence.indexOf(pattern);
-                    System.out.print("index_pattern: "+index_pattern);
-                    int index_object = index_pattern + pattern.length()+1;
-                    //String subSentence = sentence.substring(index_object).trim();
-                   // System.out.println ("subSentence: "+subSentence);
-                    //String objet= sentence.substring(0, sentence.indexOf(' '));
                     String objet= sentence.substring(0, sentence.indexOf(pattern));
                     object.setForm(objet);
                     sentenceRelationId.setObject(object);
@@ -148,7 +132,6 @@ public class RelationBelongsToBrandExtraction extends AbstractRelationExtraction
                     sentenceRelation.setSentenceRelationId(sentenceRelationId);
                     sentenceRelation.setMethod(SentenceRelationMethod.dbpedia_patterns);
                     list_result.add(sentenceRelation);
-                    System.out.println("Extracted: "+sentenceRelationId);
                 }
             }
         }
@@ -158,15 +141,13 @@ public class RelationBelongsToBrandExtraction extends AbstractRelationExtraction
     // recherche des EN de DBpedia dans le data
     private  void verifyENDBpedia(String line,NodeList nSentenceList, Map<String, String> hmap) throws
             ParserConfigurationException, IOException, SAXException {
-
-       //hmap.put("La Vie est Belle","Lanc \\'f4me");
         //parcourir le hmap
         Set set = hmap.entrySet();
         Iterator iterator = set.iterator();
         while (iterator.hasNext()) {
             Map.Entry mentry = (Map.Entry) iterator.next();
             SentenceRelation sentenceRelation=new SentenceRelation();
-            //parcourir la sortie de renco
+            //parcourir la sortie de fr.inria.smilk.ws.relationextraction.renco
             for (int sent_temp = 0; sent_temp < nSentenceList.getLength(); sent_temp++) {
                 Node nSentNode = nSentenceList.item(sent_temp);
                 StringBuilder builder = new StringBuilder();
@@ -192,22 +173,13 @@ public class RelationBelongsToBrandExtraction extends AbstractRelationExtraction
                                     if (yNode instanceof Element) {
                                         Element yElement = (Element) yNode;
                                         Token objectToken = new Token();
-                                        //recherche de la phrase de la relation
-                                       /* if ((!yElement.hasAttribute("type") || yElement.getAttribute("type").equalsIgnoreCase("not_identified"))) {
-                                            Token relationToken = new Token();
-                                            relationToken=elementToToken(yElement);
-
-                                        } */
-                                       // else {
-                                        //recherche de la phrase de la relation
                                             if ((!yElement.getAttribute("form").equalsIgnoreCase(mentry.getValue().toString()))||(!yElement.getAttribute("lemma").equalsIgnoreCase(mentry.getValue().toString()))){
                                                 Token relationToken = new Token();
                                                 relationToken=elementToToken(yElement);
                                                 relationTokens.add(relationToken);
-
                                             }
                                          //recherche du l'object
-                                            else if ((yElement.getAttribute("form").equalsIgnoreCase(mentry.getValue().toString()))||(yElement.getAttribute("form").equalsIgnoreCase(mentry.getValue().toString()))) {
+                                            else if ((yElement.getAttribute("form").equalsIgnoreCase(mentry.getValue().toString()))||(yElement.getAttribute("lemma").equalsIgnoreCase(mentry.getValue().toString()))) {
                                                 objectToken = elementToToken(yElement);
                                                 StringBuilder relation = new StringBuilder();
                                                 for (Token t : relationTokens) {
@@ -222,14 +194,11 @@ public class RelationBelongsToBrandExtraction extends AbstractRelationExtraction
                                                 sentenceRelationId.setType(SentenceRelationType.belongsToBrand);
                                                 sentenceRelation.setSentenceRelationId(sentenceRelationId);
                                                 sentenceRelation.setMethod(SentenceRelationMethod.dbpedia_namedEntity);
-                                                System.out.println("Extracted: "+sentenceRelationId);
-                                                //construction de la liste des sentences relations
                                                 list_result.add(sentenceRelation);
                                                 relationTokens = new LinkedList<>();
                                                 y = j;
                                                 break;
                                             }
-                                       // }
                                     }
                                 }
                                 x = y;
@@ -264,8 +233,8 @@ public class RelationBelongsToBrandExtraction extends AbstractRelationExtraction
         NodeList nSentenceList = doc.getElementsByTagName("sentence");
         verifyPatternsDBpedia(line,nSentenceList, patterns);
         verifyENDBpedia(line,nSentenceList,productBrandMap);
-        productBrandMap = findByTypes(line,nSentenceList,"product","Brand");
-        productBrandMap = findByTypes(line,nSentenceList,"range","Brand");
+        productBrandMap = findByTypes(line,nSentenceList,"product","brand");
+        productBrandMap = findByTypes(line,nSentenceList,"range","brand");
     }
 
     //recherche de la relation en se basant sur la règle belongsToBrand=product->brand
@@ -287,9 +256,9 @@ public class RelationBelongsToBrandExtraction extends AbstractRelationExtraction
                     Node xNode = nList.item(x);
                     if (xNode instanceof Element) {
                         Element xElement = (Element) xNode;
-                        if (xElement.hasAttribute("type") && (xElement.getAttribute("type").equalsIgnoreCase(firstType) ||
-                                xElement.getAttribute("type").equalsIgnoreCase(secondType) ||((xElement.getAttribute("type").equalsIgnoreCase("not_identified"))
-                                &&(xElement.getAttribute("pos").equalsIgnoreCase("NPP") )) )) {
+                        if (xElement.hasAttribute("type") && !xElement.getAttribute("type").equalsIgnoreCase("not_identified") &&
+                                (xElement.getAttribute("type").equalsIgnoreCase(firstType) ||
+                                        xElement.getAttribute("type").equalsIgnoreCase(secondType))) {
 
                             Token subjectToken = elementToToken(xElement);
                             y = x + 1;
@@ -298,7 +267,7 @@ public class RelationBelongsToBrandExtraction extends AbstractRelationExtraction
                                 Node yNode = nList.item(j);
                                 if (yNode instanceof Element) {
                                     Element yElement = (Element) yNode;
-                                    if (!yElement.hasAttribute("type")  )
+                                    if ((!yElement.hasAttribute("type") || yElement.getAttribute("type").equalsIgnoreCase("not_identified")))
 
                                     {
 
@@ -307,8 +276,8 @@ public class RelationBelongsToBrandExtraction extends AbstractRelationExtraction
 
                                     } else {
                                         Token objectToken = elementToToken(yElement);
-                                        if (xElement.getAttribute("type").equalsIgnoreCase(firstType) && ((yElement.getAttribute("type").equalsIgnoreCase(secondType))||
-                                                ((yElement.getAttribute("type").equalsIgnoreCase("not_identified"))&&(yElement.getAttribute("pos").equalsIgnoreCase("NPP") ))))
+                                        if ((xElement.getAttribute("type").equalsIgnoreCase(firstType) &&
+                                                yElement.getAttribute("type").equalsIgnoreCase(secondType)))
                                         {
                                             StringBuilder relation = new StringBuilder();
 
@@ -325,9 +294,8 @@ public class RelationBelongsToBrandExtraction extends AbstractRelationExtraction
                                             sentenceRelation.setSentenceRelationId(sentenceRelationId);
                                             sentenceRelation.setMethod(SentenceRelationMethod.rulesbelongsToBrand);
                                             list_result.add(sentenceRelation);
-                                        }else if (((xElement.getAttribute("type").equalsIgnoreCase(secondType)))&&
-                                                ((yElement.getAttribute("type").equalsIgnoreCase(firstType))||
-                                                        ((yElement.getAttribute("type").equalsIgnoreCase("not_identified"))&&(yElement.getAttribute("pos").equalsIgnoreCase("NPP") )))) {
+                                        } else if (xElement.getAttribute("type").equalsIgnoreCase(secondType) &&
+                                                yElement.getAttribute("type").equalsIgnoreCase(firstType)) {
                                             StringBuilder relation = new StringBuilder();
 
                                             for (Token t : relationTokens) {
@@ -416,6 +384,10 @@ public class RelationBelongsToBrandExtraction extends AbstractRelationExtraction
         rulesBelongsToBrand(line,renco.rencoByWebService(line));
     }
 
+    @Override
+    public void init() throws Exception {
+        extractionFromDBpedia();
+    }
 
 
 }

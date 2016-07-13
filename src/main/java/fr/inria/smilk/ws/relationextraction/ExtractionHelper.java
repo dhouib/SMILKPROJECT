@@ -4,26 +4,21 @@ import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
 import com.hp.hpl.jena.rdf.model.Property;
 import com.hp.hpl.jena.rdf.model.Resource;
-import fr.inria.smilk.ws.relationextraction.bean.SentenceRelation;
 import fr.inria.smilk.ws.relationextraction.bean.SentenceRelationId;
-import fr.inria.smilk.ws.relationextraction.util.ListFilesUtil;
-import fr.inria.smilk.ws.relationextraction.util.openNLP;
+import fr.inria.smilk.ws.relationextraction.bean.Token;
 import org.apache.commons.lang3.StringUtils;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
 import java.io.*;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 /**
  * Created by dhouib on 03/07/2016.
  */
 public class ExtractionHelper {
 
+    //construct the RDF Model
     public static Model constructModel (SentenceRelationId sentenceRelationId){
         Model model = ModelFactory.createDefaultModel();
         String smilkprefix="http://ns.inria.fr/smilk/elements/1.0/";
@@ -39,10 +34,10 @@ public class ExtractionHelper {
         model.add(subject,rdfs_type,type_subject).add(subject, belongs_to_group, object).add(subject,hasText,text_sources);
         model.add(object, rdfs_type,type_object);
         model.write(System.out, "N-TRIPLE");
-
         return model;
     }
 
+    //write the RDF in the N3 format
     public static void writeRdf (Model model) throws IOException {
         File file=new File("src/main/resources/extractedrelation.ttl");
 
@@ -59,7 +54,6 @@ public class ExtractionHelper {
                     out.flush();
                     out.close();
                 } catch (IOException closeException) {
-                    // ignore
                 }
             }
 
@@ -70,11 +64,12 @@ public class ExtractionHelper {
                 out.close();
             } catch (IOException ex) {
 
-                // ignore
             }
         }
 
     }
+
+    // transform element To Token
     public static Token elementToToken (Element element){
         Token token=new Token();
         token.setId(Integer.parseInt(element.getAttribute("id")));
@@ -89,6 +84,7 @@ public class ExtractionHelper {
         return token;
     }
 
+    // search token by index
     public static Element searchToken(NodeList nTokensList, int index_pattern) {
         Element before_current_element = null;
         for (int currentTokensIndex = 0; currentTokensIndex < nTokensList.getLength(); currentTokensIndex++) {
@@ -114,64 +110,6 @@ public class ExtractionHelper {
             }
         }
         return before_current_element;
-    }
-
-    public static Element searchTokenByType (NodeList nTokensList, String product ) {
-        System.out.println ("entrer");
-        Element before_current_element = null;
-        for (int currentTokensIndex = 0; currentTokensIndex < nTokensList.getLength(); currentTokensIndex++) {
-            Node nTokensNode = nTokensList.item(currentTokensIndex);
-            if (nTokensNode instanceof Element) {
-                for (int currentChildIndex = 0; currentChildIndex < nTokensNode.getChildNodes().getLength(); currentChildIndex++) {
-                    Node nTokenNode = nTokensNode.getChildNodes().item(currentChildIndex);
-                    if (nTokenNode instanceof Element) {
-
-                        Element current_element = (Element) nTokenNode;
-                        String index_start = current_element.getAttribute("start");
-                        //System.out.println("index_start: " + index_start + " type: " + current_element.getAttribute("type"));
-
-                        //before_current_element = current_element;
-                        if (current_element.hasAttribute("type")){
-                            if(current_element.getAttribute("type").equalsIgnoreCase(product)) {
-                                before_current_element = current_element;
-                                System.out.println("before_current: " + before_current_element.getAttribute("form"));
-                        }
-
-                        }
-                    } else {
-                        return before_current_element;
-                    }
-
-
-
-                }
-            }
-        }
-        return before_current_element;
-    }
-
-    public static Element searchTokenAfterPattern(NodeList nTokensList, int indexRelation){
-        Element after_current_element=null;
-        for (int currentTokensIndex = 0; currentTokensIndex < nTokensList.getLength(); currentTokensIndex++) {
-            Node nTokensNode = nTokensList.item(currentTokensIndex);
-            if (nTokensNode instanceof Element) {
-                for (int currentChildIndex = 0; currentChildIndex < nTokensNode.getChildNodes().getLength(); currentChildIndex++) {
-                    Node nTokenNode = nTokensNode.getChildNodes().item(currentChildIndex);
-                    if (nTokenNode instanceof Element) {
-                        Element current_element = (Element) nTokenNode;
-                        String index_start = current_element.getAttribute("start");
-                        int index_token = Integer.parseInt(index_start);
-                        if (index_token > indexRelation) {
-                            after_current_element = current_element;
-                        } else {
-                            return after_current_element;
-                        }
-                    }
-                }
-            }
-        }
-
-        return after_current_element;
     }
 
     public static String sentenceToString(Node sentenceNode){

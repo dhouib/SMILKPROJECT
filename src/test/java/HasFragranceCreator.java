@@ -1,5 +1,3 @@
-package fr.inria.smilk.ws.relationextraction;
-
 import com.hp.hpl.jena.query.*;
 import com.hp.hpl.jena.rdf.model.Literal;
 import fr.inria.smilk.ws.relationextraction.renco.renco_simple.RENCO;

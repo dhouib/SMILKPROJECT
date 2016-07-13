@@ -9,7 +9,9 @@ public enum SentenceRelationMethod {
     dbpedia_patterns,
     rulesBelongsToDivision,
     rulesBelongsToGroup,
+    rulesBelongsToProductOrServiceRange,
     dbpedia_chimical_component,
-    dbpedia_component;
+    dbpedia_component,
+    dbpedia_parfum_component;
 
 }

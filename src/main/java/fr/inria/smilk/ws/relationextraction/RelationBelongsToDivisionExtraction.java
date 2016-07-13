@@ -1,13 +1,7 @@
 package fr.inria.smilk.ws.relationextraction;
 
 import com.hp.hpl.jena.rdf.model.Model;
-import com.hp.hpl.jena.rdf.model.ModelFactory;
-import com.hp.hpl.jena.rdf.model.Property;
-import com.hp.hpl.jena.rdf.model.Resource;
-import fr.inria.smilk.ws.relationextraction.bean.SentenceRelation;
-import fr.inria.smilk.ws.relationextraction.bean.SentenceRelationId;
-import fr.inria.smilk.ws.relationextraction.bean.SentenceRelationMethod;
-import fr.inria.smilk.ws.relationextraction.bean.SentenceRelationType;
+import fr.inria.smilk.ws.relationextraction.bean.*;
 import fr.inria.smilk.ws.relationextraction.renco.renco_simple.RENCO;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -20,7 +14,6 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.util.*;
 
 import static fr.inria.smilk.ws.relationextraction.ExtractionHelper.constructModel;
@@ -31,8 +24,6 @@ import static fr.inria.smilk.ws.relationextraction.ExtractionHelper.writeRdf;
  * Created by dhouib on 04/07/2016.
  */
 public class RelationBelongsToDivisionExtraction extends AbstractRelationExtraction {
-
-
 
 
     @Override
@@ -81,12 +72,12 @@ public class RelationBelongsToDivisionExtraction extends AbstractRelationExtract
     }
 
     //recherche de la relation en se basant sur la règle belongsToBrand=product->brand
-    private  Map<String,String> findByTypes(String line, NodeList nSentenceList,String firstType,String secondType) {
+    private  Map<String,String> findByTypes(String line,NodeList nSentenceList,String firstType,String secondType) {
         Map<String, String> firstTypeSecondTypeMap = new HashMap<>();
         for (int sent_temp = 0; sent_temp < nSentenceList.getLength(); sent_temp++) {
             Node nSentNode = nSentenceList.item(sent_temp);
             StringBuilder builder = new StringBuilder();
-            String sentence=line;
+            String sentence =line;
             System.out.println("sentence:"+builder.toString());
             NodeList nTokensList = nSentNode.getChildNodes();
             //parcourir l'arbre Renco
@@ -99,9 +90,10 @@ public class RelationBelongsToDivisionExtraction extends AbstractRelationExtract
                     Node xNode = nList.item(x);
                     if (xNode instanceof Element) {
                         Element xElement = (Element) xNode;
-                        if (xElement.hasAttribute("type") && (xElement.getAttribute("type").equalsIgnoreCase(firstType) ||
-                                xElement.getAttribute("type").equalsIgnoreCase(secondType) ||((xElement.getAttribute("type").equalsIgnoreCase("not_identified"))
-                                &&(xElement.getAttribute("pos").equalsIgnoreCase("NPP") )) )) {
+                        if (xElement.hasAttribute("type") && !xElement.getAttribute("type").equalsIgnoreCase("not_identified") &&
+                                (xElement.getAttribute("type").equalsIgnoreCase(firstType) ||
+                                        xElement.getAttribute("type").equalsIgnoreCase(secondType))) {
+
                             Token subjectToken = elementToToken(xElement);
                             y = x + 1;
                             LinkedList<Token> relationTokens = new LinkedList<>();
@@ -109,14 +101,18 @@ public class RelationBelongsToDivisionExtraction extends AbstractRelationExtract
                                 Node yNode = nList.item(j);
                                 if (yNode instanceof Element) {
                                     Element yElement = (Element) yNode;
-                                    if (!yElement.hasAttribute("type") ) {
+                                    if ((!yElement.hasAttribute("type") || yElement.getAttribute("type").equalsIgnoreCase("not_identified")))
+
+                                    {
+
                                         Token relationToken = elementToToken(yElement);
                                         relationTokens.add(relationToken);
 
                                     } else {
                                         Token objectToken = elementToToken(yElement);
-                                        if (xElement.getAttribute("type").equalsIgnoreCase(firstType) && ((yElement.getAttribute("type").equalsIgnoreCase(secondType))||
-                                                ((yElement.getAttribute("type").equalsIgnoreCase("not_identified"))&&(yElement.getAttribute("pos").equalsIgnoreCase("NPP") )))){
+                                        if ((xElement.getAttribute("type").equalsIgnoreCase(firstType) &&
+                                                yElement.getAttribute("type").equalsIgnoreCase(secondType)))
+                                        {
                                             StringBuilder relation = new StringBuilder();
 
                                             for (Token t : relationTokens) {
@@ -132,15 +128,14 @@ public class RelationBelongsToDivisionExtraction extends AbstractRelationExtract
                                             sentenceRelation.setSentenceRelationId(sentenceRelationId);
                                             sentenceRelation.setMethod(SentenceRelationMethod.rulesBelongsToDivision);
                                             list_result.add(sentenceRelation);
-                                        }
-                                        else if (xElement.getAttribute("type").equalsIgnoreCase(secondType) &&
-                                                ((yElement.getAttribute("type").equalsIgnoreCase(firstType))||
-                                                        ((yElement.getAttribute("type").equalsIgnoreCase("not_identified"))&&(yElement.getAttribute("pos").equalsIgnoreCase("NPP") )))) {
+                                        } else if (xElement.getAttribute("type").equalsIgnoreCase(secondType) &&
+                                                yElement.getAttribute("type").equalsIgnoreCase(firstType)) {
                                             StringBuilder relation = new StringBuilder();
 
                                             for (Token t : relationTokens) {
                                                 relation.append(t.getForm()).append(" ");
                                             }
+
                                             SentenceRelation sentenceRelation=new SentenceRelation();
                                             SentenceRelationId sentenceRelationId = new SentenceRelationId();
                                             sentenceRelationId.setSubject(objectToken);
@@ -152,9 +147,7 @@ public class RelationBelongsToDivisionExtraction extends AbstractRelationExtract
                                             sentenceRelation.setMethod(SentenceRelationMethod.rulesBelongsToDivision);
                                             list_result.add(sentenceRelation);
                                         }
-
                                         relationTokens = new LinkedList<>();
-
                                         y = j;
                                         break;
                                     }
@@ -163,7 +156,8 @@ public class RelationBelongsToDivisionExtraction extends AbstractRelationExtract
                             }
                             x = y;
 
-                        } else {
+                        }
+                        else {
 
                             x += 1;
                         }
@@ -180,6 +174,10 @@ public class RelationBelongsToDivisionExtraction extends AbstractRelationExtract
         return firstTypeSecondTypeMap;
     }
 
+    @Override
+    public void init() throws Exception {
+
+    }
 
 
 }

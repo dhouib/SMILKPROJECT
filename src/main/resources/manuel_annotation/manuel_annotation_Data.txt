@@ -498,10 +498,18 @@ L'opération est réalisée avec l'agence 5ème Gauche
 En savoir + : www.facebook.com/CatchmeCacharel[http://www.facebook.com/CatchmeCacharel]
 ---------------
 <Code Pureté> <belongsToBrand> <L'Oréal Cosmé-tique active>
-<Code Pureté> <belongsToProductOrServiceRange> <un gel nettoyant>
+<Code Pureté> <belongsToProductOrServiceRange> < gel nettoyant>
 <Code Pureté> <belongsToProductOrServiceRange> <mousse de rasage> 
 <Code Pureté> <belongsToProductOrServiceRange> <fluide hydratant>
-<hasComponent> <LHA, acide salicylique et acide glycolique>
+<gel nettoyant><hasComponent> <LHA>
+<gel nettoyant><hasComponent> <acide salicylique>
+<gel nettoyant><hasComponent> <acide glycolique>
+<mousse de rasage><hasComponent> <LHA>
+<mousse de rasage><hasComponent> <acide salicylique>
+<mousse de rasage><hasComponent> <acide glycolique>
+<fluide hydratant><hasComponent> <LHA>
+<fluide hydratant><hasComponent> <acide salicylique>
+<fluide hydratant><hasComponent> <acide glycolique>
 La marque de L'Oréal Cosmé-tique active propose une offre baptisée Code Pureté.
 Comme son nom l'indique, celle-ci s'attaque à la peau grasse, aux imperfections et plus particulièrement à la folliculite, autrement dit les poils de barbe incarnés.
 Trois produits composent la ligne : un gel nettoyant, une mousse de rasage et un fluide hydratant.
@@ -829,15 +837,15 @@ C�t� maisons de composition, Firmenich et IFF sont prim�es trois fois avec
 <Fabrice Pellegrin> <worksFor> <Firmenich>
 <Diesel Fuel For Life> <hasfragranceCreator> <Fabrice Pellegrin>
 <Diesel Fuel For Life> <hasComponent> <bergamote>
-<Diesel Fuel For Life> <hasComponent> <Diesel Fuel For Life, cannelle>
-<Diesel Fuel For Life> <hasComponent> <Diesel Fuel For Life, pamplemousse>
-<Diesel Fuel For Life> <hasComponent> <Diesel Fuel For Life, géranium>
-<Diesel Fuel For Life> <hasComponent> <Diesel Fuel For Life, iris>
-<Diesel Fuel For Life> <hasComponent> <Diesel Fuel For Life, fleur d' oranger>
-<Diesel Fuel For Life> <hasComponent> <Diesel Fuel For Life, myrrhe>
-<Diesel Fuel For Life> <hasComponent> <Diesel Fuel For Life, encens>
-<Diesel Fuel For Life> <hasComponent> <Diesel Fuel For Life, labdanum>
-<Diesel Fuel For Life> <hasComponent> <Diesel Fuel For Life, bois ambrés>
+<Diesel Fuel For Life> <hasComponent> <cannelle>
+<Diesel Fuel For Life> <hasComponent> <pamplemousse>
+<Diesel Fuel For Life> <hasComponent> <géranium>
+<Diesel Fuel For Life> <hasComponent> <iris>
+<Diesel Fuel For Life> <hasComponent> <fleur d' oranger>
+<Diesel Fuel For Life> <hasComponent> <myrrhe>
+<Diesel Fuel For Life> <hasComponent> <encens>
+<Diesel Fuel For Life> <hasComponent> <labdanum>
+<Diesel Fuel For Life> <hasComponent> <bois ambrés>
 <Diesel Fuel For Life> <belongsToBrand> <Diesel Fuel For Life, Diesel>
 L'Or�al Luxe poursuit la saga Diesel Fuel For Life avec un nouveau masculin.
 Con�u par Fabrice Pellegrin (Firmenich), le jus s'ouvre sur des notes de bergamote, cannelle et pamplemousse.

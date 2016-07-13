@@ -8,5 +8,6 @@ public enum SentenceRelationType {
     belongsToBrand,
     belongsToDivision,
     belongsToGroup,
+    belongsToProductOrServiceRange,
     hasComponent;
 }

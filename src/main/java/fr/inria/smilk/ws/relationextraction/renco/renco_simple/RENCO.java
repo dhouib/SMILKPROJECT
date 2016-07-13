@@ -19,8 +19,8 @@ public class RENCO {
         try {
 
             Client client = Client.create();
-            String url = "https://demo-innovation-projets-groupe.viseo.net/renco-rest/rest/renco/getRenco";
-            String tempURL = "https://172.42.1.166/renco-rest/rest/renco/getRenco";
+            String url = "https://demo-innovation-projets-groupe.viseo.net/fr.inria.smilk.ws.relationextraction.renco-rest/rest/fr.inria.smilk.ws.relationextraction.renco/getRenco";
+            String tempURL = "https://172.42.1.166/fr.inria.smilk.ws.relationextraction.renco-rest/rest/fr.inria.smilk.ws.relationextraction.renco/getRenco";
             WebResource webResource = client.resource(url);
 
             ClientResponse response = webResource.type("text/plain").post(ClientResponse.class, in);
