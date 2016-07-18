@@ -2,7 +2,6 @@ package fr.inria.smilk.ws.relationextraction;
 
 import com.hp.hpl.jena.rdf.model.Model;
 import fr.inria.smilk.ws.relationextraction.bean.*;
-import fr.inria.smilk.ws.relationextraction.renco.renco_simple.RENCO;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -55,7 +54,7 @@ public class RelationBelongsToGroupExtraction extends AbstractRelationExtraction
 
     @Override
     public void processExtraction(String line) throws Exception {
-        RENCO renco = new RENCO();
+        Renco renco = new Renco();
         rulesBelongsToGroup(line, renco.rencoByWebService(line));
 
 

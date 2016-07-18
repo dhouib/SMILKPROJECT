@@ -3,7 +3,6 @@ package fr.inria.smilk.ws.relationextraction;
 import com.hp.hpl.jena.query.*;
 import com.hp.hpl.jena.rdf.model.*;
 import fr.inria.smilk.ws.relationextraction.bean.*;
-import fr.inria.smilk.ws.relationextraction.renco.renco_simple.RENCO;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -380,7 +379,7 @@ public class RelationBelongsToBrandExtraction extends AbstractRelationExtraction
 
     @Override
     public void processExtraction(String line) throws Exception {
-        RENCO renco = new RENCO();
+        Renco renco = new Renco();
         rulesBelongsToBrand(line,renco.rencoByWebService(line));
     }
 

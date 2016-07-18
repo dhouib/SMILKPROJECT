@@ -12,6 +12,8 @@ public enum SentenceRelationMethod {
     rulesBelongsToProductOrServiceRange,
     dbpedia_chimical_component,
     dbpedia_component,
-    dbpedia_parfum_component;
+    dbpedia_parfum_component,
+    dbpedia_cible,
+    dbpedia;
 
 }

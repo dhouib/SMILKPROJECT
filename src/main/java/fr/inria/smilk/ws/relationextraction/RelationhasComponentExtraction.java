@@ -4,7 +4,6 @@ import com.hp.hpl.jena.query.*;
 import com.hp.hpl.jena.rdf.model.Literal;
 import com.hp.hpl.jena.rdf.model.Model;
 import fr.inria.smilk.ws.relationextraction.bean.*;
-import fr.inria.smilk.ws.relationextraction.renco.renco_simple.RENCO;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -21,7 +20,7 @@ import static fr.inria.smilk.ws.relationextraction.ExtractionHelper.*;
 /**
  * Created by dhouib on 01/07/2016.
  */
-public class RelationhasComponentExtraction extends AbstractRelationExtraction {
+public class RelationHasComponentExtraction extends AbstractRelationExtraction {
     Set<String> listComponent = new HashSet<>();
     Set<String> listChimicalComponent = new HashSet<>();
     Set<String> listhuile = new HashSet<>();
@@ -362,7 +361,7 @@ public class RelationhasComponentExtraction extends AbstractRelationExtraction {
 
     @Override
     public void processExtraction(String line) throws Exception {
-        RENCO renco = new RENCO();
+        Renco renco = new Renco();
         ruleshasComponent(line,renco.rencoByWebService(line));
     }
 

@@ -9,5 +9,10 @@ public enum SentenceRelationType {
     belongsToDivision,
     belongsToGroup,
     belongsToProductOrServiceRange,
-    hasComponent;
+    hasComponent,
+    hasTarget,
+    hasFounder,
+    hasFragranceCreator,
+    hasAmbasador,
+    hasModel;
 }

@@ -16,29 +16,49 @@ public class RelationExtractionLauncher {
         RelationBelongsToDivisionExtraction relationBelongsToDivisionExtraction =new RelationBelongsToDivisionExtraction();
         RelationBelongsToGroupExtraction relationBelongsToGroupExtraction =new RelationBelongsToGroupExtraction();
         RelationBelongsToProductOrServiceRange relationBelongsToProductOrServiceRange=new RelationBelongsToProductOrServiceRange();
-        RelationhasComponentExtraction relationhasComponentExtraction=new RelationhasComponentExtraction();
+        RelationHasComponentExtraction relationHasComponentExtraction =new RelationHasComponentExtraction();
+        RelationHasTargetExtraction relationHasTargetExtraction=new RelationHasTargetExtraction();
+        RelationHasFragranceCreatorExtraction relationHasFragranceCreatorExtraction=new RelationHasFragranceCreatorExtraction();
+        RelationHasFounderExtraction  relationHasFounderExtraction=new  RelationHasFounderExtraction();
+        RelationHasAmbassadorExtraction relationHasAmbassadorExtraction=new RelationHasAmbassadorExtraction();
+        RelationHasModelExtraction relationHasModelExtraction=new RelationHasModelExtraction();
 
         relationBelongsToBrandExtraction.init();
         relationBelongsToDivisionExtraction.init();
         relationBelongsToGroupExtraction.init();
         relationBelongsToProductOrServiceRange.init();
-        relationhasComponentExtraction.init();
+        relationHasComponentExtraction.init();
+        relationHasTargetExtraction.init();
+        relationHasFragranceCreatorExtraction.init();
+        relationHasFounderExtraction.init();
+        relationHasAmbassadorExtraction.init();
+        relationHasModelExtraction.init();
 
 
         List<String> lines= AbstractRelationExtraction.readCorpus(folder);
         for (String line : lines) {
             relationBelongsToBrandExtraction.processExtraction(line);
-            relationBelongsToDivisionExtraction.processExtraction(line);
+           relationBelongsToDivisionExtraction.processExtraction(line);
             relationBelongsToGroupExtraction.processExtraction(line);
             relationBelongsToProductOrServiceRange.processExtraction(line);
-            relationhasComponentExtraction.processExtraction(line);
+            relationHasComponentExtraction.processExtraction(line);
+            relationHasTargetExtraction.processExtraction(line);
+            relationHasFragranceCreatorExtraction.processExtraction(line);
+            relationHasFounderExtraction.processExtraction(line);
+            relationHasAmbassadorExtraction.processExtraction(line);
+            relationHasModelExtraction.processExtraction(line);
 
         }
         relationBelongsToBrandExtraction.processGlobal();
         relationBelongsToDivisionExtraction.processGlobal();
         relationBelongsToGroupExtraction.processGlobal();
         relationBelongsToProductOrServiceRange.processGlobal();
-        relationhasComponentExtraction.processGlobal();
+        relationHasComponentExtraction.processGlobal();
+        relationHasTargetExtraction.processGlobal();
+        relationHasFragranceCreatorExtraction.processGlobal();
+        relationHasFounderExtraction.processGlobal();
+        relationHasAmbassadorExtraction.processGlobal();
+        relationHasModelExtraction.processGlobal();
 
         AbstractRelationExtraction.constructSentence(lines);
     }

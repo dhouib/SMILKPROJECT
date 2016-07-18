@@ -6,6 +6,7 @@ import fr.inria.smilk.ws.relationextraction.util.openNLP;
 
 import java.io.*;
 import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
 import java.util.*;
 
 import static org.apache.jena.atlas.io.IO.close;
@@ -40,7 +41,9 @@ public abstract class AbstractRelationExtraction {
         for (String line : lines) {
             i++;
             if (line.trim().length() > 1) {
+
                 System.out.println("\n line: " + i + " " + line);
+
                 FileWriter out = null;
 
                 try {
@@ -94,8 +97,15 @@ public abstract class AbstractRelationExtraction {
             //Create the file reader
             FileInputStream is = new FileInputStream(folderName + "/" + file);
             //windows Ansi encodding
-            InputStreamReader isr = new InputStreamReader(is,  Charset.forName("windows-1252"));
+            InputStreamReader isr = new InputStreamReader(is, Charset.forName("windows-1252"));
+
+
             fileReader = new BufferedReader(isr);
+
+           // InputStreamReader isr1 = new InputStreamReader(is,  Charset.forName("UTF-8"));
+            //fileReader = new BufferedReader(isr1);
+
+           //fileReader = new BufferedReader(in);
             while ((line = fileReader.readLine()) != null) {
                 if (line.trim().length() > 1) {
                     String[] sentences = opennlp.senenceSegmentation(line);
@@ -103,12 +113,15 @@ public abstract class AbstractRelationExtraction {
                         for (String sent : sentences) {
                             if (sent.length() > 0) {
                                 lines.add(sent);
+
                             }
                         }
                     }
 
                 }
             }
+
+
         }
 
         return lines;
