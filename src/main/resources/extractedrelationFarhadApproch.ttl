@@ -1,0 +1,504 @@
+<http://fr.dbpedia.org/page/L'Oréal>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <RANGE> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://fr.dbpedia.org/page/Lancôme_(cosmétique)> .
+
+<http://fr.dbpedia.org/page/Lancôme_(cosmétique)>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <BRAND> .
+<http://fr.dbpedia.org/page/Cadum>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <RANGE> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://fr.dbpedia.org/page/Lancôme_(cosmétique)> .
+
+<http://fr.dbpedia.org/page/Lancôme_(cosmétique)>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <BRAND> .
+<http://ns.inria.fr/smilk/elements/1.0/la phoceenne de cosmetique>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <BRAND> .
+
+<http://fr.dbpedia.org/page/Cadum>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <RANGE> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/la phoceenne de cosmetique> .
+<http://ns.inria.fr/smilk/elements/1.0/super stay>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <BRAND> .
+
+<http://ns.inria.fr/smilk/elements/1.0/kokorico>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <PRODUCT> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/super stay> .
+<http://fr.dbpedia.org/page/Biotherm>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <BRAND> .
+
+<http://fr.dbpedia.org/page/Trésor_(parfum)>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <PRODUCT> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://fr.dbpedia.org/page/Biotherm> .
+<http://ns.inria.fr/smilk/elements/1.0/genifique>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <RANGE> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://fr.dbpedia.org/page/Shū_Uemura> .
+
+<http://fr.dbpedia.org/page/Shū_Uemura>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <BRAND> .
+<http://ns.inria.fr/smilk/elements/1.0/saint algue palette>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <PRODUCT> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/ch me. e> .
+
+<http://ns.inria.fr/smilk/elements/1.0/ch me. e>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <BRAND> .
+<http://ns.inria.fr/smilk/elements/1.0/dream touch blush>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <PRODUCT> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://fr.dbpedia.org/page/Lancôme_(cosmétique)> .
+
+<http://fr.dbpedia.org/page/Lancôme_(cosmétique)>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <BRAND> .
+<http://ns.inria.fr/smilk/elements/1.0/color show>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <RANGE> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/orgio armani> .
+
+<http://ns.inria.fr/smilk/elements/1.0/orgio armani>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <BRAND> .
+<http://fr.dbpedia.org/page/La_vie_est_belle_(film,_1956)>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <PRODUCT> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/ktor & rolf> .
+
+<http://ns.inria.fr/smilk/elements/1.0/ktor & rolf>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <BRAND> .
+<http://ns.inria.fr/smilk/elements/1.0/eu d>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <PRODUCT> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/es saint laurent> .
+
+<http://ns.inria.fr/smilk/elements/1.0/es saint laurent>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <BRAND> .
+<http://ns.inria.fr/smilk/elements/1.0/ge caresse>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <PRODUCT> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://fr.dbpedia.org/page/Giorgio_Armani_(entreprise)> .
+
+<http://fr.dbpedia.org/page/Giorgio_Armani_(entreprise)>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <BRAND> .
+<http://fr.dbpedia.org/page/Kiehl's>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <BRAND> .
+
+<http://ns.inria.fr/smilk/elements/1.0/m, a>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <RANGE> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://fr.dbpedia.org/page/Kiehl's> .
+<http://fr.dbpedia.org/page/Shū_Uemura>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <BRAND> .
+
+<http://ns.inria.fr/smilk/elements/1.0/m, a>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <RANGE> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://fr.dbpedia.org/page/Shū_Uemura> .
+<http://ns.inria.fr/smilk/elements/1.0/arlate l'act>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <PRODUCT> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://fr.dbpedia.org/page/Helena_Rubinstein> .
+
+<http://fr.dbpedia.org/page/Helena_Rubinstein>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <BRAND> .
+<http://ns.inria.fr/smilk/elements/1.0/vapeur d'opium>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <PRODUCT> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/dor, iba> .
+
+<http://ns.inria.fr/smilk/elements/1.0/dor, iba>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <BRAND> .
+<http://fr.dbpedia.org/page/Luxe>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <DIVISION> .
+
+<http://fr.dbpedia.org/page/Biotherm>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <BRAND> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToDivision>
+                <http://fr.dbpedia.org/page/Luxe> .
+<http://fr.dbpedia.org/page/Laboratoires_Vendôme>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <DIVISION> .
+
+<http://fr.dbpedia.org/page/Giorgio_Armani_(entreprise)>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <BRAND> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToDivision>
+                <http://fr.dbpedia.org/page/Laboratoires_Vendôme> .
+<http://ns.inria.fr/smilk/elements/1.0/trois produits>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <DIVISION> .
+
+<http://fr.dbpedia.org/page/Diesel_(entreprise)>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <BRAND> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToDivision>
+                <http://ns.inria.fr/smilk/elements/1.0/trois produits> .
+<http://fr.dbpedia.org/page/Petite_robe_noire>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <PRODUCT> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://fr.dbpedia.org/page/Guerlain> .
+
+<http://fr.dbpedia.org/page/Guerlain>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <BRAND> .
+<http://ns.inria.fr/smilk/elements/1.0/spicebomb>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <PRODUCT> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/vmor & rolf> .
+
+<http://ns.inria.fr/smilk/elements/1.0/vmor & rolf>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <BRAND> .
+<http://ns.inria.fr/smilk/elements/1.0/only the brave tattoo>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <PRODUCT> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://fr.dbpedia.org/page/Diesel_(entreprise)> .
+
+<http://fr.dbpedia.org/page/Diesel_(entreprise)>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <BRAND> .
+<http://fr.dbpedia.org/page/Playboy>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <BRAND> .
+
+<http://ns.inria.fr/smilk/elements/1.0/vip pour elle>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <PRODUCT> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://fr.dbpedia.org/page/Playboy> .
+<http://fr.dbpedia.org/page/Playboy>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <BRAND> .
+
+<http://ns.inria.fr/smilk/elements/1.0/the essence>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <PRODUCT> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://fr.dbpedia.org/page/Playboy> .
+<http://fr.dbpedia.org/page/David_Beckham>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <BRAND> .
+
+<http://ns.inria.fr/smilk/elements/1.0/the essence>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <PRODUCT> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://fr.dbpedia.org/page/David_Beckham> .
+<http://fr.dbpedia.org/page/Yves_Rocher_(entreprise)>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <BRAND> .
+
+<http://ns.inria.fr/smilk/elements/1.0/so elixir purple>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <PRODUCT> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://fr.dbpedia.org/page/Yves_Rocher_(entreprise)> .
+<http://ns.inria.fr/smilk/elements/1.0/spicebomb>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <PRODUCT> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://fr.dbpedia.org/page/Diesel_(entreprise)> .
+
+<http://fr.dbpedia.org/page/Diesel_(entreprise)>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <BRAND> .
+<http://ns.inria.fr/smilk/elements/1.0/spicebomb>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <PRODUCT> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://fr.dbpedia.org/page/Coty_(entreprise)> .
+
+<http://fr.dbpedia.org/page/Coty_(entreprise)>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <BRAND> .
+<http://ns.inria.fr/smilk/elements/1.0/coco noir>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <PRODUCT> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://fr.dbpedia.org/page/Chanel> .
+
+<http://fr.dbpedia.org/page/Chanel>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <BRAND> .
+<http://fr.dbpedia.org/page/La_Petite_Robe_noire>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <PRODUCT> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://fr.dbpedia.org/page/Chanel> .
+
+<http://fr.dbpedia.org/page/Chanel>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <BRAND> .
+<http://fr.dbpedia.org/page/La_Petite_Robe_noire>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <PRODUCT> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://fr.dbpedia.org/page/Guerlain> .
+
+<http://fr.dbpedia.org/page/Guerlain>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <BRAND> .
+<http://ns.inria.fr/smilk/elements/1.0/florabotanica>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <PRODUCT> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://fr.dbpedia.org/page/Cristóbal_Balenciaga> .
+
+<http://fr.dbpedia.org/page/Cristóbal_Balenciaga>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <BRAND> .
+<http://fr.dbpedia.org/page/Maison_Margiela>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <BRAND> .
+
+<http://fr.dbpedia.org/page/Replica>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <PRODUCT> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://fr.dbpedia.org/page/Maison_Margiela> .
+<http://ns.inria.fr/smilk/elements/1.0/coty prestige>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <DIVISION> .
+
+<http://fr.dbpedia.org/page/Cristóbal_Balenciaga>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <BRAND> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToDivision>
+                <http://ns.inria.fr/smilk/elements/1.0/coty prestige> .
+<http://ns.inria.fr/smilk/elements/1.0/l'oreal professionnel>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <BRAND> .
+
+<http://ns.inria.fr/smilk/elements/1.0/natural liss tecniart>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <PRODUCT> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/l'oreal professionnel> .
+<http://ns.inria.fr/smilk/elements/1.0/acqua for life>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <PRODUCT> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://fr.dbpedia.org/page/Giorgio_Armani_(entreprise)> .
+
+<http://fr.dbpedia.org/page/Giorgio_Armani_(entreprise)>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <BRAND> .
+<http://fr.dbpedia.org/page/Green_Cross_International>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <DIVISION> .
+
+<http://fr.dbpedia.org/page/Giorgio_Armani>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <BRAND> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToDivision>
+                <http://fr.dbpedia.org/page/Green_Cross_International> .
+<http://ns.inria.fr/smilk/elements/1.0/la vie est belle>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <PRODUCT> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://fr.dbpedia.org/page/Lancôme_(cosmétique)> .
+
+<http://fr.dbpedia.org/page/Lancôme_(cosmétique)>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <BRAND> .
+<http://ns.inria.fr/smilk/elements/1.0/amor amor in a flash.cree>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <PRODUCT> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://fr.dbpedia.org/page/Cacharel_(parfums)> .
+
+<http://fr.dbpedia.org/page/Cacharel_(parfums)>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <BRAND> .
+<http://fr.dbpedia.org/page/L'Oréal>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <GROUP> .
+
+<http://fr.dbpedia.org/page/Luxe>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <DIVISION> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToGroup>
+                <http://fr.dbpedia.org/page/L'Oréal> .
+<http://fr.dbpedia.org/page/Cil_(anatomie)>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <BRAND> .
+
+<http://ns.inria.fr/smilk/elements/1.0/volume millions>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <PRODUCT> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://fr.dbpedia.org/page/Cil_(anatomie)> .
+<http://fr.dbpedia.org/page/Yves_Rocher_(entreprise)>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <BRAND> .
+
+<http://ns.inria.fr/smilk/elements/1.0/bha l'huile demaquillante sensationnelle eclat sublime>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <PRODUCT> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://fr.dbpedia.org/page/Yves_Rocher_(entreprise)> .
+<http://ns.inria.fr/smilk/elements/1.0/hydra vegetal>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <RANGE> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://fr.dbpedia.org/page/Yves_Rocher_(entreprise)> .
+
+<http://fr.dbpedia.org/page/Yves_Rocher_(entreprise)>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <BRAND> .
+<http://fr.dbpedia.org/page/J'adore>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <PRODUCT> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://fr.dbpedia.org/page/Christian_Dior> .
+
+<http://fr.dbpedia.org/page/Christian_Dior>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <BRAND> .
+<http://ns.inria.fr/smilk/elements/1.0/even better>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <RANGE> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://fr.dbpedia.org/page/Christian_Dior_(entreprise)> .
+
+<http://fr.dbpedia.org/page/Christian_Dior_(entreprise)>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <BRAND> .
+<http://ns.inria.fr/smilk/elements/1.0/en p>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <BRAND> .
+
+<http://ns.inria.fr/smilk/elements/1.0/lence.au contraire des>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <PRODUCT> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/en p> .
+<http://fr.dbpedia.org/page/Roger_&_Gallet>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <BRAND> .
+
+<http://fr.dbpedia.org/page/Ficus_carica>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <PRODUCT> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://fr.dbpedia.org/page/Roger_&_Gallet> .
+<http://fr.dbpedia.org/page/Arpège_(parfum)>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <BRAND> .
+
+<http://fr.dbpedia.org/page/Éclat_(Préhistoire)>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <RANGE> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://fr.dbpedia.org/page/Arpège_(parfum)> .
+<http://fr.dbpedia.org/page/Viktor_&_Rolf>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <BRAND> .
+
+<http://ns.inria.fr/smilk/elements/1.0/spicebomb>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <PRODUCT> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://fr.dbpedia.org/page/Viktor_&_Rolf> .
+<http://ns.inria.fr/smilk/elements/1.0/vapeur d'opium>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <PRODUCT> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://fr.dbpedia.org/page/Giorgio_Armani_(entreprise)> .
+
+<http://fr.dbpedia.org/page/Giorgio_Armani_(entreprise)>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <BRAND> .
+<http://ns.inria.fr/smilk/elements/1.0/orgio armani>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <BRAND> .
+
+<http://fr.dbpedia.org/page/La_vie_est_belle_(film,_1956)>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <PRODUCT> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/orgio armani> .
+<http://fr.dbpedia.org/page/La_vie_est_belle_(film,_1956)>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <PRODUCT> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/ktor & rolf> .
+
+<http://ns.inria.fr/smilk/elements/1.0/ktor & rolf>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <BRAND> .
+<http://fr.dbpedia.org/page/Nuxe>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <BRAND> .
+
+<http://ns.inria.fr/smilk/elements/1.0/creme prodigieuse>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <PRODUCT> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://fr.dbpedia.org/page/Nuxe> .
+<http://ns.inria.fr/smilk/elements/1.0/huile prodigieuse>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <PRODUCT> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://fr.dbpedia.org/page/Nuxe> .
+
+<http://fr.dbpedia.org/page/Nuxe>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <BRAND> .
+<http://ns.inria.fr/smilk/elements/1.0/huile prodigieuse>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <PRODUCT> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://fr.dbpedia.org/page/Nuxe> .
+
+<http://fr.dbpedia.org/page/Nuxe>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <BRAND> .
+<http://ns.inria.fr/smilk/elements/1.0/produits professionnels>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <DIVISION> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToGroup>
+                <http://fr.dbpedia.org/page/L'Oréal> .
+
+<http://fr.dbpedia.org/page/L'Oréal>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <GROUP> .

@@ -266,10 +266,10 @@ public class RelationBelongsToBrandExtraction extends AbstractRelationExtraction
                                 Node yNode = nList.item(j);
                                 if (yNode instanceof Element) {
                                     Element yElement = (Element) yNode;
+
                                     if ((!yElement.hasAttribute("type") || yElement.getAttribute("type").equalsIgnoreCase("not_identified")))
 
                                     {
-
                                         Token relationToken = elementToToken(yElement);
                                         relationTokens.add(relationToken);
 

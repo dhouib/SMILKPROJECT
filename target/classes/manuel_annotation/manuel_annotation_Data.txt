@@ -856,7 +856,7 @@ La fragrance b�n�ficie d'un plan de communication � 360�.
 
 <text15>
 <Coco Noir> <belongsToBrand> <Chanel>
-<Coco Noir> <hasTarget> <Coco Noir, féminin>
+<Coco Noir> <hasTarget> <féminin>
 <La Petite Robe Noire> <belongsToBrand> <Guerlain>
 <Florabotanica> <belongsToBrand> <Balenciaga>
 <Balenciaga> <belongsToDivision> <Coty Prestige>

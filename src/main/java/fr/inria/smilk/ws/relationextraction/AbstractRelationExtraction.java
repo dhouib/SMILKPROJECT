@@ -7,6 +7,8 @@ import fr.inria.smilk.ws.relationextraction.util.openNLP;
 import java.io.*;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.*;
 
 import static org.apache.jena.atlas.io.IO.close;
@@ -96,8 +98,9 @@ public abstract class AbstractRelationExtraction {
             String line = "";
             //Create the file reader
             FileInputStream is = new FileInputStream(folderName + "/" + file);
+
             //windows Ansi encodding
-            InputStreamReader isr = new InputStreamReader(is, Charset.forName("windows-1252"));
+            InputStreamReader isr = new InputStreamReader(is, Charset.forName(file.equals("10")?"utf-8":"windows-1252"));
 
 
             fileReader = new BufferedReader(isr);

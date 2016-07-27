@@ -1,0 +1,16 @@
+ spot: luxe type: DIVISION link:http://fr.dbpedia.org/page/Luxewikiname: Luxe
+spot: l'oreal type: GROUP link:http://fr.dbpedia.org/page/L'Oréalwikiname: L'Oréal
+spot: la vie est belle type: PRODUCT link:http://fr.dbpedia.org/page/La_vie_est_belle_(film,_1997)wikiname: La_vie_est_belle_(film,_1997)
+spot: lancome type: BRAND link:http://fr.dbpedia.org/page/Lancôme_(cosmétique)wikiname: Lancôme_(cosmétique)
+spot: amor amor type: NOT_IDENTIFIED link:NILwikiname: NIL
+spot: cacharel type: NULL link:http://fr.dbpedia.org/page/Cacharel_(parfums)wikiname: Cacharel_(parfums)
+spot: amor amor in a flash.cree type: PRODUCT link:NILwikiname: NIL
+spot: pierre negrin type: NULL link:NILwikiname: NIL
+spot: firmenich type: NULL link:http://fr.dbpedia.org/page/Firmenichwikiname: Firmenich
+spot: jean baptiste mondino type: NULL link:http://fr.dbpedia.org/page/Jean-Baptiste_Mondinowikiname: Jean-Baptiste_Mondino
+spot: edt vapo 30 type: NULL link:NILwikiname: NIL
+spot: summer type: PRODUCT link:http://fr.dbpedia.org/page/Summer_Robertswikiname: Summer_Roberts
+spot: danne flipo type: NULL link:NILwikiname: NIL
+spot: carlos benam type: NULL link:NILwikiname: NIL
+spot: iff type: NULL link:NILwikiname: NIL
+spot: edt vapo 50 type: PRODUCT link:NILwikiname: NIL

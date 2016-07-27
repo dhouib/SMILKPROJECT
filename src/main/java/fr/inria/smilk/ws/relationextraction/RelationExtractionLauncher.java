@@ -3,6 +3,9 @@ package fr.inria.smilk.ws.relationextraction;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.nio.charset.Charset;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.List;
 
 /**
@@ -12,27 +15,28 @@ public class RelationExtractionLauncher {
     public static void main(String[] args) throws Exception {
         initRdfFile();
         String folder = "C:/Users/dhouib/Desktop/SMILK_project_devpt/RelationExtractionSMILK/src/main/resources/input/test1";
-        RelationBelongsToBrandExtraction relationBelongsToBrandExtraction =new RelationBelongsToBrandExtraction();
+
+       RelationBelongsToBrandExtraction relationBelongsToBrandExtraction =new RelationBelongsToBrandExtraction();
         RelationBelongsToDivisionExtraction relationBelongsToDivisionExtraction =new RelationBelongsToDivisionExtraction();
         RelationBelongsToGroupExtraction relationBelongsToGroupExtraction =new RelationBelongsToGroupExtraction();
         RelationBelongsToProductOrServiceRange relationBelongsToProductOrServiceRange=new RelationBelongsToProductOrServiceRange();
         RelationHasComponentExtraction relationHasComponentExtraction =new RelationHasComponentExtraction();
-        RelationHasTargetExtraction relationHasTargetExtraction=new RelationHasTargetExtraction();
+       /*  RelationHasTargetExtraction relationHasTargetExtraction=new RelationHasTargetExtraction();
         RelationHasFragranceCreatorExtraction relationHasFragranceCreatorExtraction=new RelationHasFragranceCreatorExtraction();
         RelationHasFounderExtraction  relationHasFounderExtraction=new  RelationHasFounderExtraction();
         RelationHasAmbassadorExtraction relationHasAmbassadorExtraction=new RelationHasAmbassadorExtraction();
-        RelationHasModelExtraction relationHasModelExtraction=new RelationHasModelExtraction();
+        RelationHasModelExtraction relationHasModelExtraction=new RelationHasModelExtraction();*/
 
         relationBelongsToBrandExtraction.init();
         relationBelongsToDivisionExtraction.init();
         relationBelongsToGroupExtraction.init();
         relationBelongsToProductOrServiceRange.init();
         relationHasComponentExtraction.init();
-        relationHasTargetExtraction.init();
+      /*  relationHasTargetExtraction.init();
         relationHasFragranceCreatorExtraction.init();
         relationHasFounderExtraction.init();
         relationHasAmbassadorExtraction.init();
-        relationHasModelExtraction.init();
+        relationHasModelExtraction.init();*/
 
 
         List<String> lines= AbstractRelationExtraction.readCorpus(folder);
@@ -42,11 +46,11 @@ public class RelationExtractionLauncher {
             relationBelongsToGroupExtraction.processExtraction(line);
             relationBelongsToProductOrServiceRange.processExtraction(line);
             relationHasComponentExtraction.processExtraction(line);
-            relationHasTargetExtraction.processExtraction(line);
+            /*relationHasTargetExtraction.processExtraction(line);
             relationHasFragranceCreatorExtraction.processExtraction(line);
             relationHasFounderExtraction.processExtraction(line);
             relationHasAmbassadorExtraction.processExtraction(line);
-            relationHasModelExtraction.processExtraction(line);
+            relationHasModelExtraction.processExtraction(line);*/
 
         }
         relationBelongsToBrandExtraction.processGlobal();
@@ -54,11 +58,11 @@ public class RelationExtractionLauncher {
         relationBelongsToGroupExtraction.processGlobal();
         relationBelongsToProductOrServiceRange.processGlobal();
         relationHasComponentExtraction.processGlobal();
-        relationHasTargetExtraction.processGlobal();
+        /*relationHasTargetExtraction.processGlobal();
         relationHasFragranceCreatorExtraction.processGlobal();
         relationHasFounderExtraction.processGlobal();
         relationHasAmbassadorExtraction.processGlobal();
-        relationHasModelExtraction.processGlobal();
+        relationHasModelExtraction.processGlobal();*/
 
         AbstractRelationExtraction.constructSentence(lines);
     }
