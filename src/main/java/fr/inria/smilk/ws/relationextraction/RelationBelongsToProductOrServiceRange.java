@@ -22,28 +22,28 @@ import static fr.inria.smilk.ws.relationextraction.ExtractionHelper.writeRdf;
 /**
  * Created by dhouib on 08/07/2016.
  */
-public class RelationBelongsToProductOrServiceRange extends AbstractRelationExtraction{
+public class RelationBelongsToProductOrServiceRange extends AbstractRelationExtraction {
     @Override
-    public  void annotationData(List<SentenceRelation> list_result ) throws IOException {
+    public void annotationData(List<SentenceRelation> list_result) throws IOException {
         // on construit un map (SentenceRelationId,List<SentenceRelationMethod>)
-        Map<SentenceRelationId,List<SentenceRelationMethod>> relationMap = new HashMap<>();
+        Map<SentenceRelationId, List<SentenceRelationMethod>> relationMap = new HashMap<>();
         //construction de list_result contenant les méthodes appliquées pour la même sentence
         for (SentenceRelation sentence_relation : list_result) {
-            if(!relationMap.containsKey(sentence_relation.getSentenceRelationId())){
+            if (!relationMap.containsKey(sentence_relation.getSentenceRelationId())) {
                 ArrayList<SentenceRelationMethod> methodlist = new ArrayList<>();
                 methodlist.add(sentence_relation.getMethod());
-                relationMap.put(sentence_relation.getSentenceRelationId(), methodlist) ;
-            }else {
+                relationMap.put(sentence_relation.getSentenceRelationId(), methodlist);
+            } else {
                 relationMap.get(sentence_relation.getSentenceRelationId()).add(sentence_relation.getMethod());
             }
         }
         // on parcours le map, et on applique la méthode d'extraction selon cette ordre: dbpedia_patterns,
         // dbpedia_namedEntity, rulesbelongsToBrand
-        for(SentenceRelationId sentenceRelationId : relationMap.keySet()){
+        for (SentenceRelationId sentenceRelationId : relationMap.keySet()) {
             List<SentenceRelationMethod> relationMethods = relationMap.get(sentenceRelationId);
-            if(relationMethods.contains(SentenceRelationMethod.rulesBelongsToProductOrServiceRange)){
-                System.out.println("Selected"+sentenceRelationId + "" + SentenceRelationMethod.rulesBelongsToProductOrServiceRange);
-                Model model=constructModel (sentenceRelationId);
+            if (relationMethods.contains(SentenceRelationMethod.rulesBelongsToProductOrServiceRange)) {
+                System.out.println("Selected" + sentenceRelationId + "" + SentenceRelationMethod.rulesBelongsToProductOrServiceRange);
+                Model model = constructModel(sentenceRelationId);
                 writeRdf(model);
             }
         }
@@ -54,9 +54,10 @@ public class RelationBelongsToProductOrServiceRange extends AbstractRelationExtr
         Renco renco = new Renco();
         rulesBelongsToDivision(line, renco.rencoByWebService(line));
     }
+
     //recherche de la relation belongsTodivision
-    private  void rulesBelongsToDivision(String line, String input) throws ParserConfigurationException, IOException, SAXException {
-        Map<String,String> divisionGroupMap = new HashMap<>();
+    private void rulesBelongsToDivision(String line, String input) throws ParserConfigurationException, IOException, SAXException {
+        Map<String, String> divisionGroupMap = new HashMap<>();
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         DocumentBuilder builder = factory.newDocumentBuilder();
         StringBuilder xmlStringBuilder = new StringBuilder();
@@ -65,17 +66,17 @@ public class RelationBelongsToProductOrServiceRange extends AbstractRelationExtr
         Document doc = builder.parse(in);
         doc.getDocumentElement().normalize();
         NodeList nSentenceList = doc.getElementsByTagName("sentence");
-        divisionGroupMap = findByTypes(line, nSentenceList,"product","range");
+        divisionGroupMap = findByTypes(line, nSentenceList, "product", "range");
     }
 
     //recherche de la relation en se basant sur la règle belongsToBrand=product->brand
-    private  Map<String,String> findByTypes(String line,NodeList nSentenceList,String firstType,String secondType) {
+    private Map<String, String> findByTypes(String line, NodeList nSentenceList, String firstType, String secondType) {
         Map<String, String> firstTypeSecondTypeMap = new HashMap<>();
         for (int sent_temp = 0; sent_temp < nSentenceList.getLength(); sent_temp++) {
             Node nSentNode = nSentenceList.item(sent_temp);
             StringBuilder builder = new StringBuilder();
-            String sentence =line;
-            System.out.println("sentence:"+builder.toString());
+            String sentence = line;
+            System.out.println("sentence:" + builder.toString());
             NodeList nTokensList = nSentNode.getChildNodes();
             //parcourir l'arbre Renco
             for (int token_temp = 0; token_temp < nTokensList.getLength(); token_temp++) {
@@ -108,14 +109,13 @@ public class RelationBelongsToProductOrServiceRange extends AbstractRelationExtr
                                     } else {
                                         Token objectToken = elementToToken(yElement);
                                         if ((xElement.getAttribute("type").equalsIgnoreCase(firstType) &&
-                                                yElement.getAttribute("type").equalsIgnoreCase(secondType)))
-                                        {
+                                                yElement.getAttribute("type").equalsIgnoreCase(secondType))) {
                                             StringBuilder relation = new StringBuilder();
 
                                             for (Token t : relationTokens) {
                                                 relation.append(t.getForm()).append(" ");
                                             }
-                                            SentenceRelation sentenceRelation=new SentenceRelation();
+                                            SentenceRelation sentenceRelation = new SentenceRelation();
                                             SentenceRelationId sentenceRelationId = new SentenceRelationId();
                                             sentenceRelationId.setSubject(subjectToken);
                                             sentenceRelationId.setObject(objectToken);
@@ -133,7 +133,7 @@ public class RelationBelongsToProductOrServiceRange extends AbstractRelationExtr
                                                 relation.append(t.getForm()).append(" ");
                                             }
 
-                                            SentenceRelation sentenceRelation=new SentenceRelation();
+                                            SentenceRelation sentenceRelation = new SentenceRelation();
                                             SentenceRelationId sentenceRelationId = new SentenceRelationId();
                                             sentenceRelationId.setSubject(objectToken);
                                             sentenceRelationId.setObject(subjectToken);
@@ -153,8 +153,7 @@ public class RelationBelongsToProductOrServiceRange extends AbstractRelationExtr
                             }
                             x = y;
 
-                        }
-                        else {
+                        } else {
 
                             x += 1;
                         }

@@ -1,26 +1,35 @@
 package fr.inria.smilk.ws.relationextraction;
 
+import com.google.gson.JsonObject;
+import fr.inria.smilk.ws.relationextraction.bean.Spot;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+
 import java.io.File;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.List;
+import java.util.*;
+
+import static fr.inria.smilk.ws.relationextraction.ExtractionHelper.readFileJson;
 
 /**
  * Created by dhouib on 03/07/2016.
  */
-public class RelationExtractionLauncher {
-    public static void main(String[] args) throws Exception {
+public class RelationExtractionLauncher {    public static void main(String[] args) throws Exception {
         initRdfFile();
-        String folder = "C:/Users/dhouib/Desktop/SMILK_project_devpt/RelationExtractionSMILK/src/main/resources/input/test1";
+        String folder = "C:/Users/dhouib/Desktop/SMILK_project_devpt/RelationExtractionSMILK/src/main/resources/input/out/";
+        File folder1 = new File("C:/Users/dhouib/Desktop/SMILK_project_devpt/RelationExtractionSMILK/src/main/resources/input/out/");
 
-       RelationBelongsToBrandExtraction relationBelongsToBrandExtraction =new RelationBelongsToBrandExtraction();
-        RelationBelongsToDivisionExtraction relationBelongsToDivisionExtraction =new RelationBelongsToDivisionExtraction();
-        RelationBelongsToGroupExtraction relationBelongsToGroupExtraction =new RelationBelongsToGroupExtraction();
-        RelationBelongsToProductOrServiceRange relationBelongsToProductOrServiceRange=new RelationBelongsToProductOrServiceRange();
-        RelationHasComponentExtraction relationHasComponentExtraction =new RelationHasComponentExtraction();
+        RelationBelongsToBrandExtraction relationBelongsToBrandExtraction = new RelationBelongsToBrandExtraction();
+      //  RelationBelongsToDivisionExtraction relationBelongsToDivisionExtraction = new RelationBelongsToDivisionExtraction();
+     //   RelationBelongsToGroupExtraction relationBelongsToGroupExtraction = new RelationBelongsToGroupExtraction();
+        //RelationBelongsToProductOrServiceRange relationBelongsToProductOrServiceRange=new RelationBelongsToProductOrServiceRange();
+        //RelationHasComponentExtraction relationHasComponentExtraction =new RelationHasComponentExtraction();
        /*  RelationHasTargetExtraction relationHasTargetExtraction=new RelationHasTargetExtraction();
         RelationHasFragranceCreatorExtraction relationHasFragranceCreatorExtraction=new RelationHasFragranceCreatorExtraction();
         RelationHasFounderExtraction  relationHasFounderExtraction=new  RelationHasFounderExtraction();
@@ -28,10 +37,10 @@ public class RelationExtractionLauncher {
         RelationHasModelExtraction relationHasModelExtraction=new RelationHasModelExtraction();*/
 
         relationBelongsToBrandExtraction.init();
-        relationBelongsToDivisionExtraction.init();
-        relationBelongsToGroupExtraction.init();
-        relationBelongsToProductOrServiceRange.init();
-        relationHasComponentExtraction.init();
+        //relationBelongsToDivisionExtraction.init();
+       // relationBelongsToGroupExtraction.init();
+        ///relationBelongsToProductOrServiceRange.init();
+        //  relationHasComponentExtraction.init();
       /*  relationHasTargetExtraction.init();
         relationHasFragranceCreatorExtraction.init();
         relationHasFounderExtraction.init();
@@ -39,13 +48,13 @@ public class RelationExtractionLauncher {
         relationHasModelExtraction.init();*/
 
 
-        List<String> lines= AbstractRelationExtraction.readCorpus(folder);
+        List<String> lines = AbstractRelationExtraction.readCorpus(folder,folder1);
         for (String line : lines) {
-            relationBelongsToBrandExtraction.processExtraction(line);
-           relationBelongsToDivisionExtraction.processExtraction(line);
-            relationBelongsToGroupExtraction.processExtraction(line);
-            relationBelongsToProductOrServiceRange.processExtraction(line);
-            relationHasComponentExtraction.processExtraction(line);
+           relationBelongsToBrandExtraction.processExtraction(line);
+       //    relationBelongsToDivisionExtraction.processExtraction(line);
+        //   relationBelongsToGroupExtraction.processExtraction(line);
+            //   relationBelongsToProductOrServiceRange.processExtraction(line);
+            //   relationHasComponentExtraction.processExtraction(line);
             /*relationHasTargetExtraction.processExtraction(line);
             relationHasFragranceCreatorExtraction.processExtraction(line);
             relationHasFounderExtraction.processExtraction(line);
@@ -53,11 +62,11 @@ public class RelationExtractionLauncher {
             relationHasModelExtraction.processExtraction(line);*/
 
         }
-        relationBelongsToBrandExtraction.processGlobal();
-        relationBelongsToDivisionExtraction.processGlobal();
-        relationBelongsToGroupExtraction.processGlobal();
-        relationBelongsToProductOrServiceRange.processGlobal();
-        relationHasComponentExtraction.processGlobal();
+       relationBelongsToBrandExtraction.processGlobal();
+      // relationBelongsToDivisionExtraction.processGlobal();
+      // relationBelongsToGroupExtraction.processGlobal();
+        // relationBelongsToProductOrServiceRange.processGlobal();
+        //relationHasComponentExtraction.processGlobal();
         /*relationHasTargetExtraction.processGlobal();
         relationHasFragranceCreatorExtraction.processGlobal();
         relationHasFounderExtraction.processGlobal();
@@ -69,7 +78,7 @@ public class RelationExtractionLauncher {
 
 
     private static void initRdfFile() throws IOException {
-        File file=new File("src/main/resources/extractedrelation.ttl");
+        File file = new File("src/main/resources/extractedrelation.ttl");
         FileWriter out = null;
         //vider le contenu au début
         out = new FileWriter(file);
@@ -77,7 +86,7 @@ public class RelationExtractionLauncher {
         out.flush();
         out.close();
 
-        File file_data=new File("src/main/resources/manuel_annotation_Data.txt");
+        File file_data = new File("src/main/resources/manuel_annotation_Data.txt");
         FileWriter out_data = null;
         //vider le contenu au début
         out_data = new FileWriter(file_data);

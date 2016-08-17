@@ -21,7 +21,7 @@ public class RdfHelper {
         String smilkprefix="http://ns.inria.fr/smilk/elements/1.0/";
         String rdfsprefix="http://www.w3.org/2000/01/rdf-schema#";
         Resource subject, object;
-        if(sentenceRelationId.getSubject().getLink().equals("NIL")){
+        if(sentenceRelationId.getSubject().getLink().equals("null")||sentenceRelationId.getSubject().getLink().equals("NIL")){
              subject = model.createResource(smilkprefix + sentenceRelationId.getSubject().getSpot());
         }
         else

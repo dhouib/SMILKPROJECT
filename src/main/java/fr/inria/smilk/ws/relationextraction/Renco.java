@@ -22,29 +22,28 @@ import com.sun.jersey.api.client.WebResource;
 public class Renco {
 
     public String rencoByWebService(String in) throws Exception {
-    String sortie="";
-    try {
+        String sortie = "";
+        try {
 
             Client client = Client.create();
-            String url="https://demo-innovation-projets-groupe.viseo.net/renco-rest/rest/renco/getRenco";
-            String tempURL="https://172.42.1.166/renco-rest/rest/renco/getRenco";
+            String url = "https://demo-innovation-projets-groupe.viseo.net/renco-rest/rest/renco/getRenco";
+            String tempURL = "https://172.42.1.166/renco-rest/rest/renco/getRenco";
             WebResource webResource = client.resource(url);
 
             ClientResponse response = webResource.type("text/plain").post(ClientResponse.class, in);
 
-             sortie = response.getEntity(String.class);
+            sortie = response.getEntity(String.class);
 
-       // System.out.println(sortie);
-            
+            // System.out_copy.println(sortie);
+
 
         } catch (Exception e) {
             System.out.println("ERROR in the text: " + in);
             e.printStackTrace();
 
         }
-    return sortie;
+        return sortie;
     }
-    
-    
-   
+
+
 }

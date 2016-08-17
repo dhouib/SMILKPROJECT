@@ -25,10 +25,9 @@ public class SentenceRelation {
         this.method = method;
     }
 
-    public String toString(){
-        return  sentenceRelationId +",method: "+method;
+    public String toString() {
+        return sentenceRelationId + ",method: " + method;
     }
-
 
 
 }

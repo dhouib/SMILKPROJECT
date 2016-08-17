@@ -18,7 +18,7 @@ public class UtfTest {
         //String marque = "Lanc�me";
 
         /*byte[] encoded = Files.readAllBytes(Paths.get("src/main/resources/input/test/1"));
-        System.out.println(new String(encoded, Charset.forName("windows-1252")));
+        System.out_copy.println(new String(encoded, Charset.forName("windows-1252")));
 */
 
         ListFilesUtil listFileUtil = new ListFilesUtil();
@@ -47,27 +47,27 @@ public class UtfTest {
 
 
 /*
-        System.out.println(marque.getBytes());
+        System.out_copy.println(marque.getBytes());
         String sr=new String(marque.getBytes("UTF-8"), Charset.forName("UTF-16"));
-        System.out.println("str:"+sr);
+        System.out_copy.println("str:"+sr);
 
          sr=new String(marque.getBytes("UTF-8"), "windows-1252");
-        System.out.println("str:"+sr);
+        System.out_copy.println("str:"+sr);
 
 
         String wrongMarque = "Lancï¿½me";
-        System.out.println(wrongMarque.getBytes());
+        System.out_copy.println(wrongMarque.getBytes());
 
         String result = new String(wrongMarque.getBytes("windows-1252"), "UTF-8");
-        System.out.println(result);
+        System.out_copy.println(result);
 
         String wrongMarqueEnc =new String(wrongMarque.getBytes("UTF-8"), Charset.forName("ISO-8859-1"));
-        System.out.println(wrongMarqueEnc);
+        System.out_copy.println(wrongMarqueEnc);
 
         wrongMarqueEnc =new String(wrongMarque.getBytes("ISO-8859-1"), Charset.forName("UTF-8"));
-        System.out.println(wrongMarqueEnc);
+        System.out_copy.println(wrongMarqueEnc);
         wrongMarqueEnc =new String(wrongMarque.getBytes("ISO-8859-1"), Charset.forName("UTF-16"));
-        System.out.println(wrongMarqueEnc);
+        System.out_copy.println(wrongMarqueEnc);
 
 
         String input = "Ã¼";
@@ -84,8 +84,8 @@ public class UtfTest {
         // but in utf-8, c3 bc is "ü"
         String fixed = new String(windows1252Bytes, utf8);
 
-        System.out.println(input);
-        System.out.println(fixed);
+        System.out_copy.println(input);
+        System.out_copy.println(fixed);
 */
 
     }

@@ -56,8 +56,8 @@ public class SentenceRelationId {
     }
 
 
-    public String toString(){
-        return  "Subject:"+subject.getForm()+",Object:"+object.getForm()+",relation:"+ relation+ ",type:"+type+"\nsentenceText:"+sentence_text;
+    public String toString() {
+        return "Subject:" + subject.getForm() + ",Object:" + object.getForm() + ",relation:" + relation + ",type:" + type + "\nsentenceText:" + sentence_text;
     }
 
     @Override

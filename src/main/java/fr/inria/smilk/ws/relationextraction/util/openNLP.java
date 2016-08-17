@@ -13,40 +13,41 @@ import java.io.IOException;
 import java.io.InputStream;
 
 /**
- *
  * @author farhadzn
  */
 public class openNLP {
- SentenceDetector _sentenceDetector = null;
-public openNLP() {
+    SentenceDetector _sentenceDetector = null;
+
+    public openNLP() {
 
 
-InputStream modelIn = null;
-try {
-   // Loading sentence detection model
-   modelIn = getClass().getResourceAsStream("/fr-sent.bin");
-   final SentenceModel sentenceModel = new SentenceModel(modelIn);
-   modelIn.close();
- 
-   _sentenceDetector = new SentenceDetectorME(sentenceModel);
-    
-    } catch (final IOException ioe) {
-   ioe.printStackTrace();
-} finally {
-   if (modelIn != null) {
-      try {
-         modelIn.close();
-      } catch (final IOException e) {} // oh well!
-   }
-}
-}
- 
-    
-public String[] senenceSegmentation(String content){
-    
+        InputStream modelIn = null;
+        try {
+            // Loading sentence detection model
+            modelIn = getClass().getResourceAsStream("/fr-sent.bin");
+            final SentenceModel sentenceModel = new SentenceModel(modelIn);
+            modelIn.close();
 
-   String[] Sentences=_sentenceDetector.sentDetect(content);
-   return Sentences;
+            _sentenceDetector = new SentenceDetectorME(sentenceModel);
+
+        } catch (final IOException ioe) {
+            ioe.printStackTrace();
+        } finally {
+            if (modelIn != null) {
+                try {
+                    modelIn.close();
+                } catch (final IOException e) {
+                } // oh well!
+            }
+        }
+    }
+
+
+    public String[] senenceSegmentation(String content) {
+
+
+        String[] Sentences = _sentenceDetector.sentDetect(content);
+        return Sentences;
 
     }
 }

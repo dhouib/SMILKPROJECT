@@ -1,0 +1,5 @@
+<root>
+    <item name='info.bliki.api.Connector java.lang.String queryXML(info.bliki.api.User, java.util.List&lt;java.lang.String&gt;, java.lang.String[])'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

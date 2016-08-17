@@ -15,12 +15,12 @@ package fr.inria.smilk.ws.relationextraction.util;
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- *
  * @author fnoorala
  */
 public class ListFilesUtil {
@@ -70,9 +70,9 @@ public class ListFilesUtil {
         for (int i = 0; i < listOfFiles.length; i++) {
             if (listOfFiles[i].isFile()) {
                 files.add(listOfFiles[i].getName());
-            }else if (listOfFiles[i].isDirectory()) {
-        files.add(listOfFiles[i].getName());
-      }
+            } else if (listOfFiles[i].isDirectory()) {
+                files.add(listOfFiles[i].getName());
+            }
         }
     }
 

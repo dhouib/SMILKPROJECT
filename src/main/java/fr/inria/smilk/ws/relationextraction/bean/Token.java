@@ -5,11 +5,10 @@ package fr.inria.smilk.ws.relationextraction.bean;/*
  */
 
 /**
- *
  * Created by dhouib on 30/06/2016.
  */
 public class Token {
-    
+
     private String lema;
 
     private String form;
@@ -20,6 +19,15 @@ public class Token {
     private int start;
     private int end;
     private int head;
+    private String link;
+
+    public String getLink() {
+        return link;
+    }
+
+    public void setLink(String link) {
+        this.link = link;
+    }
 
 
     public String getLema() {

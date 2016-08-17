@@ -47,7 +47,7 @@ public class DecodingFile {
                 // if (builder.toString().length() > 0) {
                 builder.append(fileContentCorpus);
                 fileContentCorpus = builder.toString();
-                FileWriter writer = new FileWriter("C:/Users/dhouib/Desktop/SMILK_project_devpt/RelationExtractionSMILK/src/main/resources/out/"+listOfFiles[i].getName()+".txt", false);
+                FileWriter writer = new FileWriter("C:/Users/dhouib/Desktop/SMILK_project_devpt/RelationExtractionSMILK/src/main/resources/out_copy/"+listOfFiles[i].getName()+".txt", false);
 
                 writer.write(fileContentCorpus);
                 writer.close();
@@ -75,7 +75,7 @@ public class DecodingFile {
         sortFiles(filesArray);
         for (String file : filesArray) {
 
-            System.out.println("Processing file #: "+ file +": "+ i);
+            System.out_copy.println("Processing file #: "+ file +": "+ i);
             i++;
             BufferedReader fileReader = null;
             String line = "";
@@ -132,27 +132,27 @@ public class DecodingFile {
     public static void constructSentence( List<String> lines) throws Exception {
         File file=new File("src/main/resources/manuel_annotation_Data.txt");
         //  List<String> lines = readCorpus(folder);
-        //System.out.println("Size of data: " + lines.size());
-        // System.out.print("data: "+lines);
+        //System.out_copy.println("Size of data: " + lines.size());
+        // System.out_copy.print("data: "+lines);
         int i = 0;
         for (String line : lines) {
             i++;
             if (line.trim().length() > 1) {
 
-                System.out.println("\n line: " + i + " " + line);
+                System.out_copy.println("\n line: " + i + " " + line);
 
-                FileWriter out = null;
+                FileWriter out_copy = null;
 
                 try {
 
-                    out = new FileWriter(file,true);
+                    out_copy = new FileWriter(file,true);
                     try {
-                        out.append(line+"\n");
+                        out_copy.append(line+"\n");
 
                     } finally {
                         try {
-                            out.flush();
-                            out.close();
+                            out_copy.flush();
+                            out_copy.close();
                         } catch (IOException closeException) {
                             // ignore
                         }
@@ -161,8 +161,8 @@ public class DecodingFile {
                 } finally {
 
                     try {
-                        out.flush();
-                        out.close();
+                        out_copy.flush();
+                        out_copy.close();
                     } catch (IOException ex) {
 
                         // ignore
