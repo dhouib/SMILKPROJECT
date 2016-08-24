@@ -27,8 +27,9 @@ public class CoreferenceAlgo {
 
 
     public static void main(String[] args) throws Exception {
-        String input = "Tu as invité Jean, le garçon très charmant." +
-                "Tu as invité Pierre, ce garçon très charmant.";
+        String input = "Alors qu'il a perdu sa place de premier parfum de la division Luxe de L' Oréal au profit de La Vie est Belle de Lancôme," +
+                "Amor Amor de Cacharel revient sur le devant de la scène en avril avec une édition Amor Amor In a flash. " +
+                "Créé par Pierre Negrin (Firmenich), ce jus est un oriental gourmand caractérisé par un coeur de vanille , caramel et pomme d' amour sucrée. ";
 
         chunk(input);
     }
@@ -62,10 +63,13 @@ public class CoreferenceAlgo {
 
         ChunkerME chunkerME = new ChunkerME(cModel);
         String result[] = chunkerME.chunk(whitespaceTokenizerLine, tags);
-        for (String s : result) {
-            //  System.out.println(s);
-        }
+        /*for (String s : result) {
+              System.out.println(s);
+        }*/
         Span[] span = chunkerME.chunkAsSpans(whitespaceTokenizerLine, tags);
+       /* for (Span sp : span) {
+              System.out.println(sp);
+        }*/
         String[] text = whitespaceTokenizerLine.clone();
         constructNounPhrasesSpan(span, input, tags, text);
     }
@@ -79,7 +83,14 @@ public class CoreferenceAlgo {
 
         list_np = Arrays.asList(span).stream().filter(p -> p.getType().equalsIgnoreCase("NP")).collect(Collectors.toList());
         System.out.println("Filter: " + list_np);
-        constructAntecedent(list_np, input, text, tags);
+      /*  for(int i=0; i<list_np.size(); i++){
+            System.out.println(text[list_np.get(i).getStart()]+ " "+ text[list_np.get(i).getEnd()] +" start: "+ list_np.get(i).getStart()+ " end: "+ list_np.get(i).getStart());
+        }*/
+
+        /*for(int i=0; i<text.length; i++){
+            System.out.println(text[i]);
+        }*/
+       constructAntecedent(list_np, input, text, tags);
     }
 
     //Generation des antecedents candidats
@@ -114,11 +125,11 @@ public class CoreferenceAlgo {
                 if (chek == 1) {
                     rank_pos++;
                     s.setRanking_pos(rank_pos);
-                    System.out.println("Key Pooos: " + key + " s: " + s.getSpan() + " rank: " + s.getRanking_pos());
+                    //System.out.println("Key Pooos: " + key + " s: " + s.getSpan() + " rank: " + s.getRanking_pos());
                 } else if (chek > 1) {
                     rank_pos = 0;
                     s.setRanking_pos(rank_pos);
-                    System.out.println("Key Pooos: " + key + " s: " + s.getSpan() + " rank: " + s.getRanking_pos());
+                  //  System.out.println("Key Pooos: " + key + " s: " + s.getSpan() + " rank: " + s.getRanking_pos());
                 }
             }
         }
@@ -134,7 +145,7 @@ public class CoreferenceAlgo {
             for (SpanWrapper s : values) {
                 rank_dist = rank_dist + 10;
                 s.setRanking_dist(rank_dist);
-                System.out.println("Key Dist: " + key + " s: " + s.getSpan() + " rank: " + s.getRanking_dist());
+             //   System.out.println("Key Dist: " + key + " s: " + s.getSpan() + " rank: " + s.getRanking_dist());
             }
         }
 
@@ -150,7 +161,7 @@ public class CoreferenceAlgo {
             List<SpanWrapper> values = (List<SpanWrapper>) entry.getValue();
             for (int j = 0; j < values.size(); j++) {
                 values.get(j).setRank(values.get(j).getRanking_dist() + values.get(j).getRanking_pos());
-                System.out.println("key antecedent: " + key + "antecedent: " + values.get(j).getSpan() + " " + values.get(j).getRanking_pos() + " " + values.get(j).getRanking_dist() + " " + values.get(j).getRank());
+             //   System.out.println("key antecedent: " + key + "antecedent: " + values.get(j).getSpan() + " " + values.get(j).getRanking_pos() + " " + values.get(j).getRanking_dist() + " " + values.get(j).getRank());
             }
         }
 

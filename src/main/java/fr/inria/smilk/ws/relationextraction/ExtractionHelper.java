@@ -105,6 +105,37 @@ public class ExtractionHelper {
         token.setLink("null");
         return token;
     }
+    // transform element To Token
+    public static Token elementToToken(Element element1, Element element2) {
+        Token token = new Token();
+        token.setId(Integer.parseInt(element1.getAttribute("id")));
+        token.setForm(element1.getAttribute("form") + " "+element2.getAttribute("form"));
+        token.setStart(Integer.parseInt(element1.getAttribute("start")));
+        token.setEnd(Integer.parseInt(element2.getAttribute("end")));
+        token.setLema(element1.getAttribute("lemma")+" "+element2.getAttribute("form"));
+        token.setPos(element1.getAttribute("pos")+ " "+ element2.getAttribute("pos"));
+        token.setDepRel(element1.getAttribute("depRel"));
+        token.setHead(Integer.parseInt(element1.getAttribute("head")));
+        token.setType(element1.getAttribute("type"));
+        token.setLink("null");
+        return token;
+    }
+
+    // transform element To Token
+    public static Token elementToToken(Element element1, Element element2, Element element3) {
+        Token token = new Token();
+        token.setId(Integer.parseInt(element1.getAttribute("id")));
+        token.setForm(element1.getAttribute("form") + " "+element2.getAttribute("form"));
+        token.setStart(Integer.parseInt(element1.getAttribute("start")));
+        token.setEnd(Integer.parseInt(element3.getAttribute("end")));
+        token.setLema(element1.getAttribute("lemma")+" "+element2.getAttribute("form")+ " "+element3.getAttribute("form"));
+        token.setPos(element1.getAttribute("pos")+ " "+ element2.getAttribute("pos"));
+        token.setDepRel(element1.getAttribute("depRel"));
+        token.setHead(Integer.parseInt(element1.getAttribute("head")));
+        token.setType(element1.getAttribute("type"));
+        token.setLink("null");
+        return token;
+    }
 
     // search token by index
     public static Element searchToken(NodeList nTokensList, int index_pattern) {

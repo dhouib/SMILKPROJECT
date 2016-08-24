@@ -26,8 +26,8 @@ public class RelationExtractionLauncher {    public static void main(String[] ar
         File folder1 = new File("C:/Users/dhouib/Desktop/SMILK_project_devpt/RelationExtractionSMILK/src/main/resources/input/out/");
 
         RelationBelongsToBrandExtraction relationBelongsToBrandExtraction = new RelationBelongsToBrandExtraction();
-      //  RelationBelongsToDivisionExtraction relationBelongsToDivisionExtraction = new RelationBelongsToDivisionExtraction();
-     //   RelationBelongsToGroupExtraction relationBelongsToGroupExtraction = new RelationBelongsToGroupExtraction();
+        RelationBelongsToDivisionExtraction relationBelongsToDivisionExtraction = new RelationBelongsToDivisionExtraction();
+        RelationBelongsToGroupExtraction relationBelongsToGroupExtraction = new RelationBelongsToGroupExtraction();
         //RelationBelongsToProductOrServiceRange relationBelongsToProductOrServiceRange=new RelationBelongsToProductOrServiceRange();
         //RelationHasComponentExtraction relationHasComponentExtraction =new RelationHasComponentExtraction();
        /*  RelationHasTargetExtraction relationHasTargetExtraction=new RelationHasTargetExtraction();
@@ -37,8 +37,8 @@ public class RelationExtractionLauncher {    public static void main(String[] ar
         RelationHasModelExtraction relationHasModelExtraction=new RelationHasModelExtraction();*/
 
         relationBelongsToBrandExtraction.init();
-        //relationBelongsToDivisionExtraction.init();
-       // relationBelongsToGroupExtraction.init();
+        relationBelongsToDivisionExtraction.init();
+        relationBelongsToGroupExtraction.init();
         ///relationBelongsToProductOrServiceRange.init();
         //  relationHasComponentExtraction.init();
       /*  relationHasTargetExtraction.init();
@@ -51,8 +51,8 @@ public class RelationExtractionLauncher {    public static void main(String[] ar
         List<String> lines = AbstractRelationExtraction.readCorpus(folder,folder1);
         for (String line : lines) {
            relationBelongsToBrandExtraction.processExtraction(line);
-       //    relationBelongsToDivisionExtraction.processExtraction(line);
-        //   relationBelongsToGroupExtraction.processExtraction(line);
+           relationBelongsToDivisionExtraction.processExtraction(line);
+           relationBelongsToGroupExtraction.processExtraction(line);
             //   relationBelongsToProductOrServiceRange.processExtraction(line);
             //   relationHasComponentExtraction.processExtraction(line);
             /*relationHasTargetExtraction.processExtraction(line);
@@ -63,8 +63,8 @@ public class RelationExtractionLauncher {    public static void main(String[] ar
 
         }
        relationBelongsToBrandExtraction.processGlobal();
-      // relationBelongsToDivisionExtraction.processGlobal();
-      // relationBelongsToGroupExtraction.processGlobal();
+       relationBelongsToDivisionExtraction.processGlobal();
+       relationBelongsToGroupExtraction.processGlobal();
         // relationBelongsToProductOrServiceRange.processGlobal();
         //relationHasComponentExtraction.processGlobal();
         /*relationHasTargetExtraction.processGlobal();

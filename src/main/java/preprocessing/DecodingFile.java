@@ -22,8 +22,6 @@ public class DecodingFile {
     static String fileContentCorpus;
 
 
-
-
     static String readFile(String path, String encoding)
             throws IOException {
         byte[] encoded = Files.readAllBytes(Paths.get(path));

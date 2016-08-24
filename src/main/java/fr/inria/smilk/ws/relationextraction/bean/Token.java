@@ -10,7 +10,6 @@ package fr.inria.smilk.ws.relationextraction.bean;/*
 public class Token {
 
     private String lema;
-
     private String form;
     private String pos;
     private String type;
@@ -20,6 +19,7 @@ public class Token {
     private int end;
     private int head;
     private String link;
+    private String morpho;
 
     public String getLink() {
         return link;
@@ -102,6 +102,13 @@ public class Token {
         this.head = head;
     }
 
+    public String getMorpho() {
+        return morpho;
+    }
+
+    public void setMorpho(String morpho) {
+        this.morpho = morpho;
+    }
 
     @Override
     public boolean equals(Object o) {
