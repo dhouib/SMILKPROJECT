@@ -32,14 +32,14 @@ public class ExtractionHelper {
         String rdfsprefix = "http://www.w3.org/2000/01/rdf-schema#";
         Resource subject, object;
         //subject = model.createResource(smilkprefix + sentenceRelationId.getSubject().getForm());
-
-        if ((sentenceRelationId.getSubject().getLink() == null)) {
+        System.out.println("RDF: " + sentenceRelationId.getSubject().getForm() + "link: " + sentenceRelationId.getSubject().getLink());
+        if ((sentenceRelationId.getSubject().getLink() == null) || (sentenceRelationId.getSubject().getLink() == "null")) {
             subject = model.createResource(smilkprefix + sentenceRelationId.getSubject().getForm());
         } else {
             subject = model.createResource(sentenceRelationId.getSubject().getLink());
         }
 
-        if ((sentenceRelationId.getObject().getLink() == null)) {
+        if ((sentenceRelationId.getObject().getLink() == null) || (sentenceRelationId.getSubject().getLink() == "null")) {
             object = model.createResource(smilkprefix + sentenceRelationId.getObject().getForm());
         } else {
             object = model.createResource(sentenceRelationId.getObject().getLink());
@@ -51,25 +51,19 @@ public class ExtractionHelper {
         Resource type_object = model.createResource(sentenceRelationId.getObject().getType());
         Resource text_sources = model.createResource(sentenceRelationId.getSentence_text());
         model.add(subject, rdfs_type, type_subject).add(subject, belongs_to_group, object).add(subject, hasText, text_sources);
-
-            model.add(object, rdfs_type, type_object);
-
-        //model.write(System.out, "N-TRIPLE");
+        model.add(object, rdfs_type, type_object);
+        //   model.write(System.out, "N-TRIPLE");
         return model;
     }
 
     //write the RDF in the N3 format
     public static void writeRdf(Model model) throws IOException {
-        File file = new File("src/main/resources/extractedrelation.ttl");
-
+        File file = new File("src/resources/output/relation_extraction/text.ttl");
         FileWriter out = null;
-
         try {
-
             out = new FileWriter(file, true);
             try {
                 model.write(out, "N3");
-
             } finally {
                 try {
                     out.flush();
@@ -87,7 +81,6 @@ public class ExtractionHelper {
 
             }
         }
-
     }
 
     // transform element To Token
@@ -105,15 +98,16 @@ public class ExtractionHelper {
         token.setLink("null");
         return token;
     }
+
     // transform element To Token
     public static Token elementToToken(Element element1, Element element2) {
         Token token = new Token();
         token.setId(Integer.parseInt(element1.getAttribute("id")));
-        token.setForm(element1.getAttribute("form") + " "+element2.getAttribute("form"));
+        token.setForm(element1.getAttribute("form") + " " + element2.getAttribute("form"));
         token.setStart(Integer.parseInt(element1.getAttribute("start")));
         token.setEnd(Integer.parseInt(element2.getAttribute("end")));
-        token.setLema(element1.getAttribute("lemma")+" "+element2.getAttribute("form"));
-        token.setPos(element1.getAttribute("pos")+ " "+ element2.getAttribute("pos"));
+        token.setLema(element1.getAttribute("lemma") + " " + element2.getAttribute("form"));
+        token.setPos(element1.getAttribute("pos") + " " + element2.getAttribute("pos"));
         token.setDepRel(element1.getAttribute("depRel"));
         token.setHead(Integer.parseInt(element1.getAttribute("head")));
         token.setType(element1.getAttribute("type"));
@@ -125,11 +119,11 @@ public class ExtractionHelper {
     public static Token elementToToken(Element element1, Element element2, Element element3) {
         Token token = new Token();
         token.setId(Integer.parseInt(element1.getAttribute("id")));
-        token.setForm(element1.getAttribute("form") + " "+element2.getAttribute("form"));
+        token.setForm(element1.getAttribute("form") + " " + element2.getAttribute("form"));
         token.setStart(Integer.parseInt(element1.getAttribute("start")));
         token.setEnd(Integer.parseInt(element3.getAttribute("end")));
-        token.setLema(element1.getAttribute("lemma")+" "+element2.getAttribute("form")+ " "+element3.getAttribute("form"));
-        token.setPos(element1.getAttribute("pos")+ " "+ element2.getAttribute("pos"));
+        token.setLema(element1.getAttribute("lemma") + " " + element2.getAttribute("form") + " " + element3.getAttribute("form"));
+        token.setPos(element1.getAttribute("pos") + " " + element2.getAttribute("pos"));
         token.setDepRel(element1.getAttribute("depRel"));
         token.setHead(Integer.parseInt(element1.getAttribute("head")));
         token.setType(element1.getAttribute("type"));
@@ -148,15 +142,14 @@ public class ExtractionHelper {
                     if (nTokenNode instanceof Element) {
                         Element current_element = (Element) nTokenNode;
                         String index_start = current_element.getAttribute("start");
-                      //  System.out.println("index_start: " + index_start);
+                        //  System.out.println("index_start: " + index_start);
                         int index_token = Integer.parseInt(index_start);
                         if (index_token < index_pattern) {
                             before_current_element = current_element;
-                        //    System.out.println("if <" + before_current_element.getNodeValue());
+                            //    System.out.println("if <" + before_current_element.getNodeValue());
                         } else {
-                          //  System.out.println("else:" + before_current_element);
+                            //  System.out.println("else:" + before_current_element);
                             return before_current_element;
-
                         }
                     }
                 }
@@ -193,33 +186,21 @@ public class ExtractionHelper {
 
 
     public static List<Spot> readFileJson() {
-        File folder = new File("C:/Users/dhouib/Desktop/SMILK_project_devpt/RelationExtractionSMILK/src/main/resources/json/");
+        File folder = new File("C:/Users/dhouib/Desktop/SMILK_project_devpt/RelationExtractionSMILK/src/resources/input/ENL_farhad/");
         File[] listOfFiles = folder.listFiles();
-
         HashMap<Integer, Spot> hmap = new HashMap<Integer, Spot>();
         List<Spot> list = new ArrayList<Spot>();
         JSONParser parser = new JSONParser();
 
         for (int f = 0; f < listOfFiles.length; f++) {
             if (listOfFiles[f].isFile()) {
-              //  System.out.println("File " + listOfFiles[f].getName());
                 try {
                     hmap = new HashMap<Integer, Spot>();
                     list = new ArrayList<>();
                     Object obj = parser.parse(new FileReader(listOfFiles[f]));
-                    // parser.parse(new FileReader("C:/Users/dhouib/Desktop/SMILK_project_devpt/RelationExtractionSMILK/src/main/resources/output_farhad/2_result.txt"));
-
                     JSONObject jsonObject = (JSONObject) obj;
-
                     String text = (String) jsonObject.get("text");
-                  //  System.out.println("text: " + text);
                     JSONArray annotatedSpot = (JSONArray) jsonObject.get("annotatedSpot");
-                    //System.out.println("\nannotatedSpot:");
-                    for (int i = 0; i < annotatedSpot.size(); i++) {
-                        //  System.out_copy.println("the "+ i+"element of the array: "+annotatedSpot.get(i));
-
-                    }
-
                     Iterator iterator = annotatedSpot.iterator();
                     while (iterator.hasNext()) {
                         JSONObject innerObj = (JSONObject) iterator.next();
@@ -230,8 +211,6 @@ public class ExtractionHelper {
                         spot.setStart(Integer.parseInt(innerObj.get("start").toString()));
                         spot.setEnd(innerObj.get("end").toString());
                         spot.setWikiname(innerObj.get("wikiname").toString());
-                      //  System.out.println("sortie Farhad: "+ innerObj.get("spot").toString()+ " "+ innerObj.get("type").toString()+" "+ innerObj.get("wikiname").toString()
-                      //  + " "+ innerObj.get("dbpedia").toString());
                         hmap.put(spot.getStart(), spot);
                     }
                     Set set = hmap.entrySet();
@@ -240,7 +219,6 @@ public class ExtractionHelper {
                         Map.Entry mentry = (Map.Entry) it.next();
                         Object key = mentry.getKey();
                         Spot value = (Spot) mentry.getValue();
-                        //System.out_copy.println("Key: " + key + "Value: " + value.getSpot());
                         list.add(value);
                     }
                     Collections.sort(list);
@@ -250,7 +228,7 @@ public class ExtractionHelper {
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
-           }
+            }
         }
         return list;
     }
@@ -273,43 +251,29 @@ public class ExtractionHelper {
         }
     }
 
-
     public static Spot searchSpotByForm(List<Spot> list, String form) {
         Spot spot = new Spot();
         for (int j = 0; j < list.size(); j++) {
-            //System.out_copy.println("foooooorm: " + form.toUpperCase());
-            //System.out_copy.println("searchSpot: " + list.get(j).getWikiname().toUpperCase() + " " + list.get(j).getLink());
             if ((list.get(j).getWikiname().toUpperCase().contains("COSMÉTIQUE")) || ((list.get(j).getWikiname().toUpperCase().contains("PARFUMS")))
                     || list.get(j).getWikiname().toUpperCase().contains("ENTREPRISE")) {
                 int index = list.get(j).getWikiname().indexOf("_");
                 String new_wikiname = list.get(j).getWikiname().substring(0, index);
                 list.get(j).setWikiname(new_wikiname);
-              //  System.out_copy.println("new_wikiname: " + list.get(j).getWikiname());
             }
             if (list.get(j).getWikiname().equalsIgnoreCase(form)) {
                 if ((list.get(j).getLink().equals("NIL"))) {
                     list.get(j).setLink("null");
                     spot = list.get(j);
-                    //System.out_copy.println("searchSpot: " + list.get(j).getLink());
                 } else {
                     spot = list.get(j);
                 }
             }
         }
-            /*else {
-             list.get(j).setLink("null");
-                spot=list.get(j);
-
-                System.out_copy.println("searchSpot: "+ list.get(j).getLink());
-            }*/
-
         return spot;
     }
 
-
     public static void verifyLink(Spot s) {
         String link = s.getLink().replace("page", "resource");
-      //  System.out.println("link: " + link + "\n");
         ParameterizedSparqlString qs = new ParameterizedSparqlString("" +
                 "PREFIX p: <http://dbpedia.org/property/>" +
                 "PREFIX dbpedia: <http://dbpedia.org/resource/>" +
@@ -327,10 +291,8 @@ public class ExtractionHelper {
                 "} ");
         Model model = ModelFactory.createDefaultModel();
         Resource resource = model.createResource(link);
-       // System.out.println("Resource: " + resource);
         qs.setParam("link", resource);
 
-        //Query query = QueryFactory.create(qs);
         QueryExecution qexec = QueryExecutionFactory.sparqlService("http://fr.dbpedia.org/sparql", qs.asQuery());
 
         String subject_string = "NULL";
@@ -343,20 +305,15 @@ public class ExtractionHelper {
                 subject_string = subject_name.toString();
                 if (subject_string.contains("Maison de parfum")) {
                     s.setType("BRAND");
-              //     System.out.println("Spot: " + s.getSpot() + " " + s.getType());
                 }
-
             }
         } finally {
             qexec.close();
         }
-
-
     }
 
     public static void verifyLink_2(Spot s) {
         String link = s.getLink().replace("page", "resource");
-       // System.out.println("link: " + link + "\n");
         ParameterizedSparqlString qs = new ParameterizedSparqlString("" +
                 "PREFIX p: <http://dbpedia.org/property/>" +
                 "PREFIX dbpedia: <http://dbpedia.org/resource/>" +
@@ -375,10 +332,7 @@ public class ExtractionHelper {
                 "} ");
         Model model = ModelFactory.createDefaultModel();
         Resource resource = model.createResource(link);
-      //  System.out.println("Resource: " + resource);
         qs.setParam("link", resource);
-
-        //Query query = QueryFactory.create(qs);
         QueryExecution qexec = QueryExecutionFactory.sparqlService("http://fr.dbpedia.org/sparql", qs.asQuery());
 
         String subject_string = "NULL";
@@ -389,23 +343,15 @@ public class ExtractionHelper {
                 Resource subject = soln.getResource("type");
                 Literal subject_name = soln.getLiteral("type_name");
                 subject_string = subject_name.toString();
-                //   subject_string=subject.toString();
-              //  System.out.print("type: " + subject_string + "\n");
-
 
                 if ((subject_string.contains("film") || (subject_string.contains("personne")))) {
                     s.setLink("null");
-                 //   System.out.println("Spot: " + s.getSpot() + " " + s.getLink());
                 }
-
-
             }
         } finally {
             qexec.close();
         }
-
     }
-
 
     private static String readAll(Reader rd) throws IOException {
         StringBuilder sb = new StringBuilder();

@@ -19,6 +19,7 @@ import com.sun.jersey.api.client.Client;
 import com.sun.jersey.api.client.ClientResponse;
 import com.sun.jersey.api.client.WebResource;
 
+/*Classe qui appelle le web service renco*/
 public class Renco {
 
     public String rencoByWebService(String in) throws Exception {
@@ -31,11 +32,7 @@ public class Renco {
             WebResource webResource = client.resource(url);
 
             ClientResponse response = webResource.type("text/plain").post(ClientResponse.class, in);
-
             sortie = response.getEntity(String.class);
-
-            // System.out_copy.println(sortie);
-
 
         } catch (Exception e) {
             System.out.println("ERROR in the text: " + in);

@@ -6,12 +6,7 @@ import fr.inria.smilk.ws.relationextraction.util.openNLP;
 
 import java.io.*;
 import java.nio.charset.Charset;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.*;
-
-import static org.apache.jena.atlas.io.IO.close;
 
 /**
  * Created by dhouib on 03/07/2016.
@@ -36,48 +31,43 @@ public abstract class AbstractRelationExtraction {
 
     //transform data in 1 File
     public static void constructSentence(List<String> lines) throws Exception {
-        File file = new File("src/main/resources/manuel_annotation_Data.txt");
-        //  List<String> lines = readCorpus(folder);
-        //System.out_copy.println("Size of data: " + lines.size());
-        // System.out_copy.print("data: "+lines);
+        File file = new File("src/resources/output/relation_extraction/text_Data.txt");
         int i = 0;
         for (String line : lines) {
             i++;
             if (line.trim().length() > 1) {
 
-                    System.out.println("\n line: " + i + " " + line);
+                System.out.println("\n line: " + i + " " + line);
 
-                    FileWriter out = null;
+                FileWriter out = null;
 
+                try {
+
+                    out = new FileWriter(file, true);
                     try {
-
-                        out = new FileWriter(file, true);
-                        try {
-                            out.append(line + "\n");
-
-                        } finally {
-                            try {
-                                out.flush();
-                                out.close();
-                            } catch (IOException closeException) {
-                                // ignore
-                            }
-                        }
+                        out.append(line + "\n");
 
                     } finally {
-
                         try {
                             out.flush();
                             out.close();
-                        } catch (IOException ex) {
-
+                        } catch (IOException closeException) {
                             // ignore
                         }
                     }
+
+                } finally {
+
+                    try {
+                        out.flush();
+                        out.close();
+                    } catch (IOException ex) {
+                        // ignore
+                    }
                 }
             }
+        }
     }
-
 
     // read corpus Files
     public static List<String> readCorpus(String folderName, File folder1) throws IOException {
@@ -92,8 +82,8 @@ public abstract class AbstractRelationExtraction {
 
         int i = 0;
         String[] filesArray = files.toArray(new String[]{});
-       // sortFiles(filesArray);
-        sortByNumber(listOfFiles);
+        sortFiles(filesArray);
+        //   sortByNumber(listOfFiles);
         for (String file : filesArray) {
 
             System.out.println("Processing file #: " + file + ": " + i);
@@ -107,42 +97,19 @@ public abstract class AbstractRelationExtraction {
 
             fileReader = new BufferedReader(isr);
 
-            // InputStreamReader isr1 = new InputStreamReader(is,  Charset.forName("UTF-8"));
-            //fileReader = new BufferedReader(isr1);
-
-            //fileReader = new BufferedReader(in);
             while ((line = fileReader.readLine()) != null) {
                 if (line.trim().length() > 1) {
                     String[] sentences = opennlp.senenceSegmentation(line);
                     if (sentences != null) {
                         for (String sent : sentences) {
                             if (sent.length() > 0) {
-                               /* String[] linessplit = sent.split(",");
-                                for (String linesplit : linessplit) {
-                                    if (!(linesplit.indexOf("et") >= 0)) {
-                                        lines.add(linesplit);
-                                    }
-                                    if (linesplit.indexOf("et") >= 0) {
-                                        String[] sublines = linesplit.split("et");
-                                        for (String subline : sublines) {
-                                            lines.add(subline);
-                                            // System.out.println("subline: " + subline);
-                                        }
-
-                                    }
-                                }*/
-
                                 lines.add(sent);
-                        }
+                            }
                         }
                     }
-
                 }
             }
-
-
         }
-
         return lines;
     }
 
@@ -152,8 +119,9 @@ public abstract class AbstractRelationExtraction {
         Arrays.sort(filenames, new Comparator<String>() {
             public int compare(String f1, String f2) {
                 try {
-                    int i1 = Integer.parseInt(f1);
-                    int i2 = Integer.parseInt(f2);
+                    int i1 = Integer.parseInt(f1.substring(0, f1.indexOf("L")).concat(f1.substring(f1.indexOf("l") + 1, f1.indexOf("."))));// = Integer.parseInt(f1.substring(0, f1_repalace.indexOf(".")));
+                    int i2 = Integer.parseInt(f2.substring(0, f2.indexOf("L")).concat(f2.substring(f2.indexOf("l") + 1, f2.indexOf("."))));// = Integer.parseInt(f2.substring(0, f2_replace.indexOf(".")));
+
                     return i1 - i2;
                 } catch (NumberFormatException e) {
                     throw new AssertionError(e);
@@ -179,18 +147,12 @@ public abstract class AbstractRelationExtraction {
                     int e = name.lastIndexOf('.');
                     String number = name.substring(e);
                     i = Integer.parseInt(number);
-                } catch(Exception e) {
+                } catch (Exception e) {
                     i = 0; // if filename does not match the format
                     // then default to 0
                 }
                 return i;
             }
         });
-
-       /* for(File f : files) {
-            System.out_copy.println(f.getName());
-        }*/
     }
-
-
 }

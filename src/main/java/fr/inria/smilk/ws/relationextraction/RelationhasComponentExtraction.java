@@ -20,12 +20,15 @@ import static fr.inria.smilk.ws.relationextraction.ExtractionHelper.*;
 /**
  * Created by dhouib on 01/07/2016.
  */
+
+/*Cherche les relations hasComponent dans le texte */
 public class RelationHasComponentExtraction extends AbstractRelationExtraction {
     Set<String> listComponent = new HashSet<>();
     Set<String> listChimicalComponent = new HashSet<>();
     Set<String> listhuile = new HashSet<>();
-    //SPARQL queries to extract chimical component from DBpedia
 
+
+    //SPARQL queries to extract chimical component from DBpedia
     public void extractionComponentFromDBpedia() {
         String Component_name;
         String queryString = "PREFIX p: <http://dbpedia.org/property/>" +
@@ -51,54 +54,47 @@ public class RelationHasComponentExtraction extends AbstractRelationExtraction {
                 QuerySolution soln = results.nextSolution();
                 Literal Component_name_DBpedia = soln.getLiteral("?concept_name");
                 Component_name = Component_name_DBpedia.toString();
-
                 int indexproduct = 0;
                 if ((Component_name.contains("("))) {
                     indexproduct = Component_name.indexOf("(");
                 } else if (Component_name.contains("@")) {
                     indexproduct = Component_name.indexOf("@");
                 }
-
                 Component_name = Component_name.substring(0, indexproduct);
-
                 listChimicalComponent.add(Component_name.toLowerCase());
-
             }
-
         } finally {
             qexec.close();
         }
-
     }
 
     //SPARQL queries to extract component (plante, arôme) from DBpedia
     private Set<String> hasComponentDbpedia() throws Exception {
         String Component_name;
-        String queryString =
-                "PREFIX p: <http://dbpedia.org/property/>" +
-                        "PREFIX dbpedia: <http://dbpedia.org/resource/>" +
-                        "PREFIX category: <http://dbpedia.org/resource/Category:>" +
-                        "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>" +
-                        "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>" +
-                        "PREFIX geo: <http://www.georss.org/georss/>" +
-                        "PREFIX dbpedia-owl: <http://dbpedia.org/ontology/>" +
-                        "PREFIX prop-fr: <http://fr.dbpedia.org/property/>" +
-                        "select  ?Component_name\n" +
-                        "where { \n" +
-                        "{?concept rdfs:label \"Liste des plantes à cosmétique et à parfum\" @fr.\n" +
-                        "?concept dbpedia-owl:wikiPageWikiLink  ?Component}\n" +
-                        "Union\n" +
-                        "{?concept rdfs:label  \"Élément synthétique\" @fr.\n" +
-                        "?concept dbpedia-owl:wikiPageWikiLink  ?Component\n" +
-                        "}\n" +
-                        "Union\n" +
-                        "{?concept rdfs:label \"Arôme\" @fr.\n" +
-                        " ?concept dbpedia-owl:wikiPageWikiLink  ?Component\n" +
-                        "}\n" +
-                        "\n" +
-                        "?Component rdfs:label ?Component_name.\n" +
-                        " FILTER ( LANG(?Component_name) = \"fr\" )\n" +
-                        "  }\n";
+        String queryString = "PREFIX p: <http://dbpedia.org/property/>" +
+                "PREFIX dbpedia: <http://dbpedia.org/resource/>" +
+                "PREFIX category: <http://dbpedia.org/resource/Category:>" +
+                "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>" +
+                "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>" +
+                "PREFIX geo: <http://www.georss.org/georss/>" +
+                "PREFIX dbpedia-owl: <http://dbpedia.org/ontology/>" +
+                "PREFIX prop-fr: <http://fr.dbpedia.org/property/>" +
+                "select  ?Component_name\n" +
+                "where { \n" +
+                "{?concept rdfs:label \"Liste des plantes à cosmétique et à parfum\" @fr.\n" +
+                "?concept dbpedia-owl:wikiPageWikiLink  ?Component}\n" +
+                "Union\n" +
+                "{?concept rdfs:label  \"Élément synthétique\" @fr.\n" +
+                "?concept dbpedia-owl:wikiPageWikiLink  ?Component\n" +
+                "}\n" +
+                "Union\n" +
+                "{?concept rdfs:label \"Arôme\" @fr.\n" +
+                " ?concept dbpedia-owl:wikiPageWikiLink  ?Component\n" +
+                "}\n" +
+                "\n" +
+                "?Component rdfs:label ?Component_name.\n" +
+                " FILTER ( LANG(?Component_name) = \"fr\" )\n" +
+                "  }\n";
 
         Query query = QueryFactory.create(queryString);
         QueryExecution qexec = QueryExecutionFactory.sparqlService("http://fr.dbpedia.org/sparql", query);
@@ -126,7 +122,7 @@ public class RelationHasComponentExtraction extends AbstractRelationExtraction {
     }
 
 
-    //SPARQL queries to extract component (plante, arôme) from DBpedia
+    //SPARQL queries to extract component (huiles essentielles) from DBpedia
     private Set<String> hashuileDbpedia() throws Exception {
         String Component_name;
         String queryString =
@@ -165,7 +161,6 @@ public class RelationHasComponentExtraction extends AbstractRelationExtraction {
                 QuerySolution soln = results.nextSolution();
                 Literal Component_name_DBpedia = soln.getLiteral("?huile_name");
                 Component_name = Component_name_DBpedia.toString();
-
                 int indexproduct = 0;
                 if ((Component_name.contains("("))) {
                     indexproduct = Component_name.indexOf("(");
@@ -175,7 +170,6 @@ public class RelationHasComponentExtraction extends AbstractRelationExtraction {
                 Component_name = Component_name.substring(0, indexproduct);
                 listhuile.add(Component_name.toLowerCase());
             }
-
         } finally {
             qexec.close();
         }
@@ -188,12 +182,10 @@ public class RelationHasComponentExtraction extends AbstractRelationExtraction {
 
         for (int sent_temp = 0; sent_temp < nSentenceList.getLength(); sent_temp++) {
             Node nSentNode = nSentenceList.item(sent_temp);
-            StringBuilder builder = new StringBuilder();
             String sentence = line;
             NodeList nTokensList = nSentNode.getChildNodes();
             //parcourir l'arbre Renco
             for (int token_temp = 0; token_temp < nTokensList.getLength(); token_temp++) {
-
                 Node nTokenNode = nTokensList.item(token_temp);
                 NodeList nList = nTokenNode.getChildNodes();
                 Node nNode = nList.item(token_temp);
@@ -204,8 +196,6 @@ public class RelationHasComponentExtraction extends AbstractRelationExtraction {
                         Element xElement = (Element) xNode;
                         if ((xElement.hasAttribute("type") && !xElement.getAttribute("type").equalsIgnoreCase("not_identified") &&
                                 (xElement.getAttribute("type").equalsIgnoreCase(firstType))) || (xElement.getAttribute("form").equalsIgnoreCase(secondType))) {
-
-
                             y = x + 1;
                             LinkedList<Token> relationTokens = new LinkedList<>();
                             for (int j = y; j < nList.getLength(); j++) {
@@ -213,19 +203,14 @@ public class RelationHasComponentExtraction extends AbstractRelationExtraction {
 
                                 if (yNode instanceof Element) {
                                     Element yElement = (Element) yNode;
-                                    //System.out_copy.println("objectToken: "+objectToken.getForm());
-                                    // if (!yElement.getAttribute("form").equalsIgnoreCase(secondType))// ||
-                                    if ((!yElement.getAttribute("form").equalsIgnoreCase(secondType)) && (!yElement.getAttribute("type").equalsIgnoreCase(firstType))) {
-
+                                    if ((!yElement.getAttribute("form").equalsIgnoreCase(secondType)) &&
+                                            (!yElement.getAttribute("type").equalsIgnoreCase(firstType))) {
                                         Token relationToken = elementToToken(yElement);
                                         relationTokens.add(relationToken);
                                     } else {
-
-
                                         if ((xElement.getAttribute("type").equalsIgnoreCase(firstType) &&
                                                 yElement.getAttribute("form").equalsIgnoreCase(secondType))) {
                                             StringBuilder relation = new StringBuilder();
-
                                             for (Token t : relationTokens) {
                                                 relation.append(t.getForm()).append(" ");
                                             }
@@ -248,11 +233,9 @@ public class RelationHasComponentExtraction extends AbstractRelationExtraction {
                                             subjectToken.setForm(secondType);
                                             Token objectToken = elementToToken(yElement);
                                             StringBuilder relation = new StringBuilder();
-
                                             for (Token t : relationTokens) {
                                                 relation.append(t.getForm()).append(" ");
                                             }
-
                                             SentenceRelation sentenceRelation = new SentenceRelation();
                                             SentenceRelationId sentenceRelationId = new SentenceRelationId();
                                             sentenceRelationId.setSubject(objectToken);
@@ -269,25 +252,20 @@ public class RelationHasComponentExtraction extends AbstractRelationExtraction {
                                         break;
                                     }
                                 }
-
                             }
                             x = y;
-
                         } else {
 
                             x += 1;
                         }
-
                     } else {
 
                         x += 1;
-
                     }
                 }
 
             }
         }
-
         return firstTypeSecondTypeMap;
     }
 
@@ -297,14 +275,14 @@ public class RelationHasComponentExtraction extends AbstractRelationExtraction {
         DocumentBuilder builder = factory.newDocumentBuilder();
         StringBuilder xmlStringBuilder = new StringBuilder();
         xmlStringBuilder.append(input);
-        ByteArrayInputStream in = new ByteArrayInputStream(xmlStringBuilder.toString().getBytes("UTF-8"));//"UTF-8"
+        System.out.println(input);
+        ByteArrayInputStream in = new ByteArrayInputStream(xmlStringBuilder.toString().getBytes("UTF-8"));
         Document doc = builder.parse(in);
         doc.getDocumentElement().normalize();
         NodeList nSentenceList = doc.getElementsByTagName("sentence");
         listComponent.remove("cosmétique");
         listComponent.remove("acide");
         listComponent.remove("parfum");
-
         for (String component : listComponent) {
             findByTypes(line, nSentenceList, "product", component);
         }
@@ -320,7 +298,6 @@ public class RelationHasComponentExtraction extends AbstractRelationExtraction {
 
     @Override
     public void annotationData(List<SentenceRelation> list_result) throws IOException {
-        // on construit un map (SentenceRelationId,List<SentenceRelationMethod>)
         Map<SentenceRelationId, List<SentenceRelationMethod>> relationMap = new HashMap<>();
         //construction de list_result contenant les méthodes appliquées pour la même sentence
         for (SentenceRelation sentence_relation : list_result) {

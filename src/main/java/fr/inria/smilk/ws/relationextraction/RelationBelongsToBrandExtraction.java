@@ -2,9 +2,9 @@ package fr.inria.smilk.ws.relationextraction;
 
 import com.google.gson.JsonObject;
 import com.hp.hpl.jena.query.*;
-import com.hp.hpl.jena.rdf.model.*;
+import com.hp.hpl.jena.rdf.model.Literal;
+import com.hp.hpl.jena.rdf.model.Model;
 import fr.inria.smilk.ws.relationextraction.bean.*;
-
 import org.apache.commons.lang3.StringUtils;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -19,7 +19,8 @@ import org.xml.sax.SAXException;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
-import java.io.*;
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -37,7 +38,7 @@ public class RelationBelongsToBrandExtraction extends AbstractRelationExtraction
     Set<String> patterns = new HashSet<>();
 
     //store data of wikipedia
-    HashMap<String,  Set<String>> hmap_wiki = new HashMap<String,  Set<String>>();
+    HashMap<String, Set<String>> hmap_wiki = new HashMap<String, Set<String>>();
 
     // méthode qui permet d'extraire les patterns de la relation belongsToBrand à partir
     // de l'abstract de DBpedia ainsi que les parfums et les marques
@@ -244,18 +245,18 @@ public class RelationBelongsToBrandExtraction extends AbstractRelationExtraction
         JsonObject json = readJsonFromUrl(link);
         //tester les types en se basant sur wikipedia
         try {
-            readJson(json,line, nSentenceList);
+            readJson(json, line, nSentenceList);
         } catch (ParseException e) {
             e.printStackTrace();
         }
 
         //tester les types en se basant sur NED
         VerifyTypeBasedOnFarhadAproach(line, nSentenceList, "product", "brand");
-        verifyPatternsDBpedia(line,nSentenceList, patterns);
-        verifyENDBpedia(line,nSentenceList,productBrandMap);
+        verifyPatternsDBpedia(line, nSentenceList, patterns);
+        verifyENDBpedia(line, nSentenceList, productBrandMap);
         //renco
         productBrandMap = findByTypes(line, nSentenceList, "product", "brand");
-        productBrandMap = findByTypes(line,nSentenceList,"range","brand");
+        productBrandMap = findByTypes(line, nSentenceList, "range", "brand");
     }
 
     private void VerifyTypeBasedOnFarhadAproach(String line, NodeList nSentenceList, String firstType, String secondType) {
@@ -280,11 +281,11 @@ public class RelationBelongsToBrandExtraction extends AbstractRelationExtraction
                         Element xElement = (Element) xNode;
 
                         if (!xElement.hasAttribute("type") || xElement.getAttribute("type").equalsIgnoreCase("not_identified")) {
-                          //  System.out.println("not_type: " + xElement.getAttribute("form") + " type: " + xElement.getAttribute("type"));
+                            //  System.out.println("not_type: " + xElement.getAttribute("form") + " type: " + xElement.getAttribute("type"));
                             Token token = elementToToken(xElement);
                             Spot spot = new Spot();
                             spot = searchSpotByForm(list_spot, token.getForm());
-                           // System.out.println("nex Type: " + spot.getSpot() + " type: " + spot.getType());
+                            // System.out.println("nex Type: " + spot.getSpot() + " type: " + spot.getType());
                             xElement.setAttribute("type", spot.getType());
                             token.setLink(spot.getLink());
                             token.setType(spot.getType());
@@ -297,7 +298,7 @@ public class RelationBelongsToBrandExtraction extends AbstractRelationExtraction
         // productBrandMap = findByTypes(line,nSentenceList,"product","brand");
     }
 
-    public void readJson(JsonObject json,String line, NodeList nSentenceList) throws ParseException {
+    public void readJson(JsonObject json, String line, NodeList nSentenceList) throws ParseException {
 
         JSONParser parser = new JSONParser();
         Object obj = parser.parse(String.valueOf(json.get("query")));
@@ -456,46 +457,44 @@ public class RelationBelongsToBrandExtraction extends AbstractRelationExtraction
             }
         }
 
-                for (int sent_temp = 0; sent_temp < nSentenceList.getLength(); sent_temp++) {
-                    Node nSentNode = nSentenceList.item(sent_temp);
-                    StringBuilder builder = new StringBuilder();
-                    String sentence = line;
-                   // System.out.println("sentence:" + builder.toString());
-                    NodeList nTokensList = nSentNode.getChildNodes();
-                    //parcourir l'arbre Renco
-                    for (int token_temp = 0; token_temp < nTokensList.getLength(); token_temp++) {
-                        Node nTokenNode = nTokensList.item(token_temp);
-                        NodeList nList = nTokenNode.getChildNodes();
-                        Node nNode = nList.item(token_temp);
-                        int x = 0, y = 0;
-                        for (int j = 0; j < nList.getLength(); j++) {
-                            Node xNode = nList.item(j);
-                            if (xNode instanceof Element) {
-                                Element xElement = (Element) xNode;
+        for (int sent_temp = 0; sent_temp < nSentenceList.getLength(); sent_temp++) {
+            Node nSentNode = nSentenceList.item(sent_temp);
+            StringBuilder builder = new StringBuilder();
+            String sentence = line;
+            // System.out.println("sentence:" + builder.toString());
+            NodeList nTokensList = nSentNode.getChildNodes();
+            //parcourir l'arbre Renco
+            for (int token_temp = 0; token_temp < nTokensList.getLength(); token_temp++) {
+                Node nTokenNode = nTokensList.item(token_temp);
+                NodeList nList = nTokenNode.getChildNodes();
+                Node nNode = nList.item(token_temp);
+                int x = 0, y = 0;
+                for (int j = 0; j < nList.getLength(); j++) {
+                    Node xNode = nList.item(j);
+                    if (xNode instanceof Element) {
+                        Element xElement = (Element) xNode;
 
-                                if (!xElement.hasAttribute("type") || xElement.getAttribute("type").equalsIgnoreCase("not_identified")) {
-                                //    System.out.println("xElement: "+xElement.getAttribute("form")+ "   "+ xElement.getAttribute("type"));
-                                    Set set = hmap_wiki.entrySet();
-                                    Iterator iteratorhmap = set.iterator();
-                                    while (iteratorhmap.hasNext()) {
-                                        Map.Entry mentry = (Map.Entry) iteratorhmap.next();
-                                        Object key = mentry.getKey();
-                                        Set<String> values =  (Set<String>) mentry.getValue();
-                                        System.out.println("Key: " + key + " Values: " + values);
-                                        if(key.equals(xElement.getAttribute("form"))){
-                                           // System.out.println("wikipedia: "+key+ "  "+ xElement.getAttribute("form"));
-                                            Token token = elementToToken(xElement);
-                                            xElement.setAttribute("type", "brand");
-                                            token.setType("brand");
-                                        }
-                                        for (String value:values) {
-                                            if (value.equals(xElement.getAttribute("form"))) {
-                                               // System.out.println("wikipedia: " + values + "  " + xElement.getAttribute("form"));
-                                                Token token = elementToToken(xElement);
-                                                xElement.setAttribute("type", "product");
-                                                token.setType("product");
-                                            }
-                                        }
+                        if (!xElement.hasAttribute("type") || xElement.getAttribute("type").equalsIgnoreCase("not_identified")) {
+                            //    System.out.println("xElement: "+xElement.getAttribute("form")+ "   "+ xElement.getAttribute("type"));
+                            Set set = hmap_wiki.entrySet();
+                            Iterator iteratorhmap = set.iterator();
+                            while (iteratorhmap.hasNext()) {
+                                Map.Entry mentry = (Map.Entry) iteratorhmap.next();
+                                Object key = mentry.getKey();
+                                Set<String> values = (Set<String>) mentry.getValue();
+                                //  System.out.println("Key: " + key + " Values: " + values);
+                                if (key.equals(xElement.getAttribute("form"))) {
+                                    // System.out.println("wikipedia: "+key+ "  "+ xElement.getAttribute("form"));
+                                    Token token = elementToToken(xElement);
+                                    xElement.setAttribute("type", "brand");
+                                    token.setType("brand");
+                                }
+                                for (String value : values) {
+                                    if (value.equalsIgnoreCase(xElement.getAttribute("form"))) {
+                                        // System.out.println("wikipedia: " + values + "  " + xElement.getAttribute("form"));
+                                        Token token = elementToToken(xElement);
+                                        xElement.setAttribute("type", "product");
+                                        token.setType("product");
                                     }
                                 }
                             }
@@ -503,15 +502,17 @@ public class RelationBelongsToBrandExtraction extends AbstractRelationExtraction
                     }
                 }
             }
-
+        }
+    }
 
 
     private void addToMap(String brand, String parfum) {
-        if(!hmap_wiki.containsKey(brand)){
+        if (!hmap_wiki.containsKey(brand)) {
             hmap_wiki.put(brand, new HashSet<String>());
         }
         hmap_wiki.get(brand).add(parfum);
     }
+
     //recherche de la relation en se basant sur la règle belongsToBrand=product->brand
     private Map<String, String> findByTypes(String line, NodeList nSentenceList, String firstType, String secondType) {
         Map<String, String> firstTypeSecondTypeMap = new HashMap<>();
@@ -521,7 +522,7 @@ public class RelationBelongsToBrandExtraction extends AbstractRelationExtraction
             Node nSentNode = nSentenceList.item(sent_temp);
             StringBuilder builder = new StringBuilder();
             String sentence = line;
-           // System.out.println("sentence:" + builder.toString());
+            // System.out.println("sentence:" + builder.toString());
             NodeList nTokensList = nSentNode.getChildNodes();
             //parcourir l'arbre Renco
             for (int token_temp = 0; token_temp < nTokensList.getLength(); token_temp++) {
@@ -547,8 +548,7 @@ public class RelationBelongsToBrandExtraction extends AbstractRelationExtraction
                                 if (yNode instanceof Element) {
                                     Element yElement = (Element) yNode;
 
-                                    if (!yElement.hasAttribute("type") || StringUtils.isBlank(yElement.getAttribute("type")) || yElement.getAttribute("type").equalsIgnoreCase("not_identified"))
-                                    {
+                                    if (!yElement.hasAttribute("type") || StringUtils.isBlank(yElement.getAttribute("type")) || yElement.getAttribute("type").equalsIgnoreCase("not_identified")) {
                                         Token relationToken = elementToToken(yElement);
                                         relationTokens.add(relationToken);
                                     } else {
@@ -556,12 +556,12 @@ public class RelationBelongsToBrandExtraction extends AbstractRelationExtraction
                                         if((y-x)==1) {*/
 
 
-                                            Token objectToken = elementToToken(yElement);
-                                            spot = searchSpotByForm(list_spot, objectToken.getForm());
-                                            objectToken.setLink(spot.getLink());
+                                        Token objectToken = elementToToken(yElement);
+                                        spot = searchSpotByForm(list_spot, objectToken.getForm());
+                                        objectToken.setLink(spot.getLink());
 
-                                            if ((xElement.getAttribute("type").equalsIgnoreCase(firstType) &&
-                                                    yElement.getAttribute("type").equalsIgnoreCase(secondType))) {
+                                        if ((xElement.getAttribute("type").equalsIgnoreCase(firstType) &&
+                                                yElement.getAttribute("type").equalsIgnoreCase(secondType))) {
                                            /* Set set = hmap_wiki.entrySet();
                                             Iterator iteratorhmap = set.iterator();
                                             while (iteratorhmap.hasNext()) {
@@ -571,30 +571,30 @@ public class RelationBelongsToBrandExtraction extends AbstractRelationExtraction
                                                 if (key.toString().toUpperCase().equalsIgnoreCase(yElement.getAttribute("form").toUpperCase())&&value.toUpperCase().equalsIgnoreCase(xElement.getAttribute("form").toUpperCase())) {
                                                     System.out.println("Ruleswikipedia: " + key + "  " + yElement.getAttribute("form")+ " "+value +" " + xElement.getAttribute("form"));
 */
-                                                StringBuilder relation = new StringBuilder();
-                                                for (Token t : relationTokens) {
-                                                    relation.append(t.getForm()).append(" ");
-                                                }
-
-                                               if((!relation.toString().contains(","))&&  (!relation.toString().contains("et")))  {
-                                                   SentenceRelation sentenceRelation = new SentenceRelation();
-                                                   SentenceRelationId sentenceRelationId = new SentenceRelationId();
-                                                   sentenceRelationId.setSubject(subjectToken);
-                                                   sentenceRelationId.setObject(objectToken);
-                                                   sentenceRelationId.setRelation(relation.toString());
-                                                   sentenceRelationId.setSentence_text(sentence);
-                                                   sentenceRelationId.setType(SentenceRelationType.belongsToBrand);
-                                                   sentenceRelation.setSentenceRelationId(sentenceRelationId);
-                                                   sentenceRelation.setMethod(SentenceRelationMethod.rulesbelongsToBrand);
-                                                   list_result.add(sentenceRelation);
-                                                   // }
-                                                   // }
-                                               }
+                                            StringBuilder relation = new StringBuilder();
+                                            for (Token t : relationTokens) {
+                                                relation.append(t.getForm()).append(" ");
                                             }
-                                            if (xElement.getAttribute("type").equalsIgnoreCase(secondType) &&
-                                                    yElement.getAttribute("type").equalsIgnoreCase(firstType)) {
-                                                Set set = hmap_wiki.entrySet();
-                                                Iterator iteratorhmap = set.iterator();
+
+                                            if ((!relation.toString().contains(",")) && (!relation.toString().contains("et"))) {
+                                                SentenceRelation sentenceRelation = new SentenceRelation();
+                                                SentenceRelationId sentenceRelationId = new SentenceRelationId();
+                                                sentenceRelationId.setSubject(subjectToken);
+                                                sentenceRelationId.setObject(objectToken);
+                                                sentenceRelationId.setRelation(relation.toString());
+                                                sentenceRelationId.setSentence_text(sentence);
+                                                sentenceRelationId.setType(SentenceRelationType.belongsToBrand);
+                                                sentenceRelation.setSentenceRelationId(sentenceRelationId);
+                                                sentenceRelation.setMethod(SentenceRelationMethod.rulesbelongsToBrand);
+                                                list_result.add(sentenceRelation);
+                                                // }
+                                                // }
+                                            }
+                                        }
+                                        if (xElement.getAttribute("type").equalsIgnoreCase(secondType) &&
+                                                yElement.getAttribute("type").equalsIgnoreCase(firstType)) {
+                                            Set set = hmap_wiki.entrySet();
+                                            Iterator iteratorhmap = set.iterator();
                                            /* while (iteratorhmap.hasNext()) {
                                                 Map.Entry mentry = (Map.Entry) iteratorhmap.next();
                                                 Object key = mentry.getKey();
@@ -602,26 +602,26 @@ public class RelationBelongsToBrandExtraction extends AbstractRelationExtraction
                                                 if (key.toString().toUpperCase().equalsIgnoreCase(xElement.getAttribute("form").toUpperCase()) && value.toUpperCase().equalsIgnoreCase(yElement.getAttribute("form").toUpperCase().toUpperCase())) {
                                                     System.out.println("Ruleswikipedia: " + key + "  " + xElement.getAttribute("form") + " " + value + " " + yElement.getAttribute("form"));
 */
-                                                StringBuilder relation = new StringBuilder();
-                                                for (Token t : relationTokens) {
-                                                    relation.append(t.getForm()).append(" ");
-                                                }
-                                                if((!relation.toString().contains(",") &&  (!relation.toString().contains("et")))) {
-                                                    SentenceRelation sentenceRelation = new SentenceRelation();
-                                                    SentenceRelationId sentenceRelationId = new SentenceRelationId();
-                                                    sentenceRelationId.setSubject(objectToken);
-                                                    sentenceRelationId.setObject(subjectToken);
-                                                    sentenceRelationId.setRelation(relation.toString());
-                                                    sentenceRelationId.setSentence_text(sentence);
-                                                    sentenceRelationId.setType(SentenceRelationType.belongsToBrand);
-                                                    sentenceRelation.setSentenceRelationId(sentenceRelationId);
-                                                    sentenceRelation.setMethod(SentenceRelationMethod.rulesbelongsToBrand);
-                                                    list_result.add(sentenceRelation);
-                                                }
+                                            StringBuilder relation = new StringBuilder();
+                                            for (Token t : relationTokens) {
+                                                relation.append(t.getForm()).append(" ");
                                             }
-                                            // }
-                                            //}
-                                       // }
+                                            if ((!relation.toString().contains(",") && (!relation.toString().contains("et")))) {
+                                                SentenceRelation sentenceRelation = new SentenceRelation();
+                                                SentenceRelationId sentenceRelationId = new SentenceRelationId();
+                                                sentenceRelationId.setSubject(objectToken);
+                                                sentenceRelationId.setObject(subjectToken);
+                                                sentenceRelationId.setRelation(relation.toString());
+                                                sentenceRelationId.setSentence_text(sentence);
+                                                sentenceRelationId.setType(SentenceRelationType.belongsToBrand);
+                                                sentenceRelation.setSentenceRelationId(sentenceRelationId);
+                                                sentenceRelation.setMethod(SentenceRelationMethod.rulesbelongsToBrand);
+                                                list_result.add(sentenceRelation);
+                                            }
+                                        }
+                                        // }
+                                        //}
+                                        // }
                                         relationTokens = new LinkedList<>();
                                         y = j;
                                         break;
@@ -655,7 +655,7 @@ public class RelationBelongsToBrandExtraction extends AbstractRelationExtraction
         Map<SentenceRelationId, List<SentenceRelationMethod>> relationMap = new HashMap<>();
         //construction de list_result contenant les méthodes appliquées pour la même sentence
         for (SentenceRelation sentence_relation : list_result) {
-         //   System.out.println("sentence_relation:" + sentence_relation);
+            //   System.out.println("sentence_relation:" + sentence_relation);
             if (!relationMap.containsKey(sentence_relation.getSentenceRelationId())) {
                 ArrayList<SentenceRelationMethod> methodlist = new ArrayList<>();
                 methodlist.add(sentence_relation.getMethod());

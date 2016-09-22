@@ -3,7 +3,6 @@ package fr.inria.smilk.ws.relationextraction;
 import com.google.gson.JsonObject;
 import com.hp.hpl.jena.rdf.model.Model;
 import fr.inria.smilk.ws.relationextraction.bean.*;
-import org.apache.commons.lang3.StringUtils;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -30,7 +29,7 @@ import static fr.inria.smilk.ws.relationextraction.ExtractionHelper.*;
  */
 public class RelationBelongsToDivisionExtraction extends AbstractRelationExtraction {
 
-    static HashMap<String,  Set<String>> hmap = new HashMap<String,  Set<String>>();
+    static HashMap<String, Set<String>> hmap = new HashMap<String, Set<String>>();
 
     @Override
     public void annotationData(List<SentenceRelation> list_result) throws IOException {
@@ -71,6 +70,7 @@ public class RelationBelongsToDivisionExtraction extends AbstractRelationExtract
         DocumentBuilder builder = factory.newDocumentBuilder();
         StringBuilder xmlStringBuilder = new StringBuilder();
         xmlStringBuilder.append(input);
+        System.out.println(input);
         ByteArrayInputStream in = new ByteArrayInputStream(xmlStringBuilder.toString().getBytes("UTF-8"));//"UTF-8"
         Document doc = builder.parse(in);
         doc.getDocumentElement().normalize();
@@ -79,12 +79,13 @@ public class RelationBelongsToDivisionExtraction extends AbstractRelationExtract
         JsonObject json = readJsonFromUrl(link);
         //   System.out.println(json.get("query"));
         try {
-            readJson(json,line, nSentenceList);
+            readJson(json, line, nSentenceList);
         } catch (ParseException e) {
             e.printStackTrace();
         }
-        VerifyTypeBasedOnFarhadAproach(line, nSentenceList, "brand", "Division");
-        divisionGroupMap = findByTypes(line, nSentenceList, "brand", "Division");
+        VerifyTypeBasedOnFarhadAproach(line, nSentenceList, "brand", "division");
+        divisionGroupMap = findByTypes(line, nSentenceList, "brand", "division");
+
     }
 
     private void VerifyTypeBasedOnFarhadAproach(String line, NodeList nSentenceList, String firstType, String secondType) {
@@ -95,7 +96,7 @@ public class RelationBelongsToDivisionExtraction extends AbstractRelationExtract
             Node nSentNode = nSentenceList.item(sent_temp);
             StringBuilder builder = new StringBuilder();
             String sentence = line;
-            System.out.println("sentence:" + builder.toString());
+            // System.out.println("sentence:" + builder.toString());
             NodeList nTokensList = nSentNode.getChildNodes();
             //parcourir l'arbre Renco
             for (int token_temp = 0; token_temp < nTokensList.getLength(); token_temp++) {
@@ -109,11 +110,11 @@ public class RelationBelongsToDivisionExtraction extends AbstractRelationExtract
                         Element xElement = (Element) xNode;
 
                         if (!xElement.hasAttribute("type") || xElement.getAttribute("type").equalsIgnoreCase("not_identified")) {
-                            System.out.println("not_type: " + xElement.getAttribute("form") + " type: " + xElement.getAttribute("type"));
+                            //        System.out.println("not_type: " + xElement.getAttribute("form") + " type: " + xElement.getAttribute("type"));
                             Token token = elementToToken(xElement);
                             Spot spot = new Spot();
                             spot = searchSpotByForm(list_spot, token.getForm());
-                            System.out.println("nex Type: " + spot.getSpot() + " type: " + spot.getType());
+                            // System.out.println("nex Type: " + spot.getSpot() + " type: " + spot.getType());
                             xElement.setAttribute("type", spot.getType());
                             token.setLink(spot.getLink());
                             token.setType(spot.getType());
@@ -127,9 +128,7 @@ public class RelationBelongsToDivisionExtraction extends AbstractRelationExtract
     }
 
 
-
-
-    public void readJson(JsonObject json,String line, NodeList nSentenceList) throws ParseException {
+    public void readJson(JsonObject json, String line, NodeList nSentenceList) throws ParseException {
         JSONParser parser = new JSONParser();
         Object obj = parser.parse(String.valueOf(json.get("query")));
         JSONObject pages = (JSONObject) ((JSONObject) obj).get("pages");
@@ -144,11 +143,12 @@ public class RelationBelongsToDivisionExtraction extends AbstractRelationExtract
             content = innerObj.get("*").toString();
         }
         // System.out.println(content);
-        String div = new String();   String brand = new String();
-        String [] sections=content.split("\n=====");
+        String div = new String();
+        String brand = new String();
+        String[] sections = content.split("\n=====");
         for (String section : sections) {
             // System.out.println("section: " + section + "  \n ennnnnnnnnnnnnnnd");
-            if(section.indexOf("Cette division")>=0) {
+            if (section.indexOf("Cette division") >= 0) {
                 if (section.indexOf("=====") >= 0) {
                     div = section.substring(0, section.indexOf("====="));
                     // System.out.println("div: " + div);
@@ -156,14 +156,14 @@ public class RelationBelongsToDivisionExtraction extends AbstractRelationExtract
                 }
                 if (section.indexOf("''''") >= 0) {
                     String Sectionbrand = section.substring(section.indexOf("'''''"));
-                    String [] lines_brands=Sectionbrand.split(",");
-                    for (String lin: lines_brands) {
+                    String[] lines_brands = Sectionbrand.split(",");
+                    for (String lin : lines_brands) {
                         Pattern p_brand = Pattern.compile("'''''(.)*");
                         // Pattern p_brand =Pattern.compile("'''''\\[\\[.*\\]\\]'''''");
                         Matcher m_brand = p_brand.matcher(lin);
                         boolean b_brand = m_brand.find();
                         if (b_brand) {
-                            System.out.println(m_brand.group(0));
+                            //     System.out.println(m_brand.group(0));
 
                             if ((m_brand.group(0).indexOf("'''''[[") >= 0) && (m_brand.group(0).indexOf("]]'''''") >= 0)) {
                                 int index_start_brand = m_brand.group(0).indexOf("'''''[[");
@@ -208,45 +208,45 @@ public class RelationBelongsToDivisionExtraction extends AbstractRelationExtract
             System.out.println("Key: " + key + " Values: " + values);*/
 
 
-            for (int sent_temp = 0; sent_temp < nSentenceList.getLength(); sent_temp++) {
-                Node nSentNode = nSentenceList.item(sent_temp);
-                StringBuilder builder = new StringBuilder();
-                String sentence = line;
-                // System.out.println("sentence:" + builder.toString());
-                NodeList nTokensList = nSentNode.getChildNodes();
-                //parcourir l'arbre Renco
-                for (int token_temp = 0; token_temp < nTokensList.getLength(); token_temp++) {
-                    Node nTokenNode = nTokensList.item(token_temp);
-                    NodeList nList = nTokenNode.getChildNodes();
-                    Node nNode = nList.item(token_temp);
-                    int x = 0, y = 0;
-                    for (int j = 0; j < nList.getLength(); j++) {
-                        Node xNode = nList.item(j);
-                        if (xNode instanceof Element) {
-                            Element xElement = (Element) xNode;
+        for (int sent_temp = 0; sent_temp < nSentenceList.getLength(); sent_temp++) {
+            Node nSentNode = nSentenceList.item(sent_temp);
+            StringBuilder builder = new StringBuilder();
+            String sentence = line;
+            // System.out.println("sentence:" + builder.toString());
+            NodeList nTokensList = nSentNode.getChildNodes();
+            //parcourir l'arbre Renco
+            for (int token_temp = 0; token_temp < nTokensList.getLength(); token_temp++) {
+                Node nTokenNode = nTokensList.item(token_temp);
+                NodeList nList = nTokenNode.getChildNodes();
+                Node nNode = nList.item(token_temp);
+                int x = 0, y = 0;
+                for (int j = 0; j < nList.getLength(); j++) {
+                    Node xNode = nList.item(j);
+                    if (xNode instanceof Element) {
+                        Element xElement = (Element) xNode;
 
-                            if (!xElement.hasAttribute("type") || xElement.getAttribute("type").equalsIgnoreCase("not_identified")) {
-                                //    System.out.println("xElement: "+xElement.getAttribute("form")+ "   "+ xElement.getAttribute("type"));
-                                Set set = hmap.entrySet();
-                                Iterator iteratorhmap = set.iterator();
-                                while (iteratorhmap.hasNext()) {
-                                    Map.Entry mentry = (Map.Entry) iteratorhmap.next();
-                                    Object key = mentry.getKey();
-                                    Set<String> values = (Set<String>) mentry.getValue();
-                                    System.out.println("Key: " + key + " Values: " + values);
-                                    if(key.equals(xElement.getAttribute("form"))){
-                                        // System.out.println("wikipedia: "+key+ "  "+ xElement.getAttribute("form"));
+                        if (!xElement.hasAttribute("type") || xElement.getAttribute("type").equalsIgnoreCase("not_identified")) {
+                            //    System.out.println("xElement: "+xElement.getAttribute("form")+ "   "+ xElement.getAttribute("type"));
+                            Set set = hmap.entrySet();
+                            Iterator iteratorhmap = set.iterator();
+                            while (iteratorhmap.hasNext()) {
+                                Map.Entry mentry = (Map.Entry) iteratorhmap.next();
+                                Object key = mentry.getKey();
+                                String string_key = (String) key;
+                                Set<String> values = (Set<String>) mentry.getValue();
+                                //  System.out.println("Key: " + key + " Values: " + values);
+                                if (string_key.equals(xElement.getAttribute("form"))) {
+                                    // System.out.println("wikipedia: "+key+ "  "+ xElement.getAttribute("form"));
+                                    Token token = elementToToken(xElement);
+                                    xElement.setAttribute("type", "division");
+                                    token.setType("division");
+                                }
+                                for (String value : values) {
+                                    if (value.equals(xElement.getAttribute("form"))) {
+                                        // System.out.println("wikipedia: " + values + "  " + xElement.getAttribute("form"));
                                         Token token = elementToToken(xElement);
-                                        xElement.setAttribute("type", "division");
-                                        token.setType("division");
-                                    }
-                                    for (String value:values) {
-                                        if (value.equals(xElement.getAttribute("form"))) {
-                                            // System.out.println("wikipedia: " + values + "  " + xElement.getAttribute("form"));
-                                            Token token = elementToToken(xElement);
-                                            xElement.setAttribute("type", "brand");
-                                            token.setType("brand");
-                                        }
+                                        xElement.setAttribute("type", "brand");
+                                        token.setType("brand");
                                     }
                                 }
                             }
@@ -254,14 +254,12 @@ public class RelationBelongsToDivisionExtraction extends AbstractRelationExtract
                     }
                 }
             }
-
         }
-
-
+    }
 
 
     private static void addToMap(String div, String brand) {
-        if(!hmap.containsKey(div)){
+        if (!hmap.containsKey(div)) {
             hmap.put(div, new HashSet<String>());
         }
         hmap.get(div).add(brand);
@@ -276,7 +274,7 @@ public class RelationBelongsToDivisionExtraction extends AbstractRelationExtract
             Node nSentNode = nSentenceList.item(sent_temp);
             StringBuilder builder = new StringBuilder();
             String sentence = line;
-            System.out.println("sentence:" + builder.toString());
+            // System.out.println("sentence:" + builder.toString());
             NodeList nTokensList = nSentNode.getChildNodes();
             //parcourir l'arbre Renco
             for (int token_temp = 0; token_temp < nTokensList.getLength(); token_temp++) {
@@ -288,70 +286,67 @@ public class RelationBelongsToDivisionExtraction extends AbstractRelationExtract
                     Node xNode = nList.item(x);
                     if (xNode instanceof Element) {
                         Element xElement = (Element) xNode;
+
                         if (xElement.hasAttribute("type") && !xElement.getAttribute("type").equalsIgnoreCase("not_identified") &&
                                 (xElement.getAttribute("type").equalsIgnoreCase(firstType) ||
                                         xElement.getAttribute("type").equalsIgnoreCase(secondType))) {
-
+                            System.out.println("testxxx: " + xElement.getAttribute("form") + ":" + xElement.getAttribute("type"));
                             Token subjectToken = elementToToken(xElement);
                             Spot spot = searchSpotByForm(list_spot, subjectToken.getForm());
                             subjectToken.setLink(spot.getLink());
                             y = x + 1;
+                            List<String> yElement_list = new ArrayList();
                             LinkedList<Token> relationTokens = new LinkedList<>();
                             for (int j = y; j < nList.getLength(); j++) {
                                 Node yNode = nList.item(j);
                                 if (yNode instanceof Element) {
                                     Element yElement = (Element) yNode;
-                                    if ((!yElement.hasAttribute("type") || StringUtils.isBlank(yElement.getAttribute("type")) || yElement.getAttribute("type").equalsIgnoreCase("not_identified")))
+                                    if (yElement.getAttribute("type").equalsIgnoreCase(firstType)) {
+                                        System.out.println("yElement: " + yElement.getAttribute("form"));
 
-                                    {
+                                        yElement_list.add(yElement.getAttribute("form"));
+                                        System.out.println("list:" + yElement_list);
+                                        for (String element : yElement_list) {
+                                            Token objectToken = elementToToken(yElement);
+                                            spot = searchSpotByForm(list_spot, objectToken.getForm());
+                                            objectToken.setLink(spot.getLink());
+                                            if ((xElement.getAttribute("type").equalsIgnoreCase(firstType) &&
+                                                    yElement.getAttribute("type").equalsIgnoreCase(secondType))) {
+                                                StringBuilder relation = new StringBuilder();
+                                                for (Token t : relationTokens) {
+                                                    relation.append(t.getForm()).append(" ");
+                                                }
+                                                SentenceRelation sentenceRelation = new SentenceRelation();
+                                                SentenceRelationId sentenceRelationId = new SentenceRelationId();
+                                                sentenceRelationId.setSubject(subjectToken);
+                                                sentenceRelationId.setObject(objectToken);
+                                                sentenceRelationId.setRelation(relation.toString());
+                                                sentenceRelationId.setSentence_text(sentence);
+                                                sentenceRelationId.setType(SentenceRelationType.belongsToDivision);
+                                                sentenceRelation.setSentenceRelationId(sentenceRelationId);
+                                                sentenceRelation.setMethod(SentenceRelationMethod.rulesBelongsToDivision);
+                                                list_result.add(sentenceRelation);
+                                            } else if (xElement.getAttribute("type").equalsIgnoreCase(secondType) &&
+                                                    yElement.getAttribute("type").equalsIgnoreCase(firstType)) {
 
-                                        Token relationToken = elementToToken(yElement);
-                                        relationTokens.add(relationToken);
 
-                                    } else {
-                                        Token objectToken = elementToToken(yElement);
-                                        spot = searchSpotByForm(list_spot, objectToken.getForm());
-                                        System.out.println("spooooot: " + spot.getLink());
-                                        objectToken.setLink(spot.getLink());
-                                        if ((xElement.getAttribute("type").equalsIgnoreCase(firstType) &&
-                                                yElement.getAttribute("type").equalsIgnoreCase(secondType))) {
-                                            StringBuilder relation = new StringBuilder();
+                                                StringBuilder relation = new StringBuilder();
+                                                for (Token t : relationTokens) {
+                                                    relation.append(t.getForm()).append(" ");
+                                                }
 
-                                            for (Token t : relationTokens) {
-                                                relation.append(t.getForm()).append(" ");
+                                                SentenceRelation sentenceRelation = new SentenceRelation();
+                                                SentenceRelationId sentenceRelationId = new SentenceRelationId();
+                                                sentenceRelationId.setSubject(objectToken);
+                                                sentenceRelationId.setObject(subjectToken);
+                                                sentenceRelationId.setRelation(relation.toString());
+                                                sentenceRelationId.setSentence_text(sentence);
+                                                sentenceRelationId.setType(SentenceRelationType.belongsToDivision);
+                                                sentenceRelation.setSentenceRelationId(sentenceRelationId);
+                                                sentenceRelation.setMethod(SentenceRelationMethod.rulesBelongsToDivision);
+                                                list_result.add(sentenceRelation);
                                             }
-                                            SentenceRelation sentenceRelation = new SentenceRelation();
-                                            SentenceRelationId sentenceRelationId = new SentenceRelationId();
-                                            sentenceRelationId.setSubject(subjectToken);
-                                            sentenceRelationId.setObject(objectToken);
-                                            sentenceRelationId.setRelation(relation.toString());
-                                            sentenceRelationId.setSentence_text(sentence);
-                                            sentenceRelationId.setType(SentenceRelationType.belongsToDivision);
-                                            sentenceRelation.setSentenceRelationId(sentenceRelationId);
-                                            sentenceRelation.setMethod(SentenceRelationMethod.rulesBelongsToDivision);
-                                            list_result.add(sentenceRelation);
-                                        } else if (xElement.getAttribute("type").equalsIgnoreCase(secondType) &&
-                                                yElement.getAttribute("type").equalsIgnoreCase(firstType)) {
-                                            StringBuilder relation = new StringBuilder();
-
-                                            for (Token t : relationTokens) {
-                                                relation.append(t.getForm()).append(" ");
-                                            }
-
-                                            SentenceRelation sentenceRelation = new SentenceRelation();
-                                            SentenceRelationId sentenceRelationId = new SentenceRelationId();
-                                            sentenceRelationId.setSubject(objectToken);
-                                            sentenceRelationId.setObject(subjectToken);
-                                            sentenceRelationId.setRelation(relation.toString());
-                                            sentenceRelationId.setSentence_text(sentence);
-                                            sentenceRelationId.setType(SentenceRelationType.belongsToDivision);
-                                            sentenceRelation.setSentenceRelationId(sentenceRelationId);
-                                            sentenceRelation.setMethod(SentenceRelationMethod.rulesBelongsToDivision);
-                                            list_result.add(sentenceRelation);
                                         }
-                                        relationTokens = new LinkedList<>();
-                                        y = j;
-                                        break;
                                     }
                                 }
 

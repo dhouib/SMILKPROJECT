@@ -1,0 +1,190 @@
+<http://ns.inria.fr/smilk/elements/1.0/Hydra végétal>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <range> ;
+        <hasText>  <De son côté, Yves Rocher enrichit sa ligne Hydra végétal, avec une eau micellaire hydratante 2 en 1 pour peaux normales à mixtes (200 ml, 4,90 prix de lancement), comprenant, comme les autres références, des sèves végétales d'érable du Canada et d'agave bleu du Mexique.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Yves Rocher> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Yves Rocher>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> .
+<http://ns.inria.fr/smilk/elements/1.0/La Vie est Belle>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <product> ;
+        <hasText>  <Alors qu'il a perdu sa place de premier parfum de la division Luxe de L'Oréal au profit de La Vie est Belle de Lancôme, Amor Amor de Cacharel revient sur le devant de la scène en avril avec une édition Amor Amor In a flash.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://fr.dbpedia.org/page/Lancôme_(cosmétique)> .
+
+<http://fr.dbpedia.org/page/Lancôme_(cosmétique)>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> .
+<http://ns.inria.fr/smilk/elements/1.0/Amor Amor In a flash>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <product> ;
+        <hasText>  <Alors qu'il a perdu sa place de premier parfum de la division Luxe de L'Oréal au profit de La Vie est Belle de Lancôme, Amor Amor de Cacharel revient sur le devant de la scène en avril avec une édition Amor Amor In a flash.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Cacharel> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Cacharel>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> .
+<http://ns.inria.fr/smilk/elements/1.0/Amor Amor>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <product> ;
+        <hasText>  <Alors qu'il a perdu sa place de premier parfum de la division Luxe de L'Oréal au profit de La Vie est Belle de Lancôme, Amor Amor de Cacharel revient sur le devant de la scène en avril avec une édition Amor Amor In a flash.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Cacharel> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Cacharel>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> .
+<http://ns.inria.fr/smilk/elements/1.0/Luxe>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <division> .
+
+<http://fr.dbpedia.org/page/Lancôme_(cosmétique)>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> ;
+        <hasText>  <Alors qu'il a perdu sa place de premier parfum de la division Luxe de L'Oréal au profit de La Vie est Belle de Lancôme, Amor Amor de Cacharel revient sur le devant de la scène en avril avec une édition Amor Amor In a flash.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToDivision>
+                <http://ns.inria.fr/smilk/elements/1.0/Luxe> .
+<http://ns.inria.fr/smilk/elements/1.0/Luxe>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <division> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Cacharel>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> ;
+        <hasText>  <Alors qu'il a perdu sa place de premier parfum de la division Luxe de L'Oréal au profit de La Vie est Belle de Lancôme, Amor Amor de Cacharel revient sur le devant de la scène en avril avec une édition Amor Amor In a flash.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToDivision>
+                <http://ns.inria.fr/smilk/elements/1.0/Luxe> .
+<http://ns.inria.fr/smilk/elements/1.0/L'Oréal>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <group> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Luxe>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <division> ;
+        <hasText>  <Alors qu'il a perdu sa place de premier parfum de la division Luxe de L'Oréal au profit de La Vie est Belle de Lancôme, Amor Amor de Cacharel revient sur le devant de la scène en avril avec une édition Amor Amor In a flash.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToGroup>
+                <http://ns.inria.fr/smilk/elements/1.0/L'Oréal> .
+<http://ns.inria.fr/smilk/elements/1.0/La Vie est Belle>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <product> ;
+        <hasText>  <Alors qu'il a perdu sa place de premier parfum de la division Luxe de L'Oréal au profit de La Vie est Belle de Lancôme, Amor Amor de Cacharel revient sur le devant de la scène en avril avec une édition Amor Amor In a flash.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://fr.dbpedia.org/page/Lancôme_(cosmétique)> .
+
+<http://fr.dbpedia.org/page/Lancôme_(cosmétique)>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> .
+<http://ns.inria.fr/smilk/elements/1.0/Amor Amor>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <product> ;
+        <hasText>  <Alors qu'il a perdu sa place de premier parfum de la division Luxe de L'Oréal au profit de La Vie est Belle de Lancôme, Amor Amor de Cacharel revient sur le devant de la scène en avril avec une édition Amor Amor In a flash.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Cacharel> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Cacharel>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> .
+<http://ns.inria.fr/smilk/elements/1.0/Amor Amor In a flash>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <product> ;
+        <hasText>  <Alors qu'il a perdu sa place de premier parfum de la division Luxe de L'Oréal au profit de La Vie est Belle de Lancôme, Amor Amor de Cacharel revient sur le devant de la scène en avril avec une édition Amor Amor In a flash.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Cacharel> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Cacharel>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> .
+<http://ns.inria.fr/smilk/elements/1.0/Luxe>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <division> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Cacharel>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> ;
+        <hasText>  <Alors qu'il a perdu sa place de premier parfum de la division Luxe de L'Oréal au profit de La Vie est Belle de Lancôme, Amor Amor de Cacharel revient sur le devant de la scène en avril avec une édition Amor Amor In a flash.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToDivision>
+                <http://ns.inria.fr/smilk/elements/1.0/Luxe> .
+<http://ns.inria.fr/smilk/elements/1.0/Luxe>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <division> .
+
+<http://fr.dbpedia.org/page/Lancôme_(cosmétique)>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> ;
+        <hasText>  <Alors qu'il a perdu sa place de premier parfum de la division Luxe de L'Oréal au profit de La Vie est Belle de Lancôme, Amor Amor de Cacharel revient sur le devant de la scène en avril avec une édition Amor Amor In a flash.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToDivision>
+                <http://ns.inria.fr/smilk/elements/1.0/Luxe> .
+<http://ns.inria.fr/smilk/elements/1.0/L'Oréal>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <group> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Luxe>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <division> ;
+        <hasText>  <Alors qu'il a perdu sa place de premier parfum de la division Luxe de L'Oréal au profit de La Vie est Belle de Lancôme, Amor Amor de Cacharel revient sur le devant de la scène en avril avec une édition Amor Amor In a flash.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToGroup>
+                <http://ns.inria.fr/smilk/elements/1.0/L'Oréal> .
+<http://ns.inria.fr/smilk/elements/1.0/Amor Amor>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <product> ;
+        <hasText>  <Alors qu'il a perdu sa place de premier parfum de la division Luxe de L'Oréal au profit de La Vie est Belle de Lancôme, Amor Amor de Cacharel revient sur le devant de la scène en avril avec une édition Amor Amor In a flash.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Cacharel> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Cacharel>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> .
+<http://ns.inria.fr/smilk/elements/1.0/La Vie est Belle>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <product> ;
+        <hasText>  <Alors qu'il a perdu sa place de premier parfum de la division Luxe de L'Oréal au profit de La Vie est Belle de Lancôme, Amor Amor de Cacharel revient sur le devant de la scène en avril avec une édition Amor Amor In a flash.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://fr.dbpedia.org/page/Lancôme_(cosmétique)> .
+
+<http://fr.dbpedia.org/page/Lancôme_(cosmétique)>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> .
+<http://ns.inria.fr/smilk/elements/1.0/Amor Amor In a flash>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <product> ;
+        <hasText>  <Alors qu'il a perdu sa place de premier parfum de la division Luxe de L'Oréal au profit de La Vie est Belle de Lancôme, Amor Amor de Cacharel revient sur le devant de la scène en avril avec une édition Amor Amor In a flash.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToBrand>
+                <http://ns.inria.fr/smilk/elements/1.0/Cacharel> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Cacharel>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> .
+<http://ns.inria.fr/smilk/elements/1.0/Luxe>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <division> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Cacharel>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> ;
+        <hasText>  <Alors qu'il a perdu sa place de premier parfum de la division Luxe de L'Oréal au profit de La Vie est Belle de Lancôme, Amor Amor de Cacharel revient sur le devant de la scène en avril avec une édition Amor Amor In a flash.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToDivision>
+                <http://ns.inria.fr/smilk/elements/1.0/Luxe> .
+<http://ns.inria.fr/smilk/elements/1.0/Luxe>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <division> .
+
+<http://fr.dbpedia.org/page/Lancôme_(cosmétique)>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <brand> ;
+        <hasText>  <Alors qu'il a perdu sa place de premier parfum de la division Luxe de L'Oréal au profit de La Vie est Belle de Lancôme, Amor Amor de Cacharel revient sur le devant de la scène en avril avec une édition Amor Amor In a flash.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToDivision>
+                <http://ns.inria.fr/smilk/elements/1.0/Luxe> .
+<http://ns.inria.fr/smilk/elements/1.0/L'Oréal>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <group> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Luxe>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <division> ;
+        <hasText>  <Alors qu'il a perdu sa place de premier parfum de la division Luxe de L'Oréal au profit de La Vie est Belle de Lancôme, Amor Amor de Cacharel revient sur le devant de la scène en avril avec une édition Amor Amor In a flash.> ;
+        <http://ns.inria.fr/smilk/elements/1.0/belongsToGroup>
+                <http://ns.inria.fr/smilk/elements/1.0/L'Oréal> .

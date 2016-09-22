@@ -21,9 +21,8 @@ import static fr.inria.smilk.ws.relationextraction.ExtractionHelper.*;
 /**
  * Created by dhouib on 04/07/2016.
  */
+
 public class RelationBelongsToGroupExtraction extends AbstractRelationExtraction {
-
-
     @Override
     public void annotationData(List<SentenceRelation> list_result) throws IOException {
         // on construit un map (SentenceRelationId,List<SentenceRelationMethod>)
@@ -55,8 +54,6 @@ public class RelationBelongsToGroupExtraction extends AbstractRelationExtraction
     public void processExtraction(String line) throws Exception {
         Renco renco = new Renco();
         rulesBelongsToGroup(line, renco.rencoByWebService(line));
-
-
     }
 
     //recherche de la relation belongsToGroup
@@ -99,8 +96,6 @@ public class RelationBelongsToGroupExtraction extends AbstractRelationExtraction
                             System.out.println("not_type: " + xElement.getAttribute("form") + " type: " + xElement.getAttribute("type"));
                             Token token = elementToToken(xElement);
                             Spot spot = new Spot();
-
-
                             spot = searchSpotByForm(list_spot, token.getForm());
                             System.out.println("nex Type: " + spot.getSpot() + " type: " + spot.getType());
                             xElement.setAttribute("type", spot.getType());
@@ -112,7 +107,6 @@ public class RelationBelongsToGroupExtraction extends AbstractRelationExtraction
                 }
             }
         }
-        // productBrandMap = findByTypes(line,nSentenceList,"product","brand");
     }
 
     //recherche de la relation en se basant sur la règle belongsToBrand=product->brand
@@ -148,8 +142,7 @@ public class RelationBelongsToGroupExtraction extends AbstractRelationExtraction
                                 Node yNode = nList.item(j);
                                 if (yNode instanceof Element) {
                                     Element yElement = (Element) yNode;
-                                    if ((!yElement.hasAttribute("type") || StringUtils.isBlank(yElement.getAttribute("type")) || yElement.getAttribute("type").equalsIgnoreCase("not_identified")))
-                                    {
+                                    if ((!yElement.hasAttribute("type") || StringUtils.isBlank(yElement.getAttribute("type")) || yElement.getAttribute("type").equalsIgnoreCase("not_identified"))) {
                                         Token relationToken = elementToToken(yElement);
                                         relationTokens.add(relationToken);
 
