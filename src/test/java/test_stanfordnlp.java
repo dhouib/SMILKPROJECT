@@ -26,20 +26,38 @@ import edu.stanford.nlp.trees.GrammaticalRelation;
 import edu.stanford.nlp.trees.Tree;
 import edu.stanford.nlp.trees.TreeCoreAnnotations.TreeAnnotation;
 import edu.stanford.nlp.util.CoreMap;
+import edu.stanford.nlp.util.PropertiesUtils;
+
 /**
  * Created by dhouib on 08/08/2016.
+ *http://stanfordnlp.github.io/CoreNLP/api.html
+ * https://mailman.stanford.edu/pipermail/java-nlp-user/2016-May/007588.html
+ * http://stackoverflow.com/questions/36634101/dependency-parsing-for-french-with-corenlp
  */
 public class test_stanfordnlp {
 
     public static void main(String[] args) throws IOException {
         // creates a StanfordCoreNLP object, with POS tagging, lemmatization, NER, parsing, and preprocessing.coreference resolution
-        Properties props = new Properties();
-        props.put("annotators", "tokenize, ssplit, pos, lemma, ner, parse, dcoref");
-        StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
+        /*Properties props = new Properties();
+        props.put("annotators", "tokenize, ssplit, pos, lemma, ner, parse, depparse");
+        StanfordCoreNLP pipeline = new StanfordCoreNLP(props);*/
+
+        StanfordCoreNLP pipeline = new StanfordCoreNLP(
+                PropertiesUtils.asProperties(
+                        "annotators", "tokenize, ssplit, pos, depparse, parse, lemma",
+                        "tokenize.language", "fr",
+                        //"ssplit.isOneSentence", "true",
+                        "pos.model","edu/stanford/nlp/models/pos-tagger/french/french.tagger",
+                        "parse.model", "edu/stanford/nlp/models/lexparser/frenchFactored.ser.gz",
+                        "depparse.model","edu/stanford/nlp/models/parser/nndep/UD_French.gz"));
 
         // read some text from the file..
-        File inputFile = new File("src/test/resources/sample-content.txt");
-        String text = "Un enfant mange une pomme"    ;
+       // File inputFile = new File("src/test/resources/sample-content.txt");
+       /* String text = "Les chats mangent la souris. Des chats mangent des souries. Le chat mange des grandes souries. L'enfant mange la pomme verte." +
+                "Un enfant mange une pomme."    ;*/
+        String text="La ligne s'anime également en mai avec une édition limitée Summer, rafraîchie d'ananas, création d'Ann Filpo et Catlos Benam." +
+                "La jeune femme incarnera Manifesto, le nouveau parfum féminin d la griffe, qui sort à la rentrée, construit autour du jasmin et de la vanille." +
+                "Prodigy Night repose sur la Bio-Sève Moléculaire, actif vedette de la gamme Prodigy.";
         // create an empty Annotation just with the given text
         Annotation document = new Annotation(text);
 
@@ -61,20 +79,24 @@ public class test_stanfordnlp {
                 // this is the NER label of the token
                 String ne = token.get(NamedEntityTagAnnotation.class);
 
+
+
                 System.out.println("word: " + word + " pos: " + pos + " ne:" + ne);
             }
 
             // this is the parse tree of the current sentence
             Tree tree = sentence.get(TreeAnnotation.class);
             System.out.println("parse tree:\n" + tree);
-         //   System.out.println("first child:\n" + tree.parent());
+            ///System.out.println("first child:\n" + tree.parent());
 
 
             // this is the Stanford dependency graph of the current sentence
             SemanticGraph dependencies = sentence.get(CollapsedCCProcessedDependenciesAnnotation.class);
             System.out.println("dependency graph:\n" + dependencies);
             IndexedWord firstRoot = dependencies.getFirstRoot();
-            System.out.println("firstRoot: "+ firstRoot);
+           // if (firstRoot.lemma().contains("animer")) {
+                System.out.println("firstRoot: " + firstRoot);
+           // }
             List<SemanticGraphEdge> incomingEdgesSorted =
                     dependencies.getIncomingEdgesSorted(firstRoot);
 
@@ -102,14 +124,6 @@ public class test_stanfordnlp {
                 System.out.println("Relation=" + relation);
             }
         }
-
-
-        // This is the preprocessing.coreference link graph
-        // Each chain stores a set of mentions that link to each other,
-        // along with a method for getting the most representative mention
-        // Both sentence and token offsets start at 1!
-        Map<Integer, CorefChain> graph =
-                document.get(CorefChainAnnotation.class);
 
     }
 

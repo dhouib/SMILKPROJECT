@@ -5,6 +5,7 @@ import com.google.gson.JsonParser;
 import com.hp.hpl.jena.query.*;
 import com.hp.hpl.jena.rdf.model.*;
 import fr.inria.smilk.ws.relationextraction.bean.SentenceRelationId;
+import fr.inria.smilk.ws.relationextraction.bean.SentenceRelationMethod;
 import fr.inria.smilk.ws.relationextraction.bean.Spot;
 import fr.inria.smilk.ws.relationextraction.bean.Token;
 import org.apache.commons.lang3.StringUtils;
@@ -47,12 +48,25 @@ public class ExtractionHelper {
         Property belongs_to_group = model.createProperty(smilkprefix + sentenceRelationId.getType().name());
         Property rdfs_type = model.createProperty(rdfsprefix + "a");
         Property hasText = model.createProperty("hasText");
-        Resource type_subject = model.createResource(sentenceRelationId.getSubject().getType());
-        Resource type_object = model.createResource(sentenceRelationId.getObject().getType());
+        Property hasConfidence = model.createProperty("hasConfidence");
+        Property hasRules=model.createProperty("hasRules");
+        Resource type_subject = model.createResource("http://provoc/Product");
+        Resource type_object = null;
+        if(sentenceRelationId.getType().name().equalsIgnoreCase("hasComponent")) {
+             type_object = model.createResource("http://provoc/Component");
+        }
+        if(sentenceRelationId.getType().name().equalsIgnoreCase("hasFragranceCreator")) {
+            type_object = model.createResource("http://provoc/FragrranceCreator");
+        }
+        if(sentenceRelationId.getType().name().equalsIgnoreCase("hasAmbasador")) {
+            type_object = model.createResource("http://provoc/Ambassador");
+        }
         Resource text_sources = model.createResource(sentenceRelationId.getSentence_text());
-        model.add(subject, rdfs_type, type_subject).add(subject, belongs_to_group, object).add(subject, hasText, text_sources);
+        Resource  rules_sources = model.createResource(sentenceRelationId.getRelation());
+        Resource confidence=model.createResource(String.valueOf(sentenceRelationId.getConfidence()));
+        model.add(subject, rdfs_type, type_subject).add(subject, belongs_to_group, object).add(subject, hasText, text_sources).add(subject,hasRules,rules_sources).add(subject,hasConfidence,confidence);
         model.add(object, rdfs_type, type_object);
-        //   model.write(System.out, "N-TRIPLE");
+          model.write(System.out, "N-TRIPLE");
         return model;
     }
 

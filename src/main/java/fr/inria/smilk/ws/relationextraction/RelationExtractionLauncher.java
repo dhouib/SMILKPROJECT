@@ -11,30 +11,34 @@ import java.util.List;
 public class RelationExtractionLauncher {
     public static void main(String[] args) throws Exception {
         initRdfFile();
-        String folder = "C:/Users/dhouib/Desktop/SMILK_project_devpt/RelationExtractionSMILK/src/resources/input/test/";
-        File folder1 = new File("C:/Users/dhouib/Desktop/SMILK_project_devpt/RelationExtractionSMILK/src/resources/input/test/");
+        String folder = "C:/Users/dhouib/Desktop/SMILK_project_devpt/RelationExtractionSMILK/src/resources/input/test";
+        File folder1 = new File("C:/Users/dhouib/Desktop/SMILK_project_devpt/RelationExtractionSMILK/src/resources/input/test");
 
-        RelationBelongsToBrandExtraction relationBelongsToBrandExtraction = new RelationBelongsToBrandExtraction();
-        RelationBelongsToDivisionExtraction relationBelongsToDivisionExtraction = new RelationBelongsToDivisionExtraction();
-        RelationBelongsToGroupExtraction relationBelongsToGroupExtraction = new RelationBelongsToGroupExtraction();
-        RelationHasComponentExtraction relationHasComponentExtraction = new RelationHasComponentExtraction();
+        //RelationBelongsToBrandExtraction relationBelongsToBrandExtraction = new RelationBelongsToBrandExtraction();
+        //RelationBelongsToDivisionExtraction relationBelongsToDivisionExtraction = new RelationBelongsToDivisionExtraction();
+        //RelationBelongsToGroupExtraction relationBelongsToGroupExtraction = new RelationBelongsToGroupExtraction();
+        //RelationHasComponentExtraction relationHasComponentExtraction = new RelationHasComponentExtraction();
+        TalismaneAPITestV5_without_holmes relationHasComponentExtractionStanford = new TalismaneAPITestV5_without_holmes();
 
-        relationBelongsToBrandExtraction.init();
-        relationBelongsToDivisionExtraction.init();
-        relationBelongsToGroupExtraction.init();
-        relationHasComponentExtraction.init();
+        //relationBelongsToBrandExtraction.init();
+        //relationBelongsToDivisionExtraction.init();
+        //relationBelongsToGroupExtraction.init();
+        //relationHasComponentExtraction.init();
+        relationHasComponentExtractionStanford.init();
 
         List<String> lines = AbstractRelationExtraction.readCorpus(folder, folder1);
         for (String line : lines) {
-            relationBelongsToBrandExtraction.processExtraction(line);
+            /*relationBelongsToBrandExtraction.processExtraction(line);
             relationBelongsToDivisionExtraction.processExtraction(line);
             relationBelongsToGroupExtraction.processExtraction(line);
-            relationHasComponentExtraction.processExtraction(line);
+            relationHasComponentExtraction.processExtraction(line);*/
+            relationHasComponentExtractionStanford.processExtraction(line);
         }
-        relationBelongsToBrandExtraction.processGlobal();
+        /*relationBelongsToBrandExtraction.processGlobal();
         relationBelongsToDivisionExtraction.processGlobal();
         relationBelongsToGroupExtraction.processGlobal();
-        relationHasComponentExtraction.processGlobal();
+        relationHasComponentExtraction.processGlobal();*/
+        relationHasComponentExtractionStanford.processGlobal();
 
         AbstractRelationExtraction.constructSentence(lines);
     }

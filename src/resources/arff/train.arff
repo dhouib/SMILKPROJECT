@@ -1,0 +1,12 @@
+@relation train 
+ @attribute Text string 
+ @attribute class-hasComponent {0,1}
+ 'créer par Pierre Negrin (firmenich) Amor_Amor_In_a_flash être un oriental gourmand caractériser par un coeur de vanille, caramel et pomme deamour sucrer.',?
+@relation train 
+ @attribute Text string 
+ @attribute class-hasComponent {0,1}
+ 'Jessica_Chastain incerna Manifesto, le nouveau parfum féminin de la griffe, qui sortir à la rentrée, construire autour du jasmin et de la vanille.',?
+@relation train 
+ @attribute Text string 
+ @attribute class-hasComponent {0,1}
+ 'créer par Pierre Negrin (firmenich) Amor_Amor_In_a_flash être un oriental gourmand caractériser par un coeur de vanille, caramel et pomme deamour sucrer.',?

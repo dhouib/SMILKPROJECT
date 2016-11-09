@@ -1,0 +1,4 @@
+ @relation train 
+ @attribute Text string 
+ @attribute class-hasComponent {0,1}
+ 'créer par Pierre Negrin (firmenich) Amor_Amor_In_a_flash être un oriental gourmand caractériser par un coeur de vanille, caramel et pomme deamour sucrer.',?

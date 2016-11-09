@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.joliciel.talismane:talismane-utils:3.0.0b">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/joliciel/talismane/talismane-utils/3.0.0b/talismane-utils-3.0.0b.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/joliciel/talismane/talismane-utils/3.0.0b/talismane-utils-3.0.0b-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/joliciel/talismane/talismane-utils/3.0.0b/talismane-utils-3.0.0b-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -13,6 +13,16 @@ public class SentenceRelationId {
 
     private SentenceRelationType type;
 
+    private double confidence;
+
+    public double getConfidence() {
+        return confidence;
+    }
+
+    public void setConfidence(double confidence) {
+        this.confidence = confidence;
+    }
+
     public String getSentence_text() {
         return sentence_text;
     }
@@ -57,7 +67,7 @@ public class SentenceRelationId {
 
 
     public String toString() {
-        return "Subject:" + subject.getForm() + ",Object:" + object.getForm() + ",relation:" + relation + ",type:" + type + "\nsentenceText:" + sentence_text;
+        return "Subject:" + subject.getForm() + ",Object:" + object.getForm() + ",relation:" + relation + ",type:" + type + "\nsentenceText:" + sentence_text + ",confidence:"+confidence;
     }
 
     @Override
@@ -67,7 +77,7 @@ public class SentenceRelationId {
 
         SentenceRelationId that = (SentenceRelationId) o;
 
-        if (!object.equals(that.object)) return false;
+        if (!object.getForm().equals(that.object.getForm())) return false;
         if (!relation.equals(that.relation)) return false;
         if (!subject.equals(that.subject)) return false;
         if (type != that.type) return false;

@@ -1,0 +1,27 @@
+1	Créé	créer	VPP	VPP	n=s|g=m|t=K|	10	dep	10	dep
+2	par	par	P	P		1	p_obj	1	p_obj
+3	Pierre	pierre	NC	NC	n=s|g=f|	2	prep	2	prep
+4	Negrin	_	NPP	NPP	_	3	mod	3	mod
+5	(	(	PONCT	PONCT		4	ponct	4	ponct
+6	Firmenich	_	NPP	NPP	_	4	mod	4	mod
+7	)	)	PONCT	PONCT		6	ponct	6	ponct
+8	,	,	PONCT	PONCT		6	ponct	6	ponct
+9	Amor_Amor_In_a_flash	_	NPP	NPP	_	10	suj	10	suj
+10	est	être	V	V	n=s|t=P|p=3|	0	root	0	root
+11	un	un	DET	DET	n=s|g=m|	13	det	13	det
+12	oriental	oriental	ADJ	ADJ	n=s|g=m|	13	mod	13	mod
+13	gourmand	gourmand	NC	NC	n=s|g=f|	10	ats	10	ats
+14	caractérisé	caractériser	VPP	VPP	n=s|g=m|t=K|	13	mod	13	mod
+15	par	par	P	P		14	p_obj	14	p_obj
+16	un	un	DET	DET	n=s|g=m|	17	det	17	det
+17	coeur	coeur	NC	NC	n=s|g=m|	15	prep	15	prep
+18	de	de	P	P		17	dep	17	dep
+19	vanille	vanille	NC	NC	n=s|g=f|	18	prep	18	prep
+20	,	,	PONCT	PONCT		19	ponct	19	ponct
+21	caramel	caramel	NC	NC	n=s|g=m|	17	mod	17	mod
+22	et	et	CC	CC		21	coord	21	coord
+23	pomme	pomme	NC	NC	n=s|g=f|	22	dep_coord	22	dep_coord
+24	d'	de	P	P		23	dep	23	dep
+25	amour	amour	NC	NC	n=s|g=m|	24	prep	24	prep
+26	sucrée	sucrer	ADJ	ADJ	n=s|g=f|t=K|	25	mod	25	mod
+27	.	.	PONCT	PONCT		26	ponct	26	ponct

@@ -14,6 +14,7 @@ public enum SentenceRelationMethod {
     dbpedia_component,
     dbpedia_parfum_component,
     dbpedia_cible,
-    dbpedia;
+    dbpedia,
+    rules;
 
 }
