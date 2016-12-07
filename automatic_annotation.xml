@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Sentences>
+  <sentence id="s1">
+    <text>Elaboré à partir de caféine et de Skinfibrine, Taille de Rêve (125 ml, 13,90€) se présente sous forme d'un gel-crème.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>_:s1</subject>
+        <predicate>hasComponent</predicate>
+        <object>Skinfibrine</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s1">
+    <text>Elaboré à partir de caféine et de Skinfibrine, Taille de Rêve (125 ml, 13,90€) se présente sous forme d'un gel-crème.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>_:s1</subject>
+        <predicate>hasComponent</predicate>
+        <object>caféine</object>
+      </Relation>
+    </Relations>
+  </sentence>
+</Sentences>
+

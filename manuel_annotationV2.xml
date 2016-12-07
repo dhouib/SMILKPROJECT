@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Sentences>
+    <sentence id="s9">
+        <text>En 2012, François Demachy crée Eau Sauvage Parfum, le nouveau chapitre d’une histoire légendaire.</text>
+        <Relations>
+            <Relation id="r1">
+                <subject>Eau Sauvage Parfum</subject>
+                <predicate>hasFragranceCreator</predicate>
+                <object>François Demachy</object>
+            </Relation>
+        </Relations>
+    </sentence>
+
+  <sentence id="s9">
+    <text>En 2012, François Demachy crée Eau Sauvage Parfum, le nouveau chapitre d’une histoire légendaire.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Eau Sauvage Parfum</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>François Demachy</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s10">
+    <text>En 2012, Olivier Polge participe à la création de SpiceBomb de Viktor &amp; Rolf, de La vie est belle de Lancôme, et de Repetto pour la marque éponyme en 2013.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>SpiceBomb</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>test</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s11">
+    <text>En 2012, Olivier Polge participe à la création de SpiceBomb de Viktor &amp; Rolf, de La vie est belle de Lancôme, et de Repetto pour la marque éponyme en 2013.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Repetto</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>test</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s12">
+    <text>L’Eau du Caporal est un parfum qui a été créée en 1985 par Jacques Fraysse, « inspiré par la simple perfection de la nature » selon le dossier de presse.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Caporal</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>par Jacques Fraysse</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s13">
+    <text>Angéliques Sous La Pluie de Frederic Malle est un parfum Boisé Floral Musqué pour homme et femme.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Angéliques Sous La Pluie</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Frederic Malle</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s15">
+    <text>C'est à la parfumeuse Calice Becker que l'on doit l’Eau de Parfum J’Adore de Dior.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Eau de Parfum J'Adore</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Calice Becker</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s16">
+    <text>Elaboré en 1925, par Jacques Guerlain, Shalimar est le premier grand parfum de la famille oriental.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Shalimar</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Jacques Guerlain</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s17">
+    <text>Après Paris et Eternity, Sophia Grosjman fut consacrée “reine des roses” avec le succès international de Trésor.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Paris</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Sophia Grosjman</object>
+      </Relation>
+      <Relation id="r2">
+            <subject>Eternity</subject>
+            <predicate>hasFragranceCreator</predicate>
+            <object>Sophia Grosjman</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s19">
+    <text>Pure Poison a été créé par Carlos Benaim, Dominique Ropion et Olivier Polge.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Pure Poison</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Carlos Benaim</object>
+      </Relation>
+      <Relation id="r2">
+            <subject>Pure Poison</subject>
+            <predicate>hasFragranceCreator</predicate>
+            <object>Dominique Ropion</object>
+      </Relation>
+      <Relation id="r3">
+            <subject>Pure Poison</subject>
+            <predicate>hasFragranceCreator</predicate>
+            <object>Olivier Polge</object>
+       </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s20">
+    <text>Allure Homme est un parfum masculin de Chanel, créé par Jacques Polge et sorti en 1999.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Allure Homme</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Jacques Polge</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s21">
+    <text>Hermessence signée par Jean-Claude Ellena, comme un hommage au très stylisé Diorissimo, on est vite surpris par le naturalisme frappant de ce muguet, et c’est tant mieux.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Hermessence</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Jean-Claude Ellena</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s22">
+    <text>C'est par le nez de Véronique Nyberg que le parfum pour homme Invictus de Paco Rabanne a vu le jour, et par le coup de crayon du designer Cédric Ragot que le flacon a pris forme.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Invictus</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Véronique Nyberg </object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s23">
+    <text>Le parfum Si a été créé par Christine Nagel, parfumeur chez Mane fils, en totale concordance avec les gouts de Monsieur Armani.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Si</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Christine Nagel</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s24">
+    <text>En 1956, son fils Jean-Paul Guerlain crée "Vétiver", le premier parfum masculin de la maison.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Vétiver</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Jean-Paul Guerlain</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s25">
+    <text>Eau sauvage est un parfum des Parfums Christian Dior, créé par le « nez » Edmond Roudnitska en 1966.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Eau sauvage</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Edmond Roudnitska</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s26">
+    <text>Créée par François Demachy, Parfumeur-Créateur Dior, l'Eau de Parfum Diorissimo est une nouvelle expression de l'Eau de Toilette originale Diorissimo, plus riche, plus profonde, plus intense, avec une note de cœur florale plus jasminée.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Eau de Parfum Diorissimo</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>François Demachy</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s29">
+    <text>Décrit comme « un parfum à l’architecture moderne » par Edmond Roudnitska , Diorissimo est né de l’envie de son créateur de créer une parfumerie « simplifiée, concentrée ».</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Diorissimo</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Edmond Roudnitska</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s30">
+    <text>No 22 est un parfum de Chanel créé en 1922 par Ernest Beaux pour Coco Chanel.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>No 22</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Ernest Beaux</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s31">
+    <text>"Soir de Paris" de Bourjois a été créé dès 1863 par le célèbre parfumeur Ernest Beaux.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Soir de Paris</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Ernest Beaux</object>
+      </Relation>
+    </Relations>
+  </sentence>
+</Sentences>
+

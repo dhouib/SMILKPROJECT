@@ -18,13 +18,19 @@ public class RelationExtractionLauncher {
         //RelationBelongsToDivisionExtraction relationBelongsToDivisionExtraction = new RelationBelongsToDivisionExtraction();
         //RelationBelongsToGroupExtraction relationBelongsToGroupExtraction = new RelationBelongsToGroupExtraction();
         //RelationHasComponentExtraction relationHasComponentExtraction = new RelationHasComponentExtraction();
-        TalismaneAPITestV5_without_holmes relationHasComponentExtractionStanford = new TalismaneAPITestV5_without_holmes();
+        TalismaneAPITestV5_with_holmes_V3_hasFragranceCreator relationHasFragranceCreator = new TalismaneAPITestV5_with_holmes_V3_hasFragranceCreator();
+        TalismaneAPITestV5_with_holmes_V3_hasAmbassador relationHasAmbassador = new TalismaneAPITestV5_with_holmes_V3_hasAmbassador();
+       //TalismaneAPITestV5_with_holmes_V3_hasComponent relationHasComponent= new TalismaneAPITestV5_with_holmes_V3_hasComponent();
+       hasComponent_with_ingredient relationComponent=new hasComponent_with_ingredient();
 
         //relationBelongsToBrandExtraction.init();
         //relationBelongsToDivisionExtraction.init();
         //relationBelongsToGroupExtraction.init();
         //relationHasComponentExtraction.init();
-        relationHasComponentExtractionStanford.init();
+      relationHasFragranceCreator.init();
+        relationHasAmbassador.init();
+      //relationHasComponent.init();
+        relationComponent.init();
 
         List<String> lines = AbstractRelationExtraction.readCorpus(folder, folder1);
         for (String line : lines) {
@@ -32,13 +38,19 @@ public class RelationExtractionLauncher {
             relationBelongsToDivisionExtraction.processExtraction(line);
             relationBelongsToGroupExtraction.processExtraction(line);
             relationHasComponentExtraction.processExtraction(line);*/
-            relationHasComponentExtractionStanford.processExtraction(line);
+          relationHasFragranceCreator.processExtraction(line);
+            relationHasAmbassador.processExtraction(line);
+           // relationHasComponent.processExtraction(line);
+            relationComponent.processExtraction(line);
         }
         /*relationBelongsToBrandExtraction.processGlobal();
         relationBelongsToDivisionExtraction.processGlobal();
         relationBelongsToGroupExtraction.processGlobal();
         relationHasComponentExtraction.processGlobal();*/
-        relationHasComponentExtractionStanford.processGlobal();
+      relationHasFragranceCreator.processGlobal();
+       relationHasAmbassador.processGlobal();
+      // relationHasComponent.processGlobal();
+        relationComponent.processGlobal();
 
         AbstractRelationExtraction.constructSentence(lines);
     }

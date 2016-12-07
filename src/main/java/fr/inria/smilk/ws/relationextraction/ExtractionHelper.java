@@ -4,11 +4,9 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import com.hp.hpl.jena.query.*;
 import com.hp.hpl.jena.rdf.model.*;
-import fr.inria.smilk.ws.relationextraction.bean.SentenceRelationId;
-import fr.inria.smilk.ws.relationextraction.bean.SentenceRelationMethod;
-import fr.inria.smilk.ws.relationextraction.bean.Spot;
-import fr.inria.smilk.ws.relationextraction.bean.Token;
+import fr.inria.smilk.ws.relationextraction.bean.*;
 import org.apache.commons.lang3.StringUtils;
+import org.jdom.Document;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -20,23 +18,41 @@ import java.io.*;
 import java.net.URL;
 import java.nio.charset.Charset;
 import java.util.*;
-
+import java.io.*;
+import org.jdom.*;
+import org.jdom.Document;
+import org.jdom.output.*;
 /**
  * Created by dhouib on 03/07/2016.
  */
 public class ExtractionHelper {
-
+    static org.jdom.Element racine = new org.jdom.Element("Sentences");
+    static Document document = new Document(racine);
     //construct the RDF Model
     public static Model constructModel(SentenceRelationId sentenceRelationId) {
         Model model = ModelFactory.createDefaultModel();
         String smilkprefix = "http://ns.inria.fr/smilk/elements/1.0/";
         String rdfsprefix = "http://www.w3.org/2000/01/rdf-schema#";
-        Resource subject, object;
-        //subject = model.createResource(smilkprefix + sentenceRelationId.getSubject().getForm());
+        String schemaprefix="http://www.w3.org/2001/XMLSchema/";
+        Resource subject, object, sentence;
+        String id_sentence="T0";
+        String newVersionSentence = "T" + (Integer.parseInt(id_sentence.substring(1,id_sentence.length()))+1);
+        sentence=model.createResource(smilkprefix+newVersionSentence);
+        id_sentence=newVersionSentence;
+        subject = model.createResource(smilkprefix + sentenceRelationId.getSubject().getForm());
         System.out.println("RDF: " + sentenceRelationId.getSubject().getForm() + "link: " + sentenceRelationId.getSubject().getLink());
+        if((sentenceRelationId.getSubject().getForm()==null)||(sentenceRelationId.getSubject().getForm()=="null"))
+        {
+            String id_blank_node="s0";
+            String newVersion = "s" + (Integer.parseInt(id_blank_node.substring(1,id_blank_node.length()))+1);
+            subject=model.createResource("_:"+newVersion);
+            id_blank_node=newVersion;
+        }
+        else
         if ((sentenceRelationId.getSubject().getLink() == null) || (sentenceRelationId.getSubject().getLink() == "null")) {
             subject = model.createResource(smilkprefix + sentenceRelationId.getSubject().getForm());
-        } else {
+           }
+         else {
             subject = model.createResource(sentenceRelationId.getSubject().getLink());
         }
 
@@ -47,27 +63,92 @@ public class ExtractionHelper {
         }
         Property belongs_to_group = model.createProperty(smilkprefix + sentenceRelationId.getType().name());
         Property rdfs_type = model.createProperty(rdfsprefix + "a");
-        Property hasText = model.createProperty("hasText");
+        Property rdfs_comments = model.createProperty(rdfsprefix+"comment");
+        Property schema_about = model.createProperty(schemaprefix+"about");
         Property hasConfidence = model.createProperty("hasConfidence");
         Property hasRules=model.createProperty("hasRules");
-        Resource type_subject = model.createResource("http://provoc/Product");
+        Resource type_subject = model.createResource("http://provoc/"+sentenceRelationId.getSubject().getType());
         Resource type_object = null;
         if(sentenceRelationId.getType().name().equalsIgnoreCase("hasComponent")) {
              type_object = model.createResource("http://provoc/Component");
         }
         if(sentenceRelationId.getType().name().equalsIgnoreCase("hasFragranceCreator")) {
-            type_object = model.createResource("http://provoc/FragrranceCreator");
+            type_object = model.createResource("http://provoc/Person");
         }
-        if(sentenceRelationId.getType().name().equalsIgnoreCase("hasAmbasador")) {
-            type_object = model.createResource("http://provoc/Ambassador");
+        if(sentenceRelationId.getType().name().equalsIgnoreCase("hasRepresentative")) {
+            type_object = model.createResource("http://provoc/Person");
         }
         Resource text_sources = model.createResource(sentenceRelationId.getSentence_text());
         Resource  rules_sources = model.createResource(sentenceRelationId.getRelation());
         Resource confidence=model.createResource(String.valueOf(sentenceRelationId.getConfidence()));
-        model.add(subject, rdfs_type, type_subject).add(subject, belongs_to_group, object).add(subject, hasText, text_sources).add(subject,hasRules,rules_sources).add(subject,hasConfidence,confidence);
+        model.add(sentence,rdfs_comments,text_sources).add(sentence,schema_about,subject);
+        model.add(subject, rdfs_type, type_subject).add(subject, belongs_to_group, object).add(subject,hasRules,rules_sources).add(subject,hasConfidence,confidence);
         model.add(object, rdfs_type, type_object);
           model.write(System.out, "N-TRIPLE");
+        //model.write(System.out);
+        xml_Model(sentenceRelationId,subject);
         return model;
+    }
+
+    public static void xml_Model (SentenceRelationId sentenceRelationId,Resource subject1) {
+        org.jdom.Element sentence = new org.jdom.Element("sentence");
+        racine.addContent(sentence);
+        String id= "s0";
+        String newVersion = "s" + (Integer.parseInt(id.substring(1,id.length()))+1);
+        Attribute identifiant = new Attribute("id", newVersion);
+        id=newVersion;
+        sentence.setAttribute(identifiant);
+
+        org.jdom.Element text=new org.jdom.Element("text");
+        text.setText(sentenceRelationId.getSentence_text());
+        sentence.addContent(text);
+
+        org.jdom.Element Relations = new org.jdom.Element("Relations");
+        sentence.addContent(Relations);
+        org.jdom.Element relation = new org.jdom.Element("Relation");
+        Relations.addContent(relation);
+        String id_relation="r0";
+        String newVersion_relation = "r" + (Integer.parseInt(id_relation.substring(1,id.length()))+1);
+        Attribute identifiant_relation = new Attribute("id", newVersion_relation);
+        id_relation=newVersion_relation;
+        relation.setAttribute(identifiant_relation);
+
+
+        org.jdom.Element subject = new org.jdom.Element("subject");
+        //subject.setText(sentenceRelationId.getSubject().getForm());
+        subject.setText(String.valueOf(subject1));
+        relation.addContent(subject);
+
+        org.jdom.Element predicate = new org.jdom.Element("predicate");
+        predicate.setText(sentenceRelationId.getType().name());
+        relation.addContent(predicate);
+
+        org.jdom.Element object = new org.jdom.Element("object");
+        object.setText(sentenceRelationId.getObject().getForm());
+        relation.addContent(object);
+
+        affiche();
+        enregistre("automatic_annotation.xml");
+    }
+
+    static void affiche()
+    {
+        try
+        {
+            XMLOutputter sortie = new XMLOutputter(Format.getPrettyFormat());
+            sortie.output(document, System.out);
+        }
+        catch (java.io.IOException e){}
+    }
+
+    static void enregistre(String fichier)
+    {
+        try
+        {
+            XMLOutputter sortie = new XMLOutputter(Format.getPrettyFormat());
+            sortie.output(document, new FileOutputStream(fichier));
+        }
+        catch (java.io.IOException e){}
     }
 
     //write the RDF in the N3 format

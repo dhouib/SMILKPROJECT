@@ -8,11 +8,7 @@ public enum SentenceRelationType {
     belongsToBrand,
     belongsToDivision,
     belongsToGroup,
-    belongsToProductOrServiceRange,
     hasComponent,
-    hasTarget,
-    hasFounder,
     hasFragranceCreator,
-    hasAmbasador,
-    hasModel;
+    hasRepresentative,
 }

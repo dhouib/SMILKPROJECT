@@ -417,7 +417,7 @@ public class RelationHasComponentExtrationStanfordV2 extends AbstractRelationExt
                                     }
 
                                     else if(type_relation.equalsIgnoreCase("ambasador")){
-                                        sentenceRelationId.setType(SentenceRelationType.hasAmbasador );
+                                        sentenceRelationId.setType(SentenceRelationType.hasRepresentative );
                                     }
                                     sentenceRelation.setSentenceRelationId(sentenceRelationId);
                                     sentenceRelation.setMethod(SentenceRelationMethod.dbpedia_chimical_component);

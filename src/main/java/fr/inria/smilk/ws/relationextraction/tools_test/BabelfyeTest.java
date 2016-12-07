@@ -174,7 +174,7 @@ component.remove("parfums");
                                         } else if (type_relation.equalsIgnoreCase("creator")) {
                                             sentenceRelationId.setType(SentenceRelationType.hasFragranceCreator);
                                         } else if (type_relation.equalsIgnoreCase("ambasador")) {
-                                            sentenceRelationId.setType(SentenceRelationType.hasAmbasador);
+                                            sentenceRelationId.setType(SentenceRelationType.hasRepresentative);
                                         }
                                         sentenceRelation.setSentenceRelationId(sentenceRelationId);
                                         sentenceRelation.setMethod(SentenceRelationMethod.dbpedia_chimical_component);
@@ -241,10 +241,10 @@ component.remove("parfums");
                                                 sentenceRelationId.setType(SentenceRelationType.hasComponent);
                                             }
                                             else if (relationType.equalsIgnoreCase("creator")){
-                                                sentenceRelationId.setType(SentenceRelationType.hasAmbasador);
+                                                sentenceRelationId.setType(SentenceRelationType.hasRepresentative);
                                             }
                                            else if(relationType.equalsIgnoreCase("ambassador")){
-                                                sentenceRelationId.setType(SentenceRelationType.hasAmbasador);
+                                                sentenceRelationId.setType(SentenceRelationType.hasRepresentative);
                                             }
                                             sentenceRelation.setSentenceRelationId(sentenceRelationId);
 
@@ -270,10 +270,10 @@ component.remove("parfums");
                                                 sentenceRelationId.setType(SentenceRelationType.hasComponent);
                                             }
                                             else if (relationType.equalsIgnoreCase("creator")){
-                                                sentenceRelationId.setType(SentenceRelationType.hasAmbasador);
+                                                sentenceRelationId.setType(SentenceRelationType.hasRepresentative);
                                             }
                                             else if(relationType.equalsIgnoreCase("ambassador")){
-                                                sentenceRelationId.setType(SentenceRelationType.hasAmbasador);
+                                                sentenceRelationId.setType(SentenceRelationType.hasRepresentative);
                                             }
                                             sentenceRelation.setSentenceRelationId(sentenceRelationId);
                                             sentenceRelation.setMethod(SentenceRelationMethod.dbpedia_component);

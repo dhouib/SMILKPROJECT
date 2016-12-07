@@ -96,9 +96,9 @@ public class TalismaneAPITestV5_with_holmes extends AbstractRelationExtraction {
         HolmesNERServiceFrenchService hs = new HolmesNERServiceFrenchService();
         HolmesNERServiceFrench holmes = hs.getHolmesNERServiceFrenchPort();
         List<CompactNamedEntity> holmesOutput = holmes.parse(line);
-        for(CompactNamedEntity cne : holmesOutput) {
-            System.out.println(cne.getEntityString() + " type: "+ cne.getEntityType());
-            if(cne.getEntityType().equalsIgnoreCase("PER")){
+        for (CompactNamedEntity cne : holmesOutput) {
+            System.out.println(cne.getEntityString() + " type: " + cne.getEntityType());
+            if (cne.getEntityType().equalsIgnoreCase("PER")) {
                 String form = cne.getEntityString();
                 String form_with_underscore = form.replaceAll("\\s", "_");
                 System.out.println("form: " + form + " with underscor: " + form_with_underscore);
@@ -119,9 +119,9 @@ public class TalismaneAPITestV5_with_holmes extends AbstractRelationExtraction {
         HolmesNERServiceFrench holmes = hs.getHolmesNERServiceFrenchPort();
         List<CompactNamedEntity> holmesOutput = holmes.parse(line);
 
-        for(CompactNamedEntity cne : holmesOutput){
+        for (CompactNamedEntity cne : holmesOutput) {
             // System.out.println(cne.getEntityString() +" "+cne.getEntityType()+ " "+ cne.getSpanFrom()+ " "+ cne.getSpanTo()+" "+ cne.getScore());
-            String token2=token.replace("_"," ");
+            String token2 = token.replace("_", " ");
             if ((cne.getEntityString().equalsIgnoreCase(token2))) {
                 type = cne.getEntityType();
             }
@@ -144,10 +144,9 @@ public class TalismaneAPITestV5_with_holmes extends AbstractRelationExtraction {
                             Element xElement = (Element) xNode;
                             //Si XElement a un type (product, range, brand, division, group
                             if (xElement.hasAttribute("type") && !xElement.getAttribute("type").equalsIgnoreCase("not_identified")
-                             /* && (xElement.getAttribute("type").equalsIgnoreCase("product")  )*/)
-                            {
+                             /* && (xElement.getAttribute("type").equalsIgnoreCase("product")  )*/) {
                                 Token subjectToken = elementToToken(xElement);
-                                String token2=token.replace("_"," ");
+                                String token2 = token.replace("_", " ");
                                 if ((subjectToken.getForm().equalsIgnoreCase(token2))) {
                                     type = subjectToken.getType();
 
@@ -190,11 +189,11 @@ public class TalismaneAPITestV5_with_holmes extends AbstractRelationExtraction {
         ParseConfiguration parseConfiguration = parser.parseSentence(posTagSequence);
 
         for (int i = 0; i < posTagSequence.size(); i++) {
-        posTagSequence.get(i).setComment(setType(line, nSentenceList, posTagSequence.get(i).getToken().toString()));
-            System.out.println( posTagSequence.get(i).getToken()+ " "+ posTagSequence.get(i).getComment());
+            posTagSequence.get(i).setComment(setType(line, nSentenceList, posTagSequence.get(i).getToken().toString()));
+            System.out.println(posTagSequence.get(i).getToken() + " " + posTagSequence.get(i).getComment());
         }
 
-        System.out.println("test: "+parseConfiguration.getDependencies());
+        System.out.println("test: " + parseConfiguration.getDependencies());
 
         extractSubject(parseConfiguration, posTagSequence, line);
 
@@ -214,23 +213,23 @@ public class TalismaneAPITestV5_with_holmes extends AbstractRelationExtraction {
                             || parseConfiguration.getGoverningDependency(posTagSequence.get(i)).getLabel().equalsIgnoreCase("mod"))*/)
                     || (posTagSequence.get(i).getTag().toString().equalsIgnoreCase("ADV") &&
                     parseConfiguration.getGoverningDependency(posTagSequence.get(i)).getLabel().equalsIgnoreCase("mod")))
-                    && (posTagSequence.get(i).getComment().equalsIgnoreCase("product")|| (posTagSequence.get(i).getComment().equalsIgnoreCase("brand")))) {
+                    && (posTagSequence.get(i).getComment().equalsIgnoreCase("product") || (posTagSequence.get(i).getComment().equalsIgnoreCase("brand")))) {
                 subject.setForm(posTagSequence.get(i).getToken().toString());
 
 
             }
         }
-        System.out.println("Subject: "+ subject.getForm());
-        if(subject.getForm()!=null)
-        { relationRules(parseConfiguration, posTagSequence, line, subject);}
-        else
-        {
+        System.out.println("Subject: " + subject.getForm());
+        if (subject.getForm() != null) {
+            relationRules(parseConfiguration, posTagSequence, line, subject);
+        } else {
             System.out.println("subject not found");
         }
 
     }
+
     public Token extractSubject2(ParseConfiguration parseConfiguration, PosTagSequence posTagSequence, String line) {
-        Token subject2= new Token();
+        Token subject2 = new Token();
 
         for (int i = 0; i < posTagSequence.size(); i++) {
             if (posTagSequence.get(i).getLexicalEntry() != null) {
@@ -248,15 +247,13 @@ public class TalismaneAPITestV5_with_holmes extends AbstractRelationExtraction {
                             subject2.setForm(ptt.getToken().toString());
                         }
 
-                        if (ptt.getTag().toString().equalsIgnoreCase("P") && parseConfiguration.getGoverningDependency(ptt).getLabel().equalsIgnoreCase("mod") ) {
+                        if (ptt.getTag().toString().equalsIgnoreCase("P") && parseConfiguration.getGoverningDependency(ptt).getLabel().equalsIgnoreCase("mod")) {
                             List<PosTaggedToken> pos_tagged_token_test_2 = parseConfiguration.getDependents(ptt);
                             for (PosTaggedToken ptt_test2 : pos_tagged_token_test_2) {
                                 if ((ptt_test2.getTag().toString().equalsIgnoreCase("NPP") || ptt_test2.getTag().toString().equalsIgnoreCase("NC")) && parseConfiguration.getGoverningDependency(ptt_test2).getLabel().equalsIgnoreCase("prep")
-                                        && ptt_test2.getComment().equalsIgnoreCase("product")|| ptt_test2.getComment().equalsIgnoreCase("brand")) {
+                                        && ptt_test2.getComment().equalsIgnoreCase("product") || ptt_test2.getComment().equalsIgnoreCase("brand")) {
                                     subject2.setForm(ptt_test2.getToken().toString());
-                                }
-
-                                else if(ptt_test2.getTag().toString().equalsIgnoreCase("NC") && parseConfiguration.getGoverningDependency(ptt_test2).getLabel().equalsIgnoreCase("prep")) {
+                                } else if (ptt_test2.getTag().toString().equalsIgnoreCase("NC") && parseConfiguration.getGoverningDependency(ptt_test2).getLabel().equalsIgnoreCase("prep")) {
                                     List<PosTaggedToken> pos_tagged_token_test_3 = parseConfiguration.getDependents(ptt_test2);
                                     for (PosTaggedToken ptt_test3 : pos_tagged_token_test_3) {
                                         if (ptt_test3.getTag().toString().equalsIgnoreCase("P+D") && parseConfiguration.getGoverningDependency(ptt_test3).getLabel().equalsIgnoreCase("dep")) {
@@ -279,33 +276,33 @@ public class TalismaneAPITestV5_with_holmes extends AbstractRelationExtraction {
 
                         }
 
-                        if (ptt.getTag().toString().equalsIgnoreCase("V") && parseConfiguration.getGoverningDependency(ptt).getLabel().equalsIgnoreCase("mod") ) {
+                        if (ptt.getTag().toString().equalsIgnoreCase("V") && parseConfiguration.getGoverningDependency(ptt).getLabel().equalsIgnoreCase("mod")) {
                             List<PosTaggedToken> pos_tagged_token_test_2 = parseConfiguration.getDependents(ptt);
                             for (PosTaggedToken ptt_test2 : pos_tagged_token_test_2) {
                                 if (ptt_test2.getTag().toString().equalsIgnoreCase("NPP") && parseConfiguration.getGoverningDependency(ptt_test2).getLabel().equalsIgnoreCase("suj")
-                                        && ptt_test2.getComment().equalsIgnoreCase("product")|| ptt_test2.getComment().equalsIgnoreCase("brand")) {
+                                        && ptt_test2.getComment().equalsIgnoreCase("product") || ptt_test2.getComment().equalsIgnoreCase("brand")) {
                                     subject2.setForm(ptt_test2.getToken().toString());
                                 }
                             }
 
                         }
 
-                        if (ptt.getTag().toString().equalsIgnoreCase("NC") && parseConfiguration.getGoverningDependency(ptt).getLabel().equalsIgnoreCase("suj") ) {
+                        if (ptt.getTag().toString().equalsIgnoreCase("NC") && parseConfiguration.getGoverningDependency(ptt).getLabel().equalsIgnoreCase("suj")) {
                             List<PosTaggedToken> pos_tagged_token_test_2 = parseConfiguration.getDependents(ptt);
                             for (PosTaggedToken ptt_test2 : pos_tagged_token_test_2) {
                                 if (ptt_test2.getTag().toString().equalsIgnoreCase("NPP") && parseConfiguration.getGoverningDependency(ptt_test2).getLabel().equalsIgnoreCase("mod")
-                                        && ptt_test2.getComment().equalsIgnoreCase("product")|| ptt_test2.getComment().equalsIgnoreCase("brand")) {
+                                        && ptt_test2.getComment().equalsIgnoreCase("product") || ptt_test2.getComment().equalsIgnoreCase("brand")) {
                                     subject2.setForm(ptt_test2.getToken().toString());
                                 }
                             }
 
                         }
 
-                        if (ptt.getTag().toString().equalsIgnoreCase("NC") && parseConfiguration.getGoverningDependency(ptt).getLabel().equalsIgnoreCase("obj") ) {
+                        if (ptt.getTag().toString().equalsIgnoreCase("NC") && parseConfiguration.getGoverningDependency(ptt).getLabel().equalsIgnoreCase("obj")) {
                             List<PosTaggedToken> pos_tagged_token_test_2 = parseConfiguration.getDependents(ptt);
                             for (PosTaggedToken ptt_test2 : pos_tagged_token_test_2) {
                                 if (ptt_test2.getTag().toString().equalsIgnoreCase("P") && parseConfiguration.getGoverningDependency(ptt_test2).getLabel().equalsIgnoreCase("dep")
-                                      ) {
+                                        ) {
                                     List<PosTaggedToken> pos_tagged_token_test_3 = parseConfiguration.getDependents(ptt_test2);
                                     for (PosTaggedToken ptt_test3 : pos_tagged_token_test_3) {
                                         if (ptt_test3.getTag().toString().equalsIgnoreCase("NC") && parseConfiguration.getGoverningDependency(ptt_test3).getLabel().equalsIgnoreCase("prep")
@@ -313,54 +310,54 @@ public class TalismaneAPITestV5_with_holmes extends AbstractRelationExtraction {
                                             List<PosTaggedToken> pos_tagged_token_test_4 = parseConfiguration.getDependents(ptt_test3);
                                             for (PosTaggedToken ptt_test4 : pos_tagged_token_test_4) {
                                                 if (ptt_test4.getTag().toString().equalsIgnoreCase("NC") && parseConfiguration.getGoverningDependency(ptt_test4).getLabel().equalsIgnoreCase("mod")
-                                                        && ptt_test4.getComment().equalsIgnoreCase("product")|| ptt_test4.getComment().equalsIgnoreCase("brand")) {
+                                                        && ptt_test4.getComment().equalsIgnoreCase("product") || ptt_test4.getComment().equalsIgnoreCase("brand")) {
                                                     subject2.setForm(ptt_test4.getToken().toString());
                                                 }
                                             }
                                         }
 
-                                        }
                                     }
-
                                 }
-                            }
 
-                        }
-                    }
-                }
-
-                if (posTagSequence.get(i).getTag().toString().equalsIgnoreCase("VPP") && parseConfiguration.getGoverningDependency(posTagSequence.get(i)).getLabel().equalsIgnoreCase("root")) {
-                    List<PosTaggedToken> pos_tagged_token = parseConfiguration.getDependents(posTagSequence.get(i));
-                    for (PosTaggedToken ptt : pos_tagged_token) {
-                        if (ptt.getTag().toString().equalsIgnoreCase("P") && parseConfiguration.getGoverningDependency(ptt).getLabel().equalsIgnoreCase("mod")
-                                ) {
-                            List<PosTaggedToken> pos_tagged_token_test_2 = parseConfiguration.getDependents(ptt);
-                            for (PosTaggedToken ptt_test2 : pos_tagged_token_test_2) {
-                                if (ptt_test2.getTag().toString().equalsIgnoreCase("NPP") && parseConfiguration.getGoverningDependency(ptt_test2).getLabel().equalsIgnoreCase("prep")
-                                        && ptt_test2.getComment().equalsIgnoreCase("product") || ptt_test2.getComment().equalsIgnoreCase("brand")) {
-                                    subject2.setForm(ptt_test2.getToken().toString());
-                                }
                             }
                         }
+
                     }
                 }
+            }
 
-                if (posTagSequence.get(i).getTag().toString().equalsIgnoreCase("VPP") && parseConfiguration.getGoverningDependency(posTagSequence.get(i)).getLabel().equalsIgnoreCase("mod")) {
-                    List<PosTaggedToken> pos_tagged_token = parseConfiguration.getDependents(posTagSequence.get(i));
-                    for (PosTaggedToken ptt : pos_tagged_token) {
-                        if (ptt.getTag().toString().equalsIgnoreCase("NPP") && parseConfiguration.getGoverningDependency(ptt).getLabel().equalsIgnoreCase("mod")
-                               && ptt.getComment().equalsIgnoreCase("product") || ptt.getComment().equalsIgnoreCase("brand") ) {
-                                    subject2.setForm(ptt.getToken().toString());
+            if (posTagSequence.get(i).getTag().toString().equalsIgnoreCase("VPP") && parseConfiguration.getGoverningDependency(posTagSequence.get(i)).getLabel().equalsIgnoreCase("root")) {
+                List<PosTaggedToken> pos_tagged_token = parseConfiguration.getDependents(posTagSequence.get(i));
+                for (PosTaggedToken ptt : pos_tagged_token) {
+                    if (ptt.getTag().toString().equalsIgnoreCase("P") && parseConfiguration.getGoverningDependency(ptt).getLabel().equalsIgnoreCase("mod")
+                            ) {
+                        List<PosTaggedToken> pos_tagged_token_test_2 = parseConfiguration.getDependents(ptt);
+                        for (PosTaggedToken ptt_test2 : pos_tagged_token_test_2) {
+                            if (ptt_test2.getTag().toString().equalsIgnoreCase("NPP") && parseConfiguration.getGoverningDependency(ptt_test2).getLabel().equalsIgnoreCase("prep")
+                                    && ptt_test2.getComment().equalsIgnoreCase("product") || ptt_test2.getComment().equalsIgnoreCase("brand")) {
+                                subject2.setForm(ptt_test2.getToken().toString());
+                            }
                         }
                     }
                 }
             }
 
+            if (posTagSequence.get(i).getTag().toString().equalsIgnoreCase("VPP") && parseConfiguration.getGoverningDependency(posTagSequence.get(i)).getLabel().equalsIgnoreCase("mod")) {
+                List<PosTaggedToken> pos_tagged_token = parseConfiguration.getDependents(posTagSequence.get(i));
+                for (PosTaggedToken ptt : pos_tagged_token) {
+                    if (ptt.getTag().toString().equalsIgnoreCase("NPP") && parseConfiguration.getGoverningDependency(ptt).getLabel().equalsIgnoreCase("mod")
+                            && ptt.getComment().equalsIgnoreCase("product") || ptt.getComment().equalsIgnoreCase("brand")) {
+                        subject2.setForm(ptt.getToken().toString());
+                    }
+                }
+            }
+        }
+
         return subject2;
 
     }
 
-    public void relationRules(ParseConfiguration parseConfiguration, PosTagSequence posTagSequence, String line,  Token subject) {
+    public void relationRules(ParseConfiguration parseConfiguration, PosTagSequence posTagSequence, String line, Token subject) {
 
         for (int i = 0; i < posTagSequence.size(); i++) {
             if (posTagSequence.get(i).getLexicalEntry() != null) {
@@ -387,7 +384,7 @@ public class TalismaneAPITestV5_with_holmes extends AbstractRelationExtraction {
                                     sentenceRelationId.setObject(objectToken);
                                     sentenceRelationId.setRelation("(V,root)+(P,mod)+(NPP,suj)+(NPP,mod)");
                                     sentenceRelationId.setSentence_text(line);
-                                    sentenceRelationId.setType(SentenceRelationType.hasAmbasador);
+                                    sentenceRelationId.setType(SentenceRelationType.hasRepresentative);
                                     sentenceRelationId.setConfidence(1);
                                     sentenceRelation.setSentenceRelationId(sentenceRelationId);
                                     sentenceRelation.setMethod(SentenceRelationMethod.rules);
@@ -408,7 +405,7 @@ public class TalismaneAPITestV5_with_holmes extends AbstractRelationExtraction {
                             sentenceRelationId.setObject(objectToken);
                             sentenceRelationId.setRelation("(V,root) +(NPP,suj)+(NPP,mod)+ " + ptt.getComment());
                             sentenceRelationId.setSentence_text(line);
-                            sentenceRelationId.setType(SentenceRelationType.hasAmbasador);
+                            sentenceRelationId.setType(SentenceRelationType.hasRepresentative);
                             sentenceRelationId.setConfidence(1);
                             sentenceRelation.setSentenceRelationId(sentenceRelationId);
                             sentenceRelation.setMethod(SentenceRelationMethod.rules);
@@ -416,103 +413,103 @@ public class TalismaneAPITestV5_with_holmes extends AbstractRelationExtraction {
                         }
 
                         if (ptt.getTag().toString().equalsIgnoreCase("NPP")
-                                && (parseConfiguration.getGoverningDependency(ptt).getLabel().equalsIgnoreCase("ats")||parseConfiguration.getGoverningDependency(ptt).getLabel().equalsIgnoreCase("obj")) && ptt.getComment().equalsIgnoreCase("PER")) {
+                                && (parseConfiguration.getGoverningDependency(ptt).getLabel().equalsIgnoreCase("ats") || parseConfiguration.getGoverningDependency(ptt).getLabel().equalsIgnoreCase("obj")) && ptt.getComment().equalsIgnoreCase("PER")) {
                             boolean annotated = false;
-                                    List<PosTaggedToken> pos_tagged_token_child = parseConfiguration.getDependents(ptt);
+                            List<PosTaggedToken> pos_tagged_token_child = parseConfiguration.getDependents(ptt);
 
-                                    for (PosTaggedToken ptt_child : pos_tagged_token_child) {
+                            for (PosTaggedToken ptt_child : pos_tagged_token_child) {
 
-                                        if ((ptt_child.getTag().toString().equalsIgnoreCase("NPP")
-                                                && (parseConfiguration.getGoverningDependency(ptt_child).getLabel().equalsIgnoreCase("coord"))
-                                                && ptt_child.getComment().equalsIgnoreCase("PER"))) {
+                                if ((ptt_child.getTag().toString().equalsIgnoreCase("NPP")
+                                        && (parseConfiguration.getGoverningDependency(ptt_child).getLabel().equalsIgnoreCase("coord"))
+                                        && ptt_child.getComment().equalsIgnoreCase("PER"))) {
 
-                                            List<PosTaggedToken> pos_tagged_token_child2 = parseConfiguration.getDependents(ptt_child);
+                                    List<PosTaggedToken> pos_tagged_token_child2 = parseConfiguration.getDependents(ptt_child);
 
-                                            for (PosTaggedToken ptt_child2 : pos_tagged_token_child2) {
-                                                if ((ptt_child2.getTag().toString().equalsIgnoreCase("CC")
-                                                        && (parseConfiguration.getGoverningDependency(ptt_child2).getLabel().equalsIgnoreCase("coord"))
+                                    for (PosTaggedToken ptt_child2 : pos_tagged_token_child2) {
+                                        if ((ptt_child2.getTag().toString().equalsIgnoreCase("CC")
+                                                && (parseConfiguration.getGoverningDependency(ptt_child2).getLabel().equalsIgnoreCase("coord"))
+                                        )) {
+                                            List<PosTaggedToken> pos_tagged_token_child3 = parseConfiguration.getDependents(ptt_child2);
+
+                                            for (PosTaggedToken ptt_child3 : pos_tagged_token_child3) {
+                                                if ((ptt_child3.getTag().toString().equalsIgnoreCase("NPP")
+                                                        && (parseConfiguration.getGoverningDependency(ptt_child3).getLabel().equalsIgnoreCase("dep_coord") && ptt_child3.getComment().equalsIgnoreCase("PER"))
                                                 )) {
-                                                    List<PosTaggedToken> pos_tagged_token_child3 = parseConfiguration.getDependents(ptt_child2);
-
-                                                    for (PosTaggedToken ptt_child3 : pos_tagged_token_child3) {
-                                                        if ((ptt_child3.getTag().toString().equalsIgnoreCase("NPP")
-                                                                && (parseConfiguration.getGoverningDependency(ptt_child3).getLabel().equalsIgnoreCase("dep_coord") && ptt_child3.getComment().equalsIgnoreCase("PER"))
-                                                        )) {
-                                                            System.out.println("pppppppp: " + ptt.getTag() + " " + ptt.getToken().toString());
-                                                            Token objectToken = new Token();
-                                                            Token subject2 = extractSubject2(parseConfiguration, posTagSequence, line);
-                                                            System.out.println("subject2: enter condition" + subject2);
-                                                            objectToken.setForm(ptt_child3.getToken().toString());
-                                                            SentenceRelation sentenceRelation = new SentenceRelation();
-                                                            SentenceRelationId sentenceRelationId = new SentenceRelationId();
-                                                            sentenceRelationId.setSubject(subject2);
-                                                            sentenceRelationId.setObject(objectToken);
-                                                            sentenceRelationId.setRelation("(V,root) +(NPP,suj)+(NPP,mod)+ " + ptt.getComment());
-                                                            sentenceRelationId.setSentence_text(line);
-                                                            sentenceRelationId.setType(SentenceRelationType.hasAmbasador);
-                                                            sentenceRelationId.setConfidence(1);
-                                                            sentenceRelation.setSentenceRelationId(sentenceRelationId);
-                                                            sentenceRelation.setMethod(SentenceRelationMethod.rules);
-                                                            list_result.add(sentenceRelation);
-                                                        }
-                                                    }
+                                                    System.out.println("pppppppp: " + ptt.getTag() + " " + ptt.getToken().toString());
+                                                    Token objectToken = new Token();
+                                                    Token subject2 = extractSubject2(parseConfiguration, posTagSequence, line);
+                                                    System.out.println("subject2: enter condition" + subject2);
+                                                    objectToken.setForm(ptt_child3.getToken().toString());
+                                                    SentenceRelation sentenceRelation = new SentenceRelation();
+                                                    SentenceRelationId sentenceRelationId = new SentenceRelationId();
+                                                    sentenceRelationId.setSubject(subject2);
+                                                    sentenceRelationId.setObject(objectToken);
+                                                    sentenceRelationId.setRelation("(V,root) +(NPP,suj)+(NPP,mod)+ " + ptt.getComment());
+                                                    sentenceRelationId.setSentence_text(line);
+                                                    sentenceRelationId.setType(SentenceRelationType.hasRepresentative);
+                                                    sentenceRelationId.setConfidence(1);
+                                                    sentenceRelation.setSentenceRelationId(sentenceRelationId);
+                                                    sentenceRelation.setMethod(SentenceRelationMethod.rules);
+                                                    list_result.add(sentenceRelation);
                                                 }
                                             }
+                                        }
+                                    }
 
-                                            System.out.println("pppppppp: " + ptt.getTag() + " " + ptt.getToken().toString());
-                                            Token objectToken = new Token();
-                                            Token subject2 = extractSubject2(parseConfiguration, posTagSequence, line);
-                                            System.out.println("subject2: enter condition" + subject2);
-                                            objectToken.setForm(ptt_child.getToken().toString());
-                                            SentenceRelation sentenceRelation = new SentenceRelation();
-                                            SentenceRelationId sentenceRelationId = new SentenceRelationId();
-                                            sentenceRelationId.setSubject(subject2);
-                                            sentenceRelationId.setObject(objectToken);
-                                            sentenceRelationId.setRelation("(V,root) +(NPP,suj)+(NPP,mod)+ " + ptt.getComment());
-                                            sentenceRelationId.setSentence_text(line);
-                                            sentenceRelationId.setType(SentenceRelationType.hasAmbasador);
-                                            sentenceRelationId.setConfidence(1);
-                                            sentenceRelation.setSentenceRelationId(sentenceRelationId);
-                                            sentenceRelation.setMethod(SentenceRelationMethod.rules);
-                                            list_result.add(sentenceRelation);
-                                                                       }
-                                        System.out.println("pppppppp: " + ptt.getTag() + " " + ptt.getToken().toString());
-                                        Token objectToken = new Token();
-                                        Token subject2 = extractSubject2(parseConfiguration, posTagSequence, line);
-                                        System.out.println("subject2: enter condition" + subject2);
-                                        objectToken.setForm(ptt.getToken().toString());
-                                        SentenceRelation sentenceRelation = new SentenceRelation();
-                                        SentenceRelationId sentenceRelationId = new SentenceRelationId();
-                                        sentenceRelationId.setSubject(subject2);
-                                        sentenceRelationId.setObject(objectToken);
-                                        sentenceRelationId.setRelation("(V,root) +(NPP,suj)+(NPP,mod)+ " + ptt.getComment());
-                                        sentenceRelationId.setSentence_text(line);
-                                        sentenceRelationId.setType(SentenceRelationType.hasAmbasador);
-                                        sentenceRelationId.setConfidence(1);
-                                        sentenceRelation.setSentenceRelationId(sentenceRelationId);
-                                        sentenceRelation.setMethod(SentenceRelationMethod.rules);
-                                        list_result.add(sentenceRelation);
+                                    System.out.println("pppppppp: " + ptt.getTag() + " " + ptt.getToken().toString());
+                                    Token objectToken = new Token();
+                                    Token subject2 = extractSubject2(parseConfiguration, posTagSequence, line);
+                                    System.out.println("subject2: enter condition" + subject2);
+                                    objectToken.setForm(ptt_child.getToken().toString());
+                                    SentenceRelation sentenceRelation = new SentenceRelation();
+                                    SentenceRelationId sentenceRelationId = new SentenceRelationId();
+                                    sentenceRelationId.setSubject(subject2);
+                                    sentenceRelationId.setObject(objectToken);
+                                    sentenceRelationId.setRelation("(V,root) +(NPP,suj)+(NPP,mod)+ " + ptt.getComment());
+                                    sentenceRelationId.setSentence_text(line);
+                                    sentenceRelationId.setType(SentenceRelationType.hasRepresentative);
+                                    sentenceRelationId.setConfidence(1);
+                                    sentenceRelation.setSentenceRelationId(sentenceRelationId);
+                                    sentenceRelation.setMethod(SentenceRelationMethod.rules);
+                                    list_result.add(sentenceRelation);
+                                }
+                                System.out.println("pppppppp: " + ptt.getTag() + " " + ptt.getToken().toString());
+                                Token objectToken = new Token();
+                                Token subject2 = extractSubject2(parseConfiguration, posTagSequence, line);
+                                System.out.println("subject2: enter condition" + subject2);
+                                objectToken.setForm(ptt.getToken().toString());
+                                SentenceRelation sentenceRelation = new SentenceRelation();
+                                SentenceRelationId sentenceRelationId = new SentenceRelationId();
+                                sentenceRelationId.setSubject(subject2);
+                                sentenceRelationId.setObject(objectToken);
+                                sentenceRelationId.setRelation("(V,root) +(NPP,suj)+(NPP,mod)+ " + ptt.getComment());
+                                sentenceRelationId.setSentence_text(line);
+                                sentenceRelationId.setType(SentenceRelationType.hasRepresentative);
+                                sentenceRelationId.setConfidence(1);
+                                sentenceRelation.setSentenceRelationId(sentenceRelationId);
+                                sentenceRelation.setMethod(SentenceRelationMethod.rules);
+                                list_result.add(sentenceRelation);
 
                             }
                         }
 
                         // règle pour la relation hasAmbassador (V,root) +(NC,suj)+(NPP,mod)
-                        if (ptt.getTag().toString().equalsIgnoreCase("NC") && parseConfiguration.getGoverningDependency(ptt).getLabel().equalsIgnoreCase("suj")  && ptt.getComment().equalsIgnoreCase("PER")) {
-                                Token objectToken = new Token();
-                                objectToken.setForm(ptt.getToken().toString());
-                                SentenceRelation sentenceRelation = new SentenceRelation();
-                                SentenceRelationId sentenceRelationId = new SentenceRelationId();
-                            Token subject2=extractSubject2( parseConfiguration,  posTagSequence, line);
-                            System.out.println("subject2: enter condition"+ subject2);
-                                sentenceRelationId.setSubject(subject2);
-                                sentenceRelationId.setObject(objectToken);
-                                sentenceRelationId.setRelation("(V,root) +(NC,suj)+(NPP,mod)");
-                                sentenceRelationId.setSentence_text(line);
-                                sentenceRelationId.setType(SentenceRelationType.hasFragranceCreator);
-                                sentenceRelationId.setConfidence(1);
-                                sentenceRelation.setSentenceRelationId(sentenceRelationId);
-                                sentenceRelation.setMethod(SentenceRelationMethod.rules);
-                                list_result.add(sentenceRelation);
+                        if (ptt.getTag().toString().equalsIgnoreCase("NC") && parseConfiguration.getGoverningDependency(ptt).getLabel().equalsIgnoreCase("suj") && ptt.getComment().equalsIgnoreCase("PER")) {
+                            Token objectToken = new Token();
+                            objectToken.setForm(ptt.getToken().toString());
+                            SentenceRelation sentenceRelation = new SentenceRelation();
+                            SentenceRelationId sentenceRelationId = new SentenceRelationId();
+                            Token subject2 = extractSubject2(parseConfiguration, posTagSequence, line);
+                            System.out.println("subject2: enter condition" + subject2);
+                            sentenceRelationId.setSubject(subject2);
+                            sentenceRelationId.setObject(objectToken);
+                            sentenceRelationId.setRelation("(V,root) +(NC,suj)+(NPP,mod)");
+                            sentenceRelationId.setSentence_text(line);
+                            sentenceRelationId.setType(SentenceRelationType.hasFragranceCreator);
+                            sentenceRelationId.setConfidence(1);
+                            sentenceRelation.setSentenceRelationId(sentenceRelationId);
+                            sentenceRelation.setMethod(SentenceRelationMethod.rules);
+                            list_result.add(sentenceRelation);
 
                         }
 
@@ -522,49 +519,49 @@ public class TalismaneAPITestV5_with_holmes extends AbstractRelationExtraction {
                             for (PosTaggedToken ptt_test0 : pos_tagged_token_test_0) {
                                 if (ptt_test0.getTag().toString().equalsIgnoreCase("NC") && parseConfiguration.getGoverningDependency(ptt_test0).getLabel().equalsIgnoreCase("prep")
                                         && ptt_test0.getComment().equalsIgnoreCase("PER")) {
-                                        Token objectToken = new Token();
-                                        objectToken.setForm(ptt_test0.getToken().toString());
-                                        SentenceRelation sentenceRelation = new SentenceRelation();
-                                        SentenceRelationId sentenceRelationId = new SentenceRelationId();
-                                    Token subject2=extractSubject2( parseConfiguration,  posTagSequence, line);
-                                    System.out.println("subject2: enter condition"+ subject2);
-                                        sentenceRelationId.setSubject(subject2);
-                                        sentenceRelationId.setObject(objectToken);
-                                        sentenceRelationId.setRelation("(V,root) +(P,mod) +(NC,prep)+(NPP,mod)");
-                                        sentenceRelationId.setSentence_text(line);
-                                        sentenceRelationId.setType(SentenceRelationType.hasFragranceCreator);
-                                        sentenceRelationId.setConfidence(1);
-                                        sentenceRelation.setSentenceRelationId(sentenceRelationId);
-                                        sentenceRelation.setMethod(SentenceRelationMethod.rules);
-                                        list_result.add(sentenceRelation);
+                                    Token objectToken = new Token();
+                                    objectToken.setForm(ptt_test0.getToken().toString());
+                                    SentenceRelation sentenceRelation = new SentenceRelation();
+                                    SentenceRelationId sentenceRelationId = new SentenceRelationId();
+                                    Token subject2 = extractSubject2(parseConfiguration, posTagSequence, line);
+                                    System.out.println("subject2: enter condition" + subject2);
+                                    sentenceRelationId.setSubject(subject2);
+                                    sentenceRelationId.setObject(objectToken);
+                                    sentenceRelationId.setRelation("(V,root) +(P,mod) +(NC,prep)+(NPP,mod)");
+                                    sentenceRelationId.setSentence_text(line);
+                                    sentenceRelationId.setType(SentenceRelationType.hasFragranceCreator);
+                                    sentenceRelationId.setConfidence(1);
+                                    sentenceRelation.setSentenceRelationId(sentenceRelationId);
+                                    sentenceRelation.setMethod(SentenceRelationMethod.rules);
+                                    list_result.add(sentenceRelation);
                                 }
                             }
                         }
 
                         //règle pour la relation hasComponent (v+root) + [(P,P_obj)||(de_obj)] + [[(NPP,prep)||(NC,prep)]||((cc,coord)+(P+D,dep_coord)+(NC,prep)]]
                         if (ptt.getTag().toString().equalsIgnoreCase("P") &&
-                           (parseConfiguration.getGoverningDependency(ptt).getLabel().equalsIgnoreCase("P_obj") || parseConfiguration.getGoverningDependency(ptt).getLabel().equalsIgnoreCase("de_obj")
-                                        )) {
+                                (parseConfiguration.getGoverningDependency(ptt).getLabel().equalsIgnoreCase("P_obj") || parseConfiguration.getGoverningDependency(ptt).getLabel().equalsIgnoreCase("de_obj")
+                                )) {
                             List<PosTaggedToken> pos_tagged_token_test_0 = parseConfiguration.getDependents(ptt);
                             for (PosTaggedToken ptt_test0 : pos_tagged_token_test_0) {
                                 if ((ptt_test0.getTag().toString().equalsIgnoreCase("NC") || (ptt_test0.getTag().toString().equalsIgnoreCase("NPP"))
                                         && parseConfiguration.getGoverningDependency(ptt_test0).getLabel().equalsIgnoreCase("prep"))
                                         && ptt_test0.getComment().isEmpty()) {
-                                    Token subject2=extractSubject2( parseConfiguration,  posTagSequence, line);
-                                    System.out.println("subject2: enter condition"+ subject2);
-                                        Token objectToken = new Token();
-                                        objectToken.setForm(ptt_test0.getToken().toString());
-                                        SentenceRelation sentenceRelation = new SentenceRelation();
-                                        SentenceRelationId sentenceRelationId = new SentenceRelationId();
-                                        sentenceRelationId.setSubject(subject2);
-                                        sentenceRelationId.setObject(objectToken);
-                                        sentenceRelationId.setRelation("(v+root) + [(P,P_obj)||(de_obj)] + [[(NPP,prep)||(NC,prep)]||((cc,coord)+(P+D,dep_coord)+(NC,prep)]]");
-                                        sentenceRelationId.setSentence_text(line);
-                                        sentenceRelationId.setConfidence(1);
-                                        sentenceRelationId.setType(SentenceRelationType.hasComponent);
-                                        sentenceRelation.setSentenceRelationId(sentenceRelationId);
-                                        sentenceRelation.setMethod(SentenceRelationMethod.rules);
-                                        list_result.add(sentenceRelation);
+                                    Token subject2 = extractSubject2(parseConfiguration, posTagSequence, line);
+                                    System.out.println("subject2: enter condition" + subject2);
+                                    Token objectToken = new Token();
+                                    objectToken.setForm(ptt_test0.getToken().toString());
+                                    SentenceRelation sentenceRelation = new SentenceRelation();
+                                    SentenceRelationId sentenceRelationId = new SentenceRelationId();
+                                    sentenceRelationId.setSubject(subject2);
+                                    sentenceRelationId.setObject(objectToken);
+                                    sentenceRelationId.setRelation("(v+root) + [(P,P_obj)||(de_obj)] + [[(NPP,prep)||(NC,prep)]||((cc,coord)+(P+D,dep_coord)+(NC,prep)]]");
+                                    sentenceRelationId.setSentence_text(line);
+                                    sentenceRelationId.setConfidence(1);
+                                    sentenceRelationId.setType(SentenceRelationType.hasComponent);
+                                    sentenceRelation.setSentenceRelationId(sentenceRelationId);
+                                    sentenceRelation.setMethod(SentenceRelationMethod.rules);
+                                    list_result.add(sentenceRelation);
 
                                 }
 
@@ -577,21 +574,21 @@ public class TalismaneAPITestV5_with_holmes extends AbstractRelationExtraction {
                                             for (PosTaggedToken ptt_test2 : pos_tagged_token_test_2) {
                                                 if ((ptt_test2.getTag().toString().equalsIgnoreCase("NC")) && parseConfiguration.getGoverningDependency(ptt_test2).getLabel().equalsIgnoreCase("prep")
                                                         && ptt_test2.getComment().isEmpty()) {
-                                                        Token objectToken = new Token();
-                                                        objectToken.setForm(ptt_test2.getToken().toString());
-                                                        SentenceRelation sentenceRelation = new SentenceRelation();
-                                                        SentenceRelationId sentenceRelationId = new SentenceRelationId();
-                                                    Token subject2=extractSubject2( parseConfiguration,  posTagSequence, line);
-                                                    System.out.println("subject2: enter condition"+ subject2);
-                                                        sentenceRelationId.setSubject(subject2);
-                                                        sentenceRelationId.setObject(objectToken);
-                                                        sentenceRelationId.setRelation("(v+root) + [(P,P_obj)||(de_obj)] + [[(NPP,prep)||(NC,prep)]||((cc,coord)+(P+D,dep_coord)+(NC,prep)]]");
-                                                        sentenceRelationId.setSentence_text(line);
-                                                        sentenceRelationId.setConfidence(1);
-                                                        sentenceRelationId.setType(SentenceRelationType.hasComponent);
-                                                        sentenceRelation.setSentenceRelationId(sentenceRelationId);
-                                                        sentenceRelation.setMethod(SentenceRelationMethod.rules);
-                                                        list_result.add(sentenceRelation);
+                                                    Token objectToken = new Token();
+                                                    objectToken.setForm(ptt_test2.getToken().toString());
+                                                    SentenceRelation sentenceRelation = new SentenceRelation();
+                                                    SentenceRelationId sentenceRelationId = new SentenceRelationId();
+                                                    Token subject2 = extractSubject2(parseConfiguration, posTagSequence, line);
+                                                    System.out.println("subject2: enter condition" + subject2);
+                                                    sentenceRelationId.setSubject(subject2);
+                                                    sentenceRelationId.setObject(objectToken);
+                                                    sentenceRelationId.setRelation("(v+root) + [(P,P_obj)||(de_obj)] + [[(NPP,prep)||(NC,prep)]||((cc,coord)+(P+D,dep_coord)+(NC,prep)]]");
+                                                    sentenceRelationId.setSentence_text(line);
+                                                    sentenceRelationId.setConfidence(1);
+                                                    sentenceRelationId.setType(SentenceRelationType.hasComponent);
+                                                    sentenceRelation.setSentenceRelationId(sentenceRelationId);
+                                                    sentenceRelation.setMethod(SentenceRelationMethod.rules);
+                                                    list_result.add(sentenceRelation);
 
                                                 }
                                             }
@@ -610,60 +607,60 @@ public class TalismaneAPITestV5_with_holmes extends AbstractRelationExtraction {
                 if (posTagSequence.get(i).getTag().toString().equalsIgnoreCase("NC")
                         && (parseConfiguration.getGoverningDependency(posTagSequence.get(i)).getLabel().equalsIgnoreCase("mod")
                         || parseConfiguration.getGoverningDependency(posTagSequence.get(i)).getLabel().equalsIgnoreCase("suj")
-                ||parseConfiguration.getGoverningDependency(posTagSequence.get(i)).getLabel().equalsIgnoreCase("prep")) ) {
+                        || parseConfiguration.getGoverningDependency(posTagSequence.get(i)).getLabel().equalsIgnoreCase("prep"))) {
                     List<PosTaggedToken> pos_tagged_token = parseConfiguration.getDependents(posTagSequence.get(i));
                     for (PosTaggedToken ptt : pos_tagged_token) {
-                        if ((ptt.getTag().toString().equalsIgnoreCase("P")||ptt.getTag().toString().equalsIgnoreCase("P+D"))
+                        if ((ptt.getTag().toString().equalsIgnoreCase("P") || ptt.getTag().toString().equalsIgnoreCase("P+D"))
                                 && parseConfiguration.getGoverningDependency(ptt).getLabel().equalsIgnoreCase("dep")) {
 
                             List<PosTaggedToken> pos_tagged_token_test = parseConfiguration.getDependents(ptt);
-                          //  if (!pos_tagged_token_test.isEmpty()) {
-                                for (PosTaggedToken ptt_test : pos_tagged_token_test) {
-                                    //hasFragranceCreator (NC,mod) + (P,dep) + [[(NPP,prep)+ (NPP,mod)] || [ (NPP,prep]+(CC,coord)+(NPP,dep_coord)+(NPP,mod)]]
-                                    if (ptt_test.getTag().toString().equalsIgnoreCase("NPP") && parseConfiguration.getGoverningDependency(ptt_test).getLabel().equalsIgnoreCase("prep")
-                                            && ptt_test.getComment().equalsIgnoreCase("PER")) {
-                                           Token objectToken = new Token();
-                                            objectToken.setForm(ptt_test.getToken().toString());
-                                            SentenceRelation sentenceRelation = new SentenceRelation();
-                                            SentenceRelationId sentenceRelationId = new SentenceRelationId();
-                                        Token subject2=extractSubject2( parseConfiguration,  posTagSequence, line);
-                                        System.out.println("subject2: enter condition"+ subject2);
-                                            sentenceRelationId.setSubject(subject2);
-                                            sentenceRelationId.setObject(objectToken);
-                                            sentenceRelationId.setRelation("(NC,(suj||mod||prep)) + ((P||(P+D)),dep) + [[(NPP,prep)+ (NPP,mod)] || [(NPP,prep)+(CC,coord)+(NPP,dep_coord)+(NPP,mod)]]");
-                                            sentenceRelationId.setSentence_text(line);
-                                            sentenceRelationId.setConfidence(1);
-                                            sentenceRelationId.setType(SentenceRelationType.hasFragranceCreator);
-                                            sentenceRelation.setSentenceRelationId(sentenceRelationId);
-                                            sentenceRelation.setMethod(SentenceRelationMethod.rules);
-                                            list_result.add(sentenceRelation);
-                                          List<PosTaggedToken> pos_tagged_token_test1 = parseConfiguration.getDependents(ptt_test);
-                                        for (PosTaggedToken ptt_test1 : pos_tagged_token_test1) {
-                                            if (ptt_test1.getTag().toString().equalsIgnoreCase("CC") && parseConfiguration.getGoverningDependency(ptt_test1).getLabel().equalsIgnoreCase("coord")) {
-                                                List<PosTaggedToken> pos_tagged_token_test2 = parseConfiguration.getDependents(ptt_test1);
-                                                for (PosTaggedToken ptt_test2 : pos_tagged_token_test2) {
-                                                    if (ptt_test2.getTag().toString().equalsIgnoreCase("NPP") &&
-                                                            parseConfiguration.getGoverningDependency(ptt_test2).getLabel().equalsIgnoreCase("dep_coord")
-                                                            && ptt_test2.getComment().equalsIgnoreCase("PER")) {
-                                                            Token objectToken2 = new Token();
-                                                            objectToken2.setForm(ptt_test2.getToken().toString());
-                                                            SentenceRelation sentenceRelation2 = new SentenceRelation();
-                                                            SentenceRelationId sentenceRelationId2 = new SentenceRelationId();
+                            //  if (!pos_tagged_token_test.isEmpty()) {
+                            for (PosTaggedToken ptt_test : pos_tagged_token_test) {
+                                //hasFragranceCreator (NC,mod) + (P,dep) + [[(NPP,prep)+ (NPP,mod)] || [ (NPP,prep]+(CC,coord)+(NPP,dep_coord)+(NPP,mod)]]
+                                if (ptt_test.getTag().toString().equalsIgnoreCase("NPP") && parseConfiguration.getGoverningDependency(ptt_test).getLabel().equalsIgnoreCase("prep")
+                                        && ptt_test.getComment().equalsIgnoreCase("PER")) {
+                                    Token objectToken = new Token();
+                                    objectToken.setForm(ptt_test.getToken().toString());
+                                    SentenceRelation sentenceRelation = new SentenceRelation();
+                                    SentenceRelationId sentenceRelationId = new SentenceRelationId();
+                                    Token subject2 = extractSubject2(parseConfiguration, posTagSequence, line);
+                                    System.out.println("subject2: enter condition" + subject2);
+                                    sentenceRelationId.setSubject(subject2);
+                                    sentenceRelationId.setObject(objectToken);
+                                    sentenceRelationId.setRelation("(NC,(suj||mod||prep)) + ((P||(P+D)),dep) + [[(NPP,prep)+ (NPP,mod)] || [(NPP,prep)+(CC,coord)+(NPP,dep_coord)+(NPP,mod)]]");
+                                    sentenceRelationId.setSentence_text(line);
+                                    sentenceRelationId.setConfidence(1);
+                                    sentenceRelationId.setType(SentenceRelationType.hasFragranceCreator);
+                                    sentenceRelation.setSentenceRelationId(sentenceRelationId);
+                                    sentenceRelation.setMethod(SentenceRelationMethod.rules);
+                                    list_result.add(sentenceRelation);
+                                    List<PosTaggedToken> pos_tagged_token_test1 = parseConfiguration.getDependents(ptt_test);
+                                    for (PosTaggedToken ptt_test1 : pos_tagged_token_test1) {
+                                        if (ptt_test1.getTag().toString().equalsIgnoreCase("CC") && parseConfiguration.getGoverningDependency(ptt_test1).getLabel().equalsIgnoreCase("coord")) {
+                                            List<PosTaggedToken> pos_tagged_token_test2 = parseConfiguration.getDependents(ptt_test1);
+                                            for (PosTaggedToken ptt_test2 : pos_tagged_token_test2) {
+                                                if (ptt_test2.getTag().toString().equalsIgnoreCase("NPP") &&
+                                                        parseConfiguration.getGoverningDependency(ptt_test2).getLabel().equalsIgnoreCase("dep_coord")
+                                                        && ptt_test2.getComment().equalsIgnoreCase("PER")) {
+                                                    Token objectToken2 = new Token();
+                                                    objectToken2.setForm(ptt_test2.getToken().toString());
+                                                    SentenceRelation sentenceRelation2 = new SentenceRelation();
+                                                    SentenceRelationId sentenceRelationId2 = new SentenceRelationId();
 
-                                                            sentenceRelationId2.setSubject(subject2);
-                                                            sentenceRelationId2.setObject(objectToken2);
-                                                            sentenceRelationId2.setRelation("(NC,(suj||mod||prep)) + ((P||(P+D)),dep) + [[(NPP,prep)+ (NPP,mod)] || [(NPP,prep)+(CC,coord)+(NPP,dep_coord)+(NPP,mod)]]");
-                                                            sentenceRelationId2.setConfidence(1);
-                                                            sentenceRelationId2.setSentence_text(line);
-                                                            sentenceRelationId2.setType(SentenceRelationType.hasFragranceCreator);
-                                                            sentenceRelation2.setSentenceRelationId(sentenceRelationId2);
-                                                            sentenceRelation2.setMethod(SentenceRelationMethod.rules);
-                                                            list_result.add(sentenceRelation2);
+                                                    sentenceRelationId2.setSubject(subject2);
+                                                    sentenceRelationId2.setObject(objectToken2);
+                                                    sentenceRelationId2.setRelation("(NC,(suj||mod||prep)) + ((P||(P+D)),dep) + [[(NPP,prep)+ (NPP,mod)] || [(NPP,prep)+(CC,coord)+(NPP,dep_coord)+(NPP,mod)]]");
+                                                    sentenceRelationId2.setConfidence(1);
+                                                    sentenceRelationId2.setSentence_text(line);
+                                                    sentenceRelationId2.setType(SentenceRelationType.hasFragranceCreator);
+                                                    sentenceRelation2.setSentenceRelationId(sentenceRelationId2);
+                                                    sentenceRelation2.setMethod(SentenceRelationMethod.rules);
+                                                    list_result.add(sentenceRelation2);
 
-                                                    }
-                                                        }
-                                                    }
                                                 }
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -671,7 +668,7 @@ public class TalismaneAPITestV5_with_holmes extends AbstractRelationExtraction {
                 }
 
                 //Rules with (NC, mod||suj ||prep)
-                if (posTagSequence.get(i).getTag().toString().equalsIgnoreCase("VPR") && parseConfiguration.getGoverningDependency(posTagSequence.get(i)).getLabel().equalsIgnoreCase("mod") ) {
+                if (posTagSequence.get(i).getTag().toString().equalsIgnoreCase("VPR") && parseConfiguration.getGoverningDependency(posTagSequence.get(i)).getLabel().equalsIgnoreCase("mod")) {
                     List<PosTaggedToken> pos_tagged_token = parseConfiguration.getDependents(posTagSequence.get(i));
                     for (PosTaggedToken ptt : pos_tagged_token) {
                         // règle pour la relation hasComponent
@@ -683,40 +680,40 @@ public class TalismaneAPITestV5_with_holmes extends AbstractRelationExtraction {
                             for (PosTaggedToken ptt_test : pos_tagged_token_test) {
                                 if (ptt_test.getTag().toString().equalsIgnoreCase("ADJ") && parseConfiguration.getGoverningDependency(ptt_test).getLabel().equalsIgnoreCase("mod")
                                         && ptt_test.getComment().isEmpty()) {
-                                        annotated = true;
-                                        Token objectToken = new Token();
-                                        objectToken.setForm(ptt.getToken().toString() + " " + ptt_test.getToken().toString());
-                                        SentenceRelation sentenceRelation = new SentenceRelation();
-                                        SentenceRelationId sentenceRelationId = new SentenceRelationId();
-                                    Token subject2=extractSubject2( parseConfiguration,  posTagSequence, line);
-                                    System.out.println("subject2: enter condition"+ subject2);
-                                        sentenceRelationId.setSubject(subject2);
-                                        sentenceRelationId.setObject(objectToken);
-                                        sentenceRelationId.setRelation("(VPR,mod) + [(NPP,obj) ||[(NPP,obj)+(Adj,mod)* +(CC,coord) + (NPP,dep_coord)]");
-                                        sentenceRelationId.setSentence_text(line);
-                                        sentenceRelationId.setConfidence(1);
-                                        sentenceRelationId.setType(SentenceRelationType.hasComponent);
-                                        sentenceRelation.setSentenceRelationId(sentenceRelationId);
-                                        sentenceRelation.setMethod(SentenceRelationMethod.rules);
-                                        list_result.add(sentenceRelation);
+                                    annotated = true;
+                                    Token objectToken = new Token();
+                                    objectToken.setForm(ptt.getToken().toString() + " " + ptt_test.getToken().toString());
+                                    SentenceRelation sentenceRelation = new SentenceRelation();
+                                    SentenceRelationId sentenceRelationId = new SentenceRelationId();
+                                    Token subject2 = extractSubject2(parseConfiguration, posTagSequence, line);
+                                    System.out.println("subject2: enter condition" + subject2);
+                                    sentenceRelationId.setSubject(subject2);
+                                    sentenceRelationId.setObject(objectToken);
+                                    sentenceRelationId.setRelation("(VPR,mod) + [(NPP,obj) ||[(NPP,obj)+(Adj,mod)* +(CC,coord) + (NPP,dep_coord)]");
+                                    sentenceRelationId.setSentence_text(line);
+                                    sentenceRelationId.setConfidence(1);
+                                    sentenceRelationId.setType(SentenceRelationType.hasComponent);
+                                    sentenceRelation.setSentenceRelationId(sentenceRelationId);
+                                    sentenceRelation.setMethod(SentenceRelationMethod.rules);
+                                    list_result.add(sentenceRelation);
 
                                 }
                                 if (!annotated) {
-                                        Token objectToken = new Token();
-                                        objectToken.setForm(ptt.getToken().toString());
-                                        SentenceRelation sentenceRelation = new SentenceRelation();
-                                        SentenceRelationId sentenceRelationId = new SentenceRelationId();
-                                    Token subject2=extractSubject2( parseConfiguration,  posTagSequence, line);
-                                    System.out.println("subject2: enter condition"+ subject2);
-                                        sentenceRelationId.setSubject(subject2);
-                                        sentenceRelationId.setObject(objectToken);
-                                        sentenceRelationId.setRelation("(VPR,mod) + [(NPP,obj)+(Adj,mod)* ||[(NPP,obj) +(CC,coord) + (NPP,dep_coord)]");
-                                        sentenceRelationId.setSentence_text(line);
-                                        sentenceRelationId.setConfidence(1);
-                                        sentenceRelationId.setType(SentenceRelationType.hasComponent);
-                                        sentenceRelation.setSentenceRelationId(sentenceRelationId);
-                                        sentenceRelation.setMethod(SentenceRelationMethod.rules);
-                                        list_result.add(sentenceRelation);
+                                    Token objectToken = new Token();
+                                    objectToken.setForm(ptt.getToken().toString());
+                                    SentenceRelation sentenceRelation = new SentenceRelation();
+                                    SentenceRelationId sentenceRelationId = new SentenceRelationId();
+                                    Token subject2 = extractSubject2(parseConfiguration, posTagSequence, line);
+                                    System.out.println("subject2: enter condition" + subject2);
+                                    sentenceRelationId.setSubject(subject2);
+                                    sentenceRelationId.setObject(objectToken);
+                                    sentenceRelationId.setRelation("(VPR,mod) + [(NPP,obj)+(Adj,mod)* ||[(NPP,obj) +(CC,coord) + (NPP,dep_coord)]");
+                                    sentenceRelationId.setSentence_text(line);
+                                    sentenceRelationId.setConfidence(1);
+                                    sentenceRelationId.setType(SentenceRelationType.hasComponent);
+                                    sentenceRelation.setSentenceRelationId(sentenceRelationId);
+                                    sentenceRelation.setMethod(SentenceRelationMethod.rules);
+                                    list_result.add(sentenceRelation);
                                 }
 
                                 if (ptt_test.getTag().toString().equalsIgnoreCase("CC") && (parseConfiguration.getGoverningDependency(ptt_test).getLabel().equalsIgnoreCase("coord"))
@@ -732,38 +729,38 @@ public class TalismaneAPITestV5_with_holmes extends AbstractRelationExtraction {
                                                         ) {
                                                     annotated = true;
                                                     Token objectToken2 = new Token();
-                                                        objectToken2.setForm(ptt_test1.getToken().toString() + " " + ptt_test_2.getToken().toString());
-                                                        SentenceRelation sentenceRelation2 = new SentenceRelation();
-                                                        SentenceRelationId sentenceRelationId2 = new SentenceRelationId();
-                                                    Token subject2=extractSubject2( parseConfiguration,  posTagSequence, line);
-                                                    System.out.println("subject2: enter condition"+ subject2);
-                                                        sentenceRelationId2.setSubject(subject2);
-                                                        sentenceRelationId2.setObject(objectToken2);
-                                                        sentenceRelationId2.setRelation("(VPR,mod) + [(NPP,obj)+(Adj,mod)* ||[(NPP,obj) +(CC,coord) + (NPP,dep_coord)+(Adj,mod)*]");
-                                                        sentenceRelationId2.setSentence_text(line);
-                                                        sentenceRelationId2.setConfidence(1);
-                                                        sentenceRelationId2.setType(SentenceRelationType.hasComponent);
-                                                        sentenceRelation2.setSentenceRelationId(sentenceRelationId2);
-                                                        sentenceRelation2.setMethod(SentenceRelationMethod.rules);
-                                                        list_result.add(sentenceRelation2);
+                                                    objectToken2.setForm(ptt_test1.getToken().toString() + " " + ptt_test_2.getToken().toString());
+                                                    SentenceRelation sentenceRelation2 = new SentenceRelation();
+                                                    SentenceRelationId sentenceRelationId2 = new SentenceRelationId();
+                                                    Token subject2 = extractSubject2(parseConfiguration, posTagSequence, line);
+                                                    System.out.println("subject2: enter condition" + subject2);
+                                                    sentenceRelationId2.setSubject(subject2);
+                                                    sentenceRelationId2.setObject(objectToken2);
+                                                    sentenceRelationId2.setRelation("(VPR,mod) + [(NPP,obj)+(Adj,mod)* ||[(NPP,obj) +(CC,coord) + (NPP,dep_coord)+(Adj,mod)*]");
+                                                    sentenceRelationId2.setSentence_text(line);
+                                                    sentenceRelationId2.setConfidence(1);
+                                                    sentenceRelationId2.setType(SentenceRelationType.hasComponent);
+                                                    sentenceRelation2.setSentenceRelationId(sentenceRelationId2);
+                                                    sentenceRelation2.setMethod(SentenceRelationMethod.rules);
+                                                    list_result.add(sentenceRelation2);
 
                                                 }
                                                 if (!annotated) {
-                                                        Token objectToken2 = new Token();
-                                                        objectToken2.setForm(ptt_test1.getToken().toString());
-                                                        SentenceRelation sentenceRelation2 = new SentenceRelation();
-                                                        SentenceRelationId sentenceRelationId2 = new SentenceRelationId();
-                                                    Token subject2=extractSubject2( parseConfiguration,  posTagSequence, line);
-                                                    System.out.println("subject2: enter condition"+ subject2);
-                                                        sentenceRelationId2.setSubject(subject2);
-                                                        sentenceRelationId2.setObject(objectToken2);
-                                                        sentenceRelationId2.setRelation("(VPR,mod) + [(NPP,obj)+(Adj,mod)* ||[(NPP,obj) +(CC,coord) + (NPP,dep_coord)(Adj,mod)*]");
-                                                        sentenceRelationId2.setSentence_text(line);
-                                                        sentenceRelationId2.setConfidence(1);
-                                                        sentenceRelationId2.setType(SentenceRelationType.hasComponent);
-                                                        sentenceRelation2.setSentenceRelationId(sentenceRelationId2);
-                                                        sentenceRelation2.setMethod(SentenceRelationMethod.rules);
-                                                        list_result.add(sentenceRelation2);
+                                                    Token objectToken2 = new Token();
+                                                    objectToken2.setForm(ptt_test1.getToken().toString());
+                                                    SentenceRelation sentenceRelation2 = new SentenceRelation();
+                                                    SentenceRelationId sentenceRelationId2 = new SentenceRelationId();
+                                                    Token subject2 = extractSubject2(parseConfiguration, posTagSequence, line);
+                                                    System.out.println("subject2: enter condition" + subject2);
+                                                    sentenceRelationId2.setSubject(subject2);
+                                                    sentenceRelationId2.setObject(objectToken2);
+                                                    sentenceRelationId2.setRelation("(VPR,mod) + [(NPP,obj)+(Adj,mod)* ||[(NPP,obj) +(CC,coord) + (NPP,dep_coord)(Adj,mod)*]");
+                                                    sentenceRelationId2.setSentence_text(line);
+                                                    sentenceRelationId2.setConfidence(1);
+                                                    sentenceRelationId2.setType(SentenceRelationType.hasComponent);
+                                                    sentenceRelation2.setSentenceRelationId(sentenceRelationId2);
+                                                    sentenceRelation2.setMethod(SentenceRelationMethod.rules);
+                                                    list_result.add(sentenceRelation2);
 
                                                 }
                                             }
@@ -777,7 +774,7 @@ public class TalismaneAPITestV5_with_holmes extends AbstractRelationExtraction {
                 }
 
                 // rules with (VPP, mod)
-                if (posTagSequence.get(i).getTag().toString().equalsIgnoreCase("VPP") && parseConfiguration.getGoverningDependency(posTagSequence.get(i)).getLabel().equalsIgnoreCase("mod") ) {
+                if (posTagSequence.get(i).getTag().toString().equalsIgnoreCase("VPP") && parseConfiguration.getGoverningDependency(posTagSequence.get(i)).getLabel().equalsIgnoreCase("mod")) {
                     List<PosTaggedToken> pos_tagged_token = parseConfiguration.getDependents(posTagSequence.get(i));
                     for (PosTaggedToken ptt : pos_tagged_token) {
                         //rafraîchir // caractériser // composé
@@ -799,42 +796,42 @@ public class TalismaneAPITestV5_with_holmes extends AbstractRelationExtraction {
                                             for (PosTaggedToken ptt_test2 : pos_tagged_token_test2) {
                                                 if (ptt_test2.getTag().toString().equalsIgnoreCase("ADJ") && (parseConfiguration.getGoverningDependency(ptt_test2).getLabel().equalsIgnoreCase("mod"))
                                                         ) {
-                                                        annotated = true;
-                                                        Token objectToken = new Token();
-                                                        objectToken.setForm(ptt_test1.getToken().toString() + " " + ptt_test2.getToken().toString());
-                                                        SentenceRelation sentenceRelation = new SentenceRelation();
-                                                        SentenceRelationId sentenceRelationId = new SentenceRelationId();
-                                                    Token subject2=extractSubject2( parseConfiguration,  posTagSequence, line);
-                                                    System.out.println("subject2: enter condition"+ subject2);
-                                                        sentenceRelationId.setSubject(subject2);
+                                                    annotated = true;
+                                                    Token objectToken = new Token();
+                                                    objectToken.setForm(ptt_test1.getToken().toString() + " " + ptt_test2.getToken().toString());
+                                                    SentenceRelation sentenceRelation = new SentenceRelation();
+                                                    SentenceRelationId sentenceRelationId = new SentenceRelationId();
+                                                    Token subject2 = extractSubject2(parseConfiguration, posTagSequence, line);
+                                                    System.out.println("subject2: enter condition" + subject2);
+                                                    sentenceRelationId.setSubject(subject2);
 
-                                                        sentenceRelationId.setObject(objectToken);
-                                                        sentenceRelationId.setRelation("(VPP, mod)+ (NC,mod)+(P+D,dep)+(NC,prep)+(ADj,mod)*");
-                                                        sentenceRelationId.setSentence_text(line);
-                                                        sentenceRelationId.setConfidence(1);
-                                                        sentenceRelationId.setType(SentenceRelationType.hasComponent);
-                                                        sentenceRelation.setSentenceRelationId(sentenceRelationId);
-                                                        sentenceRelation.setMethod(SentenceRelationMethod.rules);
-                                                        list_result.add(sentenceRelation);
+                                                    sentenceRelationId.setObject(objectToken);
+                                                    sentenceRelationId.setRelation("(VPP, mod)+ (NC,mod)+(P+D,dep)+(NC,prep)+(ADj,mod)*");
+                                                    sentenceRelationId.setSentence_text(line);
+                                                    sentenceRelationId.setConfidence(1);
+                                                    sentenceRelationId.setType(SentenceRelationType.hasComponent);
+                                                    sentenceRelation.setSentenceRelationId(sentenceRelationId);
+                                                    sentenceRelation.setMethod(SentenceRelationMethod.rules);
+                                                    list_result.add(sentenceRelation);
 
                                                 }
 
                                                 if (!annotated) {
-                                                        Token objectToken = new Token();
-                                                        objectToken.setForm(ptt_test1.getToken().toString());
-                                                        SentenceRelation sentenceRelation = new SentenceRelation();
-                                                        SentenceRelationId sentenceRelationId = new SentenceRelationId();
-                                                    Token subject2=extractSubject2( parseConfiguration,  posTagSequence, line);
-                                                    System.out.println("subject2: enter condition"+ subject2);
-                                                        sentenceRelationId.setSubject(subject2);
-                                                        sentenceRelationId.setObject(objectToken);
-                                                        sentenceRelationId.setRelation("(VPP, mod)+ (NC,mod)+(P+D,dep)+(NC,prep)+(ADj,mod)*");
-                                                        sentenceRelationId.setSentence_text(line);
-                                                        sentenceRelationId.setConfidence(1);
-                                                        sentenceRelationId.setType(SentenceRelationType.hasComponent);
-                                                        sentenceRelation.setSentenceRelationId(sentenceRelationId);
-                                                        sentenceRelation.setMethod(SentenceRelationMethod.rules);
-                                                        list_result.add(sentenceRelation);
+                                                    Token objectToken = new Token();
+                                                    objectToken.setForm(ptt_test1.getToken().toString());
+                                                    SentenceRelation sentenceRelation = new SentenceRelation();
+                                                    SentenceRelationId sentenceRelationId = new SentenceRelationId();
+                                                    Token subject2 = extractSubject2(parseConfiguration, posTagSequence, line);
+                                                    System.out.println("subject2: enter condition" + subject2);
+                                                    sentenceRelationId.setSubject(subject2);
+                                                    sentenceRelationId.setObject(objectToken);
+                                                    sentenceRelationId.setRelation("(VPP, mod)+ (NC,mod)+(P+D,dep)+(NC,prep)+(ADj,mod)*");
+                                                    sentenceRelationId.setSentence_text(line);
+                                                    sentenceRelationId.setConfidence(1);
+                                                    sentenceRelationId.setType(SentenceRelationType.hasComponent);
+                                                    sentenceRelation.setSentenceRelationId(sentenceRelationId);
+                                                    sentenceRelation.setMethod(SentenceRelationMethod.rules);
+                                                    list_result.add(sentenceRelation);
                                                 }
                                             }
                                         }
@@ -855,31 +852,12 @@ public class TalismaneAPITestV5_with_holmes extends AbstractRelationExtraction {
                                         if (ptt_test2.getTag().toString().equalsIgnoreCase("ADJ") && (parseConfiguration.getGoverningDependency(ptt_test2).getLabel().equalsIgnoreCase("mod"))
                                                 ) {
                                             annotated = true;
-                                                Token objectToken = new Token();
-                                                objectToken.setForm(ptt_test.getToken().toString() + " " + ptt_test2.getToken().toString());
-                                                SentenceRelation sentenceRelation = new SentenceRelation();
-                                                SentenceRelationId sentenceRelationId = new SentenceRelationId();
-                                            Token subject2=extractSubject2( parseConfiguration,  posTagSequence, line);
-                                            System.out.println("subject2: enter condition"+ subject2);
-                                                sentenceRelationId.setSubject(subject2);
-                                                sentenceRelationId.setObject(objectToken);
-                                                sentenceRelationId.setRelation("(VPP, mod)+ (NC,mod)+(P+D,dep)+(NC,prep)+(ADj,mod)*");
-                                                sentenceRelationId.setSentence_text(line);
-                                                sentenceRelationId.setConfidence(1);
-                                                sentenceRelationId.setType(SentenceRelationType.hasComponent);
-                                                sentenceRelation.setSentenceRelationId(sentenceRelationId);
-                                                sentenceRelation.setMethod(SentenceRelationMethod.rules);
-                                                list_result.add(sentenceRelation);
-
-                                        }
-                                    }
-                                    if (!annotated) {
-                                        Token objectToken = new Token();
-                                            objectToken.setForm(ptt_test.getToken().toString());
+                                            Token objectToken = new Token();
+                                            objectToken.setForm(ptt_test.getToken().toString() + " " + ptt_test2.getToken().toString());
                                             SentenceRelation sentenceRelation = new SentenceRelation();
                                             SentenceRelationId sentenceRelationId = new SentenceRelationId();
-                                        Token subject2=extractSubject2( parseConfiguration,  posTagSequence, line);
-                                        System.out.println("subject2: enter condition"+ subject2);
+                                            Token subject2 = extractSubject2(parseConfiguration, posTagSequence, line);
+                                            System.out.println("subject2: enter condition" + subject2);
                                             sentenceRelationId.setSubject(subject2);
                                             sentenceRelationId.setObject(objectToken);
                                             sentenceRelationId.setRelation("(VPP, mod)+ (NC,mod)+(P+D,dep)+(NC,prep)+(ADj,mod)*");
@@ -889,6 +867,25 @@ public class TalismaneAPITestV5_with_holmes extends AbstractRelationExtraction {
                                             sentenceRelation.setSentenceRelationId(sentenceRelationId);
                                             sentenceRelation.setMethod(SentenceRelationMethod.rules);
                                             list_result.add(sentenceRelation);
+
+                                        }
+                                    }
+                                    if (!annotated) {
+                                        Token objectToken = new Token();
+                                        objectToken.setForm(ptt_test.getToken().toString());
+                                        SentenceRelation sentenceRelation = new SentenceRelation();
+                                        SentenceRelationId sentenceRelationId = new SentenceRelationId();
+                                        Token subject2 = extractSubject2(parseConfiguration, posTagSequence, line);
+                                        System.out.println("subject2: enter condition" + subject2);
+                                        sentenceRelationId.setSubject(subject2);
+                                        sentenceRelationId.setObject(objectToken);
+                                        sentenceRelationId.setRelation("(VPP, mod)+ (NC,mod)+(P+D,dep)+(NC,prep)+(ADj,mod)*");
+                                        sentenceRelationId.setSentence_text(line);
+                                        sentenceRelationId.setConfidence(1);
+                                        sentenceRelationId.setType(SentenceRelationType.hasComponent);
+                                        sentenceRelation.setSentenceRelationId(sentenceRelationId);
+                                        sentenceRelation.setMethod(SentenceRelationMethod.rules);
+                                        list_result.add(sentenceRelation);
 
                                     }
                                 }
@@ -906,18 +903,18 @@ public class TalismaneAPITestV5_with_holmes extends AbstractRelationExtraction {
                                                     SentenceRelation sentenceRelation = new SentenceRelation();
                                                     SentenceRelationId sentenceRelationId = new SentenceRelationId();
                                                     Token objectToken = new Token();
-                                                        objectToken.setForm(ptt_test5.getToken().toString());
-                                                    Token subject2=extractSubject2( parseConfiguration,  posTagSequence, line);
-                                                    System.out.println("subject2: enter condition"+ subject2);
-                                                        sentenceRelationId.setSubject(subject2);
-                                                        sentenceRelationId.setObject(objectToken);
-                                                        sentenceRelationId.setRelation("(VPP, root) + * + [[(NC,prep)+(ADJ,mod)]|| [(NPP,prep) +(NPP,mod)] ||(NC, dep_coord)]");
-                                                        sentenceRelationId.setSentence_text(line);
-                                                        sentenceRelationId.setConfidence(1);
-                                                        sentenceRelationId.setType(SentenceRelationType.hasComponent);
-                                                        sentenceRelation.setSentenceRelationId(sentenceRelationId);
-                                                        sentenceRelation.setMethod(SentenceRelationMethod.rules);
-                                                        list_result.add(sentenceRelation);
+                                                    objectToken.setForm(ptt_test5.getToken().toString());
+                                                    Token subject2 = extractSubject2(parseConfiguration, posTagSequence, line);
+                                                    System.out.println("subject2: enter condition" + subject2);
+                                                    sentenceRelationId.setSubject(subject2);
+                                                    sentenceRelationId.setObject(objectToken);
+                                                    sentenceRelationId.setRelation("(VPP, root) + * + [[(NC,prep)+(ADJ,mod)]|| [(NPP,prep) +(NPP,mod)] ||(NC, dep_coord)]");
+                                                    sentenceRelationId.setSentence_text(line);
+                                                    sentenceRelationId.setConfidence(1);
+                                                    sentenceRelationId.setType(SentenceRelationType.hasComponent);
+                                                    sentenceRelation.setSentenceRelationId(sentenceRelationId);
+                                                    sentenceRelation.setMethod(SentenceRelationMethod.rules);
+                                                    list_result.add(sentenceRelation);
 
                                                 }
                                             }
@@ -936,7 +933,7 @@ public class TalismaneAPITestV5_with_holmes extends AbstractRelationExtraction {
                                 if (ptt_test.getTag().toString().equalsIgnoreCase("NC") && (parseConfiguration.getGoverningDependency(ptt_test).getLabel().equalsIgnoreCase("prep"))
                                         && ptt_test.getComment().isEmpty()/* !ptt_test.getComment().equalsIgnoreCase("product") && !ptt_test.getComment().equalsIgnoreCase("range")  && !ptt_test.getComment().equalsIgnoreCase("PER")*/) {
                                     boolean annotated = false;
-                                    System.out.println("tttttttoken ananas: "+ ptt_test.getToken() + "comments: "+ ptt_test.getComment());
+                                    System.out.println("tttttttoken ananas: " + ptt_test.getToken() + "comments: " + ptt_test.getComment());
                                     List<PosTaggedToken> pos_tagged_token_test1 = parseConfiguration.getDependents(ptt_test);
                                     for (PosTaggedToken ptt_test1 : pos_tagged_token_test1) {
                                         if (ptt_test1.getTag().toString().equalsIgnoreCase("ADJ") && (parseConfiguration.getGoverningDependency(ptt_test1).getLabel().equalsIgnoreCase("mod"))
@@ -946,8 +943,8 @@ public class TalismaneAPITestV5_with_holmes extends AbstractRelationExtraction {
                                             objectToken.setForm(ptt_test.getToken().toString());
                                             SentenceRelation sentenceRelation = new SentenceRelation();
                                             SentenceRelationId sentenceRelationId = new SentenceRelationId();
-                                            Token subject2=extractSubject2( parseConfiguration,  posTagSequence, line);
-                                            System.out.println("subject2: enter condition"+ subject2);
+                                            Token subject2 = extractSubject2(parseConfiguration, posTagSequence, line);
+                                            System.out.println("subject2: enter condition" + subject2);
                                             sentenceRelationId.setSubject(subject2);
                                             sentenceRelationId.setObject(objectToken);
                                             sentenceRelationId.setRelation("(VPP,mod)+(P,de_obj)+(NC,prep)+(ADJ,mod)*");
@@ -960,21 +957,21 @@ public class TalismaneAPITestV5_with_holmes extends AbstractRelationExtraction {
 
                                         }
                                         if (!annotated) {
-                                                Token objectToken = new Token();
-                                                objectToken.setForm(ptt_test.getToken().toString());
-                                                SentenceRelation sentenceRelation = new SentenceRelation();
-                                                SentenceRelationId sentenceRelationId = new SentenceRelationId();
-                                            Token subject2=extractSubject2( parseConfiguration,  posTagSequence, line);
-                                            System.out.println("subject2: enter condition"+ subject2);
-                                                sentenceRelationId.setSubject(subject2);
-                                                sentenceRelationId.setObject(objectToken);
-                                                sentenceRelationId.setRelation("(VPP,mod)+(P,de_obj)+(NC,prep)+(ADJ,mod)*");
-                                                sentenceRelationId.setSentence_text(line);
-                                                sentenceRelationId.setConfidence(1);
-                                                sentenceRelationId.setType(SentenceRelationType.hasComponent);
-                                                sentenceRelation.setSentenceRelationId(sentenceRelationId);
-                                                sentenceRelation.setMethod(SentenceRelationMethod.rules);
-                                                list_result.add(sentenceRelation);
+                                            Token objectToken = new Token();
+                                            objectToken.setForm(ptt_test.getToken().toString());
+                                            SentenceRelation sentenceRelation = new SentenceRelation();
+                                            SentenceRelationId sentenceRelationId = new SentenceRelationId();
+                                            Token subject2 = extractSubject2(parseConfiguration, posTagSequence, line);
+                                            System.out.println("subject2: enter condition" + subject2);
+                                            sentenceRelationId.setSubject(subject2);
+                                            sentenceRelationId.setObject(objectToken);
+                                            sentenceRelationId.setRelation("(VPP,mod)+(P,de_obj)+(NC,prep)+(ADJ,mod)*");
+                                            sentenceRelationId.setSentence_text(line);
+                                            sentenceRelationId.setConfidence(1);
+                                            sentenceRelationId.setType(SentenceRelationType.hasComponent);
+                                            sentenceRelation.setSentenceRelationId(sentenceRelationId);
+                                            sentenceRelation.setMethod(SentenceRelationMethod.rules);
+                                            list_result.add(sentenceRelation);
 
                                         }
                                     }
@@ -992,21 +989,21 @@ public class TalismaneAPITestV5_with_holmes extends AbstractRelationExtraction {
                                         if (ptt_test_0.getTag().toString().equalsIgnoreCase("NPP") && (parseConfiguration.getGoverningDependency(ptt_test_0).getLabel().equalsIgnoreCase("mod"))
                                                 && ptt_test_0.getComment().isEmpty()) {
 //à revoir
-                                                Token objectToken = new Token();
-                                                objectToken.setForm(ptt_test.getToken().toString() + " " + ptt_test_0.getToken().toString());
-                                                SentenceRelation sentenceRelation = new SentenceRelation();
-                                                SentenceRelationId sentenceRelationId = new SentenceRelationId();
-                                            Token subject2=extractSubject2( parseConfiguration,  posTagSequence, line);
-                                            System.out.println("subject2: enter condition"+ subject2);
-                                                sentenceRelationId.setSubject(subject2);
-                                                sentenceRelationId.setObject(objectToken);
-                                                sentenceRelationId.setRelation(ptt_test.getTag().toString());
-                                                sentenceRelationId.setSentence_text(line);
-                                                sentenceRelationId.setConfidence(1);
-                                                sentenceRelationId.setType(SentenceRelationType.hasComponent);
-                                                sentenceRelation.setSentenceRelationId(sentenceRelationId);
-                                                sentenceRelation.setMethod(SentenceRelationMethod.rules);
-                                                list_result.add(sentenceRelation);
+                                            Token objectToken = new Token();
+                                            objectToken.setForm(ptt_test.getToken().toString() + " " + ptt_test_0.getToken().toString());
+                                            SentenceRelation sentenceRelation = new SentenceRelation();
+                                            SentenceRelationId sentenceRelationId = new SentenceRelationId();
+                                            Token subject2 = extractSubject2(parseConfiguration, posTagSequence, line);
+                                            System.out.println("subject2: enter condition" + subject2);
+                                            sentenceRelationId.setSubject(subject2);
+                                            sentenceRelationId.setObject(objectToken);
+                                            sentenceRelationId.setRelation(ptt_test.getTag().toString());
+                                            sentenceRelationId.setSentence_text(line);
+                                            sentenceRelationId.setConfidence(1);
+                                            sentenceRelationId.setType(SentenceRelationType.hasComponent);
+                                            sentenceRelation.setSentenceRelationId(sentenceRelationId);
+                                            sentenceRelation.setMethod(SentenceRelationMethod.rules);
+                                            list_result.add(sentenceRelation);
 
                                         }
 
@@ -1036,45 +1033,45 @@ public class TalismaneAPITestV5_with_holmes extends AbstractRelationExtraction {
                                             for (PosTaggedToken ptt_test2 : pos_tagged_token_test2) {
                                                 if (ptt_test2.getTag().toString().equalsIgnoreCase("NC") && parseConfiguration.getGoverningDependency(ptt_test2).getLabel().equalsIgnoreCase("prep")) {
                                                     List<PosTaggedToken> pos_tagged_token_test3 = parseConfiguration.getDependents(ptt_test2);
-                                                    boolean annotated=false;
+                                                    boolean annotated = false;
                                                     for (PosTaggedToken ptt_test3 : pos_tagged_token_test3) {
                                                         if (ptt_test3.getTag().toString().equalsIgnoreCase("ADJ") &&
                                                                 parseConfiguration.getGoverningDependency(ptt_test3).getLabel().equalsIgnoreCase("mod")
-                                                                 && ptt_test3.getComment().isEmpty()) {
-                                                                annotated = true;
-                                                            Token subject2=extractSubject2( parseConfiguration,  posTagSequence, line);
-                                                            System.out.println("subject2: enter condition"+ subject2);
-                                                                SentenceRelation sentenceRelation = new SentenceRelation();
-                                                                SentenceRelationId sentenceRelationId = new SentenceRelationId();
-                                                                Token objectToken = new Token();
-                                                                objectToken.setForm(ptt_test2.getToken().toString() + " " + ptt_test3.getToken().toString());
-                                                                sentenceRelationId.setSubject(subject2);
-                                                                sentenceRelationId.setObject(objectToken);
-                                                                sentenceRelationId.setRelation("(VPP, root) + * + [[(NC,prep)+(ADJ,mod)]|| [(NPP,prep) +(NPP,mod)] ||(NC, dep_coord)]");
-                                                                sentenceRelationId.setSentence_text(line);
-                                                                sentenceRelationId.setConfidence(1);
-                                                                sentenceRelationId.setType(SentenceRelationType.hasComponent);
-                                                                sentenceRelation.setSentenceRelationId(sentenceRelationId);
-                                                                sentenceRelation.setMethod(SentenceRelationMethod.rules);
-                                                                list_result.add(sentenceRelation);
-
-                                                        }
-                                                        if(!annotated) {
+                                                                && ptt_test3.getComment().isEmpty()) {
+                                                            annotated = true;
+                                                            Token subject2 = extractSubject2(parseConfiguration, posTagSequence, line);
+                                                            System.out.println("subject2: enter condition" + subject2);
                                                             SentenceRelation sentenceRelation = new SentenceRelation();
                                                             SentenceRelationId sentenceRelationId = new SentenceRelationId();
                                                             Token objectToken = new Token();
-                                                            Token subject2=extractSubject2( parseConfiguration,  posTagSequence, line);
-                                                            System.out.println("subject2: enter condition"+ subject2);
+                                                            objectToken.setForm(ptt_test2.getToken().toString() + " " + ptt_test3.getToken().toString());
+                                                            sentenceRelationId.setSubject(subject2);
+                                                            sentenceRelationId.setObject(objectToken);
+                                                            sentenceRelationId.setRelation("(VPP, root) + * + [[(NC,prep)+(ADJ,mod)]|| [(NPP,prep) +(NPP,mod)] ||(NC, dep_coord)]");
+                                                            sentenceRelationId.setSentence_text(line);
+                                                            sentenceRelationId.setConfidence(1);
+                                                            sentenceRelationId.setType(SentenceRelationType.hasComponent);
+                                                            sentenceRelation.setSentenceRelationId(sentenceRelationId);
+                                                            sentenceRelation.setMethod(SentenceRelationMethod.rules);
+                                                            list_result.add(sentenceRelation);
+
+                                                        }
+                                                        if (!annotated) {
+                                                            SentenceRelation sentenceRelation = new SentenceRelation();
+                                                            SentenceRelationId sentenceRelationId = new SentenceRelationId();
+                                                            Token objectToken = new Token();
+                                                            Token subject2 = extractSubject2(parseConfiguration, posTagSequence, line);
+                                                            System.out.println("subject2: enter condition" + subject2);
                                                             objectToken.setForm(ptt_test2.getToken().toString());
-                                                                sentenceRelationId.setSubject(subject2);
-                                                                sentenceRelationId.setObject(objectToken);
-                                                                sentenceRelationId.setRelation("(VPP, root) + * + [[(NC,prep)+(ADJ,mod)]|| [(NPP,prep) +(NPP,mod)] ||(NC, dep_coord)]");
-                                                                sentenceRelationId.setSentence_text(line);
-                                                                sentenceRelationId.setConfidence(1);
-                                                                sentenceRelationId.setType(SentenceRelationType.hasComponent);
-                                                                sentenceRelation.setSentenceRelationId(sentenceRelationId);
-                                                                sentenceRelation.setMethod(SentenceRelationMethod.rules);
-                                                                list_result.add(sentenceRelation);
+                                                            sentenceRelationId.setSubject(subject2);
+                                                            sentenceRelationId.setObject(objectToken);
+                                                            sentenceRelationId.setRelation("(VPP, root) + * + [[(NC,prep)+(ADJ,mod)]|| [(NPP,prep) +(NPP,mod)] ||(NC, dep_coord)]");
+                                                            sentenceRelationId.setSentence_text(line);
+                                                            sentenceRelationId.setConfidence(1);
+                                                            sentenceRelationId.setType(SentenceRelationType.hasComponent);
+                                                            sentenceRelation.setSentenceRelationId(sentenceRelationId);
+                                                            sentenceRelation.setMethod(SentenceRelationMethod.rules);
+                                                            list_result.add(sentenceRelation);
 
                                                         }
 
@@ -1098,21 +1095,21 @@ public class TalismaneAPITestV5_with_holmes extends AbstractRelationExtraction {
                                                                                                 parseConfiguration.getGoverningDependency(ptt_test7).getLabel().equalsIgnoreCase("mod")
                                                                                                 && !ptt_test7.getComment().isEmpty()) {
                                                                                             ///revoir
-                                                                                            Token subject2=extractSubject2( parseConfiguration,  posTagSequence, line);
-                                                                                            System.out.println("subject2: enter condition"+ subject2);
+                                                                                            Token subject2 = extractSubject2(parseConfiguration, posTagSequence, line);
+                                                                                            System.out.println("subject2: enter condition" + subject2);
                                                                                             SentenceRelation sentenceRelation = new SentenceRelation();
                                                                                             SentenceRelationId sentenceRelationId = new SentenceRelationId();
                                                                                             Token objectToken = new Token();
-                                                                                                objectToken.setForm(ptt_test6.getToken().toString() + " " + ptt_test7.getToken().toString());
-                                                                                                sentenceRelationId.setSubject(subject2);
-                                                                                                sentenceRelationId.setObject(objectToken);
-                                                                                                sentenceRelationId.setRelation("(VPP, root) + * + [[(NC,prep)+(ADJ,mod)]|| [(NPP,prep) +(NPP,mod)] ||(NC, dep_coord)]");
-                                                                                                sentenceRelationId.setSentence_text(line);
-                                                                                                sentenceRelationId.setConfidence(1);
-                                                                                                sentenceRelationId.setType(SentenceRelationType.hasComponent);
-                                                                                                sentenceRelation.setSentenceRelationId(sentenceRelationId);
-                                                                                                sentenceRelation.setMethod(SentenceRelationMethod.rules);
-                                                                                                list_result.add(sentenceRelation);
+                                                                                            objectToken.setForm(ptt_test6.getToken().toString() + " " + ptt_test7.getToken().toString());
+                                                                                            sentenceRelationId.setSubject(subject2);
+                                                                                            sentenceRelationId.setObject(objectToken);
+                                                                                            sentenceRelationId.setRelation("(VPP, root) + * + [[(NC,prep)+(ADJ,mod)]|| [(NPP,prep) +(NPP,mod)] ||(NC, dep_coord)]");
+                                                                                            sentenceRelationId.setSentence_text(line);
+                                                                                            sentenceRelationId.setConfidence(1);
+                                                                                            sentenceRelationId.setType(SentenceRelationType.hasComponent);
+                                                                                            sentenceRelation.setSentenceRelationId(sentenceRelationId);
+                                                                                            sentenceRelation.setMethod(SentenceRelationMethod.rules);
+                                                                                            list_result.add(sentenceRelation);
 
                                                                                         }
                                                                                     }
@@ -1143,39 +1140,39 @@ public class TalismaneAPITestV5_with_holmes extends AbstractRelationExtraction {
                                     for (PosTaggedToken ptt_test3 : pos_tagged_token_test3) {
                                         if (ptt_test3.getTag().toString().equalsIgnoreCase("ADJ") &&
                                                 parseConfiguration.getGoverningDependency(ptt_test3).getLabel().equalsIgnoreCase("mod")
-                                                &&  ptt_test3.getComment().isEmpty()) {
+                                                && ptt_test3.getComment().isEmpty()) {
                                             annotated = true;
                                             Token objectToken = new Token();
-                                                objectToken.setForm(ptt_test.getToken().toString() + " " + ptt_test3.getToken().toString());
-                                                SentenceRelation sentenceRelation = new SentenceRelation();
-                                                SentenceRelationId sentenceRelationId = new SentenceRelationId();
-                                            Token subject2=extractSubject2( parseConfiguration,  posTagSequence, line);
-                                            System.out.println("subject2: enter condition"+ subject2);
-                                                sentenceRelationId.setSubject(subject2);
-                                                sentenceRelationId.setObject(objectToken);
-                                                sentenceRelationId.setRelation("(VPP, root) + * + [[(NC,prep)+(ADJ,mod)]|| [(NPP,prep) +(NPP,mod)] ||(NC, dep_coord)]");
-                                                sentenceRelationId.setSentence_text(line);
-                                                sentenceRelationId.setType(SentenceRelationType.hasComponent);
-                                                sentenceRelation.setSentenceRelationId(sentenceRelationId);
-                                                sentenceRelation.setMethod(SentenceRelationMethod.rules);
-                                                list_result.add(sentenceRelation);
+                                            objectToken.setForm(ptt_test.getToken().toString() + " " + ptt_test3.getToken().toString());
+                                            SentenceRelation sentenceRelation = new SentenceRelation();
+                                            SentenceRelationId sentenceRelationId = new SentenceRelationId();
+                                            Token subject2 = extractSubject2(parseConfiguration, posTagSequence, line);
+                                            System.out.println("subject2: enter condition" + subject2);
+                                            sentenceRelationId.setSubject(subject2);
+                                            sentenceRelationId.setObject(objectToken);
+                                            sentenceRelationId.setRelation("(VPP, root) + * + [[(NC,prep)+(ADJ,mod)]|| [(NPP,prep) +(NPP,mod)] ||(NC, dep_coord)]");
+                                            sentenceRelationId.setSentence_text(line);
+                                            sentenceRelationId.setType(SentenceRelationType.hasComponent);
+                                            sentenceRelation.setSentenceRelationId(sentenceRelationId);
+                                            sentenceRelation.setMethod(SentenceRelationMethod.rules);
+                                            list_result.add(sentenceRelation);
 
                                         }
                                         if (!annotated) {
                                             Token objectToken = new Token();
-                                                objectToken.setForm(ptt_test.getToken().toString());
-                                                SentenceRelation sentenceRelation = new SentenceRelation();
-                                                SentenceRelationId sentenceRelationId = new SentenceRelationId();
-                                            Token subject2=extractSubject2( parseConfiguration,  posTagSequence, line);
-                                            System.out.println("subject2: enter condition"+ subject2);
-                                                sentenceRelationId.setSubject(subject2);
-                                                sentenceRelationId.setObject(objectToken);
-                                                sentenceRelationId.setRelation("(VPP, root) + * + [[(NC,prep)+(ADJ,mod)]|| [(NPP,prep) +(NPP,mod)] ||(NC, dep_coord)]");
-                                                sentenceRelationId.setSentence_text(line);
-                                                sentenceRelationId.setType(SentenceRelationType.hasComponent);
-                                                sentenceRelation.setSentenceRelationId(sentenceRelationId);
-                                                sentenceRelation.setMethod(SentenceRelationMethod.rules);
-                                                list_result.add(sentenceRelation);
+                                            objectToken.setForm(ptt_test.getToken().toString());
+                                            SentenceRelation sentenceRelation = new SentenceRelation();
+                                            SentenceRelationId sentenceRelationId = new SentenceRelationId();
+                                            Token subject2 = extractSubject2(parseConfiguration, posTagSequence, line);
+                                            System.out.println("subject2: enter condition" + subject2);
+                                            sentenceRelationId.setSubject(subject2);
+                                            sentenceRelationId.setObject(objectToken);
+                                            sentenceRelationId.setRelation("(VPP, root) + * + [[(NC,prep)+(ADJ,mod)]|| [(NPP,prep) +(NPP,mod)] ||(NC, dep_coord)]");
+                                            sentenceRelationId.setSentence_text(line);
+                                            sentenceRelationId.setType(SentenceRelationType.hasComponent);
+                                            sentenceRelation.setSentenceRelationId(sentenceRelationId);
+                                            sentenceRelation.setMethod(SentenceRelationMethod.rules);
+                                            list_result.add(sentenceRelation);
 
                                         }
                                     }

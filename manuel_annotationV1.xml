@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Sentences>
+  <sentence id="s1">
+    <text>L’eau de Cologne nommée Les Bains Guerbois 1885, signée Michel Almairac, et présentée dans un généreux format splash de 260ml, joue avec les épices en accordant gingembre et cardamome avec des notes de patchouli, cèdre, papyrus, musc, ambre et encens.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Les Bains Guerbois 1885</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Michel Almairac</object>
+      </Relation>
+        <Relation id="r2">
+            <subject>Les Bains Guerbois 1885</subject>
+            <predicate>hasComponent</predicate>
+            <object>gingembre</object>
+        </Relation>
+        <Relation id="r3">
+            <subject>Les Bains Guerbois 1885</subject>
+            <predicate>hasComponent</predicate>
+            <object>cardamome</object>
+        </Relation>
+        <Relation id="r4">
+            <subject>Les Bains Guerbois 1885</subject>
+            <predicate>hasComponent</predicate>
+            <object>patchouli</object>
+        </Relation>
+        <Relation id="r5">
+            <subject>Les Bains Guerbois 1885</subject>
+            <predicate>hasComponent</predicate>
+            <object>cèdre</object>
+        </Relation>
+        <Relation id="r6">
+            <subject>Les Bains Guerbois 1885</subject>
+            <predicate>hasComponent</predicate>
+            <object>papyrus</object>
+        </Relation>
+        <Relation id="r7">
+            <subject>Les Bains Guerbois 1885</subject>
+            <predicate>hasComponent</predicate>
+            <object>musc</object>
+        </Relation>
+        <Relation id="r8">
+            <subject>Les Bains Guerbois 1885</subject>
+            <predicate>hasComponent</predicate>
+            <object>encens</object>
+        </Relation>
+        <Relation id="r9">
+            <subject>Les Bains Guerbois 1885</subject>
+            <predicate>hasComponent</predicate>
+            <object>ambre</object>
+        </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s2">
+    <text>L’Eau de Parfum Shalimar est une fragrance mythique aux accents de bergamote, d'iris et de vanille.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>L'Eau de Parfum Shalimar</subject>
+        <predicate>hasComponent</predicate>
+        <object>bergamote</object>
+      </Relation>
+        <Relation id="r2">
+            <subject>L'Eau de Parfum Shalimar</subject>
+            <predicate>hasComponent</predicate>
+            <object>iris</object>
+        </Relation>
+        <Relation id="r3">
+            <subject>L'Eau de Parfum Shalimar</subject>
+            <predicate>hasComponent</predicate>
+            <object>vanille</object>
+        </Relation>
+    </Relations>
+  </sentence>
+
+  <sentence id="s3">
+    <text>Créée par deux étoiles de la parfumerie française pour Lancôme, La Nuit Trésor est un élixir sensuel et mystérieux au cœur envoûtant de Rose Noire érotisé d’une Orchidée de Vanille.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>La Nuit Trésor</subject>
+        <predicate>hasComponent</predicate>
+        <object>Rose Noire</object>
+      </Relation>
+        <Relation id="r2">
+            <subject>La Nuit Trésor</subject>
+            <predicate>hasComponent</predicate>
+            <object>Orchidée</object>
+        </Relation>
+        <Relation id="r3">
+            <subject>La Nuit Trésor</subject>
+            <predicate>hasComponent</predicate>
+            <object>Vanille</object>
+        </Relation>
+    </Relations>
+  </sentence>
+
+  <sentence id="s5">
+    <text>Misant sur le grand retour de la séduction masculine, le 1 Million de Paco Rabanne démarre sur des sensations de menthe poivrée, accompagnées de pamplemousse et de mandarine.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Million</subject>
+        <predicate>hasComponent</predicate>
+        <object>menthe poivrée</object>
+      </Relation>
+        <Relation id="r2">
+            <subject>Million</subject>
+            <predicate>hasComponent</predicate>
+            <object>pamplemousse</object>
+        </Relation>
+        <Relation id="r3">
+            <subject>Million</subject>
+            <predicate>hasComponent</predicate>
+            <object>mandarine</object>
+        </Relation>
+    </Relations>
+  </sentence>
+
+  <sentence id="s7">
+    <text>Si se construit autour du patchouli et se mêle à des notes plus sucrées et fruitées.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Si</subject>
+        <predicate>hasComponent</predicate>
+        <object>patchouli</object>
+      </Relation>
+    </Relations>
+  </sentence>
+
+  <sentence id="s8">
+    <text>Trésor Midnight Rose c'est un nectar magique au coeur puissant et miellé, dans lequel la rose, signature olfactive des jus Trésor de Lancôme, se révèle plus gourmande que jamais.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Trésor Midnight Rose</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>test</object>
+      </Relation>
+    </Relations>
+  </sentence>
+
