@@ -41,7 +41,7 @@ public class Relation {
 
         if (object != null ? !object.equals(relation.object) : relation.object != null) return false;
         if (predicate != null ? !predicate.equals(relation.predicate) : relation.predicate != null) return false;
-        if (subject != null ? !subject.equals(relation.subject) : relation.subject != null) return false;
+        if (subject != null ? !subject.contains(relation.subject)&&!subject.contains("_:s1"): relation.subject != null) return false;
 
         return true;
     }

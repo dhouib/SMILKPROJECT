@@ -1,32 +1,127 @@
- <http://ns.inria.fr/smilk/elements/1.0/Skinfibrine>
-        <http://www.w3.org/2000/01/rdf-schema#a>
-                <http://provoc/Component> .
+ @prefix schema: <http://schema.org/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix pv:    <http://ns.inria.fr/provoc#> .
+@prefix smilk: <http://inria/smilk/sentence/1.0/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skc:   <http://inria/smilk/component/1.0/> .
+@prefix skb:   <http://inria/smilk/brand/1.0/> .
+@prefix gr:    <http://purl.org/goodrelations/v1#.> .
+@prefix skd:   <http://inria/smilk/division/1.0/> .
+@prefix skg:   <http://inria/smilk/group/1.0/> .
+@prefix skf:   <http://inria/smilk/fragranceCreator/1.0/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skp:   <http://inria/smilk/product/1.0/> .
+@prefix skr:   <http://inria/smilk/repreentative/1.0/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://ns.inria.fr/smilk/elements/1.0/T1>
-        <http://www.w3.org/2000/01/rdf-schema#comment>
-                <Elaboré à partir de caféine et de Skinfibrine, Taille de Rêve (125 ml, 13,90€) se présente sous forme d'un gel-crème.> ;
-        <http://www.w3.org/2001/XMLSchema/about>
-                <_:s1> .
+skc:fluide_hydratant  a  pv:Component ;
+        rdfs:label  "fluide hydratant" .
 
-<_:s1>  <http://www.w3.org/2000/01/rdf-schema#a>
-                <http://provoc/null> ;
-        <hasConfidence>  <1.0> ;
-        <hasRules>       <(VPP,(mod||dep))+(P+D,mod)+(CC,coord)+((P||P+D),dep_coord)+((NPP||NC),prep))> ;
-        <http://ns.inria.fr/smilk/elements/1.0/hasComponent>
-                <http://ns.inria.fr/smilk/elements/1.0/Skinfibrine> .
-<http://ns.inria.fr/smilk/elements/1.0/T1>
-        <http://www.w3.org/2000/01/rdf-schema#comment>
-                <Elaboré à partir de caféine et de Skinfibrine, Taille de Rêve (125 ml, 13,90€) se présente sous forme d'un gel-crème.> ;
-        <http://www.w3.org/2001/XMLSchema/about>
-                <_:s1> .
+smilk:T7  rdfs:comment  "Trois produits composent la ligne : un gel nettoyant, une mousse de rasage et un fluide hydratant." ;
+        schema:about  <_:s8> .
 
-<http://ns.inria.fr/smilk/elements/1.0/caféine>
-        <http://www.w3.org/2000/01/rdf-schema#a>
-                <http://provoc/Component> .
+<_:s8>  a                pv:ProductOrServiceRange ;
+        rdfs:label       "" ;
+        pv:hasComponent  skc:fluide_hydratant .
+@prefix schema: <http://schema.org/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix pv:    <http://ns.inria.fr/provoc#> .
+@prefix smilk: <http://inria/smilk/sentence/1.0/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skc:   <http://inria/smilk/component/1.0/> .
+@prefix skb:   <http://inria/smilk/brand/1.0/> .
+@prefix gr:    <http://purl.org/goodrelations/v1#.> .
+@prefix skd:   <http://inria/smilk/division/1.0/> .
+@prefix skg:   <http://inria/smilk/group/1.0/> .
+@prefix skf:   <http://inria/smilk/fragranceCreator/1.0/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skp:   <http://inria/smilk/product/1.0/> .
+@prefix skr:   <http://inria/smilk/repreentative/1.0/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<_:s1>  <http://www.w3.org/2000/01/rdf-schema#a>
-                <http://provoc/null> ;
-        <hasConfidence>  <1.0> ;
-        <hasRules>       <(VPP, mod)(P+D,dep)+(NC,prep)> ;
-        <http://ns.inria.fr/smilk/elements/1.0/hasComponent>
-                <http://ns.inria.fr/smilk/elements/1.0/caféine> .
+smilk:T8  rdfs:comment  "Ils contiennent une formule à effet peeling brevetée mêlant LHA, acide salicylique et acide glycolique.promesse" ;
+        schema:about  <_:s9> .
+
+<_:s9>  a                pv:ProductOrServiceRange ;
+        rdfs:label       "" ;
+        pv:hasComponent  skc:acide_salicylique .
+
+skc:acide_salicylique
+        a           pv:Component ;
+        rdfs:label  "acide salicylique" .
+@prefix schema: <http://schema.org/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix pv:    <http://ns.inria.fr/provoc#> .
+@prefix smilk: <http://inria/smilk/sentence/1.0/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skc:   <http://inria/smilk/component/1.0/> .
+@prefix skb:   <http://inria/smilk/brand/1.0/> .
+@prefix gr:    <http://purl.org/goodrelations/v1#.> .
+@prefix skd:   <http://inria/smilk/division/1.0/> .
+@prefix skg:   <http://inria/smilk/group/1.0/> .
+@prefix skf:   <http://inria/smilk/fragranceCreator/1.0/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skp:   <http://inria/smilk/product/1.0/> .
+@prefix skr:   <http://inria/smilk/repreentative/1.0/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+skc:acide_glycolique.promesse
+        a           pv:Component ;
+        rdfs:label  "acide glycolique.promesse" .
+
+smilk:T8  rdfs:comment  "Ils contiennent une formule à effet peeling brevetée mêlant LHA, acide salicylique et acide glycolique.promesse" ;
+        schema:about  <_:s9> .
+
+<_:s9>  a                pv:ProductOrServiceRange ;
+        rdfs:label       "" ;
+        pv:hasComponent  skc:acide_glycolique.promesse .
+@prefix schema: <http://schema.org/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix pv:    <http://ns.inria.fr/provoc#> .
+@prefix smilk: <http://inria/smilk/sentence/1.0/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skc:   <http://inria/smilk/component/1.0/> .
+@prefix skb:   <http://inria/smilk/brand/1.0/> .
+@prefix gr:    <http://purl.org/goodrelations/v1#.> .
+@prefix skd:   <http://inria/smilk/division/1.0/> .
+@prefix skg:   <http://inria/smilk/group/1.0/> .
+@prefix skf:   <http://inria/smilk/fragranceCreator/1.0/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skp:   <http://inria/smilk/product/1.0/> .
+@prefix skr:   <http://inria/smilk/repreentative/1.0/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+skc:mousse  a       pv:Component ;
+        rdfs:label  "mousse" .
+
+<_:s10>  a               pv:ProductOrServiceRange ;
+        rdfs:label       "" ;
+        pv:hasComponent  skc:mousse .
+
+smilk:T7  rdfs:comment  "Trois produits composent la ligne : un gel nettoyant, une mousse de rasage et un fluide hydratant." ;
+        schema:about  <_:s10> .
+@prefix schema: <http://schema.org/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix pv:    <http://ns.inria.fr/provoc#> .
+@prefix smilk: <http://inria/smilk/sentence/1.0/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skc:   <http://inria/smilk/component/1.0/> .
+@prefix skb:   <http://inria/smilk/brand/1.0/> .
+@prefix gr:    <http://purl.org/goodrelations/v1#.> .
+@prefix skd:   <http://inria/smilk/division/1.0/> .
+@prefix skg:   <http://inria/smilk/group/1.0/> .
+@prefix skf:   <http://inria/smilk/fragranceCreator/1.0/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skp:   <http://inria/smilk/product/1.0/> .
+@prefix skr:   <http://inria/smilk/repreentative/1.0/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<_:s11>  a               pv:ProductOrServiceRange ;
+        rdfs:label       "" ;
+        pv:hasComponent  skc:LHA .
+
+smilk:T8  rdfs:comment  "Ils contiennent une formule à effet peeling brevetée mêlant LHA, acide salicylique et acide glycolique.promesse" ;
+        schema:about  <_:s11> .
+
+skc:LHA  a          pv:Component ;
+        rdfs:label  "LHA" .

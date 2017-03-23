@@ -23,10 +23,11 @@ public class EvaluationMain_copy {
         try {
             jaxbContext = JAXBContext.newInstance(Sentences.class);
             Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
-            Sentences sentences = (Sentences) jaxbUnmarshaller.unmarshal(new File("src/resources/output/Evaluation/automatic_annotation.xml"));
-            Sentences sentences_manu = (Sentences) jaxbUnmarshaller.unmarshal(new File("src/resources/output/Evaluation/manuel_annotation.xml"));
+            Sentences sentences = (Sentences) jaxbUnmarshaller.unmarshal(new File("src/resources/output/Evaluation_Google/automatic_annotation.xml"));
+            Sentences sentences_manu = (Sentences) jaxbUnmarshaller.unmarshal(new File("src/resources/output/Evaluation_Google/manuel_annotation_google_corpus.xml"));
 
             for(Sentence sent_aut:sentences.getSentence()) {
+                System.out.println(sent_aut.getText());
                 Sentence sentence = sentences_manu.getSentence().get(sentences_manu.getSentence().indexOf(sent_aut));
                 System.out.println(sentence.getText());
                 for (Relation relation_aut : sent_aut.getRelations().getRelation()) {
@@ -47,8 +48,9 @@ public class EvaluationMain_copy {
                 for (Relation relation_aut : sent_aut.getRelations().getRelation()) {
                     if (sentence.getRelations().getRelation().contains(relation_aut)) {
                         if (relation_aut.getPredicate().equalsIgnoreCase("hasComponent")) {
-                            System.out.println("test:" + sentence.getRelations().getRelation().contains(relation_aut));
+                            System.out.println("tpppppp:" + sentence.getRelations().getRelation().contains(relation_aut));
                             tpComponent++;
+
                         }
                         if (relation_aut.getPredicate().equalsIgnoreCase("hasFragranceCreator")) {
                             System.out.println("test:" + sentence.getRelations().getRelation().contains(relation_aut));
@@ -90,31 +92,31 @@ public class EvaluationMain_copy {
         System.out.println("tpAmbassador: "+tpRepresentative);
         System.out.println("nbAuAmb: "+nbAutomatiqueAmbassador+ " manuAmb: "+ nbManuelAmbassador);
 
-        double precisionComponent=computePrecision(tpComponent,nbAutomatiqueComponent-tpComponent);
+        double precisionComponent=computePrecision(tpComponent,nbAutomatiqueComponent);
         System.out.println("precisionComponent: "+precisionComponent);
-        double recallComponent=computeRecall(tpComponent,nbManuelComponent-tpComponent);
+        double recallComponent=computeRecall(tpComponent,nbManuelComponent);
         System.out.println("recallComponent: "+recallComponent);
 
-        double precisionFragranceCreator=computePrecision(tpFragranceCreator,nbAutomatiqueFragranceCreator-tpFragranceCreator);
+       double precisionFragranceCreator=computePrecision(tpFragranceCreator,nbAutomatiqueFragranceCreator);
         System.out.println("precisionFragranceCreator: "+precisionFragranceCreator);
-        double recallFragranceCreator=computeRecall(tpFragranceCreator,nbManuelFragranceCreator-tpFragranceCreator);
+        double recallFragranceCreator=computeRecall(tpFragranceCreator,nbManuelFragranceCreator);
         System.out.println("recallFragranceCreator: "+recallFragranceCreator);
 
-        double precisionAmbassador=computePrecision(tpRepresentative,nbAutomatiqueAmbassador-tpRepresentative);
+        double precisionAmbassador=computePrecision(tpRepresentative,nbAutomatiqueAmbassador);
         System.out.println("precisionAmbassador: "+precisionAmbassador);
-        double recallAmbassador=computeRecall(tpRepresentative,nbManuelAmbassador-tpRepresentative);
+        double recallAmbassador=computeRecall(tpRepresentative,nbManuelAmbassador);
         System.out.println("recallAmbassador: "+recallAmbassador);
 
     }
 
 
-    public static double computeRecall(double tp, double fn) {
-        return (double) tp / (tp + fn);
+    public static double computeRecall(int tp, int nb) {
+        return (double) tp / nb;
     }
 
-    public static double computePrecision(double tp, double fp) {
+    public static double computePrecision(int tp, int nb) {
 
-        return (double) tp / (tp + fp);
+        return (double) tp / nb;
     }
 
     public static double computeFMesure(double recall, double precision) {

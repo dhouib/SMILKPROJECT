@@ -1,0 +1,664 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Sentences>
+  <sentence id="s1">
+    <text>Uma Thurman rejoint Liv Tyler, Justin Timberland et Marie Steiss dans la galerie des stars Givenchy.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject />
+        <predicate>hasFragranceCreator</predicate>
+        <object>Uma_Thurman</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s1">
+    <text>Avec sa peau diaphane et ses cheveux blond vénitien, Jessica Chastain incarnera le nouveau parfum féminin de la griffe, Manifesto, construit au-tour du jasmin.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>manifesto</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Jessica_Chastain</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s1">
+    <text>Composée par Jacques Cavallier (Firmenich), Stellanude est une fragrance intimiste, inspirée par l'univers de la lingerie.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject />
+        <predicate>hasFragranceCreator</predicate>
+        <object>Stellanude</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s1">
+    <text>Pour les combattre tout en réduisant les signes de l'âge, Skinceutical lance Blemish + Age Defense, un sérum riche en acides dioïque (2%), salicylique (1,5%) et LHA (0,3%).</text>
+    <Relations>
+      <Relation id="r1">
+        <subject />
+        <predicate>hasFragranceCreator</predicate>
+        <object>Skinceutical</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s1">
+    <text>Doutzen Kroes sera l'ambassadrice internationale de la collection "les ors blonds" de la coloration Récital Préférence, mais aussi du maquillage</text>
+    <Relations>
+      <Relation id="r1">
+        <subject />
+        <predicate>hasFragranceCreator</predicate>
+        <object>Doutzen_Kroes</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s1">
+    <text>Linda Evangelista, canadienne de 41 ans, sera l'image du maquillage de la marque, de la nouvelle ligne de démaquillants Demaq'expert et de la coloration Préférence Diamond Shine.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject />
+        <predicate>hasFragranceCreator</predicate>
+        <object>Linda_Evangelista</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s1">
+    <text>Par ailleurs, Megan Fox, qui travaillait déjà pour Armani (jeans et lingerie), incarne la prochaine campagne Code.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject />
+        <predicate>hasFragranceCreator</predicate>
+        <object>Megan_Fox</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s1">
+    <text>Bel Respiro de Chanel est un parfum créé par Jacques Polge.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject />
+        <predicate>hasFragranceCreator</predicate>
+        <object>Bel_Respiro_de_Chanel</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s1">
+    <text>Le parfumeur Jean Kerléo, avec l'aide d'Aimable Duhayon, parvient à reconstituer Crêpe de Chine.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject />
+        <predicate>hasFragranceCreator</predicate>
+        <object>Le_parfumeur_Jean_Kerléo</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s1">
+    <text>Joy comprend notamment du jasmin.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject />
+        <predicate>hasFragranceCreator</predicate>
+        <object>Joy</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s1">
+    <text>La ligne s'anime également en mai avec une édition limitée Summer, rafraîchie d'ananas, création d'Anne Flipo et de Carlos Benam (IFF), dans un flacon orange (EdT vapo 50 et 100 ml, 42 et 48).</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Summer</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Carlos_Benam</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s1">
+    <text>De son côté, Ck One Summer version 2011 devient, sous la baguette d'Harry Fremont (Firmenich), un hespéridé aromatique boisé, dans un étui aux couleurs vives (EdT 100 ml, 42€, mars).</text>
+    <Relations>
+      <Relation id="r1">
+        <subject />
+        <predicate>hasFragranceCreator</predicate>
+        <object>Harry_Fremont</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s1">
+    <text>Le parfumeur Jean Kerléo, avec l'aide d'Aimable Duhayon, parvient à reconstituer Crêpe de Chine.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject />
+        <predicate>hasFragranceCreator</predicate>
+        <object>Aimable_Duhayon</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s1">
+    <text>La Vie est Belle est un parfum imaginé par les parfumeurs de talent Dominique Ropion et Olivier Polge.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>La_Vie_est_Belle</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Dominique_Ropion</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s1">
+    <text>Le parfum Anaïs Anaïs est créé en 1978 par les parfumeurs Paul Léger, Raymond Chaillan, Robert Gonnon et Roger Pellegrino de la société Firmenich.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Anaïs_Anaïs</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Paul_Léger</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s1">
+    <text>Le parfum Anaïs Anaïs est créé en 1978 par les parfumeurs Paul Léger, Raymond Chaillan, Robert Gonnon et Roger Pellegrino de la société Firmenich.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Anaïs_Anaïs</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Raymond_Chaillan</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s1">
+    <text>Le parfum Anaïs Anaïs est créé en 1978 par les parfumeurs Paul Léger, Raymond Chaillan, Robert Gonnon et Roger Pellegrino de la société Firmenich.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Anaïs_Anaïs</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Robert_Gonnon</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s1">
+    <text>Le parfum Anaïs Anaïs est créé en 1978 par les parfumeurs Paul Léger, Raymond Chaillan, Robert Gonnon et Roger Pellegrino de la société Firmenich.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Anaïs_Anaïs</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Firmenich</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s1">
+    <text>La ligne s'anime également en mai avec une édition limitée Summer, rafraîchie d'ananas, création d'Anne Flipo et de Carlos Benam (IFF), dans un flacon orange (EdT vapo 50 et 100 ml, 42 et 48).</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Summer</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Anne_Flipo</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s1">
+    <text>Trésor est la création de Sophia Grosjman, de la IFF, qui a déjà conçu Paris, de Yves Saint Laurent.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject />
+        <predicate>hasFragranceCreator</predicate>
+        <object>Sophia_Grosjman</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s1">
+    <text>La Vie est Belle est un parfum imaginé par les parfumeurs de talent Dominique Ropion et Olivier Polge.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>La_Vie_est_Belle</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Olivier_Polge</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s1">
+    <text>Le parfum Anaïs Anaïs est créé en 1978 par les parfumeurs Paul Léger, Raymond Chaillan, Robert Gonnon et Roger Pellegrino de la société Firmenich.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Anaïs_Anaïs</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Roger_Pellegrino</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s1">
+    <text>Après Emily Blunt pour Opium, Yves Saint Laurent (L'Oréal Luxe) recrute une autre actrice en plein essor pour ses parfums : l'Américaine Jessica Chastain, vue dans «The Tree of Life», «Take Shelter» et «La Couleur des sentiments».</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>The_Tree</subject>
+        <predicate>hasRepresentative</predicate>
+        <object>Jessica_Chastain</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s1">
+    <text>Uma Thurman rejoint Liv Tyler, Justin Timberland et Marie Steiss dans la galerie des stars Givenchy.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Givenchy</subject>
+        <predicate>hasRepresentative</predicate>
+        <object>Liv_Tyler</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s1">
+    <text>Uma Thurman rejoint Liv Tyler, Justin Timberland et Marie Steiss dans la galerie des stars Givenchy.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Givenchy</subject>
+        <predicate>hasRepresentative</predicate>
+        <object>Marie_Steiss</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s1">
+    <text>Avec sa peau diaphane et ses cheveux blond vénitien, Jessica Chastain incarnera le nouveau parfum féminin de la griffe, Manifesto, construit au-tour du jasmin.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>manifesto</subject>
+        <predicate>hasRepresentative</predicate>
+        <object>Jessica_Chastain</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s1">
+    <text>Uma Thurman rejoint Liv Tyler, Justin Timberland et Marie Steiss dans la galerie des stars Givenchy.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Givenchy</subject>
+        <predicate>hasRepresentative</predicate>
+        <object>Uma_Thurman</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s1">
+    <text>Doutzen Kroes sera l'ambassadrice internationale de la collection "les ors blonds" de la coloration Récital Préférence, mais aussi du maquillage</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Récital_Préférence</subject>
+        <predicate>hasRepresentative</predicate>
+        <object>Doutzen_Kroes</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s1">
+    <text>Linda Evangelista, canadienne de 41 ans, sera l'image du maquillage de la marque, de la nouvelle ligne de démaquillants Demaq'expert et de la coloration Préférence Diamond Shine.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Préférence_Diamond_Shine</subject>
+        <predicate>hasRepresentative</predicate>
+        <object>Linda_Evangelista</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s1">
+    <text>Avant de tourner le film publicitaire du fond de teint Age Re-Perfect, Jane Fonda voulait le tester mais ne trouvait pas sa teinte.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Age_Re-Perfect</subject>
+        <predicate>hasRepresentative</predicate>
+        <object>Jane_Fonda</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s1">
+    <text>Uma Thurman rejoint Liv Tyler, Justin Timberland et Marie Steiss dans la galerie des stars Givenchy.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Givenchy</subject>
+        <predicate>hasRepresentative</predicate>
+        <object>Justin_Timberland</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s1">
+    <text>Après Emily Blunt pour Opium, Yves Saint Laurent (L'Oréal Luxe) recrute une autre actrice en plein essor pour ses parfums : l'Américaine Jessica Chastain, vue dans «The Tree of Life», «Take Shelter» et «La Couleur des sentiments».</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>The_Tree</subject>
+        <predicate>hasRepresentative</predicate>
+        <object>Emily_Blunt</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s1">
+    <text>Eau Mega composé par Olivier Polge, ce bouquet de jasmin et de pivoine cible les femmes qui voient la vie en grand.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Eau_Mega</subject>
+        <predicate>hasComponent</predicate>
+        <object>jasmin</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s1">
+    <text>Kouros comporte notamment des notes de coriandre, d'armoise, de bergamote, d'un cœur floral grâce au clou de girofle et au jasmin ainsi qu'une « structure robuste et sensuelle » en raison de la mousse de chêne, de l'ambre gris et de l'encens.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject />
+        <predicate>hasComponent</predicate>
+        <object>jasmin</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s1">
+    <text>Le baume Fermeté sculputure, associant Skinfibrine et élastopeptides, vise à rendre la peau plus ferme et élastique.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject />
+        <predicate>hasComponent</predicate>
+        <object>élastopeptides</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s1">
+    <text>Le baume Fermeté sculputure, associant Skinfibrine et élastopeptides, vise à rendre la peau plus ferme et élastique.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject />
+        <predicate>hasComponent</predicate>
+        <object>Skinfibrine</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s1">
+    <text>Le lait Fermeté sculpturale contient de la céramide et du collagène et promet une double action anti-dessèchement et fermeté remodelante.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Fermeté_sculpturale</subject>
+        <predicate>hasComponent</predicate>
+        <object>céramide</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s1">
+    <text>Joy comprend notamment du jasmin.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject />
+        <predicate>hasComponent</predicate>
+        <object>jasmin</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s1">
+    <text>L'Interdit comporte ainsi de la fève tonka en note de fond.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject />
+        <predicate>hasComponent</predicate>
+        <object>fève_tonka</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s1">
+    <text>Eau sauvage développe des senteurs de citron, romarin, petit-grain et de basilic ou de vétiver.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Eau_sauvage</subject>
+        <predicate>hasComponent</predicate>
+        <object>basilic</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s1">
+    <text>Un film publicitaire, toujours signé Jean-Baptiste Mondino, accompagne le lancement en parfumeries et grands magasins (EdT vapo 30, 50, 100 ml, 37, 53, 76).</text>
+    <Relations>
+      <Relation id="r1">
+        <subject />
+        <predicate>hasComponent</predicate>
+        <object>magasins grands</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s1">
+    <text>Un film publicitaire, toujours signé Jean-Baptiste Mondino, accompagne le lancement en parfumeries et grands magasins (EdT vapo 30, 50, 100 ml, 37, 53, 76).</text>
+    <Relations>
+      <Relation id="r1">
+        <subject />
+        <predicate>hasComponent</predicate>
+        <object>magasins EdT</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s1">
+    <text>Pour Flowerbomb, Olivier Polge, Carlos Benaim et Domitille Bertier orchestrent une explosion de fleurs: rose, orchidée, jasmin ou encore freesia.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Flowerbomb</subject>
+        <predicate>hasComponent</predicate>
+        <object>freesia</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s1">
+    <text>Pour Prodigy Night on été ajoutés des extraits de lotus blanc et feuille de Senna alata ainsi que le pro-Xylane maison.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Prodigy_Night</subject>
+        <predicate>hasComponent</predicate>
+        <object>pro-Xylane</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s1">
+    <text>Créé par Pierre Negrin (Firmenich), Amor Amor In a flash est un oriental gourmand caractérisé par un coeur de vanille, caramel et pomme d'amour sucrée.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Amor_Amor_In_a_flash</subject>
+        <predicate>hasComponent</predicate>
+        <object>caramel</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s1">
+    <text>Pour Flowerbomb, Olivier Polge, Carlos Benaim et Domitille Bertier orchestrent une explosion de fleurs: rose, orchidée, jasmin ou encore freesia.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Flowerbomb</subject>
+        <predicate>hasComponent</predicate>
+        <object>jasmin</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s1">
+    <text>Créé par Pierre Negrin (Firmenich), Amor Amor In a flash est un oriental gourmand caractérisé par un coeur de vanille, caramel et pomme d'amour sucrée.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Amor_Amor_In_a_flash</subject>
+        <predicate>hasComponent</predicate>
+        <object>vanille</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s1">
+    <text>Eau Mega composé par Olivier Polge, ce bouquet de jasmin et de pivoine cible les femmes qui voient la vie en grand.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Eau_Mega</subject>
+        <predicate>hasComponent</predicate>
+        <object>pivoine</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s1">
+    <text>Avec sa peau diaphane et ses cheveux blond vénitien, Jessica Chastain incarnera le nouveau parfum féminin de la griffe, Manifesto, construit au-tour du jasmin.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>manifesto</subject>
+        <predicate>hasComponent</predicate>
+        <object>jasmin</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s1">
+    <text>Après Emily Blunt pour Opium, Yves Saint Laurent (L'Oréal Luxe) recrute une autre actrice en plein essor pour ses parfums : l'Américaine Jessica Chastain, vue dans «The Tree of Life», «Take Shelter» et «La Couleur des sentiments».</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>The_Tree</subject>
+        <predicate>hasComponent</predicate>
+        <object>Jessica_Chastain</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s1">
+    <text>Aux côtés de Claudia Schiffer et Laetitia Casta, une autre ancienne icône de mode rejoint L'Oréal Paris.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject />
+        <predicate>hasComponent</predicate>
+        <object>Oréal</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s1">
+    <text>Jessica Chastain incarna Manifesto, le nouveau parfum féminin de la griffe, qui sort à la rentrée, construit autour du jasmin et de la vanille.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject />
+        <predicate>hasComponent</predicate>
+        <object>vanille</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s1">
+    <text>La ligne s'anime également en mai avec une édition limitée Summer, rafraîchie d'ananas, création d'Anne Flipo et de Carlos Benam (IFF), dans un flacon orange (EdT vapo 50 et 100 ml, 42 et 48).</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Summer</subject>
+        <predicate>hasComponent</predicate>
+        <object>ananas</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s1">
+    <text>Pour Prodigy Night on été ajoutés des extraits de lotus blanc et feuille de Senna alata ainsi que le pro-Xylane maison.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Prodigy_Night</subject>
+        <predicate>hasComponent</predicate>
+        <object>feuille de Senna_alata</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s1">
+    <text>Jessica Chastain incarna Manifesto, le nouveau parfum féminin de la griffe, qui sort à la rentrée, construit autour du jasmin et de la vanille.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject />
+        <predicate>hasComponent</predicate>
+        <object>jasmin</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s1">
+    <text>Pour Prodigy Night on été ajoutés des extraits de lotus blanc et feuille de Senna alata ainsi que le pro-Xylane maison.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Prodigy_Night</subject>
+        <predicate>hasComponent</predicate>
+        <object>lotus_blanc</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s1">
+    <text>Pour Flowerbomb, Olivier Polge, Carlos Benaim et Domitille Bertier orchestrent une explosion de fleurs: rose, orchidée, jasmin ou encore freesia.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Flowerbomb</subject>
+        <predicate>hasComponent</predicate>
+        <object>orchidée</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s1">
+    <text>Eau sauvage développe des senteurs de citron, romarin, petit-grain et de basilic ou de vétiver.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Eau_sauvage</subject>
+        <predicate>hasComponent</predicate>
+        <object>romarin</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s1">
+    <text>TriAcnéal rassemble les deux actifs principaux de la précédente version - l'acide glycolique pour son effet peeling et le Rétinaldéhyde qui limite la formation des imperfections - et leur ajoute l'Efectiose, un anti-irritant.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject />
+        <predicate>hasComponent</predicate>
+        <object>acide_glycolique</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s1">
+    <text>Pour Flowerbomb, Olivier Polge, Carlos Benaim et Domitille Bertier orchestrent une explosion de fleurs: rose, orchidée, jasmin ou encore freesia.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Flowerbomb</subject>
+        <predicate>hasComponent</predicate>
+        <object>rose</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s1">
+    <text>Eau sauvage développe des senteurs de citron, romarin, petit-grain et de basilic ou de vétiver.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Eau_sauvage</subject>
+        <predicate>hasComponent</predicate>
+        <object>citron</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s1">
+    <text>Dans Habanita on trouve des notes de vanille, de musc, d'agrumes et d'épices.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject />
+        <predicate>hasComponent</predicate>
+        <object>vanille</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s1">
+    <text>Dans Habanita on trouve des notes de vanille, de musc, d'agrumes et d'épices.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject />
+        <predicate>hasComponent</predicate>
+        <object>agrumes</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s1">
+    <text>Kouros comporte notamment des notes de coriandre, d'armoise, de bergamote, d'un cœur floral grâce au clou de girofle et au jasmin ainsi qu'une « structure robuste et sensuelle » en raison de la mousse de chêne, de l'ambre gris et de l'encens.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject />
+        <predicate>hasComponent</predicate>
+        <object>coriandre</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s1">
+    <text>Kouros comporte notamment des notes de coriandre, d'armoise, de bergamote, d'un cœur floral grâce au clou de girofle et au jasmin ainsi qu'une « structure robuste et sensuelle » en raison de la mousse de chêne, de l'ambre gris et de l'encens.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject />
+        <predicate>hasComponent</predicate>
+        <object>armoise</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s1">
+    <text>Kouros comporte notamment des notes de coriandre, d'armoise, de bergamote, d'un cœur floral grâce au clou de girofle et au jasmin ainsi qu'une « structure robuste et sensuelle » en raison de la mousse de chêne, de l'ambre gris et de l'encens.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject />
+        <predicate>hasComponent</predicate>
+        <object>bergamote</object>
+      </Relation>
+    </Relations>
+  </sentence>
+</Sentences>
+

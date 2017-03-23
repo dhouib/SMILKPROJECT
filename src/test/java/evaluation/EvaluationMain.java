@@ -23,8 +23,8 @@ public class EvaluationMain {
         try {
             jaxbContext = JAXBContext.newInstance(Sentences.class);
             Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
-            Sentences sentences = (Sentences) jaxbUnmarshaller.unmarshal(new File("src/resources/output/Evaluation/automatic_annotation.xml"));
-            Sentences sentences_manu = (Sentences) jaxbUnmarshaller.unmarshal(new File("src/resources/output/Evaluation/manuel_annotation.xml"));
+            Sentences sentences = (Sentences) jaxbUnmarshaller.unmarshal(new File("src/resources/output/Evaluation_Google/automatic_annotation.xml"));
+            Sentences sentences_manu = (Sentences) jaxbUnmarshaller.unmarshal(new File("src/resources/output/Evaluation_Google/manuel_annotation_google_corpus.xml"));
 
             for(Sentence sent_aut:sentences.getSentence()){
                 for(Relation relation_aut:sent_aut.getRelations().getRelation()){
@@ -90,19 +90,19 @@ public class EvaluationMain {
         System.out.println("tpAmbassador: "+tpRepresentative);
         System.out.println("nbAuAmb: "+nbAutomatiqueAmbassador+ " manuAmb: "+ nbManuelAmbassador);
 
-        double precisionComponent=computePrecision(tpComponent,nbAutomatiqueComponent-tpComponent);
+        double precisionComponent=computePrecision(tpComponent,nbAutomatiqueComponent/*-tpComponent*/);
         System.out.println("precisionComponent: "+precisionComponent);
-        double recallComponent=computeRecall(tpComponent,nbManuelComponent-tpComponent);
+        double recallComponent=computeRecall(tpComponent,nbManuelComponent/*-tpComponent*/);
         System.out.println("recallComponent: "+recallComponent);
 
-        double precisionFragranceCreator=computePrecision(tpFragranceCreator,nbAutomatiqueFragranceCreator-tpFragranceCreator);
+        double precisionFragranceCreator=computePrecision(tpFragranceCreator,nbAutomatiqueFragranceCreator/*-tpFragranceCreator*/);
         System.out.println("precisionFragranceCreator: "+precisionFragranceCreator);
-        double recallFragranceCreator=computeRecall(tpFragranceCreator,nbManuelFragranceCreator-tpFragranceCreator);
+        double recallFragranceCreator=computeRecall(tpFragranceCreator,nbManuelFragranceCreator/*-tpFragranceCreator*/);
         System.out.println("recallFragranceCreator: "+recallFragranceCreator);
 
-        double precisionAmbassador=computePrecision(tpRepresentative,nbAutomatiqueAmbassador-tpRepresentative);
+        double precisionAmbassador=computePrecision(tpRepresentative,nbAutomatiqueAmbassador/*-tpRepresentative*/);
         System.out.println("precisionAmbassador: "+precisionAmbassador);
-        double recallAmbassador=computeRecall(tpRepresentative,nbManuelAmbassador-tpRepresentative);
+        double recallAmbassador=computeRecall(tpRepresentative,nbManuelAmbassador/*-tpRepresentative*/);
         System.out.println("recallAmbassador: "+recallAmbassador);
 
     }

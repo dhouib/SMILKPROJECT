@@ -166,6 +166,8 @@ public class RelationBelongsToGroupExtraction extends AbstractRelationExtraction
                                             sentenceRelationId.setType(SentenceRelationType.belongsToGroup);
                                             sentenceRelation.setSentenceRelationId(sentenceRelationId);
                                             sentenceRelation.setMethod(SentenceRelationMethod.rulesBelongsToGroup);
+                                            double confidence = 1;
+                                            sentenceRelationId.setConfidence(confidence);
                                             list_result.add(sentenceRelation);
                                         } else if (xElement.getAttribute("type").equalsIgnoreCase(secondType) &&
                                                 yElement.getAttribute("type").equalsIgnoreCase(firstType)) {
@@ -184,6 +186,8 @@ public class RelationBelongsToGroupExtraction extends AbstractRelationExtraction
                                             sentenceRelationId.setType(SentenceRelationType.belongsToGroup);
                                             sentenceRelation.setSentenceRelationId(sentenceRelationId);
                                             sentenceRelation.setMethod(SentenceRelationMethod.rulesBelongsToGroup);
+                                            double confidence = 1;
+                                            sentenceRelationId.setConfidence(confidence);
                                             list_result.add(sentenceRelation);
                                         }
                                         relationTokens = new LinkedList<>();

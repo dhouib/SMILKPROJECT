@@ -1,9 +1,13 @@
 package fr.inria.smilk.ws.relationextraction;
 
+import com.hp.hpl.jena.rdf.model.Model;
+import com.hp.hpl.jena.rdf.model.ModelFactory;
+
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.List;
+
 
 /**
  * Created by dhouib on 03/07/2016.
@@ -11,48 +15,41 @@ import java.util.List;
 public class RelationExtractionLauncher {
     public static void main(String[] args) throws Exception {
         initRdfFile();
-        String folder = "C:/Users/dhouib/Desktop/SMILK_project_devpt/RelationExtractionSMILK/src/resources/input/test";
-        File folder1 = new File("C:/Users/dhouib/Desktop/SMILK_project_devpt/RelationExtractionSMILK/src/resources/input/test");
+        String folder = "C:/Users/dhouib/Desktop/SMILK_project_devpt/RelationExtractionSMILK/src/resources/corpus_test_loreal_files_1_5";
+        File folder1 = new File("C:/Users/dhouib/Desktop/SMILK_project_devpt/RelationExtractionSMILK/src/resources/corpus_test_loreal_files_1_5");
 
-        //RelationBelongsToBrandExtraction relationBelongsToBrandExtraction = new RelationBelongsToBrandExtraction();
-        //RelationBelongsToDivisionExtraction relationBelongsToDivisionExtraction = new RelationBelongsToDivisionExtraction();
-        //RelationBelongsToGroupExtraction relationBelongsToGroupExtraction = new RelationBelongsToGroupExtraction();
-        //RelationHasComponentExtraction relationHasComponentExtraction = new RelationHasComponentExtraction();
-        TalismaneAPITestV5_with_holmes_V3_hasFragranceCreator relationHasFragranceCreator = new TalismaneAPITestV5_with_holmes_V3_hasFragranceCreator();
-        TalismaneAPITestV5_with_holmes_V3_hasAmbassador relationHasAmbassador = new TalismaneAPITestV5_with_holmes_V3_hasAmbassador();
-       //TalismaneAPITestV5_with_holmes_V3_hasComponent relationHasComponent= new TalismaneAPITestV5_with_holmes_V3_hasComponent();
-       hasComponent_with_ingredient relationComponent=new hasComponent_with_ingredient();
+       RelationBelongsToBrandExtraction relationBelongsToBrandExtraction = new RelationBelongsToBrandExtraction();
+       RelationBelongsToDivisionExtraction relationBelongsToDivisionExtraction = new RelationBelongsToDivisionExtraction();
+        RelationBelongsToGroupExtraction relationBelongsToGroupExtraction = new RelationBelongsToGroupExtraction();
+        RelationHasFragranceCreatorBasedOnRenco_Holmes relationHasFragranceCreator = new RelationHasFragranceCreatorBasedOnRenco_Holmes();
+        RelationHasRespresentativeBasedOnRenco_Holmes relationHasAmbassador = new RelationHasRespresentativeBasedOnRenco_Holmes();
+        RelationHasComponentBasedOnRenco_RencoIngredient relationComponent= new RelationHasComponentBasedOnRenco_RencoIngredient();
 
-        //relationBelongsToBrandExtraction.init();
-        //relationBelongsToDivisionExtraction.init();
-        //relationBelongsToGroupExtraction.init();
-        //relationHasComponentExtraction.init();
-      relationHasFragranceCreator.init();
-        relationHasAmbassador.init();
-      //relationHasComponent.init();
+       relationBelongsToBrandExtraction.init();
+        relationBelongsToDivisionExtraction.init();
+        relationBelongsToGroupExtraction.init();
+        relationHasFragranceCreator.init();
+       relationHasAmbassador.init();
         relationComponent.init();
 
         List<String> lines = AbstractRelationExtraction.readCorpus(folder, folder1);
         for (String line : lines) {
-            /*relationBelongsToBrandExtraction.processExtraction(line);
-            relationBelongsToDivisionExtraction.processExtraction(line);
+          relationBelongsToBrandExtraction.processExtraction(line);
+           relationBelongsToDivisionExtraction.processExtraction(line);
             relationBelongsToGroupExtraction.processExtraction(line);
-            relationHasComponentExtraction.processExtraction(line);*/
           relationHasFragranceCreator.processExtraction(line);
-            relationHasAmbassador.processExtraction(line);
-           // relationHasComponent.processExtraction(line);
-            relationComponent.processExtraction(line);
+          relationHasAmbassador.processExtraction(line);
+          relationComponent.processExtraction(line);
         }
-        /*relationBelongsToBrandExtraction.processGlobal();
+      relationBelongsToBrandExtraction.processGlobal();
         relationBelongsToDivisionExtraction.processGlobal();
         relationBelongsToGroupExtraction.processGlobal();
-        relationHasComponentExtraction.processGlobal();*/
-      relationHasFragranceCreator.processGlobal();
+        relationHasFragranceCreator.processGlobal();
        relationHasAmbassador.processGlobal();
-      // relationHasComponent.processGlobal();
-        relationComponent.processGlobal();
+       relationComponent.processGlobal();
 
         AbstractRelationExtraction.constructSentence(lines);
+
     }
 
 

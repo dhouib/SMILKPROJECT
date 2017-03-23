@@ -79,7 +79,7 @@ public class SentenceRelationId {
 
         if (!object.getForm().equals(that.object.getForm())) return false;
         if (!relation.equals(that.relation)) return false;
-        if (!subject.equals(that.subject)) return false;
+        if (subject != null && that.subject != null && subject.getForm() !=null && !subject.getForm().equals(that.subject.getForm())) return false;
         if (type != that.type) return false;
 
         return true;

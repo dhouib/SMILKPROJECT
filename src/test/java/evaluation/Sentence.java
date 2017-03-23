@@ -37,7 +37,7 @@ public class Sentence {
 
         Sentence sentence = (Sentence) o;
 
-        if (text != null ? !text.equals(sentence.text) : sentence.text != null) return false;
+        if (text != null ? !text.trim().equals(sentence.text.trim()) : sentence.text != null) return false;
 
         return true;
     }

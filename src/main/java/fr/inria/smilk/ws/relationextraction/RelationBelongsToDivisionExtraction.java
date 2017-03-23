@@ -325,6 +325,8 @@ public class RelationBelongsToDivisionExtraction extends AbstractRelationExtract
                                                 sentenceRelationId.setType(SentenceRelationType.belongsToDivision);
                                                 sentenceRelation.setSentenceRelationId(sentenceRelationId);
                                                 sentenceRelation.setMethod(SentenceRelationMethod.rulesBelongsToDivision);
+                                                double confidence = 1;
+                                                sentenceRelationId.setConfidence(confidence);
                                                 list_result.add(sentenceRelation);
                                             } else if (xElement.getAttribute("type").equalsIgnoreCase(secondType) &&
                                                     yElement.getAttribute("type").equalsIgnoreCase(firstType)) {
@@ -344,6 +346,8 @@ public class RelationBelongsToDivisionExtraction extends AbstractRelationExtract
                                                 sentenceRelationId.setType(SentenceRelationType.belongsToDivision);
                                                 sentenceRelation.setSentenceRelationId(sentenceRelationId);
                                                 sentenceRelation.setMethod(SentenceRelationMethod.rulesBelongsToDivision);
+                                                double confidence = 1;
+                                                sentenceRelationId.setConfidence(confidence);
                                                 list_result.add(sentenceRelation);
                                             }
                                         }

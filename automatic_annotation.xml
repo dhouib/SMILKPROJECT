@@ -1,22 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Sentences>
   <sentence id="s1">
-    <text>Elaboré à partir de caféine et de Skinfibrine, Taille de Rêve (125 ml, 13,90€) se présente sous forme d'un gel-crème.</text>
+    <text>Trois produits composent la ligne : un gel nettoyant, une mousse de rasage et un fluide hydratant.</text>
     <Relations>
       <Relation id="r1">
-        <subject>_:s1</subject>
+        <subject>_:s8</subject>
         <predicate>hasComponent</predicate>
-        <object>Skinfibrine</object>
+        <object>fluide hydratant</object>
       </Relation>
     </Relations>
   </sentence>
   <sentence id="s1">
-    <text>Elaboré à partir de caféine et de Skinfibrine, Taille de Rêve (125 ml, 13,90€) se présente sous forme d'un gel-crème.</text>
+    <text>Ils contiennent une formule à effet peeling brevetée mêlant LHA, acide salicylique et acide glycolique.promesse</text>
     <Relations>
       <Relation id="r1">
-        <subject>_:s1</subject>
+        <subject>_:s9</subject>
         <predicate>hasComponent</predicate>
-        <object>caféine</object>
+        <object>acide salicylique</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s1">
+    <text>Ils contiennent une formule à effet peeling brevetée mêlant LHA, acide salicylique et acide glycolique.promesse</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>_:s9</subject>
+        <predicate>hasComponent</predicate>
+        <object>acide glycolique.promesse</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s1">
+    <text>Trois produits composent la ligne : un gel nettoyant, une mousse de rasage et un fluide hydratant.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>_:s10</subject>
+        <predicate>hasComponent</predicate>
+        <object>mousse</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s1">
+    <text>Ils contiennent une formule à effet peeling brevetée mêlant LHA, acide salicylique et acide glycolique.promesse</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>_:s11</subject>
+        <predicate>hasComponent</predicate>
+        <object>LHA</object>
       </Relation>
     </Relations>
   </sentence>

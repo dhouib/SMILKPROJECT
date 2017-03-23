@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Sentences>
+  <sentence id="s0">
+    <text>Après Giò (1992) et Acqua di Giò Femme (1995), L'Oréal lance Mania, un "encens frais" composé par Jacques Cavallier, dans un flacon minimaliste de Fabien Baron.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Mania</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Jacques Cavallier</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s1">
+    <text>Un masculin suivra en 2002.</text>
+  </sentence>
+  <sentence id="s3">
+    <text>La division Produits de luxe de L'Oréal s'enrichit d'une signature de mode luxueuse et épurée.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Produits de luxe</subject>
+        <predicate>belongsToGroup</predicate>
+        <object>L'Oréal</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s4">
+    <text>Après l'annonce de la prochaine acquisition d'Yves Saint Laurent, le numéro un mondial renforce ses positions dans les parfums "couture".</text>
+  </sentence>
+  <sentence id="s5">
+    <text>Ambassadrices de Lancôme, les actrices Laura Morante et Juliette Binoche nous livrent leur point de vue sur la beauté.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Lancôme</subject>
+        <predicate>hasRepresentative</predicate>
+        <object>Laura Morante</object>
+      </Relation>
+        <Relation id="r1">
+            <subject>Lancôme</subject>
+            <predicate>hasRepresentative</predicate>
+            <object>Juliette Binoche</object>
+        </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s6">
+    <text>La marque des Produits grand public de L'Oréal, qui a opté pour le slogan "Prends soin de toi", renforce son propos dans sa communication.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Produits grand public</subject>
+        <predicate>belongsToGroup</predicate>
+        <object>L'Oréal</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s7">
+    <text>Formulé à base du Dermobiotique et de vitamine B 8, co-enzyme qui renforce l'énergie cellulaire, CelléBiotic revendique une texture confort longue durée.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>CelléBiotic</subject>
+        <predicate>hasComponent</predicate>
+        <object>Dermobiotique</object>
+      </Relation>
+        <Relation id="r2">
+            <subject>CelléBiotic</subject>
+            <predicate>hasComponent</predicate>
+            <object>vitamine B 8</object>
+        </Relation>
+        <Relation id="r3">
+            <subject>CelléBiotic</subject>
+            <predicate>hasComponent</predicate>
+            <object>co-enzyme</object>
+        </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s8">
+    <text>Pour ce faire L'Oréal Paris compte sur ses égéries, plus que jamais choisies pour exprimer la beauté dans sa diversité, comme Rachida Brakni et tout dernièrement la Chinoise Zilin Zhang, Miss Monde 2007, qui sera l'ambassadrice de la marque en Asie (hors Japon).</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>L'Oréal Paris</subject>
+        <predicate>hasRepresentative</predicate>
+        <object>Rachida Brakni</object>
+      </Relation>
+        <Relation id="r2">
+            <subject>L'Oréal Paris</subject>
+            <predicate>hasRepresentative</predicate>
+            <object>Zilin Zhang</object>
+        </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s9">
+    <text>La marque de L'Oréal lance Parisienne en eau de toilette retravaillée par Sophia Grojsman et Sophie Labbé (IFF) dans une version allégée qui lui donne un côté fusant et frais, le tout dans un flacon plus élancé (50 et 90 ml, 62€ et 79€).</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Parisienne</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Sophia Grojsman</object>
+      </Relation>
+        <Relation id="r2">
+            <subject>Parisienne</subject>
+            <predicate>hasFragranceCreator</predicate>
+            <object>Sophie Labbé</object>
+        </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s10">
+    <text>Par ailleurs, Paris fait l'objet d'une nouvelle déclinaison éphémère autour de la rose - signée Sophia Grojsman et Dominique Ropion (I FF).</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Paris</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Sophia Grojsman</object>
+      </Relation>
+        <Relation id="r2">
+            <subject>Paris</subject>
+            <predicate>hasFragranceCreator</predicate>
+            <object>Dominique Ropion</object>
+        </Relation>
+        <Relation id="r3">
+            <subject>Paris</subject>
+            <predicate>hasComponent</predicate>
+            <object>rose</object>
+        </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s11">
+    <text>La licence de L'Oréal DPL s'enrichira en juin dAcqua di Gioia (EdP 30, 50 et 100 ml, 35€, 53€ et ,5€).</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>test</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>test</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s12">
+    <text>Signé par Dominique Ropion, Anne Flipo et Loc Dong (IFF), ce jus qui s'ouvre sur des notes mentholées et zestées est inspiré par la mer et la terre, d'où le jasmin d'eau pour sa facette aquatique et un fond Cèdre Coeur de LMR (I FF) avec du sucre roux et du labdanum.</text>
+  </sentence>
+  <sentence id="s13">
+    <text>Le lancement sera soutenu dans la presse, sur internet et avec de l'affichage.</text>
+  </sentence>
+  <sentence id="s14">
+    <text>En 2009, Olivier Polge, 35 ans, a notamment cosigné Only the Brave de Diesel avec Aliénor Massenet et Pierre Wargnye ainsi que Eau Mega de Viktor &amp; Rolf avec Carlos Benaïm.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Only the Brave de Diesel</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Olivier Polge</object>
+      </Relation>
+        <Relation id="r2">
+            <subject>Only the Brave de Diesel</subject>
+            <predicate>hasFragranceCreator</predicate>
+            <object>Aliénor Massenet</object>
+        </Relation>
+        <Relation id="r3">
+            <subject>Only the Brave de Diesel</subject>
+            <predicate>hasFragranceCreator</predicate>
+            <object>Pierre Wargnye</object>
+        </Relation>
+        <Relation id="r4">
+            <subject>Only the Brave de Diesel</subject>
+            <predicate>belongsToBrand</predicate>
+            <object>Diesel</object>
+        </Relation>
+        <Relation id="r5">
+            <subject>Eau Mega</subject>
+            <predicate>belongsToBrand</predicate>
+            <object>Viktor &amp; Rolf</object>
+        </Relation>
+        <Relation id="r6">
+            <subject>Eau Mega</subject>
+            <predicate>hasFragranceCreator</predicate>
+            <object>Olivier Polge</object>
+        </Relation>
+        <Relation id="r7">
+            <subject>Eau Mega</subject>
+            <predicate>hasFragranceCreator</predicate>
+            <object>Carlos Benaïm</object>
+        </Relation>
+
+    </Relations>
+  </sentence>
+  <sentence id="s15">
+    <text>Cette année, Allergan, découvreur du botox, lance Latisse (3), incarné par Brooke Shields.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Latisse</subject>
+        <predicate>hasRepresentative</predicate>
+        <object>Brooke Shields</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s16">
+    <text>Love Etc la prochaine EdP de The Body Shop (fin octobre, 28€ les 50 ml et 20€ les 30 ml) a été conçue par Dominique Ropion (IFF) avec un jasmin très présent associé en fond à la vanille et au santal.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Love Etc</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Dominique Ropion</object>
+    </Relation>
+        <Relation id="r2">
+            <subject>Love Etc</subject>
+            <predicate>hasComponent</predicate>
+            <object>vanille</object>
+        </Relation>
+        <Relation id="r3">
+            <subject>Love Etc</subject>
+            <predicate>hasComponent</predicate>
+            <object>jasmin</object>
+        </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s17">
+    <text>Monica Bellucci reste l'égérie de Rouge Dior sous l'objectif de Tyen.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Rouge Dior</subject>
+        <predicate>hasRepresentative</predicate>
+        <object>Monica Bellucci</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s18">
+    <text>Ils intègrent la gamme Color Riche Sérum anti-âge grâce au Pro-Xylane et à l'acide hyaluronique symbolisée par Linda Evangelista et destinée aux quadras.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Color Riche Sérum</subject>
+        <predicate>hasRepresentative</predicate>
+        <object>Linda Evangelista</object>
+      </Relation>
+        <Relation id="r2">
+            <subject>Color Riche Sérum</subject>
+            <predicate>hasComponent</predicate>
+            <object>Pro-Xylane</object>
+        </Relation>
+        <Relation id="r3">
+            <subject>Color Riche Sérum</subject>
+            <predicate>hasComponent</predicate>
+            <object>acide hyaluronique</object>
+        </Relation>
+
+    </Relations>
+  </sentence>
+  <sentence id="s19">
+    <text>Dans le championnat 2010 des déos qui promet d'être disputé, Men Expert (L'Oréal Paris) fait entrer sa nouvelle recrue, un certain Eric Cantona..., époux par ailleurs d'une autre égérie de la maison, Rachida Brakni.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Men Expert</subject>
+        <predicate>hasRepresentative</predicate>
+        <object>Eric Cantona</object>
+      </Relation>
+        <Relation id="r2">
+            <subject>L'Oréal Paris</subject>
+            <predicate>hasRepresentative</predicate>
+            <object>Eric Cantona</object>
+        </Relation>
+        <Relation id="r3">
+            <subject>Men Expert</subject>
+            <predicate>belongsToBrand</predicate>
+            <object>L'Oréal Paris</object>
+        </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s20">
+    <text>Elle a la bouche de son père, les yeux de sa mère et de l'énergie à revendre.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>test</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>test</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s21">
+    <text>Georgia May Jagger, fille de Mick Jagger et Jerry Hall, est la nouvelle égérie Rimmel, aux côtés de Kate Moss, Sophie Ellis-Bextor, Lily Cole et Coco Rocha.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Rimmel</subject>
+        <predicate>hasRepresentative</predicate>
+        <object>Georgia May Jagger</object>
+      </Relation>
+        <Relation id="r2">
+            <subject>Rimmel</subject>
+            <predicate>hasRepresentative</predicate>
+            <object>Kate Moss</object>
+        </Relation>
+        <Relation id="r3">
+            <subject>Rimmel</subject>
+            <predicate>hasRepresentative</predicate>
+            <object>Sophie Ellis-Bextor</object>
+        </Relation>
+        <Relation id="r4">
+            <subject>Rimmel</subject>
+            <predicate>hasRepresentative</predicate>
+            <object>Lily Cole</object>
+        </Relation>
+        <Relation id="r5">
+            <subject>Rimmel</subject>
+            <predicate>hasRepresentative</predicate>
+            <object>Coco Rocha</object>
+        </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s22">
+    <text>Autre force, ses égéries : outre le partenariat historique (2001) avec la désormais très parisienne Kate Moss, Rimmel mise sur des ambassadrices icônes, ou en passe de le devenir, comme en témoignent les signatures 2010 : la top Coco Rocha et Georgia MayJagger, "fille de".</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Rimmel</subject>
+        <predicate>hasRepresentative</predicate>
+        <object>Kate Moss</object>
+      </Relation>
+        <Relation id="r2">
+            <subject>Rimmel</subject>
+            <predicate>hasRepresentative</predicate>
+            <object>Coco Rocha</object>
+        </Relation>
+        <Relation id="r3">
+            <subject>Rimmel</subject>
+            <predicate>hasRepresentative</predicate>
+            <object>Georgia May Jagger</object>
+        </Relation>
+
+    </Relations>
+  </sentence>
+  <sentence id="s23">
+    <text>Perfect Slim Coach Minceur de L'Oréal Paris contient de la caféine, qui accélère la dégrada- tion des graisses, et un complexe Cicaplex réducteur de vergetures.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Perfect Slim Coach Minceur</subject>
+        <predicate>hasComponent</predicate>
+        <object>caféine</object>
+      </Relation>
+        <Relation id="r2">
+            <subject>Perfect Slim Coach Minceur</subject>
+            <predicate>hasComponent</predicate>
+            <object>Cicaplex</object>
+        </Relation>
+        <Relation id="r3">
+            <subject>Perfect Slim Coach Minceur</subject>
+            <predicate>belongsToBrand</predicate>
+            <object>L'Oréal Paris</object>
+        </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s24">
+    <text>Les rayons des GMS proposent maintenant également, dans une galénique mousseuse, Mat'Morphose de L'Oréal Paris avec Diane Kruger pour égérie, la dernière porte-parole recrutée par la marque.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Mat'Morphose</subject>
+        <predicate>belongsToBrand</predicate>
+        <object>L'Oréal Paris</object>
+      </Relation>
+        <Relation id="r2">
+            <subject>Mat'Morphose</subject>
+            <predicate>hasRepresentative</predicate>
+            <object>Diane Kruger</object>
+        </Relation>
+        <Relation id="r3">
+            <subject>L'Oréal Paris</subject>
+            <predicate>hasRepresentative</predicate>
+            <object>Diane Kruger</object>
+        </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s25">
+    <text>Le chiffre d'affaires de la division Produits grand public du groupe L'Oréal croît de 1% à données comparables.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Produits grand public</subject>
+        <predicate>belongsToGroup</predicate>
+        <object>L'Oréal</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s26">
+    <text>Lancôme met en pratique ces résultats à travers une nouvelle gamme luxueuse, Absolue Precious Cells.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Absolue Precious Cells</subject>
+        <predicate>belongsToBrand</predicate>
+        <object>Lancôme</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s27">
+    <text>Kate Moss chez YSL, Uma Thurman chez Givenchy...</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>YSL</subject>
+        <predicate>hasRepresentative</predicate>
+        <object>Kate Moss</object>
+    </Relation>
+        <Relation id="r2">
+            <subject>Givenchy</subject>
+            <predicate>hasRepresentative</predicate>
+            <object>Uma Thurman </object>
+        </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s28">
+    <text>Les lancements féminins se poursuivent en beauté.</text>
+  </sentence>
+  <sentence id="s29">
+    <text>Simplement baptisée Parisienne, cette eau de parfum, composée par Sophia Grojsman et Sophie Labbé (IFF), s'ouvre sur un accord vinyle en clin d'oeil au vernis à ongles.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Parisienne</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Sophia Grojsman</object>
+      </Relation>
+        <Relation id="r2">
+            <subject>Parisienne</subject>
+            <predicate>hasFragranceCreator</predicate>
+            <object>Sophie Labbé</object>
+        </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s30">
+    <text>Kate Moss, égérie de la marque, incarne cette Parisienne d'adoption dans un film publicitaire mis en scène par Fabien Baron.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Parisienne</subject>
+        <predicate>hasRepresentative</predicate>
+        <object>Kate Moss</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s31">
+    <text>Eau Mega C'est avec ce joli jeu de mots qui annonce clairement la couleur - un floral très vert à la fraîcheur évidemment aquatique signé Olivier Polge et Carlos Benaïm (IFF) - que L'Oréal Produits de luxe lance, quatre ans après Flowerbomb, sa nouvelle EdT (30, 50 et 75 ml, 52, 72 et 90€).</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Eau Mega</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Olivier Polge</object>
+      </Relation>
+        <Relation id="r2">
+            <subject>Eau Mega</subject>
+            <predicate>hasFragranceCreator</predicate>
+            <object>Carlos Benaïm</object>
+        </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s32">
+    <text>La marque a de nouveau fait appel à Sophia Grojsman, la créatrice de Paris en 1983, et à Sophie Labbé (IFF) pour son prochain floral.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Paris</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Sophia Grojsman</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s33">
+    <text>Une campagne d'envergure, à partir du 24 août, en presse, télévision, internet, affichage et sans doute de l'outdoor met en scène une Kate Moss, Parisienne d'adoption dont on devine qu'elle vient de passer une nuit blanche.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Parisienne</subject>
+        <predicate>hasRepresentative</predicate>
+        <object>Kate Moss</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s34">
+    <text>Signée Karine Dubreuil (Mane), c'est une eau de toilette très fraîche grâce au pamplemousse en tête sur un coeur légèrement épicé et un fond boisé ambré (100 ml, 41€).</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Mane</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Karine Dubreuil</object>
+      </Relation>
+        <Relation id="r2">
+            <subject>Mane</subject>
+            <predicate>hasComponent</predicate>
+            <object>pamplemousse</object>
+        </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s35">
+    <text>Signée Antoine Lie et Daniela Andrier (Givaudan), Zegna Colonia a la fraîcheur de la bergamote de Sicile en tête mêlée au néroli et à la cardamome, sur un coeur poudré (iris, galbanum) prolongé en fond par un accord musc, benjoin et cèdre.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Zegna Colonia</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Antoine Lie</object>
+      </Relation>
+        <Relation id="r2">
+        <subject>Zegna Colonia</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Daniela Andrier</object>
+    </Relation>
+        <Relation id="r3">
+        <subject>Zegna Colonia</subject>
+        <predicate>hasComponent</predicate>
+        <object>bergamote de Sicile</object>
+    </Relation>
+        <Relation id="r4">
+            <subject>Zegna Colonia</subject>
+            <predicate>hasComponent</predicate>
+            <object>néroli</object>
+        </Relation>
+        <Relation id="r5">
+            <subject>Zegna Colonia</subject>
+            <predicate>hasComponent</predicate>
+            <object>cardamome</object>
+        </Relation>
+        <Relation id="r6">
+            <subject>Zegna Colonia</subject>
+            <predicate>hasComponent</predicate>
+            <object>iris</object>
+        </Relation>
+        <Relation id="r7">
+            <subject>Zegna Colonia</subject>
+            <predicate>hasComponent</predicate>
+            <object>galbanum</object>
+        </Relation>
+        <Relation id="r8">
+            <subject>Zegna Colonia</subject>
+            <predicate>hasComponent</predicate>
+            <object>musc</object>
+        </Relation>
+        <Relation id="r9">
+            <subject>Zegna Colonia</subject>
+            <predicate>hasComponent</predicate>
+            <object>benjoin</object>
+        </Relation>
+        <Relation id="r10">
+            <subject>Zegna Colonia</subject>
+            <predicate>hasComponent</predicate>
+            <object>cèdre</object>
+        </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s36">
+    <text>Après Ladji Doucouré (champion du monde du 110 mètres haies et relais 4 x 100 m) et Nikola Karabatik (champion olympique et du monde de handball) en 2008, la marque de Lascad (L'Oréal DPGP) a choisi le quintuple champion du monde de rallye Sébastien Loeb pour représenter son nouveau Baume énergisant (100 ml, 5,95 € ).</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Baume</subject>
+        <predicate>hasRepresentative</predicate>
+        <object>Sébastien Loeb</object>
+      </Relation>
+        <Relation id="r2">
+            <subject>Lascad</subject>
+            <predicate>hasRepresentative</predicate>
+            <object>Sébastien Loeb</object>
+        </Relation>
+        <Relation id="r3">
+            <subject>Lascad</subject>
+            <predicate>hasRepresentative</predicate>
+            <object>Nikola Karabatik </object>
+        </Relation>
+        <Relation id="r4">
+            <subject>Lascad</subject>
+            <predicate>hasRepresentative</predicate>
+            <object>Ladji Doucouré</object>
+        </Relation>
+    </Relations>
+  </sentence>
+</Sentences>
+

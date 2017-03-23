@@ -1,0 +1,1948 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Sentences>
+  <sentence id="s0">
+    <text>DIOR ADDICT est un parfum conçu par Thierry Wasser.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>DIOR ADDICT</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Thierry Wasser</object>
+      </Relation>
+    </Relations>
+  </sentence>
+
+  <sentence id="s1">
+    <text>Fin 2009, une nouvelle Eau de Cologne, AMBRE NUIT, toujours créée par François Demachy, voit le jour.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>AMBRE NUIT</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>François Demachy</object>
+      </Relation>
+    </Relations>
+  </sentence>
+
+  <sentence id="s2">
+    <text>En 2012, François Demachy crée Eau Sauvage Parfum, le nouveau chapitre d’une histoire légendaire.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Eau Sauvage Parfum</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>François Demachy</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s3">
+    <text>En 2012, Olivier Polge participe à la création de SpiceBomb de Viktor &amp; Rolf, de La vie est belle de Lancôme, et de Repetto pour la marque éponyme en 2013.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>SpiceBomb</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Olivier Polge</object>
+      </Relation>
+      <Relation id="r2">
+          <subject>La vie est belle</subject>
+          <predicate>hasFragranceCreator</predicate>
+          <object>Olivier Polge</object>
+      </Relation>
+        <Relation id="r3">
+            <subject>Repetto</subject>
+            <predicate>hasFragranceCreator</predicate>
+            <object>Olivier Polge</object>
+        </Relation>
+        <Relation id="r4">
+        <subject>SpiceBomb</subject>
+        <predicate>belongsToBrand</predicate>
+        <object>Viktor &amp; Rolf</object>
+        </Relation>
+        <Relation id="r5">
+        <subject>La vie est belle</subject>
+        <predicate>belongsToBrand</predicate>
+        <object>Lancôme</object>
+        </Relation>
+        <Relation id="r6">
+        <subject>Repetto</subject>
+        <predicate>belongsToBrand</predicate>
+        <object>éponyme</object>
+        </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s4">
+    <text>Chanel n°5 fut créé en 1921 par Ernest Beaux après que Mademoiselle Chanel lui ait demandé « un parfum de femme à odeur de femme ».</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>n°5</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Ernest Beaux</object>
+      </Relation>
+        <Relation id="r2">
+            <subject>Mademoiselle</subject>
+            <predicate>hasFragranceCreator</predicate>
+            <object>Ernest Beaux</object>
+        </Relation>
+        <Relation id="r3">
+            <subject>Mademoiselle</subject>
+            <predicate>belongsToBrand</predicate>
+            <object>Chanel</object>
+        </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s5">
+    <text>Créateur des parfums Chanel depuis près d'un an, Olivier Polge dévoile sa première fragrance pour la maison, Misia.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Misia</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Olivier Polge</object>
+      </Relation>
+        <Relation id="r2">
+            <subject>Misia</subject>
+            <predicate>belongsToBrand</predicate>
+            <object>Chanel</object>
+        </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s6">
+    <text>Grandiflora, initialement conçu en parfum d’ambiance, tout comme le Jurassic Flower de Carlos Benaïm</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Jurassic Flower</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Carlos Benaïm</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s7">
+    <text>Premier Figuier a été créé en 1994 pour L’Artisan Parfumeur par Olivia Giacobetti.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Premier Figuier</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Olivia Giacobetti</object>
+      </Relation>
+        <Relation id="r2">
+            <subject>Premier Figuier</subject>
+            <predicate>belongsToBrand</predicate>
+            <object>L’Artisan Parfumeur</object>
+        </Relation>
+    </Relations>
+  </sentence>
+    <sentence id="s8">
+        <text>Amor Amor de Cacharel, créé par Dominique Ropion et Laurent Bruyère, 2003.</text>
+        <Relations>
+            <Relation id="r1">
+                <subject>Amor Amor</subject>
+                <predicate>hasFragranceCreator</predicate>
+                <object>Dominique Ropion </object>
+            </Relation>
+            <Relation id="r2">
+                <subject>Amor Amor</subject>
+                <predicate>hasFragranceCreator</predicate>
+                <object>Laurent Bruyère</object>
+            </Relation>
+            <Relation id="r3">
+                <subject>Amor Amor</subject>
+                <predicate>belongsToBrand</predicate>
+                <object>Cacharel</object>
+            </Relation>
+        </Relations>
+    </sentence>
+    <sentence id="s10">
+        <text>Baby Doll d'Yves Saint Laurent, créé par Cécile Matton, 1999.</text>
+        <Relations>
+            <Relation id="r1">
+                <subject>Baby Doll</subject>
+                <predicate>hasFragranceCreator</predicate>
+                <object>Cécile Matton</object>
+            </Relation>
+            <Relation id="r2">
+                <subject>Baby Doll</subject>
+                <predicate>belongsToBrand</predicate>
+                <object>Yves Saint Laurent</object>
+            </Relation>
+        </Relations>
+    </sentence>
+    <sentence id="s11">
+        <text>Alien de Thierry Mugler, créé par Dominique Ropion et Laurent Bruyère (IFF), 2005.</text>
+        <Relations>
+            <Relation id="r1">
+                <subject>Alien</subject>
+                <predicate>hasFragranceCreator</predicate>
+                <object>Dominique Ropion</object>
+            </Relation>
+            <Relation id="r2">
+                <subject>Alien</subject>
+                <predicate>hasFragranceCreator</predicate>
+                <object>Laurent Bruyère </object>
+            </Relation>
+            <Relation id="r3">
+                <subject>Alien</subject>
+                <predicate>belongsToBrand</predicate>
+                <object>Thierry Mugler</object>
+            </Relation>
+        </Relations>
+    </sentence>
+    <sentence id="s12">
+        <text>A*Men de Thierry Mugler, créé par Jacques Huclier, 1996.</text>
+        <Relations>
+            <Relation id="r1">
+                <subject>A*Men</subject>
+                <predicate>hasFragranceCreator</predicate>
+                <object>Jacques Huclier</object>
+            </Relation>
+            <Relation id="r2">
+                <subject>A*Men</subject>
+                <predicate>belongsToBrand</predicate>
+                <object>Thierry Mugler</object>
+            </Relation>
+        </Relations>
+    </sentence>
+  <sentence id="s13">
+    <text>La parfumeure Olivia Giacobetti a imaginé Mandarine en travaillant à partir des essences de mandarine verte, jaune et rouge afin de révéler « la simplicité de la mandarine – fraîche, fruitée et rayonnante.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Mandarine</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Olivia Giacobetti</object>
+      </Relation>
+        <Relation id="r2">
+            <subject>Mandarine</subject>
+            <predicate>hasComponent</predicate>
+            <object>mandarine verte</object>
+        </Relation>
+        <Relation id="r3">
+            <subject>Mandarine</subject>
+            <predicate>hasComponent</predicate>
+            <object>mandarine jaune</object>
+        </Relation>
+        <Relation id="r4">
+            <subject>Mandarine</subject>
+            <predicate>hasComponent</predicate>
+            <object>mandarine rouge</object>
+        </Relation>
+    </Relations>
+  </sentence>
+    <sentence id="s14">
+        <text>Emir de Dana, créé par Jean Carles, 1935.</text>
+        <Relations>
+            <Relation id="r1">
+                <subject>Emir</subject>
+                <predicate>hasFragranceCreator</predicate>
+                <object>Jean Carles</object>
+            </Relation>
+            <Relation id="r2">
+                <subject>Emir</subject>
+                <predicate>belongsToBrand</predicate>
+                <object>Dana</object>
+            </Relation>
+        </Relations>
+    </sentence>
+    <sentence id="s15">
+        <text>First de Van Cleef Arpels, créé par Jean-Claude Ellena, 1976.</text>
+        <Relations>
+            <Relation id="r1">
+                <subject>First</subject>
+                <predicate>hasFragranceCreator</predicate>
+                <object>Jean-Claude Ellena</object>
+            </Relation>
+            <Relation id="r2">
+                <subject>First</subject>
+                <predicate>belongsToBrand</predicate>
+                <object>Van Cleef Arpels</object>
+            </Relation>
+        </Relations>
+    </sentence>
+  <sentence id="s16">
+    <text>L’Eau du Caporal est un parfum qui a été créée en 1985 par Jacques Fraysse, « inspiré par la simple perfection de la nature » selon le dossier de presse.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>L’Eau du Caporal</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Jacques Fraysse</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s17">
+    <text>Œillet Sauvage a été créé en 2000 par Anne Flipo, « grande passionnée des accords floraux » (terrain de jeux dans lequel on préfère la voir jouer plutôt qu’avec une douille à caramel dans les mains...)</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Œillet Sauvage</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Anne Flipo</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s18">
+    <text>Christine Nagel signe, avec Galop, son premier grand féminin pour la célèbre maison de luxe du Faubourg Saint-Honoré.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Galop</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Christine Nagel</object>
+      </Relation>
+        <Relation id="r2">
+            <subject>Galop</subject>
+            <predicate>belongsToBrand</predicate>
+            <object>Faubourg Saint-Honoré</object>
+        </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s19">
+    <text>L’eau de Cologne nommée Les Bains Guerbois 1885, signée Michel Almairac, et présentée dans un généreux format splash de 260ml, joue avec les épices en accordant gingembre et cardamome avec des notes de patchouli, cèdre, papyrus, musc, ambre et encens.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Les Bains Guerbois 1885</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Michel Almairac</object>
+      </Relation>
+        <Relation id="r8">
+            <subject>Les Bains Guerbois 1885</subject>
+            <predicate>hasComponent</predicate>
+            <object>gingembre</object>
+        </Relation>
+        <Relation id="r2">
+            <subject>Les Bains Guerbois 1885</subject>
+            <predicate>hasComponent</predicate>
+            <object>cardamome</object>
+        </Relation>
+        <Relation id="r3">
+            <subject>Les Bains Guerbois 1885</subject>
+            <predicate>hasComponent</predicate>
+            <object>patchouli</object>
+        </Relation>
+        <Relation id="r4">
+            <subject>Les Bains Guerbois 1885</subject>
+            <predicate>hasComponent</predicate>
+            <object>cèdre</object>
+        </Relation>
+        <Relation id="r5">
+            <subject>Les Bains Guerbois 1885</subject>
+            <predicate>hasComponent</predicate>
+            <object>papyrus</object>
+        </Relation>
+        <Relation id="r6">
+            <subject>Les Bains Guerbois 1885</subject>
+            <predicate>hasComponent</predicate>
+            <object>ambre</object>
+        </Relation>
+        <Relation id="r7">
+            <subject>Les Bains Guerbois 1885</subject>
+            <predicate>hasComponent</predicate>
+            <object>encens</object>
+        </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s20">
+    <text>Angéliques Sous La Pluie de Frederic Malle est un parfum Boisé Floral Musqué pour homme et femme.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Frederic Malle</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Angéliques Sous La Pluie</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s21">
+    <text>Imaginée par le créateur Francis Kurkdjian, Fleur de Figuier révèle toutes les tonalités fraîches et charnelles de ce fruit de délice.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Fleur de Figuier</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Francis Kurkdjian</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s22">
+    <text>Puisant son inspiration dans un accord gustatif de café, Olivier Cresp avait en 1998 sans doute voulu jouer à nouveau autour d’une note gourmande, après la praline d’Angel.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Angel</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Olivier Cresp</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s23">
+    <text>C'est à la parfumeuse Calice Becker que l'on doit l’Eau de Parfum J’Adore de Dior.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Eau de Parfum J’Adore</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Calice Becker</object>
+      </Relation>
+        <Relation id="r2">
+            <subject>J’Adore</subject>
+            <predicate>belongsToBrand</predicate>
+            <object>Dior</object>
+        </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s24">
+    <text>Angel est le premier parfum signé par le styliste Thierry Mugler, datant de 1992, et appartenant à Clarins.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Angel</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Thierry Mugler</object>
+      </Relation>
+        <Relation id="r2">
+            <subject>Angel</subject>
+            <predicate>belongsToBrand</predicate>
+            <object>Clarins</object>
+        </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s25">
+    <text>Elaboré en 1925, par Jacques Guerlain, Shalimar est le premier grand parfum de la famille oriental.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Shalimar</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Jacques Guerlain</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s26">
+    <text>Après Paris et Eternity, Sophia Grosjman fut consacrée “reine des roses” avec le succès international de Trésor.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Paris</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Sophia Grosjman</object>
+      </Relation>
+      <Relation id="r2">
+            <subject>Eternity</subject>
+            <predicate>hasFragranceCreator</predicate>
+            <object>Sophia Grosjman</object>
+        </Relation>
+        <Relation id="r3">
+            <subject>Trésor</subject>
+            <predicate>hasFragranceCreator</predicate>
+            <object>Sophia Grosjman</object>
+        </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s27">
+    <text>Pure Poison a été créé par Carlos Benaim, Dominique Ropion et Olivier Polge.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Pure Poison</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Carlos Benaim</object>
+      </Relation>
+        <Relation id="r2">
+            <subject>Pure Poison</subject>
+            <predicate>hasFragranceCreator</predicate>
+            <object>Dominique Ropion</object>
+        </Relation>
+        <Relation id="r3">
+            <subject>Pure Poison</subject>
+            <predicate>hasFragranceCreator</predicate>
+            <object>Olivier Polge</object>
+        </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s28">
+    <text>CK One fut imaginé par le parfumeur Alberto Morillas et étonna de par son côté unisexe.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>CK One</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Alberto Morillas</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s29">
+    <text>Allure Homme est un parfum masculin de Chanel, créé par Jacques Polge et sorti en 1999.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Allure Homme</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Jacques Polge</object>
+      </Relation>
+        <Relation id="r2">
+            <subject>Allure Homme</subject>
+            <predicate>belongsToBrand</predicate>
+            <object>Chanel</object>
+        </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s30">
+    <text>Le créateur mexicain Carlos Huber propose avec Ella (Elle, en espagnol) un voyage olfactif dans l'espace et le temps.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Ella</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Carlos Huber</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s31">
+    <text>Hermessence signée par Jean-Claude Ellena, comme un hommage au très stylisé Diorissimo, on est vite surpris par le naturalisme frappant de ce muguet, et c’est tant mieux.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Hermessence</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Jean-Claude Ellena</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s32">
+    <text>Cuir d’ange, de Jean-Claude Ellena pour Hermès.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Cuir d’ange</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Jean-Claude Ellena</object>
+      </Relation>
+        <Relation id="r2">
+            <subject>Cuir d’ange</subject>
+            <predicate>belongsToBrand</predicate>
+            <object>Hermès</object>
+        </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s33">
+    <text>Autre nom de la Reine de Saba, Balkiss se fait Sublime dans le dernier parfum de The Different Company créé par Céline Ellena - fille de - qui a repris le flambeau des créations de la marque initiée par son père en 2000.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Balkiss</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Céline Ellena</object>
+      </Relation>
+        <Relation id="r2">
+            <subject>Balkiss</subject>
+            <predicate>belongsToBrand</predicate>
+            <object>The Different Company</object>
+        </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s34">
+    <text>1 Million est notamment signé des mains de Christophe Raynaud, Olivier Pescheux et Michel Girard.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>1 Million</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Christophe Raynaud</object>
+      </Relation>
+      <Relation id="r2">
+            <subject>1 Million</subject>
+            <predicate>hasFragranceCreator</predicate>
+            <object>Olivier Pescheux</object>
+       </Relation>
+        <Relation id="r3">
+            <subject>1 Million</subject>
+            <predicate>hasFragranceCreator</predicate>
+            <object>Michel Girard</object>
+        </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s35">
+    <text>C'est par le nez de Véronique Nyberg que le parfum pour homme Invictus de Paco Rabanne a vu le jour, et par le coup de crayon du designer Cédric Ragot que le flacon a pris forme.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Invictus</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Véronique Nyberg</object>
+      </Relation>
+        <Relation id="r2">
+            <subject>Invictus</subject>
+            <predicate>belongsToBrand</predicate>
+            <object>Paco Rabanne</object>
+        </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s36">
+    <text>Le parfum Si a été créé par Christine Nagel, parfumeur chez Mane fils, en totale concordance avec les gouts de Monsieur Armani.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Si</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Christine Nagel</object>
+      </Relation>
+        <Relation id="r2">
+            <subject>Si</subject>
+            <predicate>belongsToBrand</predicate>
+            <object>Armani</object>
+        </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s37">
+    <text>Toujours créée par Thierry Wasser, La Petite Robe Noire dévoile cette fois un parfum fleuri et lumineux.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>La Petite Robe Noire</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Thierry Wasser</object>
+      </Relation>
+    </Relations>
+  </sentence>
+    <sentence id="s38">
+        <text>French Lover des Éditions de parfums Frédéric Malle, créé par Pierre Bourdon, 2007. </text>
+        <Relations>
+            <Relation id="r1">
+                <subject>French Lover</subject>
+                <predicate>hasFragranceCreator</predicate>
+                <object>Pierre Bourdon</object>
+            </Relation>
+        </Relations>
+    </sentence>
+  <sentence id="s39">
+    <text>Déjà, dans la Petite Robe noire, Thierry Wasser l'introduit au coeur de son accord amaretto.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>la Petite Robe noire</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Thierry Wasser</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s40">
+    <text>Créé en 1921 par Ernest Beaux à la demande expresse de Coco Chanel, le parfum "n°5" a depuis connu un destin hors du commun en traversant les décennies sans prendre de rides !</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>n°5</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Ernest Beaux</object>
+      </Relation>
+        <Relation id="r2">
+            <subject>n°5</subject>
+            <predicate>belongsToBrand</predicate>
+            <object>Chanel</object>
+        </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s41">
+    <text>Lors de sa sortie, Joy créé par le nez Henri Alméras a révolutionné le monde de la parfumerie en utilisant des matières premières naturelles d''une rare qualité.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Joy</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Henri Alméras</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s42">
+    <text>Jacques Guerlain crée ensuite, en 1933, "Vol de nuit", en hommage aux pilotes qui vont marquer l’histoire de l’aviation, notamment son ami Antoine de Saint-Exupéry.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Vol de nuit</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Jacques Guerlain</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s43">
+    <text>En 1956, son fils Jean-Paul Guerlain crée "Vétiver", le premier parfum masculin de la maison.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Vétiver</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Jean-Paul Guerlain</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s44">
+    <text>Eau sauvage est un parfum des Parfums Christian Dior, créé par le « nez» Edmond Roudnitska en 1966.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Eau sauvage</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Edmond Roudnitska </object>
+          <Relation id="r2">
+              <subject>Eau sauvage</subject>
+              <predicate>belongsToBrand</predicate>
+              <object>Christian Dior</object>
+          </Relation>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s45">
+    <text>Créée par François Demachy, Parfumeur-Créateur Dior, l'Eau de Parfum Diorissimo est une nouvelle expression de l'Eau de Toilette originale Diorissimo, plus riche, plus profonde, plus intense, avec une note de cœur florale plus jasminée.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Eau de Parfum Diorissimo </subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>François Demachy</object>
+      </Relation>
+        <Relation id="r2">
+            <subject>Eau de Parfum Diorissimo</subject>
+            <predicate>belongsToBrand</predicate>
+            <object> Dior</object>
+        </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s46">
+    <text>Décrit comme « un parfum à l’architecture moderne » par Edmond Roudnitska , Diorissimo est né de l’envie de son créateur de créer une parfumerie « simplifiée, concentrée ».</text>
+    <Relations>
+        <Relation id="r1">
+            <subject>Diorissimo</subject>
+            <predicate>hasFragranceCreator</predicate>
+            <object>Edmond Roudnitska</object>
+        </Relation>
+    </Relations>
+</sentence>
+    <sentence id="s47">
+        <text>Very Irresistible Eau de Parfum a été créé par Dominique Ropion, Sophie Labbe et Carlos Benaim.</text>
+        <Relations>
+            <Relation id="r1">
+                <subject>Very Irresistible</subject>
+                <predicate>hasFragranceCreator</predicate>
+                <object>Dominique Ropion</object>
+            </Relation>
+            <Relation id="r2">
+                <subject>Very Irresistible</subject>
+                <predicate>hasFragranceCreator</predicate>
+                <object>Carlos Benaim</object>
+            </Relation>
+            <Relation id="r3">
+                <subject>Very Irresistible</subject>
+                <predicate>hasFragranceCreator</predicate>
+                <object>Carlos Benaim</object>
+            </Relation>
+        </Relations>
+    </sentence>
+  <sentence id="s48">
+    <text>No 22 est un parfum de Chanel créé en 1922 par Ernest Beaux pour Coco Chanel.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>No 22</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Ernest Beaux</object>
+      </Relation>
+        <Relation id="r2">
+            <subject>No 22</subject>
+            <predicate>belongsToBrand</predicate>
+            <object>Chanel</object>
+        </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s49">
+    <text>"Soir de Paris" de Bourjois a été créé dès 1863 par le célèbre parfumeur Ernest Beaux.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Soir de Paris</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Ernest Beaux</object>
+      </Relation>
+        <Relation id="r2">
+            <subject>Soir de Paris</subject>
+            <predicate>belongsToBrand</predicate>
+            <object>Bourjois</object>
+        </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s50">
+    <text>L’Eau de Patou  crée par Jean Kerléo en 1976 est une eau fraîche et chyprée mêlant la bergamote, le citron, le jasmin, le muguet et le musc qui laisse un sillage plutôt tenace.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>L’Eau de Patou</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Jean Kerléo</object>
+      </Relation>
+        <Relation id="r2">
+            <subject>L’Eau de Patou</subject>
+            <predicate>hasComponent</predicate>
+            <object>bergamote</object>
+        </Relation>
+        <Relation id="r3">
+            <subject>L’Eau de Patou</subject>
+            <predicate>hasComponent</predicate>
+            <object>citron</object>
+        </Relation>
+        <Relation id="r4">
+            <subject>L’Eau de Patou</subject>
+            <predicate>hasComponent</predicate>
+            <object>muguet</object>
+        </Relation>
+        <Relation id="r5">
+            <subject>L’Eau de Patou</subject>
+            <predicate>hasComponent</predicate>
+            <object>musc</object>
+        </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s51">
+    <text>Jean Kerléo crée aussi « SUBLIME » dont le lancement à lieu en 1992.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>SUBLIME</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Jean Kerléo</object>
+      </Relation>
+    </Relations>
+  </sentence>
+<sentence id="s52">
+<text>En effet, Lady Million a été composée par Anne Flipo, Béatrice Piquet et Dominique Ropion.</text>
+<Relations>
+    <Relation id="r1">
+        <subject>Lady Million</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Anne Flipo</object>
+    </Relation>
+    <Relation id="r2">
+        <subject>Lady Million</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Béatrice Piquet</object>
+    </Relation>
+    <Relation id="r3">
+        <subject>Lady Million</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Dominique Ropion</object>
+    </Relation>
+</Relations>
+</sentence>
+    <sentence id="s53">
+        <text>En outre, Calandre a été élaboré par le parfumeur Michel Hy.</text>
+        <Relations>
+            <Relation id="r1">
+                <subject>Calandre</subject>
+                <predicate>hasFragranceCreator</predicate>
+                <object>Michel Hy</object>
+            </Relation>
+        </Relations>
+    </sentence>
+    <sentence id="s54">
+        <text>Chez L'Artisan, les choses ne stagnent pas pour autant, témoin la sortie du duo L'Eau des Merveilleuses, aux notes de mangue vanillée, et L'Eau des Incroyables, un prune-tabac épicé, à l'occasion du bicentenaire de la révolution.</text>
+        <Relations>
+            <Relation id="r1">
+                <subject>L'Eau des Merveilleuses</subject>
+                <predicate>hasComponent</predicate>
+                <object>mangue vanillée</object>
+            </Relation>
+            <Relation id="r2">
+                <subject>L'Eau des Incroyables</subject>
+                <predicate>hasComponent</predicate>
+                <object>prune-tabac épicé</object>
+            </Relation>
+            <Relation id="r3">
+                <subject>L'Eau des Merveilleuses</subject>
+                <predicate>belongsToBrand</predicate>
+                <object>L'Artisan</object>
+            </Relation>
+            <Relation id="r4">
+                <subject>L'Eau des Incroyables</subject>
+                <predicate>belongsToBrand</predicate>
+                <object>L'Artisan</object>
+            </Relation>
+        </Relations>
+    </sentence>
+
+    <sentence id="s55">
+        <text>Entre un parfum chypré et un oriental, Jicky développe une tête fraîche et aromatique avec des notes de lavande, de bergamote et de romarin, pour s'épanouir en coeur avec des notes de rose et de jasmin.</text>
+        <Relations>
+            <Relation id="r1">
+                <subject>Jicky</subject>
+                <predicate>hasComponent</predicate>
+                <object>lavande</object>
+            </Relation>
+            <Relation id="r2">
+                <subject>Jicky</subject>
+                <predicate>hasComponent</predicate>
+                <object>bergamote</object>
+            </Relation>
+            <Relation id="r3">
+                <subject>Jicky</subject>
+                <predicate>hasComponent</predicate>
+                <object>romarin</object>
+            </Relation>
+            <Relation id="r4">
+                <subject>Jicky</subject>
+                <predicate>hasComponent</predicate>
+                <object>rose</object>
+            </Relation>
+            <Relation id="r5">
+                <subject>Jicky</subject>
+                <predicate>hasComponent</predicate>
+                <object>jasmin</object>
+            </Relation>
+        </Relations>
+    </sentence>
+    <sentence id="s56">
+        <text>L’Eau de Parfum Shalimar est une fragrance mythique aux accents de bergamote, d'iris et de vanille .</text>
+        <Relations>
+            <Relation id="r1">
+                <subject>L’Eau de Parfum Shalimar</subject>
+                <predicate>hasComponent</predicate>
+                <object>bergamote</object>
+            </Relation>
+            <Relation id="r2">
+                <subject>L’Eau de Parfum Shalimar</subject>
+                <predicate>hasComponent</predicate>
+                <object>iris</object>
+            </Relation>
+            <Relation id="r3">
+                <subject>L’Eau de Parfum Shalimar</subject>
+                <predicate>hasComponent</predicate>
+                <object>vanille</object>
+            </Relation>
+        </Relations>
+    </sentence>
+    <sentence id="s57">
+        <text>Créée par deux étoiles de la parfumerie française pour Lancôme, La Nuit Trésor est un élixir sensuel et mystérieux au cœur envoûtant de Rose Noire érotisé d’une Orchidée de Vanille.</text>
+        <Relations>
+            <Relation id="r1">
+                <subject>La Nuit Trésor</subject>
+                <predicate>hasComponent</predicate>
+                <object>Rose Noire </object>
+            </Relation>
+            <Relation id="r2">
+                <subject>La Nuit Trésor</subject>
+                <predicate>hasComponent</predicate>
+                <object>Orchidée de Vanille</object>
+            </Relation>
+            <Relation id="r3">
+                <subject>La Nuit Trésor</subject>
+                <predicate>belongsToBrand</predicate>
+                <object>Lancôme</object>
+            </Relation>
+        </Relations>
+    </sentence>
+    <sentence id="s58">
+        <text>Les notes fruitées étant encore peu habituelles en 90, Trésor innovait avec son accord velouté de pêche et d’abricot qui s’accorde merveilleusement avec la rose crémeuse, la violette poudrée et l’iris soyeux.</text>
+        <Relations>
+            <Relation id="r1">
+                <subject>Trésor</subject>
+                <predicate>hasComponent</predicate>
+                <object>pêche</object>
+            </Relation>
+            <Relation id="r2">
+                <subject>Trésor</subject>
+                <predicate>hasComponent</predicate>
+                <object>abricot</object>
+            </Relation>
+            <Relation id="r3">
+                <subject>Trésor</subject>
+                <predicate>hasComponent</predicate>
+                <object>rose crémeuse</object>
+            </Relation>
+            <Relation id="r4">
+                <subject>Trésor</subject>
+                <predicate>hasComponent</predicate>
+                <object>violette poudrée</object>
+            </Relation>
+            <Relation id="r5">
+                <subject>Trésor</subject>
+                <predicate>hasComponent</predicate>
+                <object>iris</object>
+            </Relation>
+        </Relations>
+    </sentence>
+    <sentence id="s59">
+        <text>Kenzo World sent le melon et les fruits rouges, sur un accord floral aqueux boisé ambré du genre “fraicheur printanière”, qu’on ne peut définir autrement que générique et formaté, passé à la moulinette d’un certain nombre de tests auprès de consommatrices ciblées.</text>
+        <Relations>
+            <Relation id="r1">
+                <subject>Kenzo World</subject>
+                <predicate>hasComponent</predicate>
+                <object>melon</object>
+            </Relation>
+            <Relation id="r2">
+                <subject>Kenzo World</subject>
+                <predicate>hasComponent</predicate>
+                <object>fruits rouges</object>
+            </Relation>
+        </Relations>
+    </sentence>
+    <sentence id="s60">
+        <text>Le sillage de 1 Million dégage notamment une senteur de cuir, de bois blanc, d'ambre et de patchouli d'Indonésie.</text>
+        <Relations>
+            <Relation id="r1">
+                <subject>1 Million</subject>
+                <predicate>hasComponent</predicate>
+                <object>cuir</object>
+            </Relation>
+            <Relation id="r2">
+                <subject>1 Million</subject>
+                <predicate>hasComponent</predicate>
+                <object>bois blanc</object>
+            </Relation>
+            <Relation id="r3">
+                <subject>1 Million</subject>
+                <predicate>hasComponent</predicate>
+                <object>ambre</object>
+            </Relation>
+            <Relation id="r4">
+                <subject>1 Million</subject>
+                <predicate>hasComponent</predicate>
+                <object>patchouli</object>
+            </Relation>
+        </Relations>
+    </sentence>
+    <sentence id="s61">
+        <text>Misant sur le grand retour de la séduction masculine, le 1 Million de Paco Rabanne démarre sur des sensations de menthe poivrée, accompagnées de pamplemousse et de mandarine.</text>
+        <Relations>
+            <Relation id="r1">
+                <subject>1 Million</subject>
+                <predicate>hasComponent</predicate>
+                <object>menthe poivrée</object>
+            </Relation>
+            <Relation id="r2">
+                <subject>1 Million</subject>
+                <predicate>hasComponent</predicate>
+                <object>pamplemousse</object>
+            </Relation>
+            <Relation id="r3">
+                <subject>1 Million</subject>
+                <predicate>hasComponent</predicate>
+                <object>mandarine</object>
+            </Relation>
+            <Relation id="r4">
+                <subject>1 Million </subject>
+                <predicate>belongsToBrand</predicate>
+                <object>Paco Rabanne</object>
+            </Relation>
+        </Relations>
+    </sentence>
+    <sentence id="s62">
+        <text>Souvenirs d'enfance, rires joyeux, la fragrance d'Angel se fait orientale gourmande (odeurs de barbe à papa, chocolat, pralines...)</text>
+        <Relations>
+            <Relation id="r1">
+                <subject>Angel</subject>
+                <predicate>hasComponent</predicate>
+                <object>barbe à papa</object>
+            </Relation>
+            <Relation id="r2">
+                <subject>Angel</subject>
+                <predicate>hasComponent</predicate>
+                <object>chocolat</object>
+            </Relation>
+            <Relation id="r3">
+                <subject>Angel</subject>
+                <predicate>hasComponent</predicate>
+                <object>pralines</object>
+            </Relation>
+        </Relations>
+    </sentence>
+    <sentence id="s63">
+        <text>Si se construit autour du patchouli et se mêle à des notes plus sucrées et fruitées.</text>
+        <Relations>
+            <Relation id="r1">
+                <subject>Si</subject>
+                <predicate>hasComponent</predicate>
+                <object>patchouli</object>
+            </Relation>
+        </Relations>
+    </sentence>
+    <sentence id="s64">
+        <text>Trésor Midnight Rose c'est un nectar magique au coeur puissant et miellé, dans lequel la rose, signature olfactive des jus Trésor de Lancôme, se révèle plus gourmande que jamais.</text>
+        <Relations>
+            <Relation id="r1">
+                <subject>Trésor Midnight Rose</subject>
+                <predicate>hasComponent</predicate>
+                <object>rose</object>
+            </Relation>
+            <Relation id="r2">
+                <subject>Trésor</subject>
+                <predicate>belongsToBrand</predicate>
+                <object>Lancôme</object>
+            </Relation>
+            <Relation id="r3">
+                <subject>Trésor Midnight Rose</subject>
+                <predicate>belongsToBrand</predicate>
+                <object>Lancôme</object>
+            </Relation>
+        </Relations>
+    </sentence>
+    <sentence id="s65">
+        <text>Le départ de TRÉSOR est comme un envol de pétales de Rose et de fleurs d'Abricot, que la saveur de la Pêche nimbe de son aura blanche et pure.</text>
+        <Relations>
+            <Relation id="r1">
+                <subject>TRÉSOR</subject>
+                <predicate>hasComponent</predicate>
+                <object>test</object>
+            </Relation>
+        </Relations>
+    </sentence>
+    <sentence id="s66">
+        <text>Mais Eau Sauvage est une cologne masculine, elle contient donc aussi des notes aromatiques, du basilic, avec sa note anisée caractéristique, du romarin, de la lavande.</text>
+        <Relations>
+            <Relation id="r1">
+                <subject>Eau Sauvage</subject>
+                <predicate>hasComponent</predicate>
+                <object>basilic</object>
+            </Relation>
+            <Relation id="r2">
+                <subject>Eau Sauvage</subject>
+                <predicate>hasComponent</predicate>
+                <object>romarin</object>
+            </Relation>
+            <Relation id="r3">
+                <subject>Eau Sauvage</subject>
+                <predicate>hasComponent</predicate>
+                <object>lavande</object>
+            </Relation>
+        </Relations>
+    </sentence>
+    <sentence id="s67">
+        <text>L’eau de toilette « Caline« , lancée en 1964  est un floral chypré mêlant le mimosa, l’oeillet, le jasmin, la fleur d’oranger, le musc, la coriandre, le bois de santal et l’ambre.</text>
+        <Relations>
+            <Relation id="r1">
+                <subject>Caline</subject>
+                <predicate>hasComponent</predicate>
+                <object>mimosa</object>
+            </Relation>
+            <Relation id="r2">
+                <subject>Caline</subject>
+                <predicate>hasComponent</predicate>
+                <object>oeillet</object>
+            </Relation>
+            <Relation id="r3">
+                <subject>Caline</subject>
+                <predicate>hasComponent</predicate>
+                <object>jasmin</object>
+            </Relation>
+            <Relation id="r4">
+                <subject>Caline</subject>
+                <predicate>hasComponent</predicate>
+                <object>oranger</object>
+            </Relation>
+            <Relation id="r5">
+                <subject>Caline</subject>
+                <predicate>hasComponent</predicate>
+                <object>musc</object>
+            </Relation>
+            <Relation id="r6">
+                <subject>Caline</subject>
+                <predicate>hasComponent</predicate>
+                <object>coriandre</object>
+            </Relation>
+            <Relation id="r7">
+                <subject>Caline</subject>
+                <predicate>hasComponent</predicate>
+                <object>bois de santal</object>
+            </Relation>
+            <Relation id="r8">
+                <subject>Caline</subject>
+                <predicate>hasComponent</predicate>
+                <object>ambre</object>
+            </Relation>
+        </Relations>
+    </sentence>
+
+    <sentence id="s68">
+    <text>Calandre contient notamment de la rose et du jasmin.</text>
+    <Relations>
+    <Relation id="r1">
+        <subject>Calandre</subject>
+        <predicate>hasComponent</predicate>
+        <object>rose</object>
+    </Relation>
+        <Relation id="r2">
+            <subject>Calandre</subject>
+            <predicate>hasComponent</predicate>
+            <object>jasmin</object>
+        </Relation>
+    </Relations>
+    </sentence>
+
+    <sentence id="s69">
+        <text>Gentlemen Only Absolute contient notamment de la cannelle, du safran et de la muscade.</text>
+        <Relations>
+            <Relation id="r1">
+                <subject>Gentlemen Only Absolute</subject>
+                <predicate>hasComponent</predicate>
+                <object>cannelle</object>
+            </Relation>
+            <Relation id="r2">
+                <subject>Gentlemen Only Absolute</subject>
+                <predicate>hasComponent</predicate>
+                <object>safran</object>
+            </Relation>
+            <Relation id="r3">
+                <subject>Gentlemen Only Absolute</subject>
+                <predicate>hasComponent</predicate>
+                <object>muscade</object>
+            </Relation>
+        </Relations>
+    </sentence>
+	<!--
+This test set contains 50 sentences / 131 Relations with representants of cosmetic products.
+Representant of: Guerlain, Hugo Boss, Lancôme, Rochas, Kenzo, Hermès, Issey Miyake, Thierry Mugler, Montblanc, Nina Ricci, Chloé
+-->
+
+<sentence id="70"> 
+	<text>En 2009, l'actrice Nora Arnezeder, révélée dans le film "Faubourg 36" de Christophe Barratier, est choisie par Guerlain pour être le visage de sa fragrance Idylle.</text>
+	<source>http://pratique.leparisien.fr/beaute/parfum/egeries-parfums/les-egeries-des-parfums-de-la-marque-guerlain-1500008669#xtref=https%3A%2F%2Fwww.google.fr%2F</source>
+	<Relations>
+		<Relation id="1">
+			<sujet>Idylle</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Nora Arnezeder</object>
+		</Relation>
+		<Relation id="2">
+			<sujet>Guerlain</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Nora Arnezeder</object>
+		</Relation>
+		<Relation id="3">
+			<sujet>Idylle</sujet>
+			<predicate>belongsToBrand</predicate>
+			<object>Guerlain</object>
+		</Relation>
+	</Relations>
+</sentence>
+<sentence id="71"> 
+	<text>Pour un autre spot, Guerlain a fait le pari de la faire tourner avec une valeur sûre de la chanson française, Thomas Dutronc.</text>
+	<source>http://pratique.leparisien.fr/beaute/parfum/egeries-parfums/les-egeries-des-parfums-de-la-marque-guerlain-1500008669#xtref=https%3A%2F%2Fwww.google.fr%2F</source>
+	<Relations>
+		<Relation id="1">
+			<sujet>Guerlain</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Thomas Dutronc</object>
+		</Relation>
+	</Relations>
+</sentence>
+<sentence id="72"> 
+	<text>L'actrice oscarisée pour "Million Dollar Baby" de Clint Eastwood, Hilary Swank, a été l'ambassadrice d'Insolence en 2006.</text>
+	<source>http://pratique.leparisien.fr/beaute/parfum/egeries-parfums/les-egeries-des-parfums-de-la-marque-guerlain-1500008669#xtref=https%3A%2F%2Fwww.google.fr%2F</source>
+	<Relations>
+		<Relation id="1">
+			<sujet>Insolence</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Hilary Swank</object>
+		</Relation>
+	</Relations>
+</sentence>
+<sentence id="73"> 
+	<text>En 2015, Theo James, la star des sagas cinématographiques "Underworld " et "Divergente", a été choisi par la maison Hugo Boss pour rejoindre le club très select des ambassadeurs de la marque.</text>
+	<source>http://pratique.leparisien.fr/beaute/parfum/egeries-parfums/les-egeries-des-parfums-de-la-marque-guerlain-1500008669#xtref=https%3A%2F%2Fwww.google.fr%2F</source>
+	<Relations>
+		<Relation id="1">
+			<sujet>Hugo Boss</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Theo James</object>
+		</Relation>
+	</Relations>
+</sentence>
+<sentence id="74"> 
+	<text>Orlando Bloom, connu pour ses rôles dans "Le Seigneur des anneaux" et "Pirates des Caraïbes" a été le visage du parfum Boss Orange.</text>
+	<source>http://pratique.leparisien.fr/beaute/parfum/egeries-parfums/les-egeries-des-parfums-de-la-marque-guerlain-1500008669#xtref=https%3A%2F%2Fwww.google.fr%2F</source>
+	<Relations>
+		<Relation id="1">
+			<sujet>Boss Orange</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Orlando Bloom</object>
+		</Relation>
+	</Relations>
+</sentence>
+<sentence id="75"> 
+	<text>Ryan Reynolds a aussi représenté trois parfums Boss Bottled, Boss Bottle Night et Boss Bottle Sport.</text>
+	<source>http://pratique.leparisien.fr/beaute/parfum/egeries-parfums/les-egeries-des-parfums-de-la-marque-guerlain-1500008669#xtref=https%3A%2F%2Fwww.google.fr%2F</source>
+	<Relations>
+		<Relation id="1">
+			<sujet>Boss Bottled</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Ryan Reynolds</object>
+		</Relation>
+		<Relation id="2">
+			<sujet>Boss Bottle Night</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Ryan Reynolds</object>
+		</Relation>
+		<Relation id="3">
+			<sujet>Boss Bottle Sport</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Ryan Reynolds</object>
+		</Relation>
+	</Relations>
+</sentence>
+<sentence id="76"> 
+	<text>La star de 300, Gerard Butler, a également prêté son visage au parfum Boss Bottled.</text>
+	<source>http://pratique.leparisien.fr/beaute/parfum/egeries-parfums/les-egeries-des-parfums-de-la-marque-guerlain-1500008669#xtref=https%3A%2F%2Fwww.google.fr%2F</source>
+	<Relations>
+		<Relation id="1">
+			<sujet>Boss Bottled</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Gerard Butler</object>
+		</Relation>
+	</Relations>
+</sentence>
+<sentence id="77"> 
+	<text>Depuis 2012, une des plus grandes actrices hollywoodiennes, Julia Roberts, est le visage de la fragrance La vie est belle.</text>
+	<source>http://pratique.leparisien.fr/beaute/parfum/egeries-parfums/les-egeries-des-parfums-de-la-marque-lancome-1500008674</source>
+	<Relations>
+		<Relation id="1">
+			<sujet>La vie est belle</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Julia Roberts</object>
+		</Relation>
+	</Relations>
+</sentence>
+<sentence id="78"> 
+	<text>Pour l'anecdote, sa fille, Elettra Rossellini, a été l'égérie de Trésor in Love, créé à l'occasion des vingt ans du parfum.</text>
+	<source>http://pratique.leparisien.fr/beaute/parfum/egeries-parfums/les-egeries-des-parfums-de-la-marque-lancome-1500008674</source>
+	<Relations>
+		<Relation id="1">
+			<sujet>Trésor in Love</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Elettra Rossellini</object>
+		</Relation>
+	</Relations>
+</sentence>
+<sentence id="79"> 
+	<text>En plus d'être l'égérie de Trésor, Inés Sastre a également incarné dans les années 2000 Aroma Tonic, Aroma Calm, Aroma Fit et Aroma Source.</text>
+	<source>http://pratique.leparisien.fr/beaute/parfum/egeries-parfums/les-egeries-des-parfums-de-la-marque-lancome-1500008674</source>
+	<Relations>
+		<Relation id="1">
+			<sujet>Trésor</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Inés Sastre</object>
+		</Relation>
+		<Relation id="2">
+			<sujet>Aroma Tonic</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Inés Sastre</object>
+		</Relation>
+		<Relation id="3">
+			<sujet>Aroma Calm</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Inés Sastre</object>
+		</Relation>
+		<Relation id="4">
+			<sujet>Aroma Fit</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Inés Sastre</object>
+		</Relation>
+		<Relation id="5">
+			<sujet>Aroma Source</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Inés Sastre</object>
+		</Relation>
+	</Relations>
+</sentence>
+<sentence id="80"> 
+	<text>En 2011, l'inoubliable Hermione de la saga Harry Potter alias Emma Watson était le visage angélique de Trésor Midnight Rose.</text>
+	<source>http://pratique.leparisien.fr/beaute/parfum/egeries-parfums/les-egeries-des-parfums-de-la-marque-lancome-1500008674</source>
+	<Relations>
+		<Relation id="1">
+			<sujet>Trésor Midnight Rose</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Emma Watson</object>
+		</Relation>
+	</Relations>
+</sentence>
+<sentence id="81"> 
+	<text>Les cascades de Rochas - Éclat d'Agrumes constitue le parfum idéal pour l'été, et son égérie n'est autre que l'actrice et mannequin Olivia Palermo.</text>
+	<source>http://pratique.leparisien.fr/beaute/parfum/egeries-parfums/les-egeries-des-parfums-de-la-marque-rochas-1500008678</source>
+	<Relations>
+		<Relation id="1">
+			<sujet>Les cascades de Rochas - Éclat d'Agrumes</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Olivia Palermo</object>
+		</Relation>
+	</Relations>
+</sentence>
+<sentence id="82"> 
+	<text>Louise Bourgoin, l'ancienne miss météo du Grand Journal de Canal+, a été choisie en 2014 par la maison Kenzo pour devenir l'égérie de leur fragrance intitulée Jeu d'Amour.</text>
+	<source>http://pratique.leparisien.fr/beaute/parfum/egeries-parfums/les-egeries-des-parfums-de-la-marque-kenzo-1500008673</source>
+	<Relations>
+		<Relation id="1">
+			<sujet>Jeu d'Amour</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Louise Bourgoin</object>
+		</Relation>
+		<Relation id="2">
+			<sujet>Kenzo</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Louise Bourgoin</object>
+		</Relation>
+		<Relation id="3">
+			<sujet>Jeu d'Amour</sujet>
+			<predicate>belongsToBrand</predicate>
+			<object>Kenzo</object>
+		</Relation>
+	</Relations>
+</sentence>
+<sentence id="83"> 
+	<text>En 1999, le mannequin français Satya Oblet, d'origine indienne, a illustré la campagne publicitaire du parfum Jungle pour homme de Kenzo.</text>
+	<source>http://pratique.leparisien.fr/beaute/parfum/egeries-parfums/les-egeries-des-parfums-de-la-marque-kenzo-1500008673</source>
+	<Relations>
+		<Relation id="1">
+			<sujet>Jungle pour homme</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Satya Oblet</object>
+		</Relation>
+		<Relation id="2">
+			<sujet>Kenzo</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Satya Oblet</object>
+		</Relation>
+		<Relation id="3">
+			<sujet>Jungle pour homme</sujet>
+			<predicate>belongsToBrand</predicate>
+			<object>Kenzo</object>
+		</Relation>
+	</Relations>
+</sentence>
+<sentence id="84"> 
+	<text>En 2012, la maison Kenzo fait appel au comédien français Nicolas Cazalé pour être le visage de son parfum Kenzo Homme Sport.</text>
+	<source>http://pratique.leparisien.fr/beaute/parfum/egeries-parfums/les-egeries-des-parfums-de-la-marque-kenzo-1500008673</source>
+	<Relations>
+		<Relation id="1">
+			<sujet>Kenzo Homme Sport</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Nicolas Cazalé</object>
+		</Relation>
+	<Relation id="2">
+			<sujet>Kenzo Homme Sport</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Kenzo</object>
+		</Relation>
+		<Relation id="3">
+			<sujet>Kenzo Homme Sport</sujet>
+			<predicate>belongToBrand</predicate>
+			<object>Kenzo</object>
+		</Relation>
+	</Relations>
+</sentence>
+<sentence id="85"> 
+	<text>Nicolas Cazalé a également été l'égérie de la marque française Chevignon.</text>
+	<source>http://pratique.leparisien.fr/beaute/parfum/egeries-parfums/les-egeries-des-parfums-de-la-marque-kenzo-1500008673</source>
+	<Relations>
+		<Relation id="1">
+			<sujet>Chevignon</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Nicolas Cazalé</object>
+		</Relation>
+	</Relations>
+</sentence>
+<sentence id="86"> 
+	<text>Clément Sibony, acteur français remarqué notamment dans les films d'Olivier Dahan ("Déjà mort" et "Le Petit Poucet "), a été choisi en 2006 par la maison Hermès pour incarner le parfum Terre d'Hermès.</text>
+	<source>http://pratique.leparisien.fr/beaute/parfum/egeries-parfums/les-egeries-des-parfums-de-la-marque-hermes-1500008670</source>
+	<Relations>
+		<Relation id="1">
+			<sujet>Hermès</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Clément Sibony</object>
+		</Relation>
+		<Relation id="2">
+			<sujet>Terre d'Hermès</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Clément Sibony</object>
+		</Relation>
+	<Relation id="3">
+			<sujet>Terre d'Hermès</sujet>
+			<predicate>belongToBrand</predicate>
+			<object>Hermès</object>
+		</Relation>
+	</Relations>
+</sentence>
+<sentence id="87"> 
+	<text>Le mannequin lituanien Edita Vilkeviciute a été choisi, en 2014, pour être l'image de Jour d'Hermès Absolu.</text>
+	<source>http://pratique.leparisien.fr/beaute/parfum/egeries-parfums/les-egeries-des-parfums-de-la-marque-hermes-1500008670</source>
+	<Relations>
+		<Relation id="1">
+			<sujet>Jour d'Hermès Absolu</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Edita Vilkeviciute</object>
+		</Relation>
+	</Relations>
+</sentence>
+<sentence id="88"> 
+	<text>En 2004, c'est Gemma Ward représente la fragrance Un Jardin sur le Nil.</text>
+	<source>http://pratique.leparisien.fr/beaute/parfum/egeries-parfums/les-egeries-des-parfums-de-la-marque-hermes-1500008670</source>
+	<Relations>
+		<Relation id="1">
+			<sujet>Un Jardin sur le Nil</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Gemma Ward</object>
+		</Relation>
+	</Relations>
+</sentence>
+<sentence id="89"> 
+	<text>Jeisa Chiminazzo, mannequin brésilien, était le visage d'Eau des Merveilles, en 2004.</text>
+	<source>http://pratique.leparisien.fr/beaute/parfum/egeries-parfums/les-egeries-des-parfums-de-la-marque-hermes-1500008670</source>
+	<Relations>
+		<Relation id="1">
+			<sujet>Eau des Merveilles</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Jeisa Chiminazzo</object>
+		</Relation>
+	</Relations>
+</sentence>
+<sentence id="90"> 
+	<text>Depuis 2012, Julianne Moore est égérie L'Oréal pour représenter la ligne de soins Renaissance Cellulaire dédiée aux femmes de 50 ans. </text>
+	<source>http://www.marieclaire.fr/,cannes-les-egeries-l-oreal-sur-le-tapis-rouge,822413.asp</source>
+	<Relations>
+		<Relation id="1">
+			<sujet>L'Oréal</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Julianne Moore</object>
+		</Relation>
+		<Relation id="2">
+			<sujet>Renaissance Cellulaire</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Julianne Moore</object>
+		</Relation>
+	</Relations>
+</sentence>
+
+<sentence id="91"> 
+	<text>À 69 ans, l'actrice de Thelma et Louise a été choisie par L'Oréal Paris pour être l'égérie d'une ligne de colorations capillaires et d'une gamme "age perfect".</text>
+	<source>http://www.marieclaire.fr/,cannes-les-egeries-l-oreal-sur-le-tapis-rouge,822413.asp</source>
+</sentence>
+
+<sentence id="92"> 
+	<text>Grande accolyte de Doutzen Kroes, l'actrice Eva Longoria est la grande ambassadrice de L'Oréal au capital sympathie on ne peut plus élevé.</text>
+	<source>http://pratique.leparisien.fr/beaute/parfum/egeries-parfums/les-egeries-des-parfums-de-la-marque-hermes-1500008670</source>
+	<Relations>
+		<Relation id="1">
+			<sujet>L'Oréal</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Eva Longoria</object>
+		</Relation>
+	</Relations>
+</sentence>
+
+<sentence id="93"> 
+	<text>À 47 ans, Naomi Watts est entrée dans le cercle très fermé des égéries de la marque L'Oréal depuis bientôt deux ans.</text>
+	<source>http://pratique.leparisien.fr/beaute/parfum/egeries-parfums/les-egeries-des-parfums-de-la-marque-hermes-1500008670</source>
+	<Relations>
+		<Relation id="1">
+			<sujet>L'Oréal</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Naomi Watts</object>
+		</Relation>
+	</Relations>
+</sentence>
+<sentence id="94"> 
+	<text>Déclinaison du parfum pour homme Legend, cette fragrance féminine est représentée par la Suédoise Mini Anden, qui devient ainsi égérie de la marque Montblanc.</text>
+	<source>http://pratique.leparisien.fr/beaute/parfum/egeries-parfums/les-egeries-des-parfums-de-la-marque-montblanc-1500008675</source>
+	<Relations>
+		<Relation id="1">
+			<sujet>Montblanc</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Mini Anden</object>
+		</Relation>
+	</Relations>
+</sentence>
+<sentence id="95"> 
+	<text>Nina Ricci signe Extase, un parfum érotique, représenté par l'actrice française Laetitia Casta. </text>
+	<source>http://pratique.leparisien.fr/beaute/parfum/egeries-parfums/les-egeries-des-parfums-de-la-marque-nina-ricci-1500008676</source>
+	<Relations>
+		<Relation id="1">
+			<sujet>Extase</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Laetitia Casta</object>
+		</Relation>
+	</Relations>
+</sentence>
+<sentence id="96"> 
+	<text>Dree Hemingway, véritable it-girl, a été choisie pour incarner le nouveau visage des parfums Chloé Signature dans une campagne lancée au mois de septembre.</text>
+	<source>http://pratique.leparisien.fr/beaute/parfum/egeries-parfums/les-egeries-des-parfums-de-la-marque-chloe-1500008665</source>
+	<Relations>
+		<Relation id="1">
+			<sujet>Chloé Signature</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Dree Hemingway</object>
+		</Relation>
+	</Relations>
+</sentence>
+<sentence id="97"> 
+	<text>Clémence Poésy, égérie du parfum Love Story de Chloé.</text>
+	<source>http://pratique.leparisien.fr/beaute/parfum/egeries-parfums/les-egeries-des-parfums-de-la-marque-chloe-1500008665</source>
+	<Relations>
+		<Relation id="1">
+			<sujet>Love Story</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Clémence Poésy</object>
+		</Relation>
+		<Relation id="2">
+			<sujet>Chloé</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Clémence Poésy</object>
+		</Relation>
+		<Relation id="3">
+			<sujet>Love Story</sujet>
+			<predicate>belongsToBrand</predicate>
+			<object>Chloé</object>
+		</Relation>
+	</Relations>
+</sentence>
+<sentence id="98"> 
+	<text>En 2008, la jeune actrice française Clémence Poésy est choisie pour incarner le parfum Love Story de Chloé.</text>
+	<source>http://pratique.leparisien.fr/beaute/parfum/egeries-parfums/les-egeries-des-parfums-de-la-marque-chloe-1500008665</source>
+	<Relations>
+		<Relation id="1">
+			<sujet>Love Story</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Clémence Poésy</object>
+		</Relation>
+		<Relation id="2">
+			<sujet>Chloé</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Clémence Poésy</object>
+		</Relation>
+		<Relation id="3">
+			<sujet>Love Story</sujet>
+			<predicate>belongsToBrand</predicate>
+			<object>Chloé</object>
+		</Relation>
+	</Relations>
+</sentence>
+<sentence id="99"> 
+	<text>Ensuite, ce sont Imogen Poots et Camille Rowe-Pourcheresse qui sont choisies pour incarner les parfums incontournables Signature et l'Eau de Chloé.</text>
+	<source>http://pratique.leparisien.fr/beaute/parfum/egeries-parfums/les-egeries-des-parfums-de-la-marque-chloe-1500008665</source>
+	<Relations>
+		<Relation id="1">
+			<sujet>Signature</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Imogen Poots</object>
+		</Relation>
+		<Relation id="2">
+			<sujet>l'Eau de Chloé</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Camille Rowe-Pourcheresse</object>
+		</Relation>
+	</Relations>
+</sentence>
+<sentence id="100"> 
+	<text>Parmi les égéries Guerlain on retrouve notamment Nora Arnezeder, Katherine Hepburn, Carla Bruni, Jane Birkin, Brigitte Bardot, Isabelle Adjani, Sophie Marceau, Natalia Vodianova, Michelle Yeoh et Julia Stegner.</text>
+	<source>http://www.marieclaire.fr/,guerlain,200115,30849.asp</source>
+	<Relations>
+		<Relation id="1">
+			<sujet>Guerlain</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Nora Arnezeder</object>
+		</Relation>
+		<Relation id="2">
+			<sujet>Guerlain</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Katherine Hepburn</object>
+		</Relation>
+		<Relation id="3">
+			<sujet>Guerlain</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Carla Bruni</object>
+		</Relation>
+		<Relation id="4">
+			<sujet>Guerlain</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Jane Birkin</object>
+		</Relation>
+		<Relation id="5">
+			<sujet>Guerlain</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Brigitte Bardot</object>
+		</Relation>
+		<Relation id="6">
+			<sujet>Guerlain</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Isabelle Adjani</object>
+		</Relation>
+		<Relation id="7">
+			<sujet>Guerlain</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Sophie Marceau</object>
+		</Relation>
+		<Relation id="8">
+			<sujet>Guerlain</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Natalia Vodianova</object>
+		</Relation>
+		<Relation id="9">
+			<sujet>Guerlain</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Michelle Yeoh</object>
+		</Relation>
+		<Relation id="10">
+			<sujet>Guerlain</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Julia Stegner</object>
+		</Relation>
+	</Relations>
+</sentence>
+<sentence id="101"> 
+	<text>Depuis ses débuts à l'écran dans la série R.I.S Police scientifique en 2006, celle qui apparaît comme l'une des étoiles montantes du cinéma français accède aujourd'hui au statut d'icône, aux côtés d'Hilary Swank ou Natalia Vodianova, autres égéries Guerlain.  </text>
+	<source>http://www.journaldesfemmes.com/beaute/parfum/photo/nora-arnezeder-egerie-pour-idylle-de-guerlain/l-etoile-qui-monte.shtml</source>
+	<Relations>
+		<Relation id="1">
+			<sujet>Guerlain</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Hilary Swank</object>
+		</Relation>
+		<Relation id="2">
+			<sujet>Guerlain</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Natalia Vodianova</object>
+		</Relation>
+	</Relations>
+</sentence>
+<sentence id="102"> 
+	<text>Pour donner vie à la campagne Idylle, Guerlain a choisi la sublime Nora Arnezeder. </text>
+	<source>http://www.journaldesfemmes.com/beaute/parfum/photo/nora-arnezeder-egerie-pour-idylle-de-guerlain/nora-arnezeder-egerie-idylle-de-guerlain.shtml</source>
+	<Relations>
+		<Relation id="1">
+			<sujet>Idylle</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Nora Arnezeder</object>
+		</Relation>
+	<Relation id="2">
+			<sujet>Guerlain</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Nora Arnezeder</object>
+		</Relation>
+		<Relation id="3">
+			<sujet>Idylle</sujet>
+			<predicate>belongToBrand</predicate>
+			<object>Guerlain</object>
+		</Relation>
+	</Relations>
+</sentence>
+<sentence id="103"> 
+	<text>Xavier Dolan, nouvelle égérie Louis Vuitton</text>
+	<source>http://www.lefigaro.fr/mode-homme/2015/09/04/30007-20150904ARTFIG00131-xavier-dolan-la-nouvelle-egerie-louis-vuitton.php</source>
+	<Relations>
+		<Relation id="1">
+			<sujet>Louis Vuitton</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Xavier Dolan</object>
+		</Relation>
+	</Relations>
+</sentence>
+<sentence id="104">
+	<text>La nouvelle égérie du géant de la maroquinerie de luxe Louis Vuitton n’est autre que Lightning, héroïne du jeu Final Fantasy, qui devient pour les besoins de la collection Series 4 l’ambassadrice de la maison.</text>
+	<source>http://toutelaculture.com/tendances/mode/pourquoi-legerie-digitale-de-vuitton-est-tout-sauf-une-surprise/</source>
+	<Relations>
+		<Relation id="1">
+			<sujet>Louis Vuitton</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Lightning</object>
+		</Relation>
+	</Relations>
+</sentence>
+
+<sentence id="105">
+	<text>Ce 13 mars, un porte-parole de la maison Dior a confirmé l'information au magazine «WWD» : la star de la pop Rihanna a été choisie pour devenir l'ambassadrice de la prochaine campagne publicitaire de la marque, «Secret Garden». </text>
+	<source>http://www.parismatch.com/People/Mode/Dix-egeries-qui-ont-marque-les-campagnes-publicitaires-de-la-maison-Dior-ces-dernieres-annees-726108</source>
+	<Relations>
+		<Relation id="1">
+			<sujet>Secret Garden</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Rihanna</object>
+		</Relation>
+		<Relation id="2">
+			<sujet>Dior</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Rihanna</object>
+		</Relation>
+		<Relation id="3">
+			<sujet>Secret Garden</sujet>
+			<predicate>belongsToBrand</predicate>
+			<object>Dior</object>
+		</Relation>
+	</Relations>
+</sentence>
+
+<sentence id="106">
+	<text>En 1998, le mannequin Milla Jovovich venait tout juste d'exploser au cinéma dans «Le Cinquième Élément» lorsqu'elle a été choisie pour prêter son image au parfum «Hypnotic Poison».</text>
+	<source>http://www.parismatch.com/People/Mode/Dix-egeries-qui-ont-marque-les-campagnes-publicitaires-de-la-maison-Dior-ces-dernieres-annees-726108</source>
+	<Relations>
+		<Relation id="1">
+			<sujet>Hypnotic Poison</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Milla Jovovich</object>
+		</Relation>
+	</Relations>
+</sentence>
+
+<sentence id="107">
+	<text>Toujours du côté des fragrances, la sublime Charlize Theron («J'adore»), la séduisante Eva Green («Midnight Poison») et la romantique Natalie Portman («Miss Dior Chérie») se sont toutes prêtées au jeu le temps de campagnes mythiques, tandis que Sharon Stone a été choisie il y a déjà huit ans pour promouvoir les lignes de cosmétiques.</text>
+	<source>http://www.parismatch.com/People/Mode/Dix-egeries-qui-ont-marque-les-campagnes-publicitaires-de-la-maison-Dior-ces-dernieres-annees-726108</source>
+	<Relations>
+		<Relation id="1">
+			<sujet>J'adore</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Charlize Theron</object>
+		</Relation>
+		<Relation id="2">
+			<sujet>Midnight Poison</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Eva Green</object>
+		</Relation>
+		<Relation id="3">
+			<sujet>Miss Dior Chérie</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Natalie Portman</object>
+		</Relation>
+	</Relations>
+</sentence>
+
+<sentence id="108">
+	<text>Les égéries du maquillage Dior sont des stars incontournables, qui font rêver, comme Natalie Portman ou Kate Moss.</text>
+	<source>http://www.vogue.fr/communaute/wiki-de-la-mode/articles/dior-maquillage/20643</source>
+	<Relations>
+		<Relation id="1">
+			<sujet>Dior</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Natalie Portman</object>
+		</Relation>
+		<Relation id="2">
+			<sujet>Dior</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Kate Moss</object>
+		</Relation>
+	</Relations>
+</sentence>
+
+<sentence id="109">
+	<text>La nouveauté produit de l'année 2011 est le rouge à lèvres Dior Addict Lipstick, dont Kate Moss est la somptueuse ambassadrice.</text>
+	<source>http://www.vogue.fr/communaute/wiki-de-la-mode/articles/dior-maquillage/20643</source>
+	<Relations>
+		<Relation id="1">
+			<sujet>Dior Addict Lipstick</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Kate Moss</object>
+		</Relation>
+	</Relations>
+</sentence>
+
+<sentence id="110">
+	<text>Suivez les tutoriels de Bella Hadid, la nouvelle ambassadrice du maquillage Dior.</text>
+	<source>http://www.dior.com/beauty/fr_fr/parfum-et-beaute/maquillage/axe-makeup-maquillage.html</source>
+	<Relations>
+		<Relation id="1">
+			<sujet>Dior</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Bella Hadid</object>
+		</Relation>
+	</Relations>
+</sentence>
+
+<sentence id="111">
+	<text>Gaspard Ulliel de nouveau ambassadeur mystérieux pour le Bleu de Chanel.</text>
+	<source>http://www.closermag.fr/video/gaspard-ulliel-de-nouveau-ambassadeur-mysterieux-pour-le-bleu-de-chanel-video-464254</source>
+	<Relations>
+		<Relation id="1">
+			<sujet>Bleu de Chanel</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Gaspard Ulliel</object>
+		</Relation>
+	</Relations>
+</sentence>
+
+<sentence id="112">
+	<text>Un film qui a séduit la maison de la rue Cambon, puisque Chanel fait de nouveau appel à Gaspard Ulliel pour incarner le parfum le Bleu de Chanel pour le printemps-été 2015.</text>
+	<source>http://www.closermag.fr/video/gaspard-ulliel-de-nouveau-ambassadeur-mysterieux-pour-le-bleu-de-chanel-video-464254</source>
+	<Relations>
+		<Relation id="1">
+			<sujet>Bleu de Chanel</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Gaspard Ulliel</object>
+		</Relation>
+	<Relation id="2">
+			<sujet>Chanel</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Gaspard Ulliel</object>
+		</Relation>
+		<Relation id="3">
+			<sujet>Bleu de Chanel</sujet>
+			<predicate>belongToBrand</predicate>
+			<object>Chanel</object>
+		</Relation>
+	</Relations>
+</sentence>
+
+<sentence id="113">
+	<text>Chanel vient de confirmer la rumeur qui circulait depuis hier aux Etats-Unis : Brad Pitt, 48 ans, a signé un accord avec la maison de la rue Cambon pour représenter son parfum le plus iconique, Chanel n°5.</text>
+	<source>http://www.purepeople.com/article/brad-pitt-ambassadeur-chanel-c-est-confirme_a100174/1</source>
+	<Relations>
+		<Relation id="1">
+			<sujet>Chanel n°5</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Brad Pitt</object>
+		</Relation>
+			<Relation id="2">
+			<sujet>Chanel</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Brad Pitt</object>
+		</Relation>
+			<Relation id="3">
+			<sujet>Chanel n°5</sujet>
+			<predicate>belongsToBrand</predicate>
+			<object>Chanel</object>
+		</Relation>
+	</Relations>
+</sentence>
+
+<sentence id="114">
+	<text>Theo James, nouvel ambassadeur des parfums Hugo Boss</text>
+	<source>http://www.parismatch.com/Vivre/Mode/Pour-sa-prochaine-campagne-parfum-Hugo-Boss-a-choisi-la-star-de-la-sage-Divergente-en-prenant-Theo-James-comme-nouvel-ambassadeur-759194</source>
+	<Relations>
+		<Relation id="1">
+			<sujet>Hugo Boss</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Theo James</object>
+		</Relation>
+	</Relations>
+</sentence>
+
+<sentence id="115">
+	<text>La Nuit de L'Homme Intense Yves Saint Laurent avec Vinnie Woolston</text>
+	<source>http://www.marieclaire.fr/,homme-parfum-beau-egerie-ambassadeur,780273.asp</source>
+	<Relations>
+		<Relation id="1">
+			<sujet>La Nuit de L'Homme Intense</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Vinnie Woolston</object>
+		</Relation>
+		<Relation id="2">
+			<sujet>Yves Saint Laurent</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Vinnie Woolston</object>
+		</Relation>
+		<Relation id="3">
+			<sujet>La Nuit de L'Homme Intense</sujet>
+			<predicate>belongsToBrand</predicate>
+			<object>Yves Saint Laurent</object>
+		</Relation>
+	</Relations>
+</sentence>
+
+<sentence id="116">
+	<text>Parmi les valeurs sûres des ambassadeurs de parfum, choisir un acteur reste une option de sécurité pour les marques comme Diesel qui a été chercher dans le visage de Liam Hemsworth une beauté aux traits réguliers et parfaits, et dont le style est enraciné dans des valeurs "de courage" et de ténacité chères au parfum…</text>
+	<source>http://www.marieclaire.fr/,homme-parfum-beau-egerie-ambassadeur,780273.asp</source>
+	<Relations>
+		<Relation id="1">
+			<sujet>Diesel</sujet>
+			<predicate>hasRepresentative</predicate>
+			<object>Liam Hemsworth</object>
+		</Relation>
+	</Relations>
+</sentence>
+
+    <sentence id="s117">
+        <text>La parfumeure Olivia Giacobetti a imaginé Mandarine en travaillant à partir des essences de mandarine verte, jaune et rouge afin de révéler « la simplicité de la mandarine – fraîche, fruitée et rayonnante».</text>
+        <Relations>
+            <Relation id="r1">
+                <subject>Mandarine</subject>
+                <predicate>hasFragranceCreator</predicate>
+                <object>Olivia Giacobetti</object>
+            </Relation>
+        </Relations>
+    </sentence>
+
+    <sentence id="118">
+        <text>Pour terminer la marche, comment omettre de mentionner le choix de la maison Chanel qui a fait appel à la simplicité, à l’élégance et au charme enfantin d’Audrey Tautou qui succède à Nicole Kidman.</text>
+        <source>https://guerlainhistoiredeparfums.wordpress.com/category/les-egeries/</source>
+        <Relations>
+            <Relation id="1">
+                <sujet>Chanel</sujet>
+                <predicate>hasRepresentative</predicate>
+                <object>Audrey Tautou</object>
+            </Relation>
+        </Relations>
+    </sentence>
+    <sentence id="119">
+        <text>Sophie Marceau, une des actrices préférées des Français, a été l'égérie du parfum Champs-Elysées en 1996.</text>
+        <source>http://pratique.leparisien.fr/beaute/parfum/egeries-parfums/les-egeries-des-parfums-de-la-marque-guerlain-1500008669#xtref=https%3A%2F%2Fwww.google.fr%2F</source>
+        <Relations>
+            <Relation id="1">
+                <sujet>Champs-Elysées</sujet>
+                <predicate>hasRepresentative</predicate>
+                <object>Sophie Marceau</object>
+            </Relation>
+        </Relations>
+    </sentence>
+
+</Sentences>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Sentences>
+  <sentence id="s0">
+    <text>L'Absolu Rouge sera incarné par le mannequin Inès Sastre sous l'objectif du photographe anglais Nick Knight.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>L'Absolu Rouge</subject>
+        <predicate>hasRepresentative</predicate>
+        <object>Inès Sastre</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s1">
+    <text>Lancôme y allouera des moyens à la hauteur de son ambition et pour l'occasion s'est offert une ambassadrice hollywoodienne, l'actrice américaine Anne Hathaway vue dans Le diable s'habille en Prada</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Lancôme</subject>
+        <predicate>hasRepresentative</predicate>
+        <object>Anne Hathaway</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s4">
+    <text>Zilin Zhang, première Chinoise à être couronnée Miss Monde, compte désormais parmi la dream team de L'Oréal Paris.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>L'Oréal Paris</subject>
+        <predicate>hasRepresentative</predicate>
+        <object>Zilin Zhang</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s5">
+    <text>Zilin Zhang représentera L'Oréal Paris en Asie, hors Japon.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>L'Oréal Paris </subject>
+        <predicate>hasRepresentative</predicate>
+        <object>Zilin Zhang</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s6">
+    <text>Pour ce faire L'Oréal Paris compte sur ses égéries, plus que jamais choisies pour exprimer la beauté dans sa diversité, comme Rachida Brakni et tout dernièrement la Chinoise Zilin Zhang, Miss Monde 2007, qui sera l'ambassadrice de la marque en Asie (hors Japon).</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>L'Oréal Paris</subject>
+        <predicate>hasRepresentative</predicate>
+        <object>Rachida Brakni</object>
+      </Relation>
+        <Relation id="r1">
+            <subject>L'Oréal Paris</subject>
+            <predicate>hasRepresentative</predicate>
+            <object>Zilin Zhang</object>
+        </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s7">
+    <text>On l'annonçait en mai dernier, Lily-Rose Depp est le nouveau visage de Chanel qui sortira à la rentrée une déclinaison de son parfum iconique, n°5 L'eau.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>n°5 L'eau</subject>
+        <predicate>hasRepresentative</predicate>
+        <object>Lily-Rose Depp</object>
+      </Relation>
+        <Relation id="r2">
+            <subject>Chanel</subject>
+            <predicate>hasRepresentative</predicate>
+            <object>Lily-Rose Depp</object>
+        </Relation>
+        <Relation id="r3">
+            <subject>n°5 L'eau</subject>
+            <predicate>belongsToBrand</predicate>
+            <object>Chanel</object>
+        </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s8">
+    <text>Nommée "Private Show", la fragrance se trouve être l’une des plus originales créées par Britney Spears.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Private Show</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Britney Spears</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s9">
+    <text>En 1921, Gabrielle Chanel crée son premier parfum, le N°5.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>N°5</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Gabrielle Chanel</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s10">
+    <text>En 1889, Aimé Guerlain a créé Jicky, le premier parfum fabriqué à partir d’éléments de synthèse.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Jicky</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Aimé Guerlain</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s11">
+    <text>"Beauté" est un parfum glamour et girly, avec ses tonalités de rose, créé par le parfumeur Emilie Bouge.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Beauté</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Emilie Bouge</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s12">
+    <text>Le second parfum "Elégance" est une senteur plus florale élaborée par le parfumeur Serge Majoullier.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Elégance</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Serge Majoullier</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s13">
+    <text>Incarner une histoire d’amour tendre et légère, un moment de plénitude à la fois fugace et éternel c’est le défi que c’est donné Thierry Wasser créateur de la dernière fragrance de Guerlain : Idylle.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Idylle</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Thierry Wasser</object>
+      </Relation>
+        <Relation id="r1">
+            <subject>Idylle</subject>
+            <predicate>belongsToBrand</predicate>
+            <object>Guerlain</object>
+        </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s14">
+    <text>Pour François Demachy, parfumeur-créateur pour Dior, Miss Dior Chérie L’Eau s’adresse à une jeune fille d’aujourd’hui, mutine, pleine de vie.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Miss Dior Chérie L’Eau</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>François Demachy</object>
+      </Relation>
+        <Relation id="r2">
+            <subject>Miss Dior Chérie L’Eau</subject>
+            <predicate>belongsToBrand</predicate>
+            <object>Dior</object>
+        </Relation>
+    </Relations>
+  </sentence>
+</Sentences>
+

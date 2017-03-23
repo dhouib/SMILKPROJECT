@@ -192,7 +192,6 @@ public class RelationBelongsToBrandExtraction extends AbstractRelationExtraction
                                             for (Token t : relationTokens) {
                                                 relation.append(t.getForm()).append(" ");
                                             }
-                                            //construction de sentence relation
                                             SentenceRelationId sentenceRelationId = new SentenceRelationId();
                                             sentenceRelationId.setSubject(subjectToken);
                                             sentenceRelationId.setObject(objectToken);
@@ -201,6 +200,8 @@ public class RelationBelongsToBrandExtraction extends AbstractRelationExtraction
                                             sentenceRelationId.setType(SentenceRelationType.belongsToBrand);
                                             sentenceRelation.setSentenceRelationId(sentenceRelationId);
                                             sentenceRelation.setMethod(SentenceRelationMethod.dbpedia_namedEntity);
+                                            double confidence = 1;
+                                            sentenceRelationId.setConfidence(confidence);
                                             list_result.add(sentenceRelation);
                                             relationTokens = new LinkedList<>();
                                             y = j;
@@ -580,15 +581,17 @@ public class RelationBelongsToBrandExtraction extends AbstractRelationExtraction
                                                 SentenceRelation sentenceRelation = new SentenceRelation();
                                                 SentenceRelationId sentenceRelationId = new SentenceRelationId();
                                                 sentenceRelationId.setSubject(subjectToken);
+                                                System.out.println("subjectToken: "+subjectToken.getForm()+ " objectToken: "+objectToken.getForm());
                                                 sentenceRelationId.setObject(objectToken);
                                                 sentenceRelationId.setRelation(relation.toString());
                                                 sentenceRelationId.setSentence_text(sentence);
                                                 sentenceRelationId.setType(SentenceRelationType.belongsToBrand);
                                                 sentenceRelation.setSentenceRelationId(sentenceRelationId);
                                                 sentenceRelation.setMethod(SentenceRelationMethod.rulesbelongsToBrand);
+                                                double confidence = 1;
+                                                sentenceRelationId.setConfidence(confidence);
                                                 list_result.add(sentenceRelation);
-                                                // }
-                                                // }
+
                                             }
                                         }
                                         if (xElement.getAttribute("type").equalsIgnoreCase(secondType) &&
@@ -611,11 +614,14 @@ public class RelationBelongsToBrandExtraction extends AbstractRelationExtraction
                                                 SentenceRelationId sentenceRelationId = new SentenceRelationId();
                                                 sentenceRelationId.setSubject(objectToken);
                                                 sentenceRelationId.setObject(subjectToken);
+                                                System.out.println("subjectToken: "+subjectToken.getForm()+ " objectToken: "+objectToken.getForm());
                                                 sentenceRelationId.setRelation(relation.toString());
                                                 sentenceRelationId.setSentence_text(sentence);
                                                 sentenceRelationId.setType(SentenceRelationType.belongsToBrand);
                                                 sentenceRelation.setSentenceRelationId(sentenceRelationId);
                                                 sentenceRelation.setMethod(SentenceRelationMethod.rulesbelongsToBrand);
+                                                double confidence = 1;
+                                                sentenceRelationId.setConfidence(confidence);
                                                 list_result.add(sentenceRelation);
                                             }
                                         }

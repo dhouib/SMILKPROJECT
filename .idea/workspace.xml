@@ -23,81 +23,43 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ExtractionHelper.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/ExtractionHelper.java">
+      <file leaf-file-name="testRenco.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/testRenco.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1377" max-vertical-offset="8143">
-              <caret line="81" column="41" selection-start-line="81" selection-start-column="41" selection-end-line="81" selection-end-column="41" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="59" max-vertical-offset="391">
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Construct_xml_annotation.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/Evaluation/Construct_xml_annotation.java">
+      <file leaf-file-name="RelationBelongsToBrandExtraction.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/RelationBelongsToBrandExtraction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="578" max-vertical-offset="4012">
-              <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
+            <state vertical-scroll-proportion="-5.142857" vertical-offset="3902" max-vertical-offset="12104">
+              <caret line="238" column="7" selection-start-line="238" selection-start-column="7" selection-end-line="238" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Renco.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/Renco.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.4289855" vertical-offset="294" max-vertical-offset="799">
+              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EvaluationMain.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/evaluation/EvaluationMain.java">
+      <file leaf-file-name="RencoIngredient.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/RencoIngredient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="2210">
-              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="manuel_annotation_hasFragranceCreator.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/manuel_annotation_hasFragranceCreator.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="9269" max-vertical-offset="9945">
-              <caret line="561" column="41" selection-start-line="561" selection-start-column="41" selection-end-line="561" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="1LOreal1.txt" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/resources/input/test/1LOreal1.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
-              <caret line="0" column="117" selection-start-line="0" selection-start-column="117" selection-end-line="0" selection-end-column="117" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="manuel_annotationV1.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/manuel_annotationV1.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1717" max-vertical-offset="2431">
-              <caret line="116" column="10" selection-start-line="116" selection-start-column="10" selection-end-line="116" selection-end-column="94" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="manuel_annotationV2.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/manuel_annotationV2.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.713" vertical-offset="2747" max-vertical-offset="3842">
-              <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="text.ttl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/resources/output/relation_extraction/text.ttl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
-              <caret line="6" column="89" selection-start-line="6" selection-start-column="89" selection-end-line="6" selection-end-column="89" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="186" max-vertical-offset="578">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -116,57 +78,57 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/resources/input/test/2LOreal4.txt" />
-        <option value="$PROJECT_DIR$/src/resources/input/test/2LOreal11.txt" />
-        <option value="$PROJECT_DIR$/src/resources/input/test/12LOreal5.txt" />
-        <option value="$PROJECT_DIR$/src/resources/input/test/11LOreal15.txt" />
-        <option value="$PROJECT_DIR$/src/resources/input/test/11LOreal18.txt" />
-        <option value="$PROJECT_DIR$/src/resources/input/test/11LOreal9.txt" />
-        <option value="$PROJECT_DIR$/src/resources/input/test/8LOreal20.txt" />
-        <option value="$PROJECT_DIR$/src/resources/input/test/8LOreal6.txt" />
-        <option value="$PROJECT_DIR$/src/resources/input/test/7LOreal9.txt" />
-        <option value="$PROJECT_DIR$/src/resources/input/test/5LOreal21.txt" />
-        <option value="$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/TalismaneAPITestV5_with_holmesV1.java" />
-        <option value="$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/bean/SentenceRelationType.java" />
-        <option value="$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/TalismaneAPITestV5_with_holmes_V1.java" />
-        <option value="$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/TalismaneAPITestV5_with_holmes.java" />
-        <option value="$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/TalismaneAPITestV5_with_holmes_V2.java" />
-        <option value="$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/TalismaneAPITestV5_with_holmes_V3.java" />
-        <option value="$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/TalismaneAPITestV5_without_holmes.java" />
-        <option value="$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/tools_test/BabelfyeTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/tools_test/BonsaiRules.java" />
-        <option value="$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/tools_test/RelationHasComponentExtrationStanfordV2.java" />
-        <option value="$PROJECT_DIR$/src/resources/input/test/training_test_final/0LOreal1.txt" />
-        <option value="$PROJECT_DIR$/src/resources/input/test_set/1LOreal1.txt" />
-        <option value="$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/Evaluation/CrunchifyCreateXMLDOM.java" />
-        <option value="$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/AbstractRelationExtraction.java" />
-        <option value="$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/Evaluation/NombreExtractionParRelation.java" />
-        <option value="$PROJECT_DIR$/src/resources/output/Evaluation/manuel_annotation.xml" />
-        <option value="$PROJECT_DIR$/src/resources/output/Evaluation/automatic_annotation.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/Evaluation/EvaluationParRelation.java" />
-        <option value="$PROJECT_DIR$/src/test/java/evaluation/Sentences.java" />
-        <option value="$PROJECT_DIR$/src/test/java/evaluation/Relations.java" />
-        <option value="$PROJECT_DIR$/src/test/java/evaluation/Sentence.java" />
-        <option value="$PROJECT_DIR$/src/resources/output/Evaluation/automatic_annotation_copy.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/RencoIngredient.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/evaluation/EvaluationMain_copy.java" />
+        <option value="$PROJECT_DIR$/src/resources/google/1LOreal1.txt" />
         <option value="$PROJECT_DIR$/src/test/java/evaluation/EvaluationMain.java" />
-        <option value="$PROJECT_DIR$/src/test/java/evaluation/Relation.java" />
-        <option value="$PROJECT_DIR$/src/resources/input/test/0LOreal1_copy.txt" />
-        <option value="$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/TalismaneAPITestV5_with_holmes_V3_hasAmbassador.java" />
-        <option value="$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/TalismaneAPITestV5_with_holmes_V3_hasComponent.java" />
-        <option value="$PROJECT_DIR$/automatic_annotation.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/hasComponent_with_ingredient.java" />
-        <option value="$PROJECT_DIR$/src/resources/output/relation_extraction/text.ttl" />
+        <option value="$PROJECT_DIR$/src/test/java/evaluation/EvaluationMain_copy.java" />
+        <option value="$PROJECT_DIR$/src/test/java/evaluation/Sentence.java" />
+        <option value="$PROJECT_DIR$/src/resources/output/Evaluation_Google/manuel_annotation_google_corpus.xml" />
+        <option value="$PROJECT_DIR$/src/resources/input/test/1LOreal1.txt" />
         <option value="$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/TalismaneAPITestV5_with_holmes_V3_hasFragranceCreator.java" />
-        <option value="$PROJECT_DIR$/src/resources/input/test/0LOreal1.txt" />
-        <option value="$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/RelationExtractionLauncher.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/hasComponent_with_ingredient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/TalismaneAPITestV5_with_holmes_V3_hasAmbassador.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/Evaluation/Sentences.java" />
+        <option value="$PROJECT_DIR$/src/main/java/preprocessing/PreprocessingWithRenco.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/Evaluation/Construct_xml_annotation.java" />
         <option value="$PROJECT_DIR$/manuel_annotation.xml" />
-        <option value="$PROJECT_DIR$/manuel_annotation_hasFragranceCreator.xml" />
+        <option value="$PROJECT_DIR$/src/resources/manuel_annotation/manuel_annotation_test_corpus_total.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/util/ExtractionHelperNew.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/ExtractionHelperNew.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/RelationBelongsToDivisionExtraction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/RelationBelongsToGroupExtraction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/RelationBelongsToBrandExtraction.java" />
+        <option value="$PROJECT_DIR$/src/resources/corpus_training/files/0LOreal1.txt" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/RelationHasRespresentativeBasedOnRenco_Holmes.java" />
+        <option value="$PROJECT_DIR$/src/resources/corpus_google_Cedric/1LOreal1.txt" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/RelationHasComponentBasedOnRenco_RencoIngredient.java" />
+        <option value="$PROJECT_DIR$/src/resources/corpus_google_total/1LOreal1.txt" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/bean/SentenceRelationId.java" />
+        <option value="$PROJECT_DIR$/src/resources/output/Evaluation/manuel_annotation_google_corpus.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/Evaluation/Relation.java" />
+        <option value="$PROJECT_DIR$/src/resources/output/Evaluation/automatic_annotation.xml" />
+        <option value="$PROJECT_DIR$/src/resources/output/evaluation_loreal_test/manuel_annotation_test_corpus_part2.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/RelationHasFragranceCreatorBasedOnRenco_Holmes.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/ExtractionHelper.java" />
-        <option value="$PROJECT_DIR$/src/resources/input/test/1LOreal1.txt" />
+        <option value="$PROJECT_DIR$/src/resources/input/1LOreal1.txt" />
+        <option value="$PROJECT_DIR$/src/resources/corpus_test1/1LOreal1.txt" />
+        <option value="$PROJECT_DIR$/src/resources/loreal_part/1LOreal1.txt" />
+        <option value="$PROJECT_DIR$/src/resources/output/Evaluation/corpus_google_total.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/RelationExtractionLauncher.java" />
+        <option value="$PROJECT_DIR$/src/resources/output/relation_extraction/text_Data.txt" />
+        <option value="$PROJECT_DIR$/src/resources/output/relation_extraction/text.ttl" />
+        <option value="$PROJECT_DIR$/automatic_annotation.xml" />
+        <option value="$PROJECT_DIR$/src/resources/corpus_test_loreal_files_1_5/41LOreal2.txt" />
+        <option value="$PROJECT_DIR$/src/resources/output/evaluation_loreal_test/automatic_annotation.xml" />
+        <option value="$PROJECT_DIR$/src/resources/output/evaluation_loreal_test/maunelle_p1_p2.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/Evaluation/EvaluationMain.java" />
+        <option value="$PROJECT_DIR$/src/resources/output/evaluation_loreal_test/manuel_annotation_test_corpus_part0.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/Evaluation/Sentence.java" />
+        <option value="$PROJECT_DIR$/src/resources/output/evaluation_loreal_test/annotation_automatique_loreal.xml" />
+        <option value="$PROJECT_DIR$/src/resources/output/evaluation_loreal_test/par1-2.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/Evaluation/EvaluationMain_copy.java" />
+        <option value="$PROJECT_DIR$/src/resources/output/evaluation_loreal_test/articles_journaux.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/testRenco.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/Renco.java" />
       </list>
     </option>
   </component>
@@ -178,10 +140,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1358" />
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1176" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -209,8 +171,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -265,59 +225,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="evaluation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RelationExtraction" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RelationExtractionSMILK" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RelationExtraction" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RelationExtractionSMILK" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="output" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="relation_extraction" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -365,7 +273,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Evaluation" />
+              <option name="myItemId" value="evaluation_loreal_test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -387,63 +295,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="input" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RelationExtraction" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RelationExtractionSMILK" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="input" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RelationExtraction" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RelationExtractionSMILK" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="input" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="training_test_final" />
+              <option name="myItemId" value="manuel_annotation" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -579,6 +431,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -601,17 +455,24 @@
       <recent name="fr.inria.smilk.ws.relationextraction" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\dhouib\Desktop\SMILK_project_devpt\RelationExtractionSMILK\src\resources\input\test" />
+      <recent name="C:\Users\dhouib\Desktop\SMILK_project_devpt\RelationExtractionSMILK\src\resources\output\evaluation_loreal_test" />
+      <recent name="C:\Users\dhouib\Desktop\SMILK_project_devpt\RelationExtractionSMILK\src\resources\manuel_annotation" />
+      <recent name="C:\Users\dhouib\Desktop\SMILK_project_devpt\RelationExtractionSMILK\src\resources\corpus_test_loreal_files_1_5" />
+      <recent name="C:\Users\dhouib\Desktop\SMILK_project_devpt\RelationExtractionSMILK\src\resources" />
       <recent name="C:\Users\dhouib\Desktop\SMILK_project_devpt\RelationExtractionSMILK\src\resources\output\Evaluation" />
-      <recent name="C:\Users\dhouib\Desktop\SMILK_project_devpt\RelationExtractionSMILK\src\resources\input\test\training_test_final" />
-      <recent name="C:\Users\dhouib\Desktop\SMILK_project_devpt\RelationExtractionSMILK\src\resources\output\relation_extraction" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\dhouib\Desktop\SMILK_project_devpt\RelationExtractionSMILK\src\resources\input\test\training_test_final" />
-      <recent name="C:\Users\dhouib\Desktop\SMILK_project_devpt\RelationExtractionSMILK\src\resources\input\test" />
+      <recent name="C:\Users\dhouib\Desktop\SMILK_project_devpt\RelationExtractionSMILK\src\resources\manuel_annotation" />
+      <recent name="C:\Users\dhouib\Desktop\SMILK_project_devpt\RelationExtractionSMILK\src\resources\histori" />
+      <recent name="C:\Users\dhouib\Desktop\SMILK_project_devpt\RelationExtractionSMILK\src\resources\output\google" />
+      <recent name="C:\Users\dhouib\Desktop\SMILK_project_devpt\RelationExtractionSMILK\src\resources\input" />
+      <recent name="C:\Users\dhouib\Desktop\SMILK_project_devpt\RelationExtractionSMILK\src\resources\google" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.RelationExtractionLauncher">
+  <component name="RunManager" selected="Application.testRenco">
     <configuration default="false" name="RelationExtractionLauncher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="fr.inria.smilk.ws.relationextraction.RelationExtractionLauncher" />
       <option name="VM_PARAMETERS" />
@@ -634,8 +495,24 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="EvaluationMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="evaluation.EvaluationMain" />
+    <configuration default="false" name="Construct_xml_annotation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="fr.inria.smilk.ws.relationextraction.Evaluation.Construct_xml_annotation" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="RelationExtraction" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="EvaluationMain_copy (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="fr.inria.smilk.ws.relationextraction.Evaluation.EvaluationMain_copy" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -656,8 +533,8 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="EvaluationMain_copy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="evaluation.EvaluationMain_copy" />
+    <configuration default="false" name="EvaluationMain (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="fr.inria.smilk.ws.relationextraction.Evaluation.EvaluationMain" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -672,24 +549,8 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="hasComponent_with_ingredient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="fr.inria.smilk.ws.relationextraction.hasComponent_with_ingredient" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="RelationExtraction" />
-      <envs />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Construct_xml_annotation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="fr.inria.smilk.ws.relationextraction.Evaluation.Construct_xml_annotation" />
+    <configuration default="false" name="testRenco" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="fr.inria.smilk.ws.relationextraction.testRenco" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -835,18 +696,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.RelationExtractionLauncher" />
-      <item index="1" class="java.lang.String" itemvalue="Application.EvaluationMain" />
-      <item index="2" class="java.lang.String" itemvalue="Application.EvaluationMain_copy" />
-      <item index="3" class="java.lang.String" itemvalue="Application.hasComponent_with_ingredient" />
-      <item index="4" class="java.lang.String" itemvalue="Application.Construct_xml_annotation" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Construct_xml_annotation" />
+      <item index="2" class="java.lang.String" itemvalue="Application.EvaluationMain_copy (1)" />
+      <item index="3" class="java.lang.String" itemvalue="Application.EvaluationMain (1)" />
+      <item index="4" class="java.lang.String" itemvalue="Application.testRenco" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.RelationExtractionLauncher" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Construct_xml_annotation" />
-        <item index="2" class="java.lang.String" itemvalue="Application.EvaluationMain" />
-        <item index="3" class="java.lang.String" itemvalue="Application.EvaluationMain_copy" />
-        <item index="4" class="java.lang.String" itemvalue="Application.hasComponent_with_ingredient" />
+        <item index="0" class="java.lang.String" itemvalue="Application.testRenco" />
+        <item index="1" class="java.lang.String" itemvalue="Application.EvaluationMain_copy (1)" />
+        <item index="2" class="java.lang.String" itemvalue="Application.EvaluationMain (1)" />
+        <item index="3" class="java.lang.String" itemvalue="Application.RelationExtractionLauncher" />
+        <item index="4" class="java.lang.String" itemvalue="Application.Construct_xml_annotation" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -867,30 +728,30 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1358" y="-8" width="1936" height="1176" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37602627" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46141216" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32512316" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.246875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48604268" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29648608" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38752052" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32756963" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32756963" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
@@ -915,34 +776,28 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/TalismaneAPITestV5_with_holmes_V2.java</url>
-          <line>2741</line>
+          <url>file://$PROJECT_DIR$/src/test/java/TalismaneAPITestV5_with_holmes_V2.java</url>
+          <line>2740</line>
           <properties />
           <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/TalismaneAPITestV5_with_holmes_V2.java</url>
-          <line>1833</line>
+          <url>file://$PROJECT_DIR$/src/test/java/TalismaneAPITestV5_with_holmes_V2.java</url>
+          <line>1832</line>
           <properties />
           <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/TalismaneAPITestV5_with_holmes_V3.java</url>
-          <line>1564</line>
+          <url>file://$PROJECT_DIR$/src/test/java/TalismaneAPITestV5_with_holmes_V3.java</url>
+          <line>1563</line>
           <properties />
           <option name="timeStamp" value="41" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/TalismaneAPITestV5_with_holmes_V3_hasComponent.java</url>
-          <line>1132</line>
+          <url>file://$PROJECT_DIR$/src/test/java/TalismaneAPITestV5_with_holmes_V3_hasComponent.java</url>
+          <line>1131</line>
           <properties />
           <option name="timeStamp" value="51" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/TalismaneAPITestV5_with_holmes_V3_hasFragranceCreator.java</url>
-          <line>1020</line>
-          <properties />
-          <option name="timeStamp" value="53" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/Evaluation/EvaluationParRelation.java</url>
@@ -957,25 +812,169 @@
           <option name="timeStamp" value="57" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/hasComponent_with_ingredient.java</url>
-          <line>58</line>
+          <url>file://$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/RelationHasComponentBasedOnRenco_RencoIngredient.java</url>
+          <line>56</line>
           <properties />
           <option name="timeStamp" value="61" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/hasComponent_with_ingredient.java</url>
-          <line>2278</line>
+          <url>file://$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/RelationHasComponentBasedOnRenco_RencoIngredient.java</url>
+          <line>1372</line>
           <properties />
-          <option name="timeStamp" value="63" />
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/RelationHasComponentBasedOnRenco_RencoIngredient.java</url>
+          <line>3652</line>
+          <properties />
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/RelationHasComponentBasedOnRenco_RencoIngredient.java</url>
+          <line>3576</line>
+          <properties />
+          <option name="timeStamp" value="68" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/RelationHasComponentBasedOnRenco_RencoIngredient.java</url>
+          <line>3492</line>
+          <properties />
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/RelationHasComponentBasedOnRenco_RencoIngredient.java</url>
+          <line>2935</line>
+          <properties />
+          <option name="timeStamp" value="71" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/RelationHasComponentBasedOnRenco_RencoIngredient.java</url>
+          <line>2969</line>
+          <properties />
+          <option name="timeStamp" value="72" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/RelationHasComponentBasedOnRenco_RencoIngredient.java</url>
+          <line>2780</line>
+          <properties />
+          <option name="timeStamp" value="73" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/RelationHasComponentBasedOnRenco_RencoIngredient.java</url>
+          <line>2859</line>
+          <properties />
+          <option name="timeStamp" value="74" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/RelationHasComponentBasedOnRenco_RencoIngredient.java</url>
+          <line>1434</line>
+          <properties />
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/RelationHasComponentBasedOnRenco_RencoIngredient.java</url>
+          <line>1539</line>
+          <properties />
+          <option name="timeStamp" value="76" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/RelationHasComponentBasedOnRenco_RencoIngredient.java</url>
+          <line>1653</line>
+          <properties />
+          <option name="timeStamp" value="77" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/RelationHasComponentBasedOnRenco_RencoIngredient.java</url>
+          <line>1620</line>
+          <properties />
+          <option name="timeStamp" value="78" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/RelationHasComponentBasedOnRenco_RencoIngredient.java</url>
+          <line>1676</line>
+          <properties />
+          <option name="timeStamp" value="79" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/RelationHasComponentBasedOnRenco_RencoIngredient.java</url>
+          <line>1711</line>
+          <properties />
+          <option name="timeStamp" value="80" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/RelationHasComponentBasedOnRenco_RencoIngredient.java</url>
+          <line>1759</line>
+          <properties />
+          <option name="timeStamp" value="82" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/RelationHasComponentBasedOnRenco_RencoIngredient.java</url>
+          <line>1895</line>
+          <properties />
+          <option name="timeStamp" value="83" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/RelationHasComponentBasedOnRenco_RencoIngredient.java</url>
+          <line>2463</line>
+          <properties />
+          <option name="timeStamp" value="84" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/RelationHasComponentBasedOnRenco_RencoIngredient.java</url>
+          <line>2560</line>
+          <properties />
+          <option name="timeStamp" value="85" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/RelationHasComponentBasedOnRenco_RencoIngredient.java</url>
+          <line>2641</line>
+          <properties />
+          <option name="timeStamp" value="86" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/RelationHasComponentBasedOnRenco_RencoIngredient.java</url>
+          <line>3070</line>
+          <properties />
+          <option name="timeStamp" value="87" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/RelationHasRespresentativeBasedOnRenco_Holmes.java</url>
+          <line>1562</line>
+          <properties />
+          <option name="timeStamp" value="89" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/RelationHasRespresentativeBasedOnRenco_Holmes.java</url>
+          <line>1563</line>
+          <properties />
+          <option name="timeStamp" value="90" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/RelationHasRespresentativeBasedOnRenco_Holmes.java</url>
+          <line>1578</line>
+          <properties />
+          <option name="timeStamp" value="91" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/ExtractionHelper.java</url>
+          <line>307</line>
+          <properties />
+          <option name="timeStamp" value="96" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/Evaluation/EvaluationMain_copy.java</url>
+          <line>87</line>
+          <properties />
+          <option name="timeStamp" value="100" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/TalismaneAPITestV5_with_holmes_V3_hasComponent.java</url>
-          <line>793</line>
-          <properties class="fr.inria.smilk.ws.relationextraction.TalismaneAPITestV5_with_holmes_V3_hasComponent" method="isCoordination" />
+          <url>file://$PROJECT_DIR$/src/test/java/TalismaneAPITestV5_with_holmes_V3_hasComponent.java</url>
+          <line>792</line>
+          <properties class="TalismaneAPITestV5_with_holmes_V3_hasComponent" method="isCoordination" />
           <option name="timeStamp" value="44" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="64" />
+      <option name="time" value="101" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -983,377 +982,391 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/resources/input/test_set/15LOreal1.txt">
+    <entry file="file://$PROJECT_DIR$/src/resources/output/KB_Google/textwithrepresentative.ttl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="449">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="13412" max-vertical-offset="24837">
+          <caret line="802" column="48" selection-start-line="802" selection-start-column="48" selection-end-line="802" selection-end-column="48" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/preprocessing/construct_data/ConstructDataLoreal.java">
+    <entry file="file://$PROJECT_DIR$/src/resources/output/KB_Google/googl_corpus.ttl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6631098" vertical-offset="1231" max-vertical-offset="2142">
-          <caret line="109" column="27" selection-start-line="109" selection-start-column="27" selection-end-line="109" selection-end-column="27" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="2957" max-vertical-offset="17442">
+          <caret line="153" column="66" selection-start-line="153" selection-start-column="47" selection-end-line="153" selection-end-column="66" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Exercice1.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/RelationHasComponentBasedOnRenco_RencoIngredient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.05255023" vertical-offset="0" max-vertical-offset="647">
-          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="62526" max-vertical-offset="63223">
+          <caret line="3740" column="5" selection-start-line="3740" selection-start-column="5" selection-end-line="3740" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/bean/Token.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/RelationHasRespresentativeBasedOnRenco_Holmes.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.94188035" vertical-offset="350" max-vertical-offset="1513">
-          <caret line="83" column="0" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/TalismaneAPITestV5_without_holmes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="44.507088" vertical-offset="2423" max-vertical-offset="45101">
-          <caret line="1837" column="101" selection-start-line="1837" selection-start-column="101" selection-end-line="1837" selection-end-column="101" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/input/test_set/1LOreal1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
-          <caret line="0" column="413" selection-start-line="0" selection-start-column="413" selection-end-line="0" selection-end-column="674" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/input/test/trainingsetsentences/1LOreal2.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="354">
-          <caret line="0" column="112" selection-start-line="0" selection-start-column="112" selection-end-line="0" selection-end-column="125" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_25/src.zip!/java/lang/NumberFormatException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7642527" vertical-offset="133" max-vertical-offset="782">
-          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="213" max-vertical-offset="26860">
+          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/bean/SentenceRelationId.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1343">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="859" max-vertical-offset="1343">
+          <caret line="79" column="29" selection-start-line="79" selection-start-column="29" selection-end-line="79" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/input/test/trainingsetsentences/1LOreal1.txt">
+    <entry file="file://$PROJECT_DIR$/manuel_annotation.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
-          <caret line="0" column="84" selection-start-line="0" selection-start-column="84" selection-end-line="0" selection-end-column="84" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2805">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/bean/SentenceRelation.java">
+    <entry file="file://$PROJECT_DIR$/src/resources/corpus_google_total/1LOreal1.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.11659808" vertical-offset="0" max-vertical-offset="729">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state vertical-scroll-proportion="-1.5" vertical-offset="1709" max-vertical-offset="2057">
+          <caret line="103" column="98" selection-start-line="103" selection-start-column="98" selection-end-line="103" selection-end-column="98" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_25/src.zip!/java/lang/Override.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_25/src.zip!/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.61037236" vertical-offset="0" max-vertical-offset="752">
-          <caret line="50" column="18" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="34607" max-vertical-offset="51935">
+          <caret line="2119" column="0" selection-start-line="2119" selection-start-column="0" selection-end-line="2119" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/AbstractRelationExtraction.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_25/src.zip!/java/util/List.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2652">
-          <caret line="24" column="74" selection-start-line="24" selection-start-column="74" selection-end-line="24" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jdom/jdom2/2.0.5/jdom2-2.0.5.jar!/org/jdom2/ContentList.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.28" vertical-offset="2737" max-vertical-offset="3196">
-          <caret line="183" column="0" selection-start-line="183" selection-start-column="0" selection-end-line="183" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jdom/jdom2/2.0.5/jdom2-2.0.5.jar!/org/jdom2/DescendantIterator.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="493">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/Evaluation/NombreExtractionParRelation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="1598">
-          <caret line="39" column="58" selection-start-line="39" selection-start-column="58" selection-end-line="39" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/evaluation/Sentences.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="114" max-vertical-offset="459">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/evaluation/Relations.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="493">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/evaluation/Sentence.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="522" max-vertical-offset="935">
-          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/Evaluation/EvaluationParRelation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1393" max-vertical-offset="3332">
-          <caret line="94" column="77" selection-start-line="94" selection-start-column="77" selection-end-line="94" selection-end-column="77" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/Renco.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="799">
-          <caret line="13" column="57" selection-start-line="13" selection-start-column="57" selection-end-line="13" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/RencoIngredient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
-          <caret line="10" column="56" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/input/ENL_farhad/1_result.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="486">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/input/test/training_test_final/0LOreal1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
-          <caret line="0" column="538" selection-start-line="0" selection-start-column="538" selection-end-line="0" selection-end-column="693" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/input/test/training_test_final/0LOreal3.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
-          <caret line="0" column="488" selection-start-line="0" selection-start-column="488" selection-end-line="0" selection-end-column="554" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/input/test/training_test_final/1LOreal3.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
-          <caret line="0" column="499" selection-start-line="0" selection-start-column="499" selection-end-line="0" selection-end-column="548" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/input/test/training_test_final/1LOreal4.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="559">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/input/test/training_test_final/1LOreal15.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
-          <caret line="0" column="7" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/input/test/training_test_final/2LOreal9.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
-          <caret line="0" column="456" selection-start-line="0" selection-start-column="456" selection-end-line="0" selection-end-column="579" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/input/test/training_test_final/2LOreal11.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
-          <caret line="0" column="175" selection-start-line="0" selection-start-column="175" selection-end-line="0" selection-end-column="310" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.64705884" vertical-offset="1224" max-vertical-offset="8347">
-          <caret line="94" column="0" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1963" max-vertical-offset="12155">
+          <caret line="144" column="12" selection-start-line="144" selection-start-column="12" selection-end-line="144" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_25/src.zip!/java/util/ArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="6309" max-vertical-offset="23749">
-          <caret line="417" column="0" selection-start-line="417" selection-start-column="0" selection-end-line="418" selection-end-column="0" />
+        <state vertical-scroll-proportion="-2.9642856" vertical-offset="4473" max-vertical-offset="23783">
+          <caret line="299" column="0" selection-start-line="299" selection-start-column="0" selection-end-line="299" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/evaluation/Relation.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/Evaluation/Relation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="850">
-          <caret line="43" column="67" selection-start-line="43" selection-start-column="67" selection-end-line="43" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/evaluation/EvaluationMain_copy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="257" max-vertical-offset="2125">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="434" max-vertical-offset="867">
+          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/resources/output/Evaluation/automatic_annotation.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="11390">
-          <caret line="26" column="6" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="19" />
+        <state vertical-scroll-proportion="0.26269317" vertical-offset="0" max-vertical-offset="31603">
+          <caret line="7" column="33" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/TalismaneAPITestV5_with_holmes.java">
+    <entry file="file://$PROJECT_DIR$/src/resources/corpus_test/1LOreal1.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="10302" max-vertical-offset="20536">
-          <caret line="502" column="87" selection-start-line="502" selection-start-column="87" selection-end-line="502" selection-end-column="87" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="437">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/hasComponent_with_ingredient.java">
+    <entry file="file://$PROJECT_DIR$/src/resources/corpus_test/2LOreal2.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-313.5" vertical-offset="23879" max-vertical-offset="44727">
-          <caret line="1921" column="74" selection-start-line="1921" selection-start-column="74" selection-end-line="1921" selection-end-column="74" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
+          <caret line="0" column="13" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/TalismaneAPITestV5_with_holmes_V3_hasComponent.java">
+    <entry file="file://$PROJECT_DIR$/src/resources/input/ENL_farhad/1_result.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31059247" vertical-offset="15365" max-vertical-offset="40800">
-          <caret line="914" column="61" selection-start-line="914" selection-start-column="61" selection-end-line="914" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/TalismaneAPITestV5_with_holmes_V3_hasAmbassador.java">
+    <entry file="file://$PROJECT_DIR$/src/resources/input/1LOreal1.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.107142" vertical-offset="18843" max-vertical-offset="21471">
-          <caret line="1164" column="107" selection-start-line="1164" selection-start-column="107" selection-end-line="1164" selection-end-column="107" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="250">
+          <caret line="0" column="74" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="142" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/TalismaneAPITestV5_with_holmes_V3_hasFragranceCreator.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/ExtractionHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="15504" max-vertical-offset="21420">
-          <caret line="1035" column="87" selection-start-line="1035" selection-start-column="87" selection-end-line="1035" selection-end-column="87" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1367" max-vertical-offset="11645">
+          <caret line="121" column="41" selection-start-line="121" selection-start-column="41" selection-end-line="121" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/RelationExtractionLauncher.java">
+    <entry file="file://$PROJECT_DIR$/src/resources/output/Evaluation/corpus_google_total.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="1343">
-          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.31559634" vertical-offset="746" max-vertical-offset="33201">
+          <caret line="54" column="24" selection-start-line="54" selection-start-column="19" selection-end-line="54" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/RelationHasFragranceCreatorBasedOnRenco_Holmes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="15674" max-vertical-offset="27880">
+          <caret line="922" column="12" selection-start-line="922" selection-start-column="12" selection-end-line="922" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/corpus_test2/1LOreal1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="340">
+          <caret line="14" column="48" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/loreal_part/1LOreal1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="323">
+          <caret line="13" column="54" selection-start-line="13" selection-start-column="54" selection-end-line="13" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/output/relation_extraction/text_Data.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="255">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/corpus_test_loreal_files_1_5/99LOreal2.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/output/relation_extraction/text.ttl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1955" max-vertical-offset="2261">
+          <caret line="126" column="27" selection-start-line="0" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/manuel_annotation/manuel_annotation_google_corpus.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.38899082" vertical-offset="18930" max-vertical-offset="19907">
+          <caret line="1126" column="20" selection-start-line="0" selection-start-column="0" selection-end-line="1165" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/manuel_annotation/manuel_annotation_training_corpus.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="14365">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/manuel_annotation/manuel_annotation_test_corpus_total.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.30367506" vertical-offset="44604" max-vertical-offset="47175">
+          <caret line="2633" column="127" selection-start-line="2633" selection-start-column="14" selection-end-line="2633" selection-end-column="127" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/automatic_annotation.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.52987015" vertical-offset="0" max-vertical-offset="850">
-          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/output/Evaluation/manuel_annotation.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="197" max-vertical-offset="14365">
-          <caret line="7" column="38" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="38" />
+        <state vertical-scroll-proportion="0.73666096" vertical-offset="439" max-vertical-offset="1020">
+          <caret line="51" column="13" selection-start-line="0" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/Evaluation/Construct_xml_annotation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3587">
-          <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
+          <caret line="36" column="130" selection-start-line="36" selection-start-column="130" selection-end-line="36" selection-end-column="130" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/Evaluation/Relations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="36" max-vertical-offset="374">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/manuel_annotation_hasFragranceCreator.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/Evaluation/EvaluationMain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="9269" max-vertical-offset="9945">
-          <caret line="561" column="41" selection-start-line="561" selection-start-column="41" selection-end-line="561" selection-end-column="41" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="248" max-vertical-offset="2193">
+          <caret line="29" column="11" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/Evaluation/Sentence.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="386" max-vertical-offset="731">
+          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/ExtractionHelper.java">
+    <entry file="file://$PROJECT_DIR$/src/resources/manuel_annotation/manuel_annotation_test_corpus_part2.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="663" max-vertical-offset="7786">
-          <caret line="81" column="41" selection-start-line="81" selection-start-column="41" selection-end-line="81" selection-end-column="41" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="262" max-vertical-offset="2805">
+          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/evaluation/EvaluationMain.java">
+    <entry file="file://$PROJECT_DIR$/src/resources/manuel_annotation/manuel_annotation_test_corpus_part1.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="81" max-vertical-offset="2176">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="2251" max-vertical-offset="9571">
+          <caret line="134" column="36" selection-start-line="134" selection-start-column="36" selection-end-line="134" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/input/test/1LOreal1.txt">
+    <entry file="file://$PROJECT_DIR$/src/resources/manuel_annotation/manuel_annotation_test_corpus_part0.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="717">
-          <caret line="0" column="117" selection-start-line="0" selection-start-column="117" selection-end-line="0" selection-end-column="117" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="28" max-vertical-offset="35139">
+          <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/manuel_annotationV1.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/Evaluation/EvaluationMain_copy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2018" max-vertical-offset="2431">
-          <caret line="116" column="10" selection-start-line="116" selection-start-column="10" selection-end-line="116" selection-end-column="94" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1325" max-vertical-offset="2771">
+          <caret line="87" column="0" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/output/relation_extraction/text.ttl">
+    <entry file="file://$PROJECT_DIR$/src/resources/output/evaluation_loreal_test/articles_journaux.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
-          <caret line="6" column="89" selection-start-line="6" selection-start-column="89" selection-end-line="6" selection-end-column="89" />
+        <state vertical-scroll-proportion="-7.285714" vertical-offset="4454" max-vertical-offset="17867">
+          <caret line="274" column="15" selection-start-line="274" selection-start-column="15" selection-end-line="274" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/manuel_annotationV2.xml">
+    <entry file="file://$PROJECT_DIR$/src/resources/output/evaluation_loreal_test/manuel_annotation_test_corpus_total.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.713" vertical-offset="2747" max-vertical-offset="3842">
-          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+        <state vertical-scroll-proportion="1294.4642" vertical-offset="38421" max-vertical-offset="47175">
+          <caret line="128" column="11" selection-start-line="128" selection-start-column="2" selection-end-line="128" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/RelationExtractionLauncher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.4342723" vertical-offset="815" max-vertical-offset="1241">
+          <caret line="18" column="143" selection-start-line="18" selection-start-column="143" selection-end-line="18" selection-end-column="143" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/AbstractRelationExtraction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24040404" vertical-offset="0" max-vertical-offset="2652">
+          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/DBpediaWikipediaTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2720">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/DependencyParserDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="816">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/RelationHasFragranceCreatorExtraction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4709">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TalismaneAPITest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7837">
+          <caret line="24" column="0" selection-start-line="21" selection-start-column="4" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/StanfordLemmatizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1666">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../OntologyBasedRelationExtractionFarhad/src/main/java/fr/inria/smilk/ws/relationextraction/Renco.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.7938144" vertical-offset="385" max-vertical-offset="901">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#1797#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/RencoIngredient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="186" max-vertical-offset="578">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../smilk_relation_extraction/src/main/java/fr/inria/smilk/ws/relationextraction/RelationBelongsToBrandExtraction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6715">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/RelationBelongsToBrandExtraction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.142857" vertical-offset="3902" max-vertical-offset="12104">
+          <caret line="238" column="7" selection-start-line="238" selection-start-column="7" selection-end-line="238" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/testRenco.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="59" max-vertical-offset="391">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/inria/smilk/ws/relationextraction/Renco.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4289855" vertical-offset="294" max-vertical-offset="799">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
           <folding />
         </state>
       </provider>

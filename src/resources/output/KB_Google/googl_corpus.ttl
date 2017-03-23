@@ -1,0 +1,1020 @@
+ <http://ns.inria.fr/smilk/elements/1.0/François_Demachy>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://xmlns.com/foaf/0.1/Person> .
+
+<http://ns.inria.fr/smilk/elements/1.0/T1>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "Fin 2009, une nouvelle Eau de Cologne, AMBRE NUIT, toujours créée par François Demachy, voit le jour." ;
+        <http://www.w3.org/2001/XMLSchema/about>
+                <http://ns.inria.fr/smilk/elements/1.0/_:s2> .
+
+<http://ns.inria.fr/smilk/elements/1.0/_:s2>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/product> ;
+        <http://ns.inria.fr/smilk/elements/1.0/hasFragranceCreator>
+                <http://ns.inria.fr/smilk/elements/1.0/François_Demachy> .
+<http://ns.inria.fr/smilk/elements/1.0/T2>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "DIOR ADDICT est un parfum conçu par Thierry Wasser." ;
+        <http://www.w3.org/2001/XMLSchema/about>
+                <http://ns.inria.fr/smilk/elements/1.0/_:s3> .
+
+<http://ns.inria.fr/smilk/elements/1.0/_:s3>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/product> ;
+        <http://ns.inria.fr/smilk/elements/1.0/hasFragranceCreator>
+                <http://ns.inria.fr/smilk/elements/1.0/Thierry_Wasser> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Thierry_Wasser>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://xmlns.com/foaf/0.1/Person> .
+<http://ns.inria.fr/smilk/elements/1.0/Carlos_Benaim>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://xmlns.com/foaf/0.1/Person> .
+
+<http://ns.inria.fr/smilk/elements/1.0/T3>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "Pure Poison a été créé par Carlos Benaim, Dominique Ropion et Olivier Polge." ;
+        <http://www.w3.org/2001/XMLSchema/about>
+                <http://ns.inria.fr/smilk/elements/1.0/_:s4> .
+
+<http://ns.inria.fr/smilk/elements/1.0/_:s4>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/product> ;
+        <http://ns.inria.fr/smilk/elements/1.0/hasFragranceCreator>
+                <http://ns.inria.fr/smilk/elements/1.0/Carlos_Benaim> .
+<http://ns.inria.fr/smilk/elements/1.0/Michel_Hy>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://xmlns.com/foaf/0.1/Person> .
+
+<http://ns.inria.fr/smilk/elements/1.0/T4>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "En outre, Calandre a été élaboré par le parfumeur Michel Hy." ;
+        <http://www.w3.org/2001/XMLSchema/about>
+                <http://ns.inria.fr/smilk/elements/1.0/_:s5> .
+
+<http://ns.inria.fr/smilk/elements/1.0/_:s5>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/product> ;
+        <http://ns.inria.fr/smilk/elements/1.0/hasFragranceCreator>
+                <http://ns.inria.fr/smilk/elements/1.0/Michel_Hy> .
+<http://ns.inria.fr/smilk/elements/1.0/Olivia_Giacobetti>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://xmlns.com/foaf/0.1/Person> .
+
+<http://ns.inria.fr/smilk/elements/1.0/T5>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "Premier Figuier a été créé en 1994 pour L’Artisan Parfumeur par Olivia Giacobetti." ;
+        <http://www.w3.org/2001/XMLSchema/about>
+                <http://ns.inria.fr/smilk/elements/1.0/_:s6> .
+
+<http://ns.inria.fr/smilk/elements/1.0/_:s6>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/product> ;
+        <http://ns.inria.fr/smilk/elements/1.0/hasFragranceCreator>
+                <http://ns.inria.fr/smilk/elements/1.0/Olivia_Giacobetti> .
+<http://ns.inria.fr/smilk/elements/1.0/Jacques_Guerlain>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://xmlns.com/foaf/0.1/Person> .
+
+<http://ns.inria.fr/smilk/elements/1.0/T6>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "Elaboré en 1925, par Jacques Guerlain, Shalimar est le premier grand parfum de la famille oriental." ;
+        <http://www.w3.org/2001/XMLSchema/about>
+                <http://ns.inria.fr/smilk/elements/1.0/Shalimar> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Shalimar>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/product> ;
+        <http://ns.inria.fr/smilk/elements/1.0/hasFragranceCreator>
+                <http://ns.inria.fr/smilk/elements/1.0/Jacques_Guerlain> .
+<http://ns.inria.fr/smilk/elements/1.0/_:s7>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/product> ;
+        <http://ns.inria.fr/smilk/elements/1.0/hasFragranceCreator>
+                <http://ns.inria.fr/smilk/elements/1.0/Ernest_Beaux> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Ernest_Beaux>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://xmlns.com/foaf/0.1/Person> .
+
+<http://ns.inria.fr/smilk/elements/1.0/T7>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "Créé en 1921 par Ernest Beaux à la demande expresse de Coco Chanel, le parfum \"n°5\" a depuis connu un destin hors du commun en traversant les décennies sans prendre de rides !" ;
+        <http://www.w3.org/2001/XMLSchema/about>
+                <http://ns.inria.fr/smilk/elements/1.0/_:s7> .
+<http://ns.inria.fr/smilk/elements/1.0/_:s8>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/product> ;
+        <http://ns.inria.fr/smilk/elements/1.0/hasFragranceCreator>
+                <http://ns.inria.fr/smilk/elements/1.0/Henri_Alméras> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Henri_Alméras>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://xmlns.com/foaf/0.1/Person> .
+
+<http://ns.inria.fr/smilk/elements/1.0/T8>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "Lors de sa sortie, Joy créé par le nez Henri Alméras a révolutionné le monde de la parfumerie en utilisant des matières premières naturelles d''une rare qualité." ;
+        <http://www.w3.org/2001/XMLSchema/about>
+                <http://ns.inria.fr/smilk/elements/1.0/_:s8> .
+<http://ns.inria.fr/smilk/elements/1.0/Jacques_Polge>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://xmlns.com/foaf/0.1/Person> .
+
+<http://ns.inria.fr/smilk/elements/1.0/T9>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "Allure Homme est un parfum masculin de Chanel, créé par Jacques Polge et sorti en 1999." ;
+        <http://www.w3.org/2001/XMLSchema/about>
+                <http://ns.inria.fr/smilk/elements/1.0/Allure_Homme> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Allure_Homme>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/product> ;
+        <http://ns.inria.fr/smilk/elements/1.0/hasFragranceCreator>
+                <http://ns.inria.fr/smilk/elements/1.0/Jacques_Polge> .
+<http://ns.inria.fr/smilk/elements/1.0/Pierre_Bourdon>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://xmlns.com/foaf/0.1/Person> .
+
+<http://ns.inria.fr/smilk/elements/1.0/_:s9>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/product> ;
+        <http://ns.inria.fr/smilk/elements/1.0/hasFragranceCreator>
+                <http://ns.inria.fr/smilk/elements/1.0/Pierre_Bourdon> .
+
+<http://ns.inria.fr/smilk/elements/1.0/T10>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "French Lover des Éditions de parfums Frédéric Malle, créé par Pierre Bourdon, 2007." ;
+        <http://www.w3.org/2001/XMLSchema/about>
+                <http://ns.inria.fr/smilk/elements/1.0/_:s9> .
+<http://ns.inria.fr/smilk/elements/1.0/_:s10>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/product> ;
+        <http://ns.inria.fr/smilk/elements/1.0/hasFragranceCreator>
+                <http://ns.inria.fr/smilk/elements/1.0/Fleur_de_Figuier> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Fleur_de_Figuier>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://xmlns.com/foaf/0.1/Person> .
+
+<http://ns.inria.fr/smilk/elements/1.0/T11>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "Imaginée par le créateur Francis Kurkdjian, Fleur de Figuier révèle toutes les tonalités fraîches et charnelles de ce fruit de délice." ;
+        <http://www.w3.org/2001/XMLSchema/about>
+                <http://ns.inria.fr/smilk/elements/1.0/_:s10> .
+<http://ns.inria.fr/smilk/elements/1.0/T12>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "Amor Amor de Cacharel, créé par Dominique Ropion et Laurent Bruyère, 2003." ;
+        <http://www.w3.org/2001/XMLSchema/about>
+                <http://ns.inria.fr/smilk/elements/1.0/_:s11> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Dominique_Ropion>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://xmlns.com/foaf/0.1/Person> .
+
+<http://ns.inria.fr/smilk/elements/1.0/_:s11>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/product> ;
+        <http://ns.inria.fr/smilk/elements/1.0/hasFragranceCreator>
+                <http://ns.inria.fr/smilk/elements/1.0/Dominique_Ropion> .
+<http://ns.inria.fr/smilk/elements/1.0/_:s12>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/product> ;
+        <http://ns.inria.fr/smilk/elements/1.0/hasFragranceCreator>
+                <http://ns.inria.fr/smilk/elements/1.0/Cécile_Matton> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Cécile_Matton>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://xmlns.com/foaf/0.1/Person> .
+
+<http://ns.inria.fr/smilk/elements/1.0/T13>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "Baby Doll d'Yves Saint Laurent, créé par Cécile Matton, 1999." ;
+        <http://www.w3.org/2001/XMLSchema/about>
+                <http://ns.inria.fr/smilk/elements/1.0/_:s12> .
+<http://ns.inria.fr/smilk/elements/1.0/Sophie_Labbe>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://xmlns.com/foaf/0.1/Person> .
+
+<http://ns.inria.fr/smilk/elements/1.0/_:s13>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/product> ;
+        <http://ns.inria.fr/smilk/elements/1.0/hasFragranceCreator>
+                <http://ns.inria.fr/smilk/elements/1.0/Sophie_Labbe> .
+
+<http://ns.inria.fr/smilk/elements/1.0/T14>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "Very Irresistible Eau de Parfum a été créé par Dominique Ropion, Sophie Labbe et Carlos Benaim." ;
+        <http://www.w3.org/2001/XMLSchema/about>
+                <http://ns.inria.fr/smilk/elements/1.0/_:s13> .
+<http://ns.inria.fr/smilk/elements/1.0/T15>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "En effet, Lady Million a été composée par Anne Flipo, Béatrice Piquet et Dominique Ropion." ;
+        <http://www.w3.org/2001/XMLSchema/about>
+                <http://ns.inria.fr/smilk/elements/1.0/_:s14> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Béatrice_Piquet>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://xmlns.com/foaf/0.1/Person> .
+
+<http://ns.inria.fr/smilk/elements/1.0/_:s14>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/product> ;
+        <http://ns.inria.fr/smilk/elements/1.0/hasFragranceCreator>
+                <http://ns.inria.fr/smilk/elements/1.0/Béatrice_Piquet> .
+<http://ns.inria.fr/smilk/elements/1.0/_:s15>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/product> ;
+        <http://ns.inria.fr/smilk/elements/1.0/hasFragranceCreator>
+                <http://ns.inria.fr/smilk/elements/1.0/Jacques_Huclier> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Jacques_Huclier>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://xmlns.com/foaf/0.1/Person> .
+
+<http://ns.inria.fr/smilk/elements/1.0/T16>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "A*Men de Thierry Mugler, créé par Jacques Huclier, 1996." ;
+        <http://www.w3.org/2001/XMLSchema/about>
+                <http://ns.inria.fr/smilk/elements/1.0/_:s15> .
+<http://ns.inria.fr/smilk/elements/1.0/_:s16>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/product> ;
+        <http://ns.inria.fr/smilk/elements/1.0/hasFragranceCreator>
+                <http://ns.inria.fr/smilk/elements/1.0/Jean_Carles> .
+
+<http://ns.inria.fr/smilk/elements/1.0/T17>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "Emir de Dana, créé par Jean Carles, 1935." ;
+        <http://www.w3.org/2001/XMLSchema/about>
+                <http://ns.inria.fr/smilk/elements/1.0/_:s16> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Jean_Carles>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://xmlns.com/foaf/0.1/Person> .
+<http://ns.inria.fr/smilk/elements/1.0/_:s17>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/product> ;
+        <http://ns.inria.fr/smilk/elements/1.0/hasFragranceCreator>
+                <http://ns.inria.fr/smilk/elements/1.0/Jean-Claude_Ellena> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Jean-Claude_Ellena>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://xmlns.com/foaf/0.1/Person> .
+
+<http://ns.inria.fr/smilk/elements/1.0/T18>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "First de Van Cleef Arpels, créé par Jean-Claude Ellena, 1976." ;
+        <http://www.w3.org/2001/XMLSchema/about>
+                <http://ns.inria.fr/smilk/elements/1.0/_:s17> .
+<http://ns.inria.fr/smilk/elements/1.0/T19>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "Le parfum Si a été créé par Christine Nagel, parfumeur chez Mane fils, en totale concordance avec les gouts de Monsieur Armani." ;
+        <http://www.w3.org/2001/XMLSchema/about>
+                <http://ns.inria.fr/smilk/elements/1.0/_:s18> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Christine_Nagel>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://xmlns.com/foaf/0.1/Person> .
+
+<http://ns.inria.fr/smilk/elements/1.0/_:s18>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/product> ;
+        <http://ns.inria.fr/smilk/elements/1.0/hasFragranceCreator>
+                <http://ns.inria.fr/smilk/elements/1.0/Christine_Nagel> .
+<http://ns.inria.fr/smilk/elements/1.0/Edmond_Roudnitska>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://xmlns.com/foaf/0.1/Person> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Eau_sauvage>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/product> ;
+        <http://ns.inria.fr/smilk/elements/1.0/hasFragranceCreator>
+                <http://ns.inria.fr/smilk/elements/1.0/Edmond_Roudnitska> .
+
+<http://ns.inria.fr/smilk/elements/1.0/T20>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "Eau sauvage est un parfum des Parfums Christian Dior, créé par le « nez » Edmond Roudnitska en 1966." ;
+        <http://www.w3.org/2001/XMLSchema/about>
+                <http://ns.inria.fr/smilk/elements/1.0/Eau_sauvage> .
+<http://ns.inria.fr/smilk/elements/1.0/T21>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "Œillet Sauvage a été créé en 2000 par Anne Flipo, « grande passionnée des accords floraux » (terrain de jeux dans lequel on préfère la voir jouer plutôt qu’avec une douille à caramel dans les mains...)" ;
+        <http://www.w3.org/2001/XMLSchema/about>
+                <http://ns.inria.fr/smilk/elements/1.0/_:s19> .
+
+<http://ns.inria.fr/smilk/elements/1.0/_:s19>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/product> ;
+        <http://ns.inria.fr/smilk/elements/1.0/hasFragranceCreator>
+                <http://ns.inria.fr/smilk/elements/1.0/Anne_Flipo> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Anne_Flipo>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://xmlns.com/foaf/0.1/Person> .
+<http://ns.inria.fr/smilk/elements/1.0/No_22>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/product> ;
+        <http://ns.inria.fr/smilk/elements/1.0/hasFragranceCreator>
+                <http://ns.inria.fr/smilk/elements/1.0/Ernest_Beaux_pour_Coco_Chanel> .
+
+<http://ns.inria.fr/smilk/elements/1.0/T22>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "No 22 est un parfum de Chanel créé en 1922 par Ernest Beaux pour Coco Chanel." ;
+        <http://www.w3.org/2001/XMLSchema/about>
+                <http://ns.inria.fr/smilk/elements/1.0/No_22> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Ernest_Beaux_pour_Coco_Chanel>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://xmlns.com/foaf/0.1/Person> .
+<http://ns.inria.fr/smilk/elements/1.0/T11>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "Imaginée par le créateur Francis Kurkdjian, Fleur de Figuier révèle toutes les tonalités fraîches et charnelles de ce fruit de délice." ;
+        <http://www.w3.org/2001/XMLSchema/about>
+                <http://ns.inria.fr/smilk/elements/1.0/_:s20> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Francis_Kurkdjian>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://xmlns.com/foaf/0.1/Person> .
+
+<http://ns.inria.fr/smilk/elements/1.0/_:s20>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/product> ;
+        <http://ns.inria.fr/smilk/elements/1.0/hasFragranceCreator>
+                <http://ns.inria.fr/smilk/elements/1.0/Francis_Kurkdjian> .
+<http://ns.inria.fr/smilk/elements/1.0/Alberto_Morillas>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://xmlns.com/foaf/0.1/Person> .
+
+<http://ns.inria.fr/smilk/elements/1.0/_:s21>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/product> ;
+        <http://ns.inria.fr/smilk/elements/1.0/hasFragranceCreator>
+                <http://ns.inria.fr/smilk/elements/1.0/Alberto_Morillas> .
+
+<http://ns.inria.fr/smilk/elements/1.0/T23>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "CK One fut imaginé par le parfumeur Alberto Morillas et étonna de par son côté unisexe." ;
+        <http://www.w3.org/2001/XMLSchema/about>
+                <http://ns.inria.fr/smilk/elements/1.0/_:s21> .
+<http://ns.inria.fr/smilk/elements/1.0/Véronique_Nyberg>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://xmlns.com/foaf/0.1/Person> .
+
+<http://ns.inria.fr/smilk/elements/1.0/_:s22>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/product> ;
+        <http://ns.inria.fr/smilk/elements/1.0/hasFragranceCreator>
+                <http://ns.inria.fr/smilk/elements/1.0/Véronique_Nyberg> .
+
+<http://ns.inria.fr/smilk/elements/1.0/T24>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "C'est par le nez de Véronique Nyberg que le parfum pour homme Invictus de Paco Rabanne a vu le jour, et par le coup de crayon du designer Cédric Ragot que le flacon a pris forme." ;
+        <http://www.w3.org/2001/XMLSchema/about>
+                <http://ns.inria.fr/smilk/elements/1.0/_:s22> .
+<http://ns.inria.fr/smilk/elements/1.0/Thierry_Mugler>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://xmlns.com/foaf/0.1/Person> .
+
+<http://ns.inria.fr/smilk/elements/1.0/_:s23>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/product> ;
+        <http://ns.inria.fr/smilk/elements/1.0/hasFragranceCreator>
+                <http://ns.inria.fr/smilk/elements/1.0/Thierry_Mugler> .
+
+<http://ns.inria.fr/smilk/elements/1.0/T25>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "Angel est le premier parfum signé par le styliste Thierry Mugler, datant de 1992, et appartenant à Clarins." ;
+        <http://www.w3.org/2001/XMLSchema/about>
+                <http://ns.inria.fr/smilk/elements/1.0/_:s23> .
+<http://ns.inria.fr/smilk/elements/1.0/François_Demachy>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://xmlns.com/foaf/0.1/Person> .
+
+<http://ns.inria.fr/smilk/elements/1.0/T26>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "En 2012, François Demachy crée Eau Sauvage Parfum, le nouveau chapitre d’une histoire légendaire." ;
+        <http://www.w3.org/2001/XMLSchema/about>
+                <http://ns.inria.fr/smilk/elements/1.0/Eau_Sauvage_Parfum> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Eau_Sauvage_Parfum>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/product> ;
+        <http://ns.inria.fr/smilk/elements/1.0/hasFragranceCreator>
+                <http://ns.inria.fr/smilk/elements/1.0/François_Demachy> .
+<http://ns.inria.fr/smilk/elements/1.0/T27>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "En 2012, Olivier Polge participe à la création de SpiceBomb de Viktor & Rolf, de La vie est belle de Lancôme, et de Repetto pour la marque éponyme en 2013." ;
+        <http://www.w3.org/2001/XMLSchema/about>
+                <http://ns.inria.fr/smilk/elements/1.0/_:s24> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Olivier_Polge>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://xmlns.com/foaf/0.1/Person> .
+
+<http://ns.inria.fr/smilk/elements/1.0/_:s24>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/product> ;
+        <http://ns.inria.fr/smilk/elements/1.0/hasFragranceCreator>
+                <http://ns.inria.fr/smilk/elements/1.0/Olivier_Polge> .
+<http://ns.inria.fr/smilk/elements/1.0/T28>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "Créateur des parfums Chanel depuis près d'un an, Olivier Polge dévoile sa première fragrance pour la maison, Misia." ;
+        <http://www.w3.org/2001/XMLSchema/about>
+                <http://ns.inria.fr/smilk/elements/1.0/_:s25> .
+
+<http://ns.inria.fr/smilk/elements/1.0/fragrance>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://xmlns.com/foaf/0.1/Person> .
+
+<http://ns.inria.fr/smilk/elements/1.0/_:s25>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/product> ;
+        <http://ns.inria.fr/smilk/elements/1.0/hasFragranceCreator>
+                <http://ns.inria.fr/smilk/elements/1.0/fragrance> .
+<http://ns.inria.fr/smilk/elements/1.0/_:s26>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/product> ;
+        <http://ns.inria.fr/smilk/elements/1.0/hasFragranceCreator>
+                <http://ns.inria.fr/smilk/elements/1.0/Olivier_Cresp> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Olivier_Cresp>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://xmlns.com/foaf/0.1/Person> .
+
+<http://ns.inria.fr/smilk/elements/1.0/T29>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "Puisant son inspiration dans un accord gustatif de café, Olivier Cresp avait en 1998 sans doute voulu jouer à nouveau autour d’une note gourmande, après la praline d’Angel." ;
+        <http://www.w3.org/2001/XMLSchema/about>
+                <http://ns.inria.fr/smilk/elements/1.0/_:s26> .
+<http://ns.inria.fr/smilk/elements/1.0/_:s27>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/product> ;
+        <http://ns.inria.fr/smilk/elements/1.0/hasFragranceCreator>
+                <http://ns.inria.fr/smilk/elements/1.0/Angel> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Angel>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://xmlns.com/foaf/0.1/Person> .
+
+<http://ns.inria.fr/smilk/elements/1.0/T25>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "Angel est le premier parfum signé par le styliste Thierry Mugler, datant de 1992, et appartenant à Clarins." ;
+        <http://www.w3.org/2001/XMLSchema/about>
+                <http://ns.inria.fr/smilk/elements/1.0/_:s27> .
+<http://ns.inria.fr/smilk/elements/1.0/Jacques_Guerlain>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://xmlns.com/foaf/0.1/Person> .
+
+<http://ns.inria.fr/smilk/elements/1.0/T30>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "Jacques Guerlain crée ensuite, en 1933, \"Vol de nuit\", en hommage aux pilotes qui vont marquer l’histoire de l’aviation, notamment son ami Antoine de Saint-Exupéry." ;
+        <http://www.w3.org/2001/XMLSchema/about>
+                <http://ns.inria.fr/smilk/elements/1.0/_:s28> .
+
+<http://ns.inria.fr/smilk/elements/1.0/_:s28>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/product> ;
+        <http://ns.inria.fr/smilk/elements/1.0/hasFragranceCreator>
+                <http://ns.inria.fr/smilk/elements/1.0/Jacques_Guerlain> .
+<http://ns.inria.fr/smilk/elements/1.0/_:s29>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/product> ;
+        <http://ns.inria.fr/smilk/elements/1.0/hasFragranceCreator>
+                <http://ns.inria.fr/smilk/elements/1.0/Jean_Kerléo> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Jean_Kerléo>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://xmlns.com/foaf/0.1/Person> .
+
+<http://ns.inria.fr/smilk/elements/1.0/T31>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "Jean Kerléo crée aussi « SUBLIME » dont le lancement à lieu en 1992." ;
+        <http://www.w3.org/2001/XMLSchema/about>
+                <http://ns.inria.fr/smilk/elements/1.0/_:s29> .
+<http://ns.inria.fr/smilk/elements/1.0/Jicky>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://xmlns.com/foaf/0.1/Person> .
+
+<http://ns.inria.fr/smilk/elements/1.0/_:s30>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/product> ;
+        <http://ns.inria.fr/smilk/elements/1.0/hasFragranceCreator>
+                <http://ns.inria.fr/smilk/elements/1.0/Jicky> .
+
+<http://ns.inria.fr/smilk/elements/1.0/T32>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "Entre un parfum chypré et un oriental, Jicky développe une tête fraîche et aromatique avec des notes de lavande, de bergamote et de romarin, pour s'épanouir en coeur avec des notes de rose et de jasmin." ;
+        <http://www.w3.org/2001/XMLSchema/about>
+                <http://ns.inria.fr/smilk/elements/1.0/_:s30> .
+<http://ns.inria.fr/smilk/elements/1.0/_:s31>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/product> ;
+        <http://ns.inria.fr/smilk/elements/1.0/hasFragranceCreator>
+                <http://ns.inria.fr/smilk/elements/1.0/Laurent_Bruyère> .
+
+<http://ns.inria.fr/smilk/elements/1.0/T33>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "Alien de Thierry Mugler, créé par Dominique Ropion et Laurent Bruyère (IFF), 2005." ;
+        <http://www.w3.org/2001/XMLSchema/about>
+                <http://ns.inria.fr/smilk/elements/1.0/_:s31> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Laurent_Bruyère>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://xmlns.com/foaf/0.1/Person> .
+<http://ns.inria.fr/smilk/elements/1.0/T3>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "Pure Poison a été créé par Carlos Benaim, Dominique Ropion et Olivier Polge." ;
+        <http://www.w3.org/2001/XMLSchema/about>
+                <http://ns.inria.fr/smilk/elements/1.0/_:s32> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Olivier_Polge>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://xmlns.com/foaf/0.1/Person> .
+
+<http://ns.inria.fr/smilk/elements/1.0/_:s32>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/product> ;
+        <http://ns.inria.fr/smilk/elements/1.0/hasFragranceCreator>
+                <http://ns.inria.fr/smilk/elements/1.0/Olivier_Polge> .
+<http://ns.inria.fr/smilk/elements/1.0/Carlos_Benaim>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://xmlns.com/foaf/0.1/Person> .
+
+<http://ns.inria.fr/smilk/elements/1.0/T14>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "Very Irresistible Eau de Parfum a été créé par Dominique Ropion, Sophie Labbe et Carlos Benaim." ;
+        <http://www.w3.org/2001/XMLSchema/about>
+                <http://ns.inria.fr/smilk/elements/1.0/_:s33> .
+
+<http://ns.inria.fr/smilk/elements/1.0/_:s33>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/product> ;
+        <http://ns.inria.fr/smilk/elements/1.0/hasFragranceCreator>
+                <http://ns.inria.fr/smilk/elements/1.0/Carlos_Benaim> .
+<http://ns.inria.fr/smilk/elements/1.0/T15>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "En effet, Lady Million a été composée par Anne Flipo, Béatrice Piquet et Dominique Ropion." ;
+        <http://www.w3.org/2001/XMLSchema/about>
+                <http://ns.inria.fr/smilk/elements/1.0/_:s34> .
+
+<http://ns.inria.fr/smilk/elements/1.0/_:s34>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/product> ;
+        <http://ns.inria.fr/smilk/elements/1.0/hasFragranceCreator>
+                <http://ns.inria.fr/smilk/elements/1.0/Dominique_Ropion> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Dominique_Ropion>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://xmlns.com/foaf/0.1/Person> .
+<http://ns.inria.fr/smilk/elements/1.0/_:s35>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/product> ;
+        <http://ns.inria.fr/smilk/elements/1.0/hasFragranceCreator>
+                <http://ns.inria.fr/smilk/elements/1.0/Premier_Figuier> .
+
+<http://ns.inria.fr/smilk/elements/1.0/T5>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "Premier Figuier a été créé en 1994 pour L’Artisan Parfumeur par Olivia Giacobetti." ;
+        <http://www.w3.org/2001/XMLSchema/about>
+                <http://ns.inria.fr/smilk/elements/1.0/_:s35> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Premier_Figuier>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://xmlns.com/foaf/0.1/Person> .
+<http://ns.inria.fr/smilk/elements/1.0/Joy>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://xmlns.com/foaf/0.1/Person> .
+
+<http://ns.inria.fr/smilk/elements/1.0/T8>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "Lors de sa sortie, Joy créé par le nez Henri Alméras a révolutionné le monde de la parfumerie en utilisant des matières premières naturelles d''une rare qualité." ;
+        <http://www.w3.org/2001/XMLSchema/about>
+                <http://ns.inria.fr/smilk/elements/1.0/_:s36> .
+
+<http://ns.inria.fr/smilk/elements/1.0/_:s36>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/product> ;
+        <http://ns.inria.fr/smilk/elements/1.0/hasFragranceCreator>
+                <http://ns.inria.fr/smilk/elements/1.0/Joy> .
+<http://ns.inria.fr/smilk/elements/1.0/Lady_Million>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://xmlns.com/foaf/0.1/Person> .
+
+<http://ns.inria.fr/smilk/elements/1.0/T15>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "En effet, Lady Million a été composée par Anne Flipo, Béatrice Piquet et Dominique Ropion." ;
+        <http://www.w3.org/2001/XMLSchema/about>
+                <http://ns.inria.fr/smilk/elements/1.0/_:s37> .
+
+<http://ns.inria.fr/smilk/elements/1.0/_:s37>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/product> ;
+        <http://ns.inria.fr/smilk/elements/1.0/hasFragranceCreator>
+                <http://ns.inria.fr/smilk/elements/1.0/Lady_Million> .
+<http://ns.inria.fr/smilk/elements/1.0/_:s38>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/product> ;
+        <http://ns.inria.fr/smilk/elements/1.0/hasRepresentative>
+                <http://ns.inria.fr/smilk/elements/1.0/Ella> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Ella>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://xmlns.com/foaf/0.1/Person> .
+
+<http://ns.inria.fr/smilk/elements/1.0/T34>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "Le créateur mexicain Carlos Huber propose avec Ella (Elle, en espagnol) un voyage olfactif dans l'espace et le temps." ;
+        <http://www.w3.org/2001/XMLSchema/about>
+                <http://ns.inria.fr/smilk/elements/1.0/_:s38> .
+<http://ns.inria.fr/smilk/elements/1.0/François_Demachy>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://xmlns.com/foaf/0.1/Person> .
+
+<http://ns.inria.fr/smilk/elements/1.0/T26>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "En 2012, François Demachy crée Eau Sauvage Parfum, le nouveau chapitre d’une histoire légendaire." ;
+        <http://www.w3.org/2001/XMLSchema/about>
+                <http://ns.inria.fr/smilk/elements/1.0/Eau_Sauvage_Parfum> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Eau_Sauvage_Parfum>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/product> ;
+        <http://ns.inria.fr/smilk/elements/1.0/hasRepresentative>
+                <http://ns.inria.fr/smilk/elements/1.0/François_Demachy> .
+<http://ns.inria.fr/smilk/elements/1.0/T27>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "En 2012, Olivier Polge participe à la création de SpiceBomb de Viktor & Rolf, de La vie est belle de Lancôme, et de Repetto pour la marque éponyme en 2013." ;
+        <http://www.w3.org/2001/XMLSchema/about>
+                <http://ns.inria.fr/smilk/elements/1.0/_:s39> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Olivier_Polge>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://xmlns.com/foaf/0.1/Person> .
+
+<http://ns.inria.fr/smilk/elements/1.0/_:s39>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/product> ;
+        <http://ns.inria.fr/smilk/elements/1.0/hasRepresentative>
+                <http://ns.inria.fr/smilk/elements/1.0/Olivier_Polge> .
+<http://ns.inria.fr/smilk/elements/1.0/Olivier_Cresp>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://xmlns.com/foaf/0.1/Person> .
+
+<http://ns.inria.fr/smilk/elements/1.0/_:s40>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/product> ;
+        <http://ns.inria.fr/smilk/elements/1.0/hasRepresentative>
+                <http://ns.inria.fr/smilk/elements/1.0/Olivier_Cresp> .
+
+<http://ns.inria.fr/smilk/elements/1.0/T29>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "Puisant son inspiration dans un accord gustatif de café, Olivier Cresp avait en 1998 sans doute voulu jouer à nouveau autour d’une note gourmande, après la praline d’Angel." ;
+        <http://www.w3.org/2001/XMLSchema/about>
+                <http://ns.inria.fr/smilk/elements/1.0/_:s40> .
+<http://ns.inria.fr/smilk/elements/1.0/Angel>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://xmlns.com/foaf/0.1/Person> .
+
+<http://ns.inria.fr/smilk/elements/1.0/_:s41>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/product> ;
+        <http://ns.inria.fr/smilk/elements/1.0/hasRepresentative>
+                <http://ns.inria.fr/smilk/elements/1.0/Angel> .
+
+<http://ns.inria.fr/smilk/elements/1.0/T25>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "Angel est le premier parfum signé par le styliste Thierry Mugler, datant de 1992, et appartenant à Clarins." ;
+        <http://www.w3.org/2001/XMLSchema/about>
+                <http://ns.inria.fr/smilk/elements/1.0/_:s41> .
+<http://ns.inria.fr/smilk/elements/1.0/Jacques_Guerlain>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://xmlns.com/foaf/0.1/Person> .
+
+<http://ns.inria.fr/smilk/elements/1.0/T30>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "Jacques Guerlain crée ensuite, en 1933, \"Vol de nuit\", en hommage aux pilotes qui vont marquer l’histoire de l’aviation, notamment son ami Antoine de Saint-Exupéry." ;
+        <http://www.w3.org/2001/XMLSchema/about>
+                <http://ns.inria.fr/smilk/elements/1.0/_:s42> .
+
+<http://ns.inria.fr/smilk/elements/1.0/_:s42>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/product> ;
+        <http://ns.inria.fr/smilk/elements/1.0/hasRepresentative>
+                <http://ns.inria.fr/smilk/elements/1.0/Jacques_Guerlain> .
+<http://ns.inria.fr/smilk/elements/1.0/Jean_Kerléo>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://xmlns.com/foaf/0.1/Person> .
+
+<http://ns.inria.fr/smilk/elements/1.0/_:s43>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/product> ;
+        <http://ns.inria.fr/smilk/elements/1.0/hasRepresentative>
+                <http://ns.inria.fr/smilk/elements/1.0/Jean_Kerléo> .
+
+<http://ns.inria.fr/smilk/elements/1.0/T31>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "Jean Kerléo crée aussi « SUBLIME » dont le lancement à lieu en 1992." ;
+        <http://www.w3.org/2001/XMLSchema/about>
+                <http://ns.inria.fr/smilk/elements/1.0/_:s43> .
+<http://ns.inria.fr/smilk/elements/1.0/_:s44>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/product> ;
+        <http://ns.inria.fr/smilk/elements/1.0/hasRepresentative>
+                <http://ns.inria.fr/smilk/elements/1.0/Jicky> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Jicky>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://xmlns.com/foaf/0.1/Person> .
+
+<http://ns.inria.fr/smilk/elements/1.0/T32>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "Entre un parfum chypré et un oriental, Jicky développe une tête fraîche et aromatique avec des notes de lavande, de bergamote et de romarin, pour s'épanouir en coeur avec des notes de rose et de jasmin." ;
+        <http://www.w3.org/2001/XMLSchema/about>
+                <http://ns.inria.fr/smilk/elements/1.0/_:s44> .
+<http://ns.inria.fr/smilk/elements/1.0/T28>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "Créateur des parfums Chanel depuis près d'un an, Olivier Polge dévoile sa première fragrance pour la maison, Misia." ;
+        <http://www.w3.org/2001/XMLSchema/about>
+                <http://ns.inria.fr/smilk/elements/1.0/_:s45> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Misia>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://xmlns.com/foaf/0.1/Person> .
+
+<http://ns.inria.fr/smilk/elements/1.0/_:s45>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/product> ;
+        <http://ns.inria.fr/smilk/elements/1.0/hasRepresentative>
+                <http://ns.inria.fr/smilk/elements/1.0/Misia> .
+<http://ns.inria.fr/smilk/elements/1.0/Carlos_Huber>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://xmlns.com/foaf/0.1/Person> .
+
+<http://ns.inria.fr/smilk/elements/1.0/_:s46>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/product> ;
+        <http://ns.inria.fr/smilk/elements/1.0/hasRepresentative>
+                <http://ns.inria.fr/smilk/elements/1.0/Carlos_Huber> .
+
+<http://ns.inria.fr/smilk/elements/1.0/T34>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "Le créateur mexicain Carlos Huber propose avec Ella (Elle, en espagnol) un voyage olfactif dans l'espace et le temps." ;
+        <http://www.w3.org/2001/XMLSchema/about>
+                <http://ns.inria.fr/smilk/elements/1.0/_:s46> .
+<http://ns.inria.fr/smilk/elements/1.0/_:s47>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/product> ;
+        <http://ns.inria.fr/smilk/elements/1.0/hasRepresentative>
+                <http://ns.inria.fr/smilk/elements/1.0/Michel_Almairac> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Michel_Almairac>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://xmlns.com/foaf/0.1/Person> .
+
+<http://ns.inria.fr/smilk/elements/1.0/T35>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "L’eau de Cologne nommée Les Bains Guerbois 1885, signée Michel Almairac, et présentée dans un généreux format splash de 260ml, joue avec les épices en accordant gingembre et cardamome avec des notes de patchouli, cèdre, papyrus, musc, ambre et encens." ;
+        <http://www.w3.org/2001/XMLSchema/about>
+                <http://ns.inria.fr/smilk/elements/1.0/_:s47> .
+<http://ns.inria.fr/smilk/elements/1.0/T19>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "Le parfum Si a été créé par Christine Nagel, parfumeur chez Mane fils, en totale concordance avec les gouts de Monsieur Armani." ;
+        <http://www.w3.org/2001/XMLSchema/about>
+                <http://ns.inria.fr/smilk/elements/1.0/_:s48> .
+
+<http://ns.inria.fr/smilk/elements/1.0/Mane>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://xmlns.com/foaf/0.1/Person> .
+
+<http://ns.inria.fr/smilk/elements/1.0/_:s48>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/product> ;
+        <http://ns.inria.fr/smilk/elements/1.0/hasRepresentative>
+                <http://ns.inria.fr/smilk/elements/1.0/Mane> .
+<http://ns.inria.fr/smilk/elements/1.0/patchouli>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/Component> .
+
+<http://ns.inria.fr/smilk/elements/1.0/T36>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "Le sillage de 1 Million dégage notamment une senteur de cuir, de bois blanc, d'ambre et de patchouli d'Indonésie." ;
+        <http://www.w3.org/2001/XMLSchema/about>
+                <http://ns.inria.fr/smilk/elements/1.0/_:s49> .
+
+<http://ns.inria.fr/smilk/elements/1.0/_:s49>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/product> ;
+        <http://ns.inria.fr/smilk/elements/1.0/hasComponent>
+                <http://ns.inria.fr/smilk/elements/1.0/patchouli> .
+<http://ns.inria.fr/smilk/elements/1.0/T37>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "Gentlemen Only Absolute contient notamment de la cannelle, du safran et de la muscade." ;
+        <http://www.w3.org/2001/XMLSchema/about>
+                <http://ns.inria.fr/smilk/elements/1.0/_:s50> .
+
+<http://ns.inria.fr/smilk/elements/1.0/safran>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/Component> .
+
+<http://ns.inria.fr/smilk/elements/1.0/_:s50>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/product> ;
+        <http://ns.inria.fr/smilk/elements/1.0/hasComponent>
+                <http://ns.inria.fr/smilk/elements/1.0/safran> .
+<http://ns.inria.fr/smilk/elements/1.0/T37>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "Gentlemen Only Absolute contient notamment de la cannelle, du safran et de la muscade." ;
+        <http://www.w3.org/2001/XMLSchema/about>
+                <http://ns.inria.fr/smilk/elements/1.0/_:s50> .
+
+<http://ns.inria.fr/smilk/elements/1.0/muscade>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/Component> .
+
+<http://ns.inria.fr/smilk/elements/1.0/_:s50>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/product> ;
+        <http://ns.inria.fr/smilk/elements/1.0/hasComponent>
+                <http://ns.inria.fr/smilk/elements/1.0/muscade> .
+<http://ns.inria.fr/smilk/elements/1.0/rose>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/Component> .
+
+<http://ns.inria.fr/smilk/elements/1.0/_:s51>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/product> ;
+        <http://ns.inria.fr/smilk/elements/1.0/hasComponent>
+                <http://ns.inria.fr/smilk/elements/1.0/rose> .
+
+<http://ns.inria.fr/smilk/elements/1.0/T38>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "Calandre contient notamment de la rose et du jasmin." ;
+        <http://www.w3.org/2001/XMLSchema/about>
+                <http://ns.inria.fr/smilk/elements/1.0/_:s51> .
+<http://ns.inria.fr/smilk/elements/1.0/T37>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "Gentlemen Only Absolute contient notamment de la cannelle, du safran et de la muscade." ;
+        <http://www.w3.org/2001/XMLSchema/about>
+                <http://ns.inria.fr/smilk/elements/1.0/_:s52> .
+
+<http://ns.inria.fr/smilk/elements/1.0/_:s52>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/product> ;
+        <http://ns.inria.fr/smilk/elements/1.0/hasComponent>
+                <http://ns.inria.fr/smilk/elements/1.0/cannelle> .
+
+<http://ns.inria.fr/smilk/elements/1.0/cannelle>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/Component> .
+<http://ns.inria.fr/smilk/elements/1.0/_:s53>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/product> ;
+        <http://ns.inria.fr/smilk/elements/1.0/hasComponent>
+                <http://ns.inria.fr/smilk/elements/1.0/pêche> .
+
+<http://ns.inria.fr/smilk/elements/1.0/pêche>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/Component> .
+
+<http://ns.inria.fr/smilk/elements/1.0/T39>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "Les notes fruitées étant encore peu habituelles en 90, Trésor innovait avec son accord velouté de pêche et d’abricot qui s’accorde merveilleusement avec la rose crémeuse, la violette poudrée et l’iris soyeux." ;
+        <http://www.w3.org/2001/XMLSchema/about>
+                <http://ns.inria.fr/smilk/elements/1.0/_:s53> .
+<http://ns.inria.fr/smilk/elements/1.0/pamplemousse>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/Component> .
+
+<http://ns.inria.fr/smilk/elements/1.0/_:s54>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/product> ;
+        <http://ns.inria.fr/smilk/elements/1.0/hasComponent>
+                <http://ns.inria.fr/smilk/elements/1.0/pamplemousse> .
+
+<http://ns.inria.fr/smilk/elements/1.0/T40>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "Misant sur le grand retour de la séduction masculine, le 1 Million de Paco Rabanne démarre sur des sensations de menthe poivrée, accompagnées de pamplemousse et de mandarine." ;
+        <http://www.w3.org/2001/XMLSchema/about>
+                <http://ns.inria.fr/smilk/elements/1.0/_:s54> .
+<http://ns.inria.fr/smilk/elements/1.0/_:s55>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/product> ;
+        <http://ns.inria.fr/smilk/elements/1.0/hasComponent>
+                <http://ns.inria.fr/smilk/elements/1.0/jasmin> .
+
+<http://ns.inria.fr/smilk/elements/1.0/T38>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "Calandre contient notamment de la rose et du jasmin." ;
+        <http://www.w3.org/2001/XMLSchema/about>
+                <http://ns.inria.fr/smilk/elements/1.0/_:s55> .
+
+<http://ns.inria.fr/smilk/elements/1.0/jasmin>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/Component> .
+<http://ns.inria.fr/smilk/elements/1.0/_:s56>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/product> ;
+        <http://ns.inria.fr/smilk/elements/1.0/hasComponent>
+                <http://ns.inria.fr/smilk/elements/1.0/fruits_rouges> .
+
+<http://ns.inria.fr/smilk/elements/1.0/fruits_rouges>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/Component> .
+
+<http://ns.inria.fr/smilk/elements/1.0/T41>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "Kenzo World sent le melon et les fruits rouges, sur un accord floral aqueux boisé ambré du genre “fraicheur printanière”, qu’on ne peut définir autrement que générique et formaté, passé à la moulinette d’un certain nombre de tests auprès de consommatrices ciblées." ;
+        <http://www.w3.org/2001/XMLSchema/about>
+                <http://ns.inria.fr/smilk/elements/1.0/_:s56> .
+<http://ns.inria.fr/smilk/elements/1.0/abricot>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/Component> .
+
+<http://ns.inria.fr/smilk/elements/1.0/T39>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "Les notes fruitées étant encore peu habituelles en 90, Trésor innovait avec son accord velouté de pêche et d’abricot qui s’accorde merveilleusement avec la rose crémeuse, la violette poudrée et l’iris soyeux." ;
+        <http://www.w3.org/2001/XMLSchema/about>
+                <http://ns.inria.fr/smilk/elements/1.0/_:s57> .
+
+<http://ns.inria.fr/smilk/elements/1.0/_:s57>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/product> ;
+        <http://ns.inria.fr/smilk/elements/1.0/hasComponent>
+                <http://ns.inria.fr/smilk/elements/1.0/abricot> .
+<http://ns.inria.fr/smilk/elements/1.0/mandarine>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/Component> .
+
+<http://ns.inria.fr/smilk/elements/1.0/_:s58>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/product> ;
+        <http://ns.inria.fr/smilk/elements/1.0/hasComponent>
+                <http://ns.inria.fr/smilk/elements/1.0/mandarine> .
+
+<http://ns.inria.fr/smilk/elements/1.0/T40>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "Misant sur le grand retour de la séduction masculine, le 1 Million de Paco Rabanne démarre sur des sensations de menthe poivrée, accompagnées de pamplemousse et de mandarine." ;
+        <http://www.w3.org/2001/XMLSchema/about>
+                <http://ns.inria.fr/smilk/elements/1.0/_:s58> .
+<http://ns.inria.fr/smilk/elements/1.0/bergamote>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/Component> .
+
+<http://ns.inria.fr/smilk/elements/1.0/_:s59>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/product> ;
+        <http://ns.inria.fr/smilk/elements/1.0/hasComponent>
+                <http://ns.inria.fr/smilk/elements/1.0/bergamote> .
+
+<http://ns.inria.fr/smilk/elements/1.0/T42>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "L’Eau de Patou  crée par Jean Kerléo en 1976 est une eau fraîche et chyprée mêlant la bergamote, le citron, le jasmin, le muguet et le musc qui laisse un sillage plutôt tenace." ;
+        <http://www.w3.org/2001/XMLSchema/about>
+                <http://ns.inria.fr/smilk/elements/1.0/_:s59> .
+<http://ns.inria.fr/smilk/elements/1.0/_:s60>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/product> ;
+        <http://ns.inria.fr/smilk/elements/1.0/hasComponent>
+                <http://ns.inria.fr/smilk/elements/1.0/mimosa> .
+
+<http://ns.inria.fr/smilk/elements/1.0/mimosa>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/Component> .
+
+<http://ns.inria.fr/smilk/elements/1.0/T43>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "L’eau de toilette « Caline« , lancée en 1964  est un floral chypré mêlant le mimosa, l’oeillet, le jasmin, la fleur d’oranger, le musc, la coriandre, le bois de santal et l’ambre." ;
+        <http://www.w3.org/2001/XMLSchema/about>
+                <http://ns.inria.fr/smilk/elements/1.0/_:s60> .
+<http://ns.inria.fr/smilk/elements/1.0/abricot>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/Component> .
+
+<http://ns.inria.fr/smilk/elements/1.0/_:s61>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/product> ;
+        <http://ns.inria.fr/smilk/elements/1.0/hasComponent>
+                <http://ns.inria.fr/smilk/elements/1.0/abricot> .
+
+<http://ns.inria.fr/smilk/elements/1.0/T39>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "Les notes fruitées étant encore peu habituelles en 90, Trésor innovait avec son accord velouté de pêche et d’abricot qui s’accorde merveilleusement avec la rose crémeuse, la violette poudrée et l’iris soyeux." ;
+        <http://www.w3.org/2001/XMLSchema/about>
+                <http://ns.inria.fr/smilk/elements/1.0/_:s61> .
+<http://ns.inria.fr/smilk/elements/1.0/_:s62>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/product> ;
+        <http://ns.inria.fr/smilk/elements/1.0/hasComponent>
+                <http://ns.inria.fr/smilk/elements/1.0/mandarine> .
+
+<http://ns.inria.fr/smilk/elements/1.0/mandarine>
+        <http://www.w3.org/2000/01/rdf-schema#a>
+                <http://provoc/Component> .
+
+<http://ns.inria.fr/smilk/elements/1.0/T40>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "Misant sur le grand retour de la séduction masculine, le 1 Million de Paco Rabanne démarre sur des sensations de menthe poivrée, accompagnées de pamplemousse et de mandarine." ;
+        <http://www.w3.org/2001/XMLSchema/about>
+                <http://ns.inria.fr/smilk/elements/1.0/_:s62> .

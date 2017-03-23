@@ -5,6 +5,7 @@ import com.google.gson.JsonParser;
 import com.hp.hpl.jena.query.*;
 import com.hp.hpl.jena.rdf.model.*;
 import fr.inria.smilk.ws.relationextraction.bean.*;
+import org.apache.commons.collections.map.HashedMap;
 import org.apache.commons.lang3.StringUtils;
 import org.jdom.Document;
 import org.json.simple.JSONArray;
@@ -28,68 +29,261 @@ import org.jdom.output.*;
 public class ExtractionHelper {
     static org.jdom.Element racine = new org.jdom.Element("Sentences");
     static Document document = new Document(racine);
+    static int count = 7, count_blank=7;
+    static Map<String,Integer> sentenceKeys= new HashMap<>();
+    static Map<String,Integer> subjectKeys = new HashMap<>();
+    static String lastBlankSentence=null;
+
+
     //construct the RDF Model
     public static Model constructModel(SentenceRelationId sentenceRelationId) {
         Model model = ModelFactory.createDefaultModel();
-        String smilkprefix = "http://ns.inria.fr/smilk/elements/1.0/";
-        String rdfsprefix = "http://www.w3.org/2000/01/rdf-schema#";
-        String schemaprefix="http://www.w3.org/2001/XMLSchema/";
-        Resource subject, object, sentence;
+        String smilk_sent = "http://inria/smilk/sentence/1.0/";
+        String smilk_product = "http://inria/smilk/product/1.0/";
+        String smilk_brand= "http://inria/smilk/brand/1.0/";
+        String smilk_division = "http://inria/smilk/division/1.0/";
+        String skg = "http://inria/smilk/group/1.0/";
+        String smilk_component = "http://inria/smilk/component/1.0/";
+        String smilk_fragrance_creator = "http://inria/smilk/fragranceCreator/1.0/";
+        String smilk_representative="http://inria/smilk/repreentative/1.0/";
+
+        String pv="http://ns.inria.fr/provoc#";
+        String gr="http://purl.org/goodrelations/v1#.";
+        String rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#";
+        String rdfs = "http://www.w3.org/2000/01/rdf-schema#";
+        String schema="http://schema.org/";
+        String foaf="http://xmlns.com/foaf/0.1/";
+        String owl="http://www.w3.org/2002/07/owl#";
+        Resource subject, object = null,link = null, sentence;
+        String label=new String();   String label_subject=new String();
         String id_sentence="T0";
-        String newVersionSentence = "T" + (Integer.parseInt(id_sentence.substring(1,id_sentence.length()))+1);
-        sentence=model.createResource(smilkprefix+newVersionSentence);
+        Integer sentenceKey = sentenceKeys.get(sentenceRelationId.getSentence_text());
+        if(sentenceKey ==null) {
+            sentenceKey = count++;
+            sentenceKeys.put(sentenceRelationId.getSentence_text(),sentenceKey);
+        }
+        String newVersionSentence = "T" + sentenceKey;//(Integer.parseInt(id_sentence.substring(1,id_sentence.length()))+1);
+        sentence=model.createResource(smilk_sent+newVersionSentence);
         id_sentence=newVersionSentence;
-        subject = model.createResource(smilkprefix + sentenceRelationId.getSubject().getForm());
-        System.out.println("RDF: " + sentenceRelationId.getSubject().getForm() + "link: " + sentenceRelationId.getSubject().getLink());
+        subject = model.createResource(smilk_sent + sentenceRelationId.getSubject().getForm());
+        Resource type_subject=null;
+        // System.out.println("RDF: " + sentenceRelationId.getSubject().getForm() + "link: " + sentenceRelationId.getSubject().getLink() + ". lemma:" + sentenceRelationId.getSubject().getLema());
         if((sentenceRelationId.getSubject().getForm()==null)||(sentenceRelationId.getSubject().getForm()=="null"))
         {
             String id_blank_node="s0";
-            String newVersion = "s" + (Integer.parseInt(id_blank_node.substring(1,id_blank_node.length()))+1);
-            subject=model.createResource("_:"+newVersion);
-            id_blank_node=newVersion;
+            System.out.println(sentenceRelationId.getSentence_text().equals(lastBlankSentence)+ ":"+sentenceRelationId.getSentence_text()+"vs"+lastBlankSentence);
+            if(!sentenceRelationId.getSentence_text().equals(lastBlankSentence)){
+                count_blank++;
+            }
+
+            String newVersion = "s" + count_blank;
+            subject=model.createResource(/*smilk_product+*/"_:"+newVersion);
+            type_subject = model.createResource(pv+"ProductOrServiceRange");
+            lastBlankSentence = sentenceRelationId.getSentence_text();
         }
         else
-        if ((sentenceRelationId.getSubject().getLink() == null) || (sentenceRelationId.getSubject().getLink() == "null")) {
-            subject = model.createResource(smilkprefix + sentenceRelationId.getSubject().getForm());
-           }
-         else {
-            subject = model.createResource(sentenceRelationId.getSubject().getLink());
+        {
+
+            if(sentenceRelationId.getSubject().getType().equals("product"))
+            { subject = model.createResource(smilk_product  + sentenceRelationId.getSubject().getForm());
+                label_subject=sentenceRelationId.getSubject().getForm().replace("_"," ");
+                type_subject = model.createResource(gr+"ProductOrService");
+            }
+            if(sentenceRelationId.getSubject().getType().equals("range"))
+            {subject = model.createResource(smilk_product  + sentenceRelationId.getSubject().getForm());
+                type_subject = model.createResource(pv+"ProductOrServiceRange");
+                label_subject=sentenceRelationId.getSubject().getForm().replace("_"," ");}
+            if(sentenceRelationId.getSubject().getType().equals("brand"))
+            {subject = model.createResource(smilk_brand  + sentenceRelationId.getSubject().getForm());
+                type_subject = model.createResource(gr+"Brand");
+                label_subject=sentenceRelationId.getSubject().getForm().replace("_"," ");}
+            if(sentenceRelationId.getSubject().getType().equals("division"))
+            {subject = model.createResource(smilk_division  + sentenceRelationId.getSubject().getForm());
+                type_subject = model.createResource(pv+"Division");
+                label_subject=sentenceRelationId.getSubject().getForm().replace("_"," ");}
+            if(sentenceRelationId.getSubject().getType().equals("group"))
+            {subject = model.createResource(skg  + sentenceRelationId.getSubject().getForm());
+                type_subject = model.createResource(gr+"BusinessEntity");
+                label_subject=sentenceRelationId.getSubject().getForm().replace("_"," ");}
+        }
+        Property same_as=model.createProperty(owl+"sameAs");
+        link = model.createResource(sentenceRelationId.getSubject().getLink());
+        String linkURI=link.getURI();
+       /* if(((linkURI != null) || (sentenceRelationId.getSubject().getLink() != "null"))){
+
+            link = model.createResource(sentenceRelationId.getSubject().getLink());
+            model.add(subject,same_as,link);
+        }
+*/
+        if(sentenceRelationId.getSubject().getForm()!=null){
+        String URL=MatchWithDBpediaFr(sentenceRelationId.getSubject().getForm().replace("_"," "));
+        link=model.createResource(URL);
+        System.out.println("liiiiiiiiiiiiink: "+link);
+        model.add(subject,same_as,link);}
+        Property relation_type = model.createProperty(pv+ sentenceRelationId.getType().name());
+        Property rdf_type = model.createProperty(rdf+"type");
+        Property rdfs_label=model.createProperty(rdfs+"label");
+        Property rdfs_comments = model.createProperty(rdfs+"comment");
+        Property schema_about = model.createProperty(schema+"about");
+
+
+        Resource type_object = null;
+
+        if(sentenceRelationId.getType().name().equalsIgnoreCase("belongsToBrand")) {
+            object = model.createResource(smilk_brand + sentenceRelationId.getObject().getForm());
+            label=sentenceRelationId.getObject().getForm().replace("_"," ");
+            type_object = model.createResource(gr+"Brand");
+        }
+        if(sentenceRelationId.getType().name().equalsIgnoreCase("belongsToDivision")) {
+            object = model.createResource(smilk_division + sentenceRelationId.getObject().getForm());
+            type_object = model.createResource(pv+"Division");
+            label=sentenceRelationId.getObject().getForm().replace("_"," ");
+        }
+        if(sentenceRelationId.getType().name().equalsIgnoreCase("belongsToGroup")) {
+            object = model.createResource(skg +sentenceRelationId.getObject().getForm());
+            type_object = model.createResource(gr+"BusinessEntity");
+            label=sentenceRelationId.getObject().getForm().replace("_"," ");
         }
 
-        if ((sentenceRelationId.getObject().getLink() == null) || (sentenceRelationId.getSubject().getLink() == "null")) {
-            object = model.createResource(smilkprefix + sentenceRelationId.getObject().getForm());
-        } else {
-            object = model.createResource(sentenceRelationId.getObject().getLink());
-        }
-        Property belongs_to_group = model.createProperty(smilkprefix + sentenceRelationId.getType().name());
-        Property rdfs_type = model.createProperty(rdfsprefix + "a");
-        Property rdfs_comments = model.createProperty(rdfsprefix+"comment");
-        Property schema_about = model.createProperty(schemaprefix+"about");
-        Property hasConfidence = model.createProperty("hasConfidence");
-        Property hasRules=model.createProperty("hasRules");
-        Resource type_subject = model.createResource("http://provoc/"+sentenceRelationId.getSubject().getType());
-        Resource type_object = null;
         if(sentenceRelationId.getType().name().equalsIgnoreCase("hasComponent")) {
-             type_object = model.createResource("http://provoc/Component");
+            object = model.createResource(smilk_component + sentenceRelationId.getObject().getForm());
+            label=sentenceRelationId.getObject().getForm().replace("_"," ");
+            type_object = model.createResource(pv+"Component");
         }
         if(sentenceRelationId.getType().name().equalsIgnoreCase("hasFragranceCreator")) {
-            type_object = model.createResource("http://provoc/Person");
+            object = model.createResource(smilk_fragrance_creator + sentenceRelationId.getObject().getForm());
+            label=sentenceRelationId.getObject().getForm().replace("_"," ");
+            type_object = model.createResource(foaf+"Person");
         }
         if(sentenceRelationId.getType().name().equalsIgnoreCase("hasRepresentative")) {
-            type_object = model.createResource("http://provoc/Person");
+            object = model.createResource(smilk_representative + sentenceRelationId.getObject().getForm());
+            label=sentenceRelationId.getObject().getForm().replace("_"," ");
+            type_object = model.createResource(foaf+"Person");
         }
-        Resource text_sources = model.createResource(sentenceRelationId.getSentence_text());
-        Resource  rules_sources = model.createResource(sentenceRelationId.getRelation());
-        Resource confidence=model.createResource(String.valueOf(sentenceRelationId.getConfidence()));
+
+        String text_sources = sentenceRelationId.getSentence_text();
+        //Resource  rules_sources = model.createResource(sentenceRelationId.getRelation());
+        //Resource confidence=model.createResource(String.valueOf(sentenceRelationId.getConfidence()));
         model.add(sentence,rdfs_comments,text_sources).add(sentence,schema_about,subject);
-        model.add(subject, rdfs_type, type_subject).add(subject, belongs_to_group, object).add(subject,hasRules,rules_sources).add(subject,hasConfidence,confidence);
-        model.add(object, rdfs_type, type_object);
-          model.write(System.out, "N-TRIPLE");
+        model.add(subject, rdf_type, type_subject).add(subject, rdfs_label, label_subject).add(subject, relation_type, object);//.add(subject,hasRules,rules_sources).add(subject,hasConfidence,confidence);
+        model.add(object, rdf_type, type_object).add(object,rdfs_label,label);
+
+
+        model.setNsPrefix( "pv", pv );
+        model.setNsPrefix( "schema", schema );
+        model.setNsPrefix( "rdf", rdf );
+        model.setNsPrefix( "rdfs", rdfs );
+        model.setNsPrefix( "foaf", foaf );
+        model.setNsPrefix( "smilk", smilk_sent);
+        model.setNsPrefix( "skp", smilk_product );
+        model.setNsPrefix( "skc", smilk_component );
+        model.setNsPrefix( "skf", smilk_fragrance_creator);
+        model.setNsPrefix( "skr", smilk_representative);
+        model.setNsPrefix( "skb", smilk_brand);
+        model.setNsPrefix( "skd", smilk_division);
+        model.setNsPrefix( "skg", skg);
+        model.setNsPrefix( "gr", gr);
+        model.setNsPrefix( "owl", owl);
+
+        String model_string=model.toString();//.getNsPrefixURI(pv).
+        model_string.replaceFirst(pv,"");//.contains(pv))
+        model.removeNsPrefix(pv);
+
         //model.write(System.out);
         xml_Model(sentenceRelationId,subject);
         return model;
     }
 
+    public static Model constructModel_old(SentenceRelationId sentenceRelationId) {
+        Model model = ModelFactory.createDefaultModel();
+        String smilk = "http://ns.inria.fr/smilk/elements/1.0/";
+        String smilk_product = "http://inria/smilk/product/1.0/";
+        String smilk_brand= "http://inria/smilk/brand/1.0/";
+        String smilk_division = "http://inria/smilk/division/1.0/";
+        String smilk_group = "http://inria/smilk/group/1.0/";
+        String smilk_component = "http://inria/smilk/component/1.0/";
+        String smilk_fragrance_creator = "http://inria/smilk/fragranceCreator/1.0/";
+        String smilk_representative="http://inria/smilk/repreentative/1.0/";
+
+        String pv="http://ns.inria.fr/provoc#";
+        String rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#";
+        String rdfs = "http://www.w3.org/2000/01/rdf-schema#";
+        String schema="http://schema.org";
+        String foaf="http://xmlns.com/foaf/0.1/";
+        Resource subject, object, sentence;
+
+        String id_sentence="T0";
+        Integer sentenceKey = sentenceKeys.get(sentenceRelationId.getSentence_text());
+        if(sentenceKey ==null) {
+            sentenceKey = count++;
+            sentenceKeys.put(sentenceRelationId.getSentence_text(),sentenceKey);
+        }
+        String newVersionSentence = "T" + sentenceKey;//(Integer.parseInt(id_sentence.substring(1,id_sentence.length()))+1);
+        sentence=model.createResource(smilk+newVersionSentence);
+        id_sentence=newVersionSentence;
+        subject = model.createResource(smilk + sentenceRelationId.getSubject().getForm());
+        Resource type_subject=null;
+        // System.out.println("RDF: " + sentenceRelationId.getSubject().getForm() + "link: " + sentenceRelationId.getSubject().getLink() + ". lemma:" + sentenceRelationId.getSubject().getLema());
+        if((sentenceRelationId.getSubject().getForm()==null)||(sentenceRelationId.getSubject().getForm()=="null"))
+        {
+            String id_blank_node="s0";
+            System.out.println(sentenceRelationId.getSentence_text().equals(lastBlankSentence)+ ":"+sentenceRelationId.getSentence_text()+"vs"+lastBlankSentence);
+            if(!sentenceRelationId.getSentence_text().equals(lastBlankSentence)){
+                count_blank++;
+            }
+
+            String newVersion = "_:s" + count_blank;
+            subject=model.createResource(/*smilk_product+*/newVersion);
+            type_subject = model.createResource(pv+"ProductOrServiceRange");
+            lastBlankSentence = sentenceRelationId.getSentence_text();
+        }
+        else
+        if ((sentenceRelationId.getSubject().getLink() == null) || (sentenceRelationId.getSubject().getLink() == "null")) {
+            subject = model.createResource(smilk + sentenceRelationId.getSubject().getForm());
+            type_subject = model.createResource(pv+sentenceRelationId.getSubject().getType());
+        }
+        else {
+            subject = model.createResource(sentenceRelationId.getSubject().getLink());
+            type_subject = model.createResource(smilk_component+sentenceRelationId.getSubject().getType());
+        }
+
+        if ((sentenceRelationId.getObject().getLink() == null) || (sentenceRelationId.getSubject().getLink() == "null")) {
+            object = model.createResource(smilk_component + sentenceRelationId.getObject().getForm());
+        } else {
+            object = model.createResource(sentenceRelationId.getObject().getLink());
+        }
+        Property belongs_to_group = model.createProperty(pv+ sentenceRelationId.getType().name());
+        Property rdfs_type = model.createProperty(rdf+"type");
+        Property rdfs_comments = model.createProperty(rdfs+"comment");
+        Property schema_about = model.createProperty(schema+"about");
+
+        Resource type_object = null;
+        if(sentenceRelationId.getType().name().equalsIgnoreCase("hasComponent")) {
+            type_object = model.createResource(pv+"Component");
+        }
+        if(sentenceRelationId.getType().name().equalsIgnoreCase("hasFragranceCreator")) {
+            type_object = model.createResource(foaf+"Person");
+        }
+        if(sentenceRelationId.getType().name().equalsIgnoreCase("hasRepresentative")) {
+            type_object = model.createResource(foaf+"Person");
+        }
+        String text_sources = sentenceRelationId.getSentence_text();
+        model.add(sentence,rdfs_comments,text_sources).add(sentence,schema_about,subject);
+        model.add(subject, rdfs_type, type_subject).add(subject, belongs_to_group, object);
+        model.add(object, rdfs_type, type_object);
+        model.setNsPrefix( "pv", pv );
+        model.setNsPrefix( "schema", schema );
+        model.setNsPrefix( "rdf", rdf );
+        model.setNsPrefix( "rdfs", rdfs );
+        model.setNsPrefix( "foaf", foaf );
+        model.setNsPrefix( "smilk", smilk );
+        model.setNsPrefix( "skp", smilk_product );
+        model.setNsPrefix( "skc", smilk_component );
+        model.write(System.out, "N-TRIPLE");
+        //model.write(System.out);
+        //xml_Model(sentenceRelationId,subject);
+        return model;
+    }
     public static void xml_Model (SentenceRelationId sentenceRelationId,Resource subject1) {
         org.jdom.Element sentence = new org.jdom.Element("sentence");
         racine.addContent(sentence);
@@ -124,11 +318,45 @@ public class ExtractionHelper {
         relation.addContent(predicate);
 
         org.jdom.Element object = new org.jdom.Element("object");
-        object.setText(sentenceRelationId.getObject().getForm());
+        object.setText(sentenceRelationId.getObject().getForm().replace("_"," "));
         relation.addContent(object);
 
-        affiche();
+        //affiche();
         enregistre("automatic_annotation.xml");
+    }
+
+    //Alignement Avec DBpedia Français  en se basant sur les noms
+    private static String MatchWithDBpediaFr(String subject){
+        String scnameMatcher= subject;
+        String URI=new String();
+        System.out.println("scnameMatcher");
+
+        ParameterizedSparqlString qs = new ParameterizedSparqlString("" +
+                "prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#>\n" +
+                "prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>" +
+                "prefix dbpedia-owl: <http://dbpedia.org/ontology/> \n" +
+                "prefix dbpprop: <http://dbpedia.org/property/> \n" +
+                "select ?resource where {\n" +
+                "?resource rdfs:label ?label\n" +
+              /*  "FILTER( regex(str(?resource), "+"\"^(?!http://fr.dbpedia.org/resource/Catégorie:).+"+"\"))\n"+
+                "FILTER( regex(str(?resource), "+"\"^(?!http://wikidata.dbpedia.org/resource/).+"+"\"))\n"+*/
+                "}");
+
+        Literal zoonyme, zoonyme2;
+        zoonyme = ResourceFactory.createLangLiteral(scnameMatcher, "fr");
+        qs.setParam("label", zoonyme);
+        QueryExecution exec = QueryExecutionFactory.sparqlService("http://fr.dbpedia.org/sparql", qs.asQuery());
+        try {
+            exec.setTimeout(20000);
+            ResultSet resultsDB = exec.execSelect();
+            while (resultsDB.hasNext()) {
+                QuerySolution next = resultsDB.next();
+                URI = next.get("resource").toString();
+            }
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+        return  URI;
     }
 
     static void affiche()

@@ -1,0 +1,2769 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Sentences>
+  <sentence id="s0">
+    <text>wTitre: hygiène; La toilette se renouvelle.</text>
+  </sentence>
+  <sentence id="s1">
+    <text>La marque grand public du n° 1 mondial de la beauté lance une gamme complète de démaquillage.</text>
+  </sentence>
+  <sentence id="s2">
+    <text>L'Oréal Paris a travaillé sur des galéniques associant actifs perfecteurs et textures délicates, autour de 3 produits.</text>
+  </sentence>
+  <sentence id="s3">
+    <text>La solution micellaire démaquillante Absolue Douceur (200 ml, 4,49) sans parfum, sans parabènes et hypoallergénique convient aux peaux sèches et sensibles.</text>
+  </sentence>
+  <sentence id="s4">
+    <text>La mousse nettoyante aérienne Incroyable Fraîcheur pour les peaux normales à grasses (150 ml, 5,10) a été formulée à partir d'acide salicylique, renforcé de BHA L'Huile démaquillante sensationnelle Eclat sublime (150 ml, 5,90) mélange 3 huiles complémentaires.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Incroyable Fraîcheur</subject>
+        <predicate>hasComponent</predicate>
+        <object>acide salicylique</object>
+      </Relation>
+        <Relation id="r2">
+            <subject>Incroyable Fraîcheur</subject>
+            <predicate>hasComponent</predicate>
+            <object>BHA</object>
+        </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s5">
+    <text>De son côté, Yves Rocher enrichit sa ligne Hydra végétal, avec une eau micellaire hydratante 2 en 1 pour peaux normales à mixtes (200 ml, 4,90 prix de lancement), comprenant, comme les autres références, des sèves végétales d'érable du Canada et d'agave bleu du Mexique.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>eau micellaire hydratante 2 en 1</subject>
+        <predicate>hasComponent</predicate>
+        <object>sèves végétales d'érable</object>
+      </Relation>
+        <Relation id="r2">
+            <subject>eau micellaire hydratante 2 en 1</subject>
+            <predicate>hasComponent</predicate>
+            <object>agave bleu du Mexique</object>
+        </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s6">
+    <text>Titre: maquillage; Lancôme pédagogue.</text>
+  </sentence>
+  <sentence id="s7">
+    <text>La nouvelle gamme Hypnôse Palette de la marque de L'Oréal Luxe cherche à faciliter le choix des consommatrices en proposant trois looks, du plus naturel au plus sophistiqué (Doll Eyes, Star Eyes, Drama Eyes), et un mode d'emploi en cinq étapes.</text>
+  </sentence>
+  <sentence id="s8">
+    <text>Quatre harmonies sont disponibles par look, contenant chacune quatre couleurs et un eye-liner.</text>
+  </sentence>
+  <sentence id="s9">
+    <text>La technologie Wet apporte une forte concentration des couleurs des pigments et des nacres, qui peuvent s'appliquer secs ou mouillés.</text>
+  </sentence>
+  <sentence id="s10">
+    <text>Les applicateurs, plus précis, sont aimantés pour ne pas tomber du boîtier, et glissent plus facilement de leur compartiment.</text>
+  </sentence>
+  <sentence id="s11">
+    <text>Le fermoir est, lui aussi, aimanté pour un geste sophistiqué.</text>
+  </sentence>
+  <sentence id="s12">
+    <text>La gamme sera disponible en mars en parfumeries, grands magasins et sur lancome.fr</text>
+  </sentence>
+  <sentence id="s13">
+    <text>(48,50€).</text>
+  </sentence>
+  <sentence id="s14">
+    <text>Les conseillères en points de vente seront également équipées de fiches explicatives pour cerner les attentes des clientes.</text>
+  </sentence>
+  <sentence id="s15">
+    <text>Titre: [Carnet].</text>
+  </sentence>
+  <sentence id="s16">
+    <text>Michael Burke devient président-directeur général de Louis Vuitton suite au départ de Jordi Constans pour raison de santé.</text>
+  </sentence>
+  <sentence id="s17">
+    <text>Entré dans le groupe LVMH en 1986, le Franco-Américain a travaillé pour les marques Christian Dior, Louis Vuitton, Fendi, après son rachat par le groupe de luxe, et, dernièrement, Bulgari.Nathalie Roos rejoint le groupe L'Oréal pour prendre des fonctions opérationnelles qui seront annoncées ultérieurement.</text>
+  </sentence>
+  <sentence id="s18">
+    <text>Cette spécialiste des PGC, qui a débuté sa carrière chez Kraft Foods, était jusqu'à cet été DG Europe de Mars.L'Occitane franchit une étape supplémentaire dans le développement de ses fragrances avec l'intégration d'un nez dans la société.</text>
+  </sentence>
+  <sentence id="s19">
+    <text>Karine Dubreuil, ex-parfumeur chez Mane, a déjà composé pour la marque L'Eau des 4 Reines, Rose et Reine, Voyage en Méditerranée (Myrte et Jasmin), L'Eau des Baux, Calanques et Rose Jardin Délice.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>L'Eau des 4 Reines</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Karine Dubreuil</object>
+      </Relation>
+        <Relation id="r2">
+            <subject>Rose et Reine</subject>
+            <predicate>hasFragranceCreator</predicate>
+            <object>Karine Dubreuil</object>
+        </Relation>
+        <Relation id="r3">
+            <subject>L'Eau des Baux</subject>
+            <predicate>hasFragranceCreator</predicate>
+            <object>Karine Dubreuil</object>
+        </Relation>
+        <Relation id="r4">
+            <subject>Voyage en Méditerranée</subject>
+            <predicate>hasFragranceCreator</predicate>
+            <object>Karine Dubreuil</object>
+        </Relation>
+        <Relation id="r5">
+            <subject>Voyage en Méditerranée</subject>
+            <predicate>hasFragranceCreator</predicate>
+            <object>Calanques</object>
+        </Relation>
+        <Relation id="r6">
+            <subject>Voyage en Méditerranée</subject>
+            <predicate>hasFragranceCreator</predicate>
+            <object>Rose Jardin Délice</object>
+        </Relation>
+        <Relation id="r7">
+            <subject>Voyage en Méditerranée</subject>
+            <predicate>hasComonent</predicate>
+            <object>Jasmin</object>
+        </Relation>
+        <Relation id="r8">
+            <subject>Voyage en Méditerranée</subject>
+            <predicate>hasComponent</predicate>
+            <object>Myrte</object>
+        </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s20">
+    <text>Titre: communication; Diane Kruger, égérie beauté de Chanel.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Chanel</subject>
+        <predicate>hasRepresentative</predicate>
+        <object>Diane Kruger</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s21">
+    <text>Elle a déjà incarné le parfum Allure en 1996, ainsi que la ligne de sacs Paris-Biarritz en 2007.</text>
+  </sentence>
+  <sentence id="s22">
+    <text>Très proche de la maison de luxe, Diane Kruger sera le visage d'une prochaine campagne publicitaire beauté, pour une nouvelle gamme de soin, prévue en 2013.</text>
+  </sentence>
+  <sentence id="s23">
+    <text>L'actrice allemande à la carrière internationale a été précédemment égérie pour L'Oréal Paris et Calvin Klein.</text>
+  </sentence>
+  <sentence id="s24">
+    <text>Titre: tout savoir sur...</text>
+  </sentence>
+  <sentence id="s25">
+    <text>Les BB creams.</text>
+  </sentence>
+  <sentence id="s26">
+    <text>Elles cumulent les fonctions et mérites au point d'être devenues un «must have».</text>
+  </sentence>
+  <sentence id="s27">
+    <text>Selon les marques, elles oscillent plus ou moins entre produit de soin et produit de maquillage.Qu'est-ce que c'est ?</text>
+  </sentence>
+  <sentence id="s28">
+    <text>Comment ça fonctionne ?Littéralement blemish balm cream («baume anti-imperfections»), la BB cream est née en Allemagne en... 1968 !</text>
+  </sentence>
+  <sentence id="s29">
+    <text>Le Dr Christine Schrammek, dermatologue, crée une crème qui nourrit la peau, l'aide à cicatriser après un traitement esthétique tout en dissimulant les imperfections.</text>
+  </sentence>
+  <sentence id="s30">
+    <text>En 1985, le médecin présente son «produit magique» en Asie.</text>
+  </sentence>
+  <sentence id="s31">
+    <text>La BB cream s'affirme comme un must have à partir de 2000, quand les actrices coréennes commencent à en vanter les mérites.</text>
+  </sentence>
+  <sentence id="s32">
+    <text>Secret de beauté de la peau asiatique, elle le devient aussi en Occident.</text>
+  </sentence>
+  <sentence id="s33">
+    <text>Mi-soin, mi-maquillage, crème «trompe-l'oeil», elle est multifonction : elle hydrate, apaise, protège, affine le grain de peau et unifie le teint, camoufle rougeurs et imperfections, affiche un indice de protection solaire et des nuances qui s'adaptent à la carnation.</text>
+  </sentence>
+  <sentence id="s34">
+    <text>Chez certaines marques, c'est plutôt un soin ; chez d'autres, plutôt un produit de maquillage.</text>
+  </sentence>
+  <sentence id="s35">
+    <text>Prochaine étape : la CC cream (color correcting), comme celle lancée par L'Oréal Paris, qui ajoute une dimension éclat et correction chromatique.L'actualité produitsBB Cream SPF 35 Bobbi Brown (40 ml, 34 €)Côté soin, un extrait de scutellaire antitaches, de l'argireline, un peptide antirides, des extraits de caféine et de saccharose contre rougeurs et imperfections et de l'acide hyaluronique hydratant.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>BB Cream SPF 35 Bobbi Brown</subject>
+        <predicate>hasComponent</predicate>
+        <object>scutellaire antitaches</object>
+      </Relation>
+        <Relation id="r2">
+            <subject>BB Cream SPF 35 Bobbi Brown</subject>
+            <predicate>hasComponent</predicate>
+            <object>argireline</object>
+        </Relation>
+        <Relation id="r3">
+            <subject>BB Cream SPF 35 Bobbi Brown</subject>
+            <predicate>hasComponent</predicate>
+            <object>peptide antirides</object>
+        </Relation>
+        <Relation id="r4">
+            <subject>BB Cream SPF 35 Bobbi Brown</subject>
+            <predicate>hasComponent</predicate>
+            <object>caféine</object>
+        </Relation>
+        <Relation id="r5">
+            <subject>BB Cream SPF 35 Bobbi Brown</subject>
+            <predicate>hasComponent</predicate>
+            <object>saccharose</object>
+        </Relation>
+        <Relation id="r6">
+            <subject>BB Cream SPF 35 Bobbi Brown</subject>
+            <predicate>hasComponent</predicate>
+            <object>acide hyaluronique</object>
+        </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s36">
+    <text>Disponible en cinq teintes, elle affiche un SPF élevé.</text>
+  </sentence>
+  <sentence id="s37">
+    <text>À utiliser seule ou sous un fond de teint.BB Skin Perfecting Cream Clarins SPF 25 (45 ml, prix NC)La première BB cream de Clarins allie un extrait de kiwi bio riche en vitamine C, aux vertus antifatigue et antioxydantes, un autre de katafray hydratant, et un pigment «Éclat 3D» qui illumine, lisse et unifie le teint.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>BB Skin Perfecting Cream Clarins SPF 25 </subject>
+        <predicate>belongsToBrand</predicate>
+        <object>Clarins</object>
+      </Relation>
+        <Relation id="r2">
+            <subject>BB Skin Perfecting Cream Clarins SPF 25 </subject>
+            <predicate>hasComponent</predicate>
+            <object>kiwi</object>
+        </Relation>
+        <Relation id="r3">
+            <subject>BB Skin Perfecting Cream Clarins SPF 25 </subject>
+            <predicate>hasComponent</predicate>
+            <object>katafray</object>
+        </Relation>
+        <Relation id="r4">
+            <subject>BB Skin Perfecting Cream Clarins SPF 25 </subject>
+            <predicate>hasComponent</predicate>
+            <object>pigment «Éclat 3D»</object>
+        </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s38">
+    <text>Elle assure aussi une protection anti-UVA/UVB et antipollution. Diorskin Nude BB Crème (50 ml, 41,55 €)Après sa BB cream Hydra Life axée sur le soin, Dior lance une version maquillage dans la ligne Nude.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Diorskin Nude BB Crème</subject>
+        <predicate>belongsToBrand</predicate>
+        <object>Dior</object>
+      </Relation>
+        <Relation id="r2">
+            <subject>BB cream Hydra Life</subject>
+            <predicate>belongsToBrand</predicate>
+            <object>Dior</object>
+        </Relation>
+      <Relation id="r3">
+          <subject>Nude</subject>
+          <predicate>belongsToBrand</predicate>
+          <object>Dior</object>
+      </Relation>
+  </Relations>
+  </sentence>
+  <sentence id="s39">
+    <text>Elle promet transparence, éclat, perfection et tenue.</text>
+  </sentence>
+  <sentence id="s40">
+    <text>Côté soin, de l'eau minéralisée et un complexe antioxydant aux trois thés.</text>
+  </sentence>
+  <sentence id="s41">
+    <text>Côté maquillage, des pigments vitrifiés à dominante rosée associés à des pigments flouteurs transparents.Les valeurs sûresBB crème Erborian (45 ml, 32 €)LA première BB crème lancée en France en 2009 parle de «soin Photoshop» créateur de «peau de bébé» grâce à des pigments caméléon et des actifs de soin (herbes du tigre cicatrisantes, scutellaire antitaches, camomille anti-inflammatoire, romarin anti-teint terne).</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>BB crème</subject>
+        <predicate>hasComponent</predicate>
+        <object>pigments caméléon</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s42">
+    <text>Elle existe aujourd'hui en version light, moins couvrante que celle d'origine, et en contour des yeux.Age Defense BB Cream Clinique SPF 30 (40 ml, 29,50 €)Best-seller, elle est proche de la BB cream coréenne, unifiante et couvrante.</text>
+  </sentence>
+  <sentence id="s43">
+    <text>Elle est dotée de pigments réflecteurs, de caféine et d'acide glycyrrhétinique pour apaiser, atténuer rides et imperfections, et d'un SPF 30.Dr Brandt's Flexitone BB Cream (30 ml, 39 €)Grâce à ses pigments auto-ajustables, elle n'existe qu'en une seule teinte qui s'adapte à toutes les carnations.Le conseil de Rodolphe Bories, directeur de la formation et de la communication France de CliniqueIl existe désormais autant de définitions de la BB cream que de produits.</text>
+  </sentence>
+  <sentence id="s44">
+    <text>D'ailleurs, en Corée, il y en a pour les ados, les hommes, les peaux grasses, les peaux matures, avec différents indices de protection et de couvrance.</text>
+  </sentence>
+  <sentence id="s45">
+    <text>En Europe, la BB cream est davantage vue comme «la crème à tout faire», à la fois hydratante, base de maquillage, soin matifiant, correcteur, protection solaire et fond de teint.</text>
+  </sentence>
+  <sentence id="s46">
+    <text>Pourtant, la nôtre, comme la BB cream d'origine, est plutôt couvrante et doit se travailler pour se fondre dans la peau.</text>
+  </sentence>
+  <sentence id="s47">
+    <text>Pour nous, c'est plus une base de teint qu'un produit tout-en-un</text>
+  </sentence>
+  <sentence id="s48">
+    <text>Titre: Soins; Lancôme reformule Génifique.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Génifique</subject>
+        <predicate>belongsToBrand</predicate>
+        <object>Lancôme</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s49">
+    <text>Quatre ans après le lancement du sérum en flacon noir, Lancôme (L'Oréal Luxe) avance dans la connaissance de la génomique et de la protéomique et crée Advanced Génifique, la deuxième génération de soin réparateur et activateur des protéines de jeunesse.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Lancôme</subject>
+        <predicate>belongsToDivision</predicate>
+        <object>L'Oréal Luxe</object>
+      </Relation>
+        <Relation id="r2">
+            <subject>Advanced Génifique</subject>
+            <predicate>belongsToBrand</predicate>
+            <object>Lancôme</object>
+        </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s50">
+    <text>Fondé sur l'étude de plus de 25 000 gènes et 1 000 protéines, protégé par 9 brevets, Advanced Génifique augmente de 40% sa concentration en actifs et élargit son action à dix signes de jeunesse de la peau (rides, ridules, éclat, élasticité, l tonicité, fermeté...).</text>
+  </sentence>
+  <sentence id="s51">
+    <text>Sa pipette, issue d'un transfert de technologie de l'industrie pharmaceutique et fabriquée en Corée du Sud, se charge automatiquement de la juste dose pour couvrir le visage.</text>
+  </sentence>
+  <sentence id="s52">
+    <text>La sensorialité de la texture a été retravaillée pour la rendre fraîche et enveloppante.</text>
+  </sentence>
+  <sentence id="s53">
+    <text>Advanced Génifique, qui remplace la formule précédente, est qualifié de ''première étape des rituels de soin Lancôme".Un film télé, de la presse et de l'échantillonnage massif soutiendront ce lancement en sélectif à partir de début mai (flacon 30 ml, 78,50).</text>
+    <Relations>
+        <Relation id="r1">
+            <subject>Advanced Génifique</subject>
+            <predicate>belongsToBrand</predicate>
+            <object>Lancôme</object>
+        </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s54">
+    <text>Titre: parfums; Les Fifi 2013.</text>
+  </sentence>
+  <sentence id="s55">
+    <text>La Petite Robe Noire (Guerlain/ LVMH) est la star de ce palmarès, révélé le 11 avril avec tous les prix (parfum de l'année pour les pro comme pour le public, design et communication), dans sa catégorie parfum féminin en sélectif.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>La Petite Robe Noire</subject>
+        <predicate>belongsToBrand</predicate>
+        <object>Guerlain</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s56">
+    <text>Son pendant masculin, Spicebomb de VMor &amp; Rolf (L'Oréal Luxe) gagne deux fois : meilleur parfum masculin pour les pro et meilleur design alors que Only the Brave Tattoo de Diesel (L'Oréal Luxe) remporte les suffrages du public et que Kenzo Homme Sport (LVMH) est distingué pour sa communication.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Spicebomb</subject>
+        <predicate>belongsToBrand</predicate>
+        <object>VMor &amp; Rolf</object>
+      </Relation>
+        <Relation id="r1">
+            <subject>VMor &amp; Rolf</subject>
+            <predicate>belongsToDivision</predicate>
+            <object>L'Oréal Luxe</object>
+        </Relation>
+        <Relation id="r2">
+            <subject>Only the Brave Tattoo</subject>
+            <predicate>belongsToBrand</predicate>
+            <object>Diesel</object>
+        </Relation>
+        <Relation id="r3">
+            <subject>Diesel</subject>
+            <predicate>belongsToDivision</predicate>
+            <object>L'Oréal Luxe</object>
+        </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s57">
+    <text>Côté grande distribution, Coty Beauty rafle la mise avec VIP pour Elle de Playboy et The Essence de David Beckham.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>VIP pour Elle</subject>
+        <predicate>belongsToBrand</predicate>
+        <object>Playboy</object>
+      </Relation>
+      <Relation id="r2">
+            <subject>The Essence</subject>
+            <predicate>belongsToBrand</predicate>
+            <object>David Beckham</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s58">
+    <text>Enfin, dans la catégorie parfum sous enseigne propre, Yves Rocher s'impose avec son féminin So Elixir Purple et L'Occitane, avec LEau de Provence Eau Unverselle, un mixte.Rappelons que les prix professionnels sont décernés par un collège de votants, tous adhérents de la Fragrance Foundation France et que 20 000 votants ont élu les gagnants du prix public dont Marionnaud est l'enseigne partenaire.</text>
+    <Relations>
+        <Relation id="r1">
+            <subject>So Elixir Purple</subject>
+            <predicate>belongsToBrand</predicate>
+            <object>Yves Rocher</object>
+        </Relation>
+        <Relation id="r2">
+            <subject>LEau de Provence Eau Unverselle</subject>
+            <predicate>belongsToBrand</predicate>
+            <object>L'Occitane</object>
+        </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s59">
+    <text>Enfin, un jury d'experts a désigné Volutes de Diptyque meilleur parfum de niche.</text>
+    <Relations>
+        <Relation id="r1">
+            <subject>Volutes</subject>
+            <predicate>belongsToBrand</predicate>
+            <object>Diptyque</object>
+        </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s60">
+    <text>Côté maisons de composition, Firmenich et IFF sont primées trois fois avec Yves Rocher, Diptyque et Diesel pour le premier, Spicebomb et les deux Coty pour IFF.</text>
+  </sentence>
+  <sentence id="s61">
+    <text>Titre: parfums; Spirit, nouvel opus Fuel For Life.</text>
+  </sentence>
+  <sentence id="s62">
+    <text>L'Oréal Luxe poursuit la saga Diesel Fuel For Life avec un nouveau masculin.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Diesel Fuel For Life</subject>
+        <predicate>belongsToDivision</predicate>
+        <object>L'Oréal Luxe</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s63">
+    <text>Conçu par Fabrice Pellegrin (Firmenich), le jus s'ouvre sur des notes de bergamote, cannelle et pamplemousse.</text>
+  </sentence>
+  <sentence id="s64">
+    <text>Le coeur associe le géranium à des accords d'iris et de fleur d'oranger.</text>
+  </sentence>
+  <sentence id="s65">
+    <text>La myrrhe, le labdanum, l'encens et un accord de bois ambrés laissent un fond vibrant.</text>
+  </sentence>
+  <sentence id="s66">
+    <text>En parfumeries, grands magasins et dans les boutiques Diesel à partir du 15 avril (50, 75 et 125 ml, 53€, 63€ et 81€).</text>
+  </sentence>
+  <sentence id="s67">
+    <text>La fragrance bénéficie d'un plan de communication à 360°.</text>
+  </sentence>
+  <sentence id="s68">
+    <text>Titre: communication; Marie Claire récompense les parfums.</text>
+  </sentence>
+  <sentence id="s69">
+    <text>Le 3 avril, les rédactions beauté des éditions France et internationales du magazine féminin ont révélé les lauréats du Prix international du Parfum 2013.</text>
+  </sentence>
+  <sentence id="s70">
+    <text>Coco Noir de Chanel a été sacré meilleur féminin, tandis que La Petite Robe Noire de Guerlain (LVMH) remportait celui de l'audace.</text>
+    <Relations>
+        <Relation id="r1">
+            <subject>Coco Noir</subject>
+            <predicate>belongsToBrand</predicate>
+            <object>Chanel</object>
+        </Relation>
+        <Relation id="r2">
+            <subject>La Petite Robe Noire</subject>
+            <predicate>belongsToBrand</predicate>
+            <object>Guerlain</object>
+        </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s71">
+    <text>Plus confidentiels, Florabotanica de Balenciaga (Coty Prestige) a été récompensée pour son flacon et Beach Walk, dans la collection Replica de Maison Martin Margiela (L'Oréal Luxe), a gagné le prix France.</text>
+    <Relations>
+        <Relation id="r1">
+            <subject>Florabotanica</subject>
+            <predicate>belongsToBrand</predicate>
+            <object>Balenciaga</object>
+        </Relation>
+        <Relation id="r2">
+            <subject>Beach Walk</subject>
+            <predicate>belongsToBrand</predicate>
+            <object>Maison Martin Margiela</object>
+        </Relation>
+        <Relation id="r3">
+            <subject>Beach Walk</subject>
+            <predicate>belongsToRange</predicate>
+            <object>Replica</object>
+        </Relation>
+        <Relation id="r4">
+            <subject>Replica</subject>
+            <predicate>belongsToBrand</predicate>
+            <object>Maison Martin Margiela</object>
+        </Relation>
+        <Relation id="r5">
+            <subject>Maison Martin Margiela</subject>
+            <predicate>belongsToDivision</predicate>
+            <object>Maison Martin Margiela</object>
+        </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s72">
+    <text>Titre: enquête; La Febea répond à l'UFC- Que Choisir.</text>
+  </sentence>
+  <sentence id="s73">
+    <text>UFC-Que Choisir et trois autres associations européennes de consommateurs viennent de publier les résultats de tests réalisés sur une vingtaine de substances, considérées comme des perturbateurs endocriniens, présentes dans 66 produits cosmétiques (dont la moitié vendue en France).</text>
+  </sentence>
+  <sentence id="s74">
+    <text>Les analyses ont fait une distinction entre les cosmétiques à rincer, ceux qui restent sur la peau et le maquillage.</text>
+  </sentence>
+  <sentence id="s75">
+    <text>Si les résultats sont dans l'ensemble plutôt rassurants, ils révèlent toutefois des taux préoccupants dans certains produits du fait notamment de l'effet cocktail de ces substances ou de leur impact sur l'environnement.Alors que l'Agence nationale de sécurité du médicament et des produits de santé déconseille pour les enfants les produits contenant plus de 4 g de phénoxyéthanol par kilo et que la recommandation du Comité scientifique pour la sécurité des consommateurs est de ne pas dépasser 2,48 g de propylparaben par kilo, l'UFC relève des taux de 2,68 g de propylparaben et de 8,02 g de phénoxyéthanol dans le gel douche Nivea Water Lily &amp; Oil.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Nivea Water Lily &amp; Oil</subject>
+        <predicate>hasComponent</predicate>
+        <object>phénoxyéthanol</object>
+      </Relation>
+        <Relation id="r2">
+            <subject>Nivea Water Lily &amp; Oil</subject>
+            <predicate>hasComponent</predicate>
+            <object>propylparaben</object>
+        </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s76">
+    <text>De même, l'organisation pointe la présence de 180 g de cyclopentasiloxane dans le déodorant Nivea Dry Comfort 48 h soin douceur stick, de 41,4 g de cette substance dans le lait corporel Dove Nutrition essentielle pour peau sèche et de 18,4 g dans le lait thermolissant pour cheveux Natural Liss Tecniart de L'Oréal Professionnel.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>déodorant Nivea Dry Comfort</subject>
+        <predicate>hasComponent</predicate>
+        <object>cyclopentasiloxane</object>
+      </Relation>
+        <Relation id="r2">
+            <subject>Dove Nutrition</subject>
+            <predicate>hasComponent</predicate>
+            <object>cyclopentasiloxane</object>
+        </Relation>
+        <Relation id="r1">
+            <subject>Liss Tecniart</subject>
+            <predicate>hasComponent</predicate>
+            <object>cyclopentasiloxane</object>
+        </Relation>
+        <Relation id="r1">
+            <subject>Liss Tecniart</subject>
+            <predicate>belongsToBrand</predicate>
+            <object>L'Oréal Professionnel</object>
+        </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s77">
+    <text>Elle s'inquiète des 17 g d'éthylhexyl methoxycinnamate contenus dans le baume à lèvres Labello, alors que ce produit appliqué sur la bouche est facilement ingérable.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Labello</subject>
+        <predicate>hasComponent</predicate>
+        <object>éthylhexyl methoxycinnamate</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s78">
+    <text>L'UFC souligne aussi les 64,33 g de cette molécule dans le fond de teint Pure Fluide minéral, 30 sable, SPF 18 de Gemey-Maybelline.</text>
+  </sentence>
+  <sentence id="s79">
+    <text>Beiersdorf, dont la marque Nivea a été l'une des plus mises en cause dans l'enquête et l'article paru dans le numéro d'avril de Que Choisir, n'a pas donné suite aux demandes d'entretien de CosmétiqueHebdo.</text>
+  </sentence>
+  <sentence id="s80">
+    <text>Mais la Febea a réagi, expliquant que son président Alain Grangé Cabane avait «adressé un courrier à Alain Bazot, président de l'UFC-Que Choisir, pour approfondir le dialogue avec cette organisation ; nous avons notamment interrogé cette dernière sur les critères l'ayant conduite à choisir les substances testées».</text>
+    <Relations>
+    </Relations>
+  </sentence>
+  <sentence id="s81">
+    <text>La Fédération regrette que la distinction entre les perturbateurs endocriniens prouvés et les alternatives présentes sur le marché n'apparaisse pas dans les résultats, «pouvant ainsi jeter l'opprobre sur l'innocuité de certaines substances».</text>
+  </sentence>
+  <sentence id="s82">
+    <text>Elle remarque que pour le propylparaben «contrairement à ce qu'indique le magazine, sa concentration n'est pas limitée à 2,48 g/kg, mais à 4 g/kg».</text>
+  </sentence>
+  <sentence id="s83">
+    <text>Elle conclut en affirmant que «le traitement de [la question des perturbateurs endocriniens] doit être rigoureux, basé sur la science et non sur la peur».</text>
+  </sentence>
+  <sentence id="s84">
+    <text>Titre: maquillage; Le nail art prend du relief.</text>
+  </sentence>
+  <sentence id="s85">
+    <text>«Après la couleur, nous entrons dans une nouvelle dimension», explique Tom Bachik, expert manucure L'Oréal Paris.</text>
+  </sentence>
+  <sentence id="s86">
+    <text>Le nail art n'a pas dit son dernier mot et ce début d'année est chargé en nouveautés, quel que soit le circuit.</text>
+  </sentence>
+  <sentence id="s87">
+    <text>Après les bases, les couleurs et les top coats, même en France, la manucure passe à la vitesse supérieure.</text>
+  </sentence>
+  <sentence id="s88">
+    <text>Du travail d'orfèvre à portée de mains.Sephora mise sur l'olfactif pour sa marque propre avec le Vernis à ongles parfumé &amp; top coat.</text>
+  </sentence>
+  <sentence id="s89">
+    <text>L'applicateur comporte deux embouts : d'un côté, la laque prend une petite odeur de fruit et, de l'autre, le top coat se fait irisé.</text>
+  </sentence>
+  <sentence id="s90">
+    <text>Les quatre références renvoient chacune à un fruit : framboise, ananas, orange ou pamplemousse (9,90 euros).</text>
+  </sentence>
+  <sentence id="s91">
+    <text>L'enseigne distribue par ailleurs en exclusivité Nails inc., une marque londonienne qui propose de nouveaux effets béton, dont la version «crépi», disponible en deux teintes vives, bleu et rouge (14 euros).La tendance urbaine prend de l'ampleur puisque la ville est aussi à l'honneur chez Calvin Klein Beauty et sa ligne Street Edition, avec un vernis adhésif en patch, au design «graffiti» différent sur chaque ongle (en février chez Marionnaud pour 14 euros, lire p.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Street Edition</subject>
+        <predicate>belongsToBrand</predicate>
+        <object>Calvin Klein Beauty</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s92">
+    <text>34).Sous sa franchise Color Riche, L'Oréal Paris lance, lui, trois top coats : l'effet confetti est une superposition aléatoire de petits pois blancs et noirs, la version smoky un écran de fumée sur la couleur, tandis que la déclinaison «carat» habille le vernis d'or (5,50 euros).</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Color Riche</subject>
+        <predicate>belongsToDivision</predicate>
+        <object>L'Oréal Paris</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s93">
+    <text>Titre: capillaire; Collaboration entre Calor et L'Oréal Paris.</text>
+  </sentence>
+  <sentence id="s94">
+    <text>Les deux marques françaises ont noué un partenariat pour créer des kits associant un spray Elnett et un appareil de coiffage.</text>
+  </sentence>
+  <sentence id="s95">
+    <text>«Nous avons joué sur nos expertises réciproques», affirme Sylvie Lacombe, responsable marketing non-food chez GSF (Groupe Seb France).</text>
+  </sentence>
+  <sentence id="s96">
+    <text>L'Oréal Paris a mis au point deux formules de spray Elnett, enrichies en xylose, un agent thermoprotecteur.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>spray Elnett</subject>
+        <predicate>hasComponent</predicate>
+        <object>xylose</object>
+      </Relation>
+        <Relation id="r1">
+            <subject>spray Elnett</subject>
+            <predicate>belongsToBrand</predicate>
+            <object>L'Oréal Paris</object>
+        </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s97">
+    <text>De son côté, Calor a adapté ses appareils et modifié leur revêtement pour renforcer l'efficacité des sprays et garantir un résultat longue durée pendant trois jours.</text>
+  </sentence>
+  <sentence id="s98">
+    <text>Trois kits sont proposés incluant un sèche-cheveux, une brosse soufflante ou un lisseur.</text>
+  </sentence>
+  <sentence id="s99">
+    <text>Les deux premiers sont vendus avec un spray volume, le troisième avec un spray Lissage.</text>
+  </sentence>
+  <sentence id="s100">
+    <text>Ils sont disponibles ce mois-ci en GMS et en GSS comme Darty ou Boulanger, au prix de 49,99€.</text>
+  </sentence>
+  <sentence id="s101">
+    <text>Titre: [parfum] féminin; Flowerbomb voit rose.</text>
+  </sentence>
+  <sentence id="s102">
+    <text>Pour son cinquième anniversaire, La Vie en Rose, édition estivale du parfum de Viktor &amp; Rolf (L'Oréal Luxe) créée par Olivier Polge (IFF), s'offre une nouvelle composition autour de trois fleurs : la rose, le jasmin sambac et l'orchidée Heights.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>La Vie en Rose</subject>
+        <predicate>belongsToBrand</predicate>
+        <object>Viktor &amp; Rolf</object>
+      </Relation>
+        <Relation id="r2">
+            <subject>Viktor &amp; Rolf</subject>
+            <predicate>belongsToDivision</predicate>
+            <object>L'Oréal Luxe</object>
+        </Relation>
+        <Relation id="r3">
+            <subject>La Vie en Rose</subject>
+            <predicate>hasFragranceCreator</predicate>
+            <object>Olivier Polge</object>
+        </Relation>
+        <Relation id="r4">
+            <subject>La Vie en Rose</subject>
+            <predicate>hasComponent</predicate>
+            <object>rose</object>
+        </Relation>
+        <Relation id="r5">
+            <subject>La Vie en Rose</subject>
+            <predicate>hasComponent</predicate>
+            <object>jasmin sambac</object>
+        </Relation>
+        <Relation id="r6">
+            <subject>La Vie en Rose</subject>
+            <predicate>hasComponent</predicate>
+            <object>l'orchidée Heights</object>
+        </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s103">
+    <text>Elles rencontrent la pointe d'amertume du thé vert et s'évanouissent dans un sillage de patchouli et de notes ambrées.PROMESSE</text>
+  </sentence>
+  <sentence id="s104">
+    <text>Une eau acidulée pour l'été.DISTRIBUTION</text>
+  </sentence>
+  <sentence id="s105">
+    <text>Parf., grands magasins.</text>
+  </sentence>
+  <sentence id="s106">
+    <text>En avril</text>
+  </sentence>
+  <sentence id="s107">
+    <text>Titre: Parfums.</text>
+  </sentence>
+  <sentence id="s108">
+    <text>Daniel Hechter cible les oiseaux de nuit.</text>
+  </sentence>
+  <sentence id="s109">
+    <text>La marque de Parfumeurs Créateurs-L'Oréal Paris affirme sa sensualité avec un 6e masculin : Midnight, un "parfum de nuit".</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Midnight</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>Parfumeurs Créateurs-L'Oréal Paris</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s110">
+    <text>Pour ceux qui séduisent en discothèque, Francis Kurkdjian (Quest) a composé une fragrance orientale.</text>
+  </sentence>
+  <sentence id="s111">
+    <text>Il y mêle des accords de cédrat, bergamote, armoise et limette en tête, sauge, cannelle, santal, thym rouge en coeur, patchouli, vanille, musc et coumarine en fond.</text>
+  </sentence>
+  <sentence id="s112">
+    <text>Le flacon rouge vif contraste avec le capot couleur canon de fusil.</text>
+  </sentence>
+  <sentence id="s113">
+    <text>L'étui revêt aussi ses habits nocturnes avec une impression holographique.</text>
+  </sentence>
+  <sentence id="s114">
+    <text>EdT 75 ml 12,95 €.Le nouveau Clin d'oeil de Bourjois.</text>
+  </sentence>
+  <sentence id="s115">
+    <text>Cinquième fragrance de la signature jeune de Bourjois, Lovely Girl, toujours signé François Demachy en interne, est un floral fruité plein de gaieté grâce au pamplemousse en note de tête.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Lovely Girl</subject>
+        <predicate>hasFragranceCreator</predicate>
+        <object>François Demachy</object>
+      </Relation>
+        <Relation id="r1">
+            <subject>Lovely Girl</subject>
+            <predicate>hasComponent</predicate>
+            <object>pamplemousse</object>
+        </Relation>
+        <Relation id="r1">
+            <subject>Lovely Girl</subject>
+            <predicate>belongsToBRand</predicate>
+            <object>Bourjois</object>
+        </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s116">
+    <text>Le flacon joue sur le même registre dans des tons rose-orangé soulignés par le vert tendre du bouchon perle.</text>
+  </sentence>
+  <sentence id="s117">
+    <text>Sortie en GMS en août (75 ml, 5,99 €).Fraîcheur andalouse selon Estéban.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Fraîcheur andalouse</subject>
+        <predicate>belongsToBrand</predicate>
+        <object>Estéban</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s118">
+    <text>Après 3 premières eaux parfumées lancées en 2003, la société plutôt spécialisée dans les senteurs pour la maison récidive avec Fraîcheur andalouse, une eau de toilette féminine.</text>
+  </sentence>
+  <sentence id="s119">
+    <text>Créé en interne, cet hespéridé fleuri se présente dans un flacon cubique à l'intérieur d'une boîte cadeau.</text>
+  </sentence>
+  <sentence id="s120">
+    <text>Il se décline aussi en lait hydratant, gel douche, bain moussant, savon et galets enrichis en extraits d'agrumes (EdT 100 ml, 30 €, dérivés : de 6,50 à 19,50 €).</text>
+  </sentence>
+  <sentence id="s121">
+    <text>Cette fragrance est la 1re étape d'une collection appelée à se développer sous le signe du voyage.</text>
+  </sentence>
+  <sentence id="s122">
+    <text>Titre: [soin] nourrissant; La Roche-Posay joue l'apaisement.</text>
+  </sentence>
+  <sentence id="s123">
+    <text>Avec Nutritic Intense, la marque de L'Oréal Cosmétique active fait coup double.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Nutritic Intense</subject>
+        <predicate>belongsToBrand</predicate>
+        <object>L'Oréal Cosmétique active</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s124">
+    <text>Ce soin nourrissant pour peaux sèches et sensibles soigne les désordres cutanés et apaise le ressenti douloureux.</text>
+  </sentence>
+  <sentence id="s125">
+    <text>Il mise sur les MP-Lipides pour relancer la fonction barrière et sur une texture riche façon baume pour soulager la peau.</text>
+  </sentence>
+  <sentence id="s126">
+    <text>Deux conditionnements sont proposés, tube classique ou pot en verre.</text>
+  </sentence>
+  <sentence id="s127">
+    <text>Ce dernier est une première pour La Roche-Posay, qui affirme que la formule minimaliste de Nutritic Intense résiste bien à la contamination bactériologique.PROMESSE</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Nutritic Intense</subject>
+        <predicate>belongsToBrand</predicate>
+        <object>Roche-Posay</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s128">
+    <text>Un soin intensif et nourrissant pour les peaux sèches et sensibles.DISTRIBUTION Pharmacies, parapharmacies.</text>
+  </sentence>
+  <sentence id="s129">
+    <text>En janvier</text>
+  </sentence>
+  <sentence id="s130">
+    <text>Titre: Pascal Giliberti.</text>
+  </sentence>
+  <sentence id="s131">
+    <text>Il prend la direction générale nouvellement créée de L'Oréal Professionnel France.</text>
+  </sentence>
+  <sentence id="s132">
+    <text>Il était jusqu'ici directeur de Redken en France</text>
+  </sentence>
+  <sentence id="s133">
+    <text>Titre: mascara; Oekabeauty joue sur les volumes.</text>
+  </sentence>
+  <sentence id="s134">
+    <text>Pour son dernier mascara Volume Millions de Cils, L'Oréal Paris a choisi la flaconnette et le capot d'Oekabeauty, qui se distinguent par leur forme particulière et une métallisation argent brillant.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Volume Millions de Cils</subject>
+        <predicate>belongsToBrand</predicate>
+        <object>L'Oréal Paris</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s135">
+    <text>Une teinte obtenue par tampographie de trois décors.</text>
+  </sentence>
+  <sentence id="s136">
+    <text>Ce mascara affiche également son originalité par sa brosse unique en élastomère, dotée de picots fins et flexibles.</text>
+  </sentence>
+  <sentence id="s137">
+    <text>Pour réaliser ce packaging, le fabricant allemand spécialiste de contenants pour le maquillage a investi dans deux nouvelles machines de parachèvement.</text>
+  </sentence>
+  <sentence id="s138">
+    <text>Titre: bilan France; 2012, année L'Oréal.</text>
+  </sentence>
+  <sentence id="s139">
+    <text>Dans un contexte économique morose qui s'accompagne d'une surenchère promotionnelle, que ce soit dans les parfumeries ou les grandes surfaces, le leader mondial se distingue.</text>
+  </sentence>
+  <sentence id="s140">
+    <text>Du côté d'un sélectif en petite forme, il est une marque pour qui 2012 restera un grand cru : Lancôme a réalisé le ''carton'' du 2nd semestre avec le parfum La Vie est Belle, qui bat des records de ventes dans le monde.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>La Vie est Belle</subject>
+        <predicate>belongsToBrand</predicate>
+        <object>Lancôme</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s141">
+    <text>En septembre, il totalisait 5,3% de PDM valeur en France et 3,3% au cumul des cinq grands pays européens (France, Royaume-Uni, Espagne, Italie, Allemagne, sources NPD et Iri).</text>
+  </sentence>
+  <sentence id="s142">
+    <text>Mais 2012 a aussi été une grande année pour Lancôme sur les autres axes, dont le soin avec la poursuite de la saga Visionnaire, qui a pris la 2e place du marché français des sérums en sélectif au 1er semestre, derrière le vétéran Advanced Night Repair d'Estée Lauder, et l'extension de la franchise Hypnôse en maquillage.Côté parfum, la marque de L'Oréal Luxe rivalise avec une autre belle endormie revenue en pleine lumière, Guerlain (LVMH), qui revendique la meilleure performance historique à la semaine pour La Petite Robe Noire (9,3% de PDM valeur à son plus haut niveau, 8,6% la semaine du lancement).</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Visionnaire</subject>
+        <predicate>belongsToBrand</predicate>
+        <object>Lancôme</object>
+      </Relation>
+        <Relation id="r2">
+            <subject>Advanced Night Repair</subject>
+            <predicate>belongsToBrand</predicate>
+            <object>Estée Lauder</object>
+        </Relation>
+        <Relation id="r3">
+            <subject>Hypnôse</subject>
+            <predicate>belongsToBrand</predicate>
+            <object>Lancôme</object>
+        </Relation>
+        <Relation id="r4">
+            <subject>La Petite Robe Noire</subject>
+            <predicate>belongsToBrand</predicate>
+            <object>Guerlain</object>
+        </Relation>
+        <Relation id="r4">
+            <subject>Guerlain</subject>
+            <predicate>belongsToDivision</predicate>
+            <object>L'Oréal Luxe</object>
+        </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s143">
+    <text>Sortie en mars, la fragrance devrait figurer dans le top 5 annuel des féminins.</text>
+  </sentence>
+  <sentence id="s144">
+    <text>Au chapitre des bonnes nouvelles - il y en a peu -, on peut citer aussi Clinique, qui a écoulé près de 22 000 exemplaires de son contour des yeux Even Better Eyes en septembre, soit la référence de soin la plus vendue en France en sélectif depuis 2006.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Even Better Eyes </subject>
+        <predicate>belongsToBrand</predicate>
+        <object>Clinique</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s145">
+    <text>Tout ceci n'empêche pas le marché d'être au mieux stable et, sans les promotions, le chiffre d'affaires reculerait.Les GMS n'échappent pas à cette surenchère promotionnelle (cf.</text>
+  </sentence>
+  <sentence id="s146">
+    <text>p.</text>
+  </sentence>
+  <sentence id="s147">
+  </sentence>
+  <sentence id="s148">
+    <text>C'est L'Oréal Paris qui tire son épingle du jeu grâce au lancement de Revitalift Laser x3 (jusqu'à 6,1 points de PDM valeur lors de sa campagne de soutien) et à la belle santé d'Elsève.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Elsève</subject>
+        <predicate>belongsToBrand</predicate>
+        <object>L'Oréal Paris </object>
+      </Relation>
+        <Relation id="r2">
+            <subject>Revitalift Laser x3</subject>
+            <predicate>belongsToBrand</predicate>
+            <object>L'Oréal Paris </object>
+        </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s149">
+    <text>Les soins du visage tirent une catégorie beauté à +1,7% (valeur, CAM à fin novembre, source Iri) puisqu'ils progressent de 4,3% (+2,5% en volume).</text>
+  </sentence>
+  <sentence id="s150">
+    <text>Au milieu de la déferlante des BB creams, phénomène entamé en 2011, Garnier a touché le jackpot avec Soin miracle perfecteur, vendu à plus d'un million d'exemplaires en huit mois.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Soin miracle perfecteur</subject>
+        <predicate>belongsToBrand</predicate>
+        <object>Garnier</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s151">
+    <text>L'offensive des vernis sauve le marché du maquillage (+1,1% en valeur, +2,1% en volume), symbolisée par le duel Essie-L'Oréal contre OPI-Coty.</text>
+  </sentence>
+  <sentence id="s152">
+    <text>Mais l'actualité de la beauté reste marquée par la montée en puissance des marques-enseignes, en premier lieu Yves Rocher qui affirme avoir encore gagné des clientes et des parts de marché en 2012.</text>
+  </sentence>
+  <sentence id="s153">
+    <text>La première marque de cosmétique en France - selon Kantar Worldpanel - lance un défi aux deux grands circuits de la beauté, qui devront réaffirmer leurs valeurs sans aggraver la spirale promotionnelle en 2013.</text>
+  </sentence>
+  <sentence id="s154">
+    <text>Titre: soins; La Roche-Posay a du pot.</text>
+  </sentence>
+  <sentence id="s155">
+    <text>La marque de L'Oréal Cosmétique active propose pour janvier Nutritic Intense, un soin nourrissant pour les peaux sèches et sensibles qui agit à deux niveaux : il soigne les désordres cutanés et apaise le ressenti douloureux.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Nutritic Intense</subject>
+        <predicate>belongsToBrand</predicate>
+        <object>L'Oréal Cosmétique active</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s156">
+    <text>Au sein de la formule, les MP-Lipides relancent la fonction barrière, et la texture riche façon baume soulage la peau.</text>
+  </sentence>
+  <sentence id="s157">
+    <text>Deux conditionnements sont proposés, en tube classique (16,40€, 50 ml) ou en pot de verre (21€, 50 ml).</text>
+  </sentence>
+  <sentence id="s158">
+    <text>Ce dernier est une première pour La Roche-Posay qui affirme que sa formule minimaliste résiste bien à la contamination bactériologique (les molécules d'eau de la phase aqueuse sont soudées entre elles et les MP-lipides, plus fragiles, sont dans la phase grasse) et n'a donc pas besoin de plus de conservateurs que la version en tube.</text>
+  </sentence>
+  <sentence id="s159">
+    <text>Titre: [soin] anti-âge; Un teint en or L'Oréal Paris.</text>
+  </sentence>
+  <sentence id="s160">
+    <text>En temps de crise, l'or est une valeur refuge.</text>
+  </sentence>
+  <sentence id="s161">
+    <text>Les marques l'ont bien compris.</text>
+  </sentence>
+  <sentence id="s162">
+    <text>Avec Nutrilift Gold, L'Oréal Paris concilie dans une seule formule la galénique du fond de teint et celle du soin.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Nutrilift Gold</subject>
+        <predicate>belongsToBrand</predicate>
+        <object>L'Oréal Paris</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s163">
+    <text>Le Sérum de teint anti-âge contient du Pro-Rétinol, du Pro-Lastyl, du Pro-Xylane, de l'acide hyaluronique, de la vitamine C et du Melanin-Block pour lutter contre les effets du vieillissement, des microparticules d'or pour un teint radieux et 30% d'huiles pour une hydratation intense.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Sérum de teint anti-âge</subject>
+        <predicate>hasComponent</predicate>
+        <object>Pro-Rétinol</object>
+      </Relation>
+        <Relation id="r2">
+            <subject>Sérum de teint anti-âge</subject>
+            <predicate>hasComponent</predicate>
+            <object>Pro-Lastyl</object>
+        </Relation>
+        <Relation id="r3">
+            <subject>Sérum de teint anti-âge</subject>
+            <predicate>hasComponent</predicate>
+            <object>Pro-Xylane</object>
+        </Relation>
+        <Relation id="r4">
+            <subject>Sérum de teint anti-âge</subject>
+            <predicate>hasComponent</predicate>
+            <object>acide hyaluronique</object>
+        </Relation>
+        <Relation id="r5">
+            <subject>Sérum de teint anti-âge</subject>
+            <predicate>hasComponent</predicate>
+            <object>vitamine C</object>
+        </Relation>
+        <Relation id="r6">
+            <subject>Sérum de teint anti-âge</subject>
+            <predicate>hasComponent</predicate>
+            <object>Melanin-Block</object>
+        </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s164">
+    <text>Une BB cream est proposée en complément ou en remplacement du sérum.PROMESSE</text>
+  </sentence>
+  <sentence id="s165">
+    <text>Un fond de teint pour combattre les signes de l'âge.COMMUNICATION Andie MacDowell comme égérie.DISTRIBUTION</text>
+  </sentence>
+  <sentence id="s166">
+    <text>GMS, parfumeries, grands magasins</text>
+  </sentence>
+  <sentence id="s167">
+    <text>Titre: capillaires; L'Oréal Paris soutient Elsève.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Elsève</subject>
+        <predicate>belongsToBrand</predicate>
+        <object>L'Oréal Paris</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s168">
+    <text>La marque de la DPGP prend une nouvelle fois la parole sur sa franchise phare, Elsève, en croissance de 3,4% au cumul à P11 2012 (source SymphonyIri).</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Elsève</subject>
+        <predicate>belongsToBrand</predicate>
+        <object>DPGP</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s169">
+    <text>Total Repair Extrême revendique de pénétrer dix couches du cheveu pour atteindre le coeur de la fibre.</text>
+  </sentence>
+  <sentence id="s170">
+    <text>Les quatre produits -un shampooing (250 ml, 4,35€), un après-shampooing (200 ml, 4,35€) un masque (300 ml, 7,80€) et un double sérum sans rinçage (15 ml, 10,50€)- contiennent de l'acide lactique et un polymère hautement conditionnant qui agit comme un pansement sur le cheveu.</text>
+  </sentence>
+  <sentence id="s171">
+    <text>Prévu en janvier, ce lancement -stratégique pour la marque- sera soutenu par de l'échantillonnage, une campagne en télévision dès mars et de la presse en avril avec Doutzen Kroes.</text>
+  </sentence>
+  <sentence id="s172">
+    <text>L'Oréal Paris propose aussi la nouvelle gamme Elsève Liss Caresse enrichie en micro-kératine (de 3,90€ à 6,90€) depuis novembre.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Elsève Liss Caresse</subject>
+        <predicate>belongsToBrand</predicate>
+        <object>L'Oréal Paris</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s173">
+    <text>Titre: Carnet.</text>
+  </sentence>
+  <sentence id="s174">
+    <text>Marc Rey va prendre la présidence de Coty Prestige aux Etats-Unis le 2 janvier.</text>
+  </sentence>
+  <sentence id="s175">
+    <text>Il remplace Bob Cankes, qui part à la retraite.</text>
+  </sentence>
+  <sentence id="s176">
+    <text>Le nouvel homme fort de Coty en Amérique du Nord supervisera aussi Coty Prestige au Canada, la marque Philosophy et le compte Sephora.</text>
+  </sentence>
+  <sentence id="s177">
+    <text>Marc Rey, diplômé de l'Ecole Supérieure de Commerce de Paris et de l'Insead, est un transfuge de L'Oréal USA.</text>
+  </sentence>
+  <sentence id="s178">
+    <text>Il y a été pendant quatre ans responsable de la division designers inter- nationaux (Armani, YSL, Ralph Lauren...).Frederic Rivoire rejoint Drom Fragrances à Paris comme directeur de la parfumerie fine globale.</text>
+  </sentence>
+  <sentence id="s179">
+    <text>Précédemment, il était directeur de la parfumerie fine Europe chez Givaudan.Minh Tran-Kim, depuis dix ans dans le groupe L'Oréal (L'Oréal Paris, Mennen, Garnier) vient d'être nommé DG de Roger &amp; Gallet et Skinceuticals France.</text>
+  </sentence>
+  <sentence id="s180">
+    <text>Il remplace Benoît Beyls qui devient directeur marketing de Skinceuticals Europe.</text>
+  </sentence>
+  <sentence id="s181">
+    <text>Titre: tendance; Versailles inspire Chanel.</text>
+  </sentence>
+  <sentence id="s182">
+    <text>Après Dior, qui crée une gamme Dior Prestige à la rose souveraine en hommage à Marie-Antoinette (cf.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Dior Prestige</subject>
+        <predicate>belongsToBrand</predicate>
+        <object>Dior</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s183">
+    <text>CH 553), et L'Oréal Paris, qui a lancé une collection de maquillage Versailles en exclusivité chez Sephora (cf.</text>
+      <Relations>
+          <Relation id="r1">
+              <subject>Versailles</subject>
+              <predicate>belongsToBrand</predicate>
+              <object>L'Oréal Paris</object>
+          </Relation>
+      </Relations>
+  </sentence>
+  <sentence id="s184">
+    <text>CH 557), c'est au tour de Chanel de consacrer une édition éphémère au palais du Roi Soleil.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>au palais du Roi Soleil</subject>
+        <predicate>belongsToBrand</predicate>
+        <object>Chanel</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s185">
+    <text>Une association logique pour la maison qui a présenté son défilé croisière 2013 dans le parc du château en mai dernier.</text>
+  </sentence>
+  <sentence id="s186">
+    <text>La collection, disponible à partir du 1er décembre dans les boutiques de la rue Cambon et de l'avenue Montaigne à Paris, met l'accent sur le rose avec une poudre illuminatrice pour le teint Mouche de beauté imprimée d'un motif Grand Siècle (58€) et aussi une ombre à paupières rose légèrement grisée (27€).</text>
+  </sentence>
+  <sentence id="s187">
+    <text>Pour l'historienne Elisabeth de Feydeau, «le XVIIIe siècle a toujours été une référence de savoir-faire, de bon goût, d'hédonisme, en mode comme en décoration».</text>
+  </sentence>
+  <sentence id="s188">
+    <text>Et maintenant en beauté.</text>
+  </sentence>
+  <sentence id="s189">
+    <text>Titre: carnet.</text>
+  </sentence>
+  <sentence id="s190">
+    <text>Lindsay Owen-Jones, président d'honneur de LOréal, a annoncé qu'il démissionnerait du conseil d'administration de L'Oréal lors de la prochaine AG du 26 avril.</text>
+  </sentence>
+  <sentence id="s191">
+    <text>En 2006, il avait cédé son poste de PDG à Jean-Paul Agon.Amélie Vidal-Simi a été nommée PDG de Henkel j: France en remplacement de ^B^vl Joachim Bolz promu VP de la branche détergents &amp; produits d'entretien.</text>
+  </sentence>
+  <sentence id="s192">
+    <text>Elle devient aussi présidente de Henkel Technologies France SAS.</text>
+  </sentence>
+  <sentence id="s193">
+    <text>Elle a débuté sa carrière dans le groupe en 1990.Nicolas Houzé, a été nommé directeur général de la branche grands magasins du groupe Galeries Lafayette.</text>
+  </sentence>
+  <sentence id="s194">
+    <text>Il succède à Paul Delaoutre.Sandrine Oeuvrard prend la tête du département marketing clients et sell out, nouvellement créé, de Decléor et Carita.</text>
+  </sentence>
+  <sentence id="s195">
+    <text>Elisabeth Crouzet en devient responsable CRM et digital international.Célia</text>
+  </sentence>
+  <sentence id="s196">
+    <text>Lerouge-Bénard est la nouvelle directrice de Molinard.</text>
+  </sentence>
+  <sentence id="s197">
+    <text>Titre: capillaires; Haute Expertise plus riche.</text>
+  </sentence>
+  <sentence id="s198">
+    <text>Afin d'apporter une réponse aux cheveux secs et abîmés, l'Oréal Paris enrichit sa gamme capillaire Haute expertise d'une 4e franchise, EverRiche, dont le lancement sera soutenu à partir de juin par une campagne de communication en télévision et sur le web.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Haute expertise</subject>
+        <predicate>belongsToBrand</predicate>
+        <object>l'Oréal Paris</object>
+      </Relation>
+        <Relation id="r2">
+            <subject>EverRiche</subject>
+            <predicate>belongsToBrand</predicate>
+            <object>l'Oréal Paris</object>
+        </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s199">
+    <text>Formulé sans sulfates desséchants, ce programme ciblé sur la nutrition et la réparation intègre de l'huile de cameline, d'abricot et de pépins de raisin, aux pro priétés nutritives et antioxydantes.</text>
+  </sentence>
+  <sentence id="s200">
+    <text>Il est parfumé à l'huile essentielle de cèdre, aux notes vanillées et ambrées.</text>
+  </sentence>
+  <sentence id="s201">
+    <text>L'Elixir Parfait (200 ml, 10,50€, mai) constitue le produit phare de la gamme du fait de sa texture brevetée, qui se présente comme un masque en spray.</text>
+  </sentence>
+  <sentence id="s202">
+    <text>Depuis janvier, le shampooing Haute Expertise EverRiche, le soin démêlant et le masque profond (7,90€ et 10,50€) ont fait leur apparition en GMS.</text>
+  </sentence>
+  <sentence id="s203">
+    <text>L'Oréal Paris est leader sur le marché des capillaires en grande distribution (hard discount compris), avec 20,3% de PDM valeur.</text>
+  </sentence>
+  <sentence id="s204">
+    <text>Titre: [maquillage] yeux; Le kajal lance un regard noir.</text>
+  </sentence>
+  <sentence id="s205">
+    <text>Ce large khôl qui fait le regard charbonneux a trouvé sa place dans les looks maquillage de l'hiver.</text>
+  </sentence>
+  <sentence id="s206">
+    <text>Chez Bourjois, tel un raisin à lèvres, il est contenu dans un stick et sa formule sans parabène est très concentrée en pigments et en cires naturelles.</text>
+  </sentence>
+  <sentence id="s207">
+    <text>Chez L'Oréal Paris, le kajal a rejoint la famille Color Riche, promettant une tenue intense et longue durée.promesse</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>kajal</subject>
+        <predicate>belongsToBrand</predicate>
+        <object>L'Oréal Paris</object>
+      </Relation>
+        <Relation id="r2">
+            <subject>Color Riche</subject>
+            <predicate>belongsToBrand</predicate>
+            <object>L'Oréal Paris</object>
+        </Relation>
+        <Relation id="r3">
+            <subject>kajal</subject>
+            <predicate>belongsToRange</predicate>
+            <object>Color Riche</object>
+        </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s208">
+    <text>Un produit ancestral modernisé.distribution</text>
+  </sentence>
+  <sentence id="s209">
+    <text>En décembre en GMS, grands magasins et parfumeries pour Bourjois ; depuis juin en GMS pour L'Oréal Paris</text>
+  </sentence>
+  <sentence id="s210">
+    <text>Titre: GMS; L'Oréal joue la couleur.</text>
+  </sentence>
+  <sentence id="s211">
+    <text>Coloration et maquillage, deux axes stratégiques pour la division Produit grand public (DPGP) si l'on en croit son dirigeant, Jean-Jacques Lebel, qui affirme : «Pour la division, les produits colorés représentent la moitié du business.»</text>
+  </sentence>
+  <sentence id="s212">
+    <text>C'est d'autant plus important qu'avec des ventes de 9,83 milliards d'euros, la DPGP représente plus de la moitié du chiffre d'affaires cosmétique du groupe.</text>
+  </sentence>
+  <sentence id="s213">
+    <text>Elle en est aussi le leader mondial avec Maybelline en numéro un du maquillage, suivi par L'Oréal Paris et, côté coloration, L'Oréal Paris puis Garnier.</text>
+  </sentence>
+  <sentence id="s214">
+    <text>La consommation est extrêmement variable d'un pays à l'autre, la France étant à la traîne avec un budget maquillage par femme et par an de 41 euros et de 13 euros en coloration (source L'Oréal).On peut donc aussi y voir un réservoir de croissance d'autant qu'Hervé Navellou, directeur géné- ral France de la DPGP, ajoute : «L'envie de couleur se ré-affirme avec le renouveau du vernis à ongles, premier geste couleur des jeunes filles, qui tire le rayon en GMS.</text>
+  </sentence>
+  <sentence id="s215">
+    <text>Les fards à yeux bénéficient également de cette tendance».</text>
+  </sentence>
+  <sentence id="s216">
+    <text>Au-delà des effets de mode, ce développement passe aussi par les progrès scientifiques sur les formules : «La sensorialité et le plaisir d'utilisation sont essentiels.</text>
+  </sentence>
+  <sentence id="s217">
+    <text>Nous proposons des produits agréables à utiliser comme Rouge Caresse (L'Oréal Paris), Super Stay de Gemey-Maybelline ou Olia (Garnier), pour que la coloration devienne un moment plaisir et qui va certainement recruter.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Rouge Caresse</subject>
+        <predicate>belongsToBrand</predicate>
+        <object>L'Oréal Paris</object>
+      </Relation>
+        <Relation id="r2">
+            <subject>Super Stay</subject>
+            <predicate>belongsToBrand</predicate>
+            <object>Gemey-Maybelline</object>
+        </Relation>
+        <Relation id="r3">
+            <subject>Olia</subject>
+            <predicate>belongsToBrand</predicate>
+            <object>Garnier</object>
+        </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s218">
+    <text>Ou encore, prochainement, la Mousse Absolue de Préférence (L'Oréal Paris), la première mousse sans mélange, réutilisable et prête à l'emploi».Parallèlement, la division voudrait voir évoluer les magasins.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Mousse Absolue de Préférence</subject>
+        <predicate>belongsToBrand</predicate>
+        <object>L'Oréal Paris</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s219">
+    <text>L'Oréal Grand public veut y mettre en avant ses atouts et y élargir l'assortiment en vernis, qui «représentent cette année 18% des ventes valeur de maquillage en GMS contre 15% il y a un an».</text>
+  </sentence>
+  <sentence id="s220">
+    <text>L'objectif est de créer de l'espace additionnel avec pour ambition 10% de linéaires supplémentaires.</text>
+  </sentence>
+  <sentence id="s221">
+    <text>Ainsi, à l'occasion du prochain lancement de Color Show avec ses 50 nuances chez Gemey-Maybelline, la division veut implanter dans les grands hypermarchés - Auchan a déjà signé - des mobiliers permanents consacrés aux vernis à ongles présentés en nu (un nouvel antivol est en cours de finalisation).</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Color Show</subject>
+        <predicate>belongsToBrand</predicate>
+        <object>Gemey-Maybelline</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s222">
+    <text>Sont également prévus des meubles promotionnels sophistiqués consacrés au maquillage des ongles.Ces ambitions sont soutenues par les résultats d'une division qui s'en sort bien face à la concurrence.</text>
+  </sentence>
+  <sentence id="s223">
+    <text>«Nos efforts pour mieux différencier nos marques portent leurs fruits, en soin par exemple avec Mixa Peaux sensibles, Garnier Skin Naturals et L'Oréal Paris Dermo-Expertise, poursuit Hervé Navellou.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Dermo-Expertise</subject>
+        <predicate>belongsToBrand</predicate>
+        <object>L'Oréal</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s224">
+    <text>Nos performances sont bonnes en hygiène, en particulier avec Cadum, à +18% en 2012, ce qui nous permet d'être numéro un sur les gels douche.</text>
+  </sentence>
+  <sentence id="s225">
+    <text>Cette année, la division gagne des parts de marché sur toutes les catégories.»</text>
+  </sentence>
+  <sentence id="s226">
+    <text>Titre: parfums; Le figuier à l'honneur.</text>
+  </sentence>
+  <sentence id="s227">
+    <text>Chez L'Oréal Cosmétique active, la nouvelle eau fraîche de Roger &amp; Gallet propose un voyage près du massif de l'Esterel, dans une composition baptisée Fleur de Figuier (100 ml, 38,70€, avril).</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Fleur de Figuier </subject>
+        <predicate>belongsToBrand</predicate>
+        <object>Roger &amp; Gallet</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s228">
+    <text>Francis Kurkdjian (Takasago) a travaillé autour d'une évocation de la figue mêlant accents gourmands et fruités à des facettes florales et boisées.</text>
+  </sentence>
+  <sentence id="s229">
+    <text>Le lancement de Fleur de Figuier sera soutenu par une campagne presse et sur le point de vente (photographiée par Sølve Sundsbø).</text>
+  </sentence>
+  <sentence id="s230">
+    <text>Le packaging se dote d'un nouveau bouchon conçu par le designer Martin Szekely : lisse à l'extérieur, facetté à l'intérieur, surmonté du médaillon Roger &amp; Gallet.</text>
+  </sentence>
+  <sentence id="s231">
+    <text>De son côté, Lascad (L'Oréal DPGP) voyage dans le Roussillon.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Lascad</subject>
+        <predicate>belongsToDivision</predicate>
+        <object>L'Oréal DPGP</object>
+      </Relation>
+        <Relation id="r1">
+            <subject>Roussillon</subject>
+            <predicate>belongsToBrand</predicate>
+            <object>Lascad</object>
+        </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s232">
+    <text>C'est autour des bourgeons de figuier de ses coteaux et de notes florales fraîches que Michel Almairac et Sidonie Lancesseur (Robertet) ont conçu le dernier opus de Bien-Etre.Vendue en GMS, la Cologne de l'Herboriste est un hespéridé floral, avec des huiles essentielles de citron et d'orange en tête, du lait de figue, de la fève tonka, des muscs blancs et de l'huile essentielle de cèdre en fond (250 ml, 6,30€).</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>bourgeons de figuier</subject>
+        <predicate>belongsToBrand</predicate>
+        <object>Bien-Etre</object>
+      </Relation>
+        <Relation id="r2">
+            <subject>bourgeons de figuier</subject>
+            <predicate>hasFragranceCreator</predicate>
+            <object>Michel Almairac</object>
+        </Relation>
+        <Relation id="r3">
+            <subject>Cologne de l'Herboriste</subject>
+            <predicate>hasComponent</predicate>
+            <object>huiles essentielles de citron</object>
+        </Relation>
+        <Relation id="r4">
+            <subject>Cologne de l'Herboriste</subject>
+            <predicate>hasComponent</predicate>
+            <object>orange</object>
+        </Relation>
+        <Relation id="r5">
+            <subject>Cologne de l'Herboriste</subject>
+            <predicate>hasComponent</predicate>
+            <object>lait de figue</object>
+        </Relation>
+        <Relation id="r6">
+            <subject>Cologne de l'Herboriste</subject>
+            <predicate>hasComponent</predicate>
+            <object>fève tonka</object>
+        </Relation>
+        <Relation id="r7">
+            <subject>Cologne de l'Herboriste</subject>
+            <predicate>hasComponent</predicate>
+            <object>muscs blancs</object>
+        </Relation>
+        <Relation id="r8">
+            <subject>Cologne de l'Herboriste</subject>
+            <predicate>hasComponent</predicate>
+            <object>huile essentielle de cèdre</object>
+        </Relation>
+
+    </Relations>
+  </sentence>
+  <sentence id="s233">
+    <text>Titre: soins; Vichy étend ses franchises.</text>
+  </sentence>
+  <sentence id="s234">
+    <text>Avec Aqualia Thermal Effet Spa à venir en mars, la marque de L'Oréal Cosmétique active opère un rapprochement avec le spa thermal de Vichy.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Vichy</subject>
+        <predicate>belongsToDivision</predicate>
+        <object>L'Oréal Cosmétique active</object>
+      </Relation>
+        <Relation id="r2">
+            <subject>Aqualia Thermal Effet Spa</subject>
+            <predicate>belongsToBrand</predicate>
+            <object>Vichy</object>
+        </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s235">
+    <text>Deux soins enrichissent la 5e ligne en valeur sur le segment de l'hydratation en pharmacie et mettent l'accent sur les textures : un gel frais jour et une version plus onctueuse nuit.</text>
+  </sentence>
+  <sentence id="s236">
+    <text>Formulés avec de l'eau thermale, de l'acide hyaluronique et de l'Aquabioryl, actif star de la gamme, ils se distinguent aussi par leur contenance généreuse (pot 75 ml, 25,70€).</text>
+  </sentence>
+  <sentence id="s237">
+    <text>La franchise Idéalia dédiée à la peau parfaite, lancée l'an dernier (18,4% de PDM valeur à fin août 2012), se dote en avril d'une BB cream, la deuxième pour Vichy après Neovadiol Lumière, qui revendique un effet contre le teint gris en surface, à l'aide de pigments minéraux et correcteurs, et une action profonde sur la luminosité du teint, grâce aux polyphénols et à l'extrait de kombucha propre à la ligne (40 ml, 21,45€).</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>BB cream</subject>
+        <predicate>belongsToBrand</predicate>
+        <object>Vichy</object>
+      </Relation>
+        <Relation id="r2">
+            <subject>Neovadiol Lumière</subject>
+            <predicate>belongsToBrand</predicate>
+            <object>Vichy</object>
+        </Relation>
+        <Relation id="r3">
+            <subject>Neovadiol Lumière</subject>
+            <predicate>hasComponent</predicate>
+            <object>polyphénols</object>
+        </Relation>
+        <Relation id="r4">
+            <subject>Neovadiol Lumière</subject>
+            <predicate>hasComponent</predicate>
+            <object>kombucha</object>
+        </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s238">
+    <text>Titre: [Bhavesh Shah].</text>
+  </sentence>
+  <sentence id="s239">
+    <text>Bhavesh Shah a été nommé chez Firmenich VP Group,chief purchasing officerauprès de la direction générale.</text>
+  </sentence>
+  <sentence id="s240">
+    <text>Dans la maison de création depuis 2011, il avait auparavant travaillé pour P&amp;G.Vincent Carton, ex-Unilever, devient délégué général d'ECR Europe, organisme paritaire dont la mission est de définir les bonnes pratiques dans la relation industriels/ distributeurs.Greentech étoffe son équipe scientifique avec l'arrivée de Rachida Nachat-Kappes au poste de chef de projet R&amp;D et de Dojeanny Leng comme chef de projet junior.Guylaine Mercier prend la direction de la communication et de l'information du groupement des Mousquetaires.</text>
+  </sentence>
+  <sentence id="s241">
+    <text>Elle avait auparavant travaillé chez Carrefour et L'Oréal.Caroline du Pin de Saint-André, ex-Clinique, devient directrice de la communication International de Darphin (autre marque d'Estée Lauder).Kilian Hennessy a remporté le Indie Award 2013 remis par la Fragrance Foundation à un parfum de niche vendu dans moins de 50 portes aux Etats- Unis pour son Amber Oud by Kilian.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Amber Oud by Kilian</subject>
+        <predicate>belongsToBrand</predicate>
+        <object>Kilian Hennessy</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s242">
+    <text>Le jury de professionnels évaluait la qualité du jus pour 70% de la note et le packaging pour 30%.</text>
+  </sentence>
+  <sentence id="s243">
+    <text>Titre: publicité; Investissements en demi-teinte.</text>
+  </sentence>
+  <sentence id="s244">
+    <text>L'hygiène-beauté a vu ses investissements publicitaires progresser de 1,6% en 2012, à 2 Md€ bruts, selon le bilan annuel établi par Kantar Media.</text>
+  </sentence>
+  <sentence id="s245">
+    <text>Le secteur se place au 5e rang national, derrière la distribution, l'automobile, la culture et les loisirs, et l'alimentation.</text>
+  </sentence>
+  <sentence id="s246">
+    <text>Si sa progression est supérieure à celle du marché total - quasi-stable à +0,9%, pour un total de 27,9 Md€ -, elle est inférieure à celle de 2011 (+2,8%).</text>
+  </sentence>
+  <sentence id="s247">
+    <text>Il faut compter avec le désinvestissement de certains annonceurs comme Beiersdorf (-21,4%), qui a arrêté le maquillage Nivea, ou Lancôme (-14,4%), qui a porté ses efforts sur La Vie est Belle en fin d'année (12,7 M€), au détriment de Trésor (7,4 M€, -51%).Mais d'autres marques ont repris la parole massivement : Johnson &amp; Johnson a consacré 18,7 M€ au Petit Marseillais (+28,8%) pour une hausse totale de 7,3% ; Procter &amp; Gamble a surfé sur les jeux Olympiques de Londres (+15,8%, après une année 2011 à -21,8%) ; Guerlain a déployé des moyens sans précédent sur La Petite Robe Noire (+41,3% versus -16% en 2011).</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>La Vie est Belle</subject>
+        <predicate>belongsToBrand</predicate>
+        <object>Lancôme</object>
+      </Relation>
+        <Relation id="r2">
+            <subject>Trésor</subject>
+            <predicate>belongsToBrand</predicate>
+            <object>Lancôme</object>
+        </Relation>
+      <Relation id="r1">
+          <subject>Petit Marseillais</subject>
+          <predicate>belongsToBrand</predicate>
+          <object>Johnson &amp; Johnson</object>
+      </Relation>
+      <Relation id="r2">
+          <subject>La Petite Robe Noire</subject>
+          <predicate>belongsToBrand</predicate>
+          <object>Procter &amp; Gamble</object>
+      </Relation>
+  </Relations>
+  </sentence>
+  <sentence id="s248">
+    <text>Le circuit sélectif fait d'ailleurs mieux que la moyenne, à +2,9% selon Kantar Media, soit 685,8 M€.L'ensemble des annonceurs français semble avoir joué la prudence, l'effet JO et Coupe d'Europe de football n'ayant que faiblement compensé les décrochages de mai (-8,5% au global, en pleine élection présidentielle, versus un mois de mai 2011 à +10%) et de septembre (-4,3%).</text>
+  </sentence>
+  <sentence id="s249">
+    <text>Des acteurs importants, comme Carrefour, 4e annonceur français, ou Unilever, 8e, ont réduit leurs dépenses (respectivement de 8,4% et 3,4%), mais les Centres E.</text>
+  </sentence>
+  <sentence id="s250">
+    <text>Leclerc, 6es, ont eux progressé de 3,4%.</text>
+  </sentence>
+  <sentence id="s251">
+    <text>A noter la forte percée de la mode, à +10%, qui lui permet d'apparaître au 8e rang des secteurs.TOP</text>
+  </sentence>
+  <sentence id="s252">
+    <text>10 ANNONCEURS HYGIÈNE-BEAUTÉ 2012, EN VALEURAnnonceurs / Évolution 2012/2011Lascad +1%L'Oréal Paris -3%Unilever France +12,9%Gemey Maybelline Garnier +4%Procter &amp; Gamble France +15,8%Christian Dior Parfums +0,5%Beiersdorf -21,4%Chanel Parfums +17,4%Henkel France +17,6%Johnson &amp; Johnson Santé Beauté +7,3%source : Kantar Media</text>
+  </sentence>
+  <sentence id="s253">
+    <text>Titre: [parfum] féminin; Lancôme sort ses épines.</text>
+  </sentence>
+  <sentence id="s254">
+    <text>L'édition In Love de Trésor Midnight Rose de Lancôme (L'Oréal Luxe) est toujours à base de framboise acidulée, jasmin, pivoine, cèdre de Virginie, vanille et muscs.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Trésor Midnight Rose</subject>
+        <predicate>belongsToBrand</predicate>
+        <object>Lancôme</object>
+      </Relation>
+     <Relation id="r2">
+            <subject>Lancôme</subject>
+            <predicate>belongsToDivision</predicate>
+            <object>L'Oréal Luxe</object>
+        </Relation>
+        <Relation id="r3">
+            <subject>Trésor Midnight Rose</subject>
+            <predicate>hasComponent</predicate>
+            <object>muscs</object>
+        </Relation>
+        <Relation id="r4">
+            <subject>Trésor Midnight Rose</subject>
+            <predicate>hasComponent</predicate>
+            <object>jasmin</object>
+        </Relation>
+        <Relation id="r5">
+            <subject>Trésor Midnight Rose</subject>
+            <predicate>hasComponent</predicate>
+            <object>pivoine</object>
+        </Relation>
+        <Relation id="r6">
+            <subject>Trésor Midnight Rose</subject>
+            <predicate>hasComponent</predicate>
+            <object>cèdre de Virginie</object>
+        </Relation>
+        <Relation id="r7">
+            <subject>Trésor Midnight Rose </subject>
+            <predicate>hasComponent</predicate>
+            <object>vanille</object>
+        </Relation>
+
+    </Relations>
+  </sentence>
+  <sentence id="s255">
+    <text>La surprise réside dans son flacon violet, accessoirisé d'une rose violine en satin, et surtout dans son tube hérissé d'épines à la façon d'une tige de rose.</text>
+  </sentence>
+  <sentence id="s256">
+    <text>Attention à la piqûre de l'amour !promesse</text>
+  </sentence>
+  <sentence id="s257">
+    <text>Un parfum floriental accessoirisé en l'honneur de la fête des amoureux.distribution</text>
+  </sentence>
+  <sentence id="s258">
+    <text>Parfumeries, grands magasins.</text>
+  </sentence>
+  <sentence id="s259">
+    <text>En février en édition limitée</text>
+  </sentence>
+  <sentence id="s260">
+    <text>Titre: [soin] minceur; L'Oréal Paris étend sa ligne.</text>
+  </sentence>
+  <sentence id="s261">
+    <text>Sublime Body, la gamme minceur de la marque, accueille trois nouveaux produits, doublant ainsi son nombre de références.</text>
+  </sentence>
+  <sentence id="s262">
+    <text>Le soin ventre plat antirondeurs Taille de rêve contient de la caféine pour déstocker et du Skinfibrine, inspiré de la technologie textile, pour un effet lissant instantané.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Taille de rêve</subject>
+        <predicate>hasComponent</predicate>
+        <object>caféine</object>
+      </Relation>
+        <Relation id="r1">
+            <subject>Taille de rêve</subject>
+            <predicate>hasComponent</predicate>
+            <object>Skinfibrine</object>
+        </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s263">
+    <text>Le baume Fermeté sculpturale, qui combine Skinfibrine et élasto-peptides, rend la peau plus ferme et plus élastique.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>baume Fermeté sculpturale</subject>
+        <predicate>hasComponent</predicate>
+        <object>Skinfibrine</object>
+      </Relation>
+        <Relation id="r2">
+            <subject>baume Fermeté sculpturale</subject>
+            <predicate>hasComponent</predicate>
+            <object>élasto-peptides</object>
+        </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s264">
+    <text>La céramide et le collagène du lait Fermeté sculpturale hydratent et remodèlent.promesse</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>lait Fermeté sculpturale</subject>
+        <predicate>hasComponent</predicate>
+        <object>collagène</object>
+      </Relation>
+       <Relation id="r2">
+            <subject>lait Fermeté sculpturale</subject>
+            <predicate>hasComponent</predicate>
+            <object>céramide</object>
+        </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s265">
+    <text>Des soins ciblés.communication</text>
+  </sentence>
+  <sentence id="s266">
+    <text>En presse et sur Internet de février à mai.distribution</text>
+  </sentence>
+  <sentence id="s267">
+    <text>GMS.</text>
+  </sentence>
+  <sentence id="s268">
+    <text>En février</text>
+  </sentence>
+  <sentence id="s269">
+    <text>Titre: [soin] minceur; Biotherm prévient la récidive.</text>
+  </sentence>
+  <sentence id="s270">
+    <text>Avec son nouveau concentré Celluli Eraser, la marque de L'Oréal Luxe promet une action anticellulite et antirécidive.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Celluli Eraser</subject>
+        <predicate>belongsToBrand</predicate>
+        <object>L'Oréal Luxe</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s271">
+    <text>L'extrait d'algue coraline et la caféine stimulent le déstockage des graisses et préviennent la formation de nouvelles cellules graisseuses.</text>
+  </sentence>
+  <sentence id="s272">
+    <text>Le ginkgo biloba et l'escine facilitent le drainage des tissus en activant la microcirculation.</text>
+  </sentence>
+  <sentence id="s273">
+    <text>L'acide salicylique lisse le grain de peau et réduit l'aspect peau d'orange.promesse</text>
+  </sentence>
+  <sentence id="s274">
+    <text>-26% de cellulite visible après quatre semaines de traitement (scorage clinique sur 54 femmes, application deux fois par jour pendant un mois).distribution</text>
+  </sentence>
+  <sentence id="s275">
+    <text>Parfumeries, grands magasins, pharmacies.</text>
+  </sentence>
+  <sentence id="s276">
+    <text>En mars</text>
+  </sentence>
+  <sentence id="s277">
+    <text>Titre: [soin] correction; Erborian livre sa CC crème.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>CC crème</subject>
+        <predicate>belongsToBrand</predicate>
+        <object>Erborian</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s278">
+    <text>Les CC creams, ces crèmes venues de Corée qui corrigent les imperfections, commencent à conquérir la France.</text>
+  </sentence>
+  <sentence id="s279">
+    <text>Après L'Oréal Paris (voir CM n°135, p.</text>
+  </sentence>
+  <sentence id="s280">
+    <text>36), Erborian proposera la sienne en mars pour une exclusivité de trois mois chez Sephora.</text>
+  </sentence>
+  <sentence id="s281">
+    <text>La CC Crème HD de la marque, qui a fait connaître la BB crème en France, contient de la Centella asiatica aux propriétés anti-âge, alliée à de l'adénosine, de la vitamine B3 et un SPF 45.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>CC Crème HD</subject>
+        <predicate>hasComponent</predicate>
+        <object>Centella asiatica</object>
+      </Relation>
+        <Relation id="r2">
+            <subject>CC Crème HD</subject>
+            <predicate>hasComponent</predicate>
+            <object>adénosine</object>
+        </Relation>
+        <Relation id="r3">
+            <subject>CC Crème HD</subject>
+            <predicate>hasComponent</predicate>
+            <object>vitamine B3</object>
+        </Relation>
+        <Relation id="r4">
+            <subject>CC Crème HD</subject>
+            <predicate>hasComponent</predicate>
+            <object>SPF 45</object>
+        </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s282">
+    <text>Des «CC pigments» contrôleurs de couleur rehaussent la teinte naturelle de la peau.promesse</text>
+  </sentence>
+  <sentence id="s283">
+    <text>Hydratation, teint lumineux, prévention anti-âge.distribution</text>
+  </sentence>
+  <sentence id="s284">
+    <text>Exclusivité Sephora de mars à mai</text>
+  </sentence>
+  <sentence id="s285">
+    <text>Titre: animation; Les capsules du maquillage.</text>
+  </sentence>
+  <sentence id="s286">
+    <text>Mode et beauté sont plus que jamais liées et la seconde prend bien souvent exemple sur la première.</text>
+  </sentence>
+  <sentence id="s287">
+    <text>Dernier emprunt en date : les collections capsules à l'instar de H&amp;M associé depuis plusieurs saisons à de grands noms de la couture, de Gap qui a ouvert ses portes à Roland Mouret ou Valentino.</text>
+  </sentence>
+  <sentence id="s288">
+    <text>Ces lignes éphémères lancées hors du calendrier traditionnel viennent animer les marques hors saison.</text>
+  </sentence>
+  <sentence id="s289">
+    <text>Si ce phénomène se développe dans le maquillage, «c'est parce qu'il permet à la marque de vivre en dehors du rythme classique et de s'inscrire dans la fast fashion», remarque Élodie Nigay, chef de projet marketing pour Carlin International.</text>
+  </sentence>
+  <sentence id="s290">
+    <text>Ce terme, lui aussi emprunté à la couture, désigne une offre à durée limitée et renouvelée fréquemment.</text>
+  </sentence>
+  <sentence id="s291">
+    <text>MAC (groupe Lauder) est un habitué de l'exercice et signe fréquemment des collaborations avec Beth Ditto, Carine Roitfeld...Après la styliste américaine L'Wren Scott, c'est la créatrice de minaudières Olympia Le-Tan qui devrait travailler avec Lancôme (L'Oréal Luxe).</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Lancôme</subject>
+        <predicate>belongsToDivision</predicate>
+        <object>L'Oréal Luxe</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s292">
+    <text>Dans le même groupe, Shu Uemura a créé l'événement en s'associant avec Karl Lagerfeld pour sa collection de Noël.</text>
+  </sentence>
+  <sentence id="s293">
+    <text>Choisir un styliste extérieur va permettre à chaque partie de se nourrir l'une l'autre.</text>
+  </sentence>
+  <sentence id="s294">
+    <text>«Lorsque MAC fait appel à Gareth Pugh, un créateur qui monte, cela permet à chacun d'élargir sa clientèle et de bénéficier d'une plus grande visibilité», précise la chef de projet.</text>
+  </sentence>
+  <sentence id="s295">
+    <text>Autre possibilité : confier les rênes à son égérie en titre, comme lorsque Givenchy (LVMH) crée une ligne de rouges à lèvres pour l'actrice Liv Tyler ou lorsque Dior (LVMH) conçoit un Rouge Dior Nude Grège pour la comédienne Natalie Portman.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Givenchy</subject>
+        <predicate>hasRepresentative</predicate>
+        <object>Liv Tyler</object>
+      </Relation>
+        <Relation id="r2">
+            <subject>LVMH</subject>
+            <predicate>hasRepresentative</predicate>
+            <object>Liv Tyler</object>
+        </Relation>
+        <Relation id="r3">
+            <subject>Rouge Dior Nude Grège</subject>
+            <predicate>hasRepresentative</predicate>
+            <object>Natalie Portman</object>
+        </Relation>
+        <Relation id="r4">
+            <subject>Dior</subject>
+            <predicate>hasRepresentative</predicate>
+            <object>Natalie Portman</object>
+        </Relation>
+        <Relation id="r5">
+            <subject>LVMH</subject>
+            <predicate>hasRepresentative</predicate>
+            <object>Natalie Portman</object>
+        </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s296">
+    <text>Celles-ci «sortent alors de leur rôle d'image, tandis que la marque renforce sa position», analyse Élodie Nigay.</text>
+  </sentence>
+  <sentence id="s297">
+    <text>Titre: [maquillage] yeux; La mise en beauté pédagogique de Lancôme.</text>
+  </sentence>
+  <sentence id="s298">
+    <text>Déclinée en trois looks - Doll Eyes, Star Eyes, Drama Eyes -, du plus naturel au plus sophistiqué, et accompagnée d'un mode d'emploi en cinq étapes, la nouvelle gamme Hypnôse Palette de la marque de L'Oréal Luxe facilite le choix des clientes.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Hypnôse Palette </subject>
+        <predicate>belongsToBrand</predicate>
+        <object>L'Oréal Luxe</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s299">
+    <text>Quatre harmonies sont disponibles par look, contenant chacune quatre couleurs et un eye-liner.</text>
+  </sentence>
+  <sentence id="s300">
+    <text>La technologie «Wet» permet une forte concentration des couleurs des pigments et des nacres, qui peuvent s'appliquer secs ou mouillés.</text>
+  </sentence>
+  <sentence id="s301">
+    <text>Les applicateurs, plus précis, sont aimantés pour ne pas tomber du boîtier, et glissent aisément de leur compartiment.</text>
+  </sentence>
+  <sentence id="s302">
+    <text>Le fermoir aussi est aimanté pour un geste sophistiqué.promesse</text>
+  </sentence>
+  <sentence id="s303">
+    <text>Un maquillage de pro à la portée de toutes.distribution</text>
+  </sentence>
+  <sentence id="s304">
+    <text>Parfumeries, grands magasins, lancome.fr.</text>
+  </sentence>
+  <sentence id="s305">
+    <text>En mars</text>
+  </sentence>
+  <sentence id="s306">
+    <text>Titre: communication; L'Oréal Paris choisit Julianne Moore.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>L'Oréal Paris</subject>
+        <predicate>hasRepresentative</predicate>
+        <object>Julianne Moore</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s307">
+    <text>L'ambassadrice de la marque sera sous les feux des projecteurs en 2013 avec la sortie du très attendu film Carrie, adapté du roman de Stephen King.</text>
+  </sentence>
+  <sentence id="s308">
+    <text>Julianne Moore sera aussi le visage du nouveau soin anti-âge de L'Oréal Paris, Age Perfect Renaissance Cellulaire, lancé en décembre prochain.</text>
+    <Relations>
+      <Relation id="r1">
+          <subject>L'Oréal Paris</subject>
+          <predicate>hasRepresentative</predicate>
+          <object>Julianne Moore</object>
+      </Relation>
+        <Relation id="r2">
+            <subject>Age Perfect Renaissance Cellulaire</subject>
+            <predicate>hasRepresentative</predicate>
+            <object>Julianne Moore</object>
+        </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s309">
+    <text>Titre: résultats; L'Oréal confiant pour le dernier trimestre.</text>
+  </sentence>
+  <sentence id="s310">
+    <text>Jean-Paul Agon, le PDG de L'Oréal, s'attend à un 4e trimestre 2012 meilleur que le 3e - marqué par une hausse du chiffre d'affaires de 11,8% à 5,5 Md€ -, grâce notamment au lancement des parfums La Vie est Belle de Lancôme et Manifesto d'Yves Saint Laurent.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>La Vie est Belle</subject>
+        <predicate>belongsToBrand</predicate>
+        <object>Lancôme</object>
+      </Relation>
+        <Relation id="r2">
+            <subject>Manifesto</subject>
+            <predicate>belongsToBrand</predicate>
+            <object>Yves Saint Laurent</object>
+        </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s311">
+    <text>Sur les neuf premiers mois de l'année, le groupe a réalisé un CA de 16,7 Md€, en croissance de 10,9%.</text>
+  </sentence>
+  <sentence id="s312">
+    <text>A +17,4% pour un CA de 4 Md€, «le luxe croît plus vite que le marché mondial, qui est à +6%.</text>
+  </sentence>
+  <sentence id="s313">
+    <text>L'année a bien débuté en Asie et en travel retail, puis a connu une décélération, mais la dynamique reste saine».</text>
+  </sentence>
+  <sentence id="s314">
+    <text>La division Produits grand public est à +9% (8 Md€), les Produits professionnels et la Cosmétique active à +7,2% (respectivement 2,2 Md€ et 1,2 Md€).</text>
+  </sentence>
+  <sentence id="s315">
+    <text>En termes de régions, l'Europe de l'Ouest représente 5,6 Md€ de CA (+1,7%), l'Amérique du Nord, 3,9 Md€ (+19,4%), l'Asie-Pacifique, où L'Oréal vient d'ouvrir en Indonésie sa plus grande usine au monde, 3,2 Md€ (+20,9% malgré un ralentissement en Corée).«L'Europe</text>
+  </sentence>
+  <sentence id="s316">
+    <text>de l'Ouest montre un visage contrasté avec des pays du Nord - incluant la France - entre +1% et +2%, et le Sud, Espagne, Italie, Portugal, Grèce, entre -3% et -4%.</text>
+  </sentence>
+  <sentence id="s317">
+    <text>Mais la part de l'Europe du Sud dans notre activité diminue : de 11% il y a trois ans à 8% aujourd'hui», précise Jean-Paul Agon.</text>
+  </sentence>
+  <sentence id="s318">
+    <text>Pour l'ensemble de l'année, le PDG maintient sa prévision d'une progression du marché mondial des cosmétiques de 4%.</text>
+  </sentence>
+  <sentence id="s319">
+    <text>Titre: solaires; L'Oréal Paris sublime le soleil.</text>
+  </sentence>
+  <sentence id="s320">
+    <text>Avec Sublime Sun, L'Oréal Paris associe six filtres, dont le Mexoryl sX et Xl, pour la protection, le SkinElixir et des micronacres dorées pour un bronzage optimisé et l'huile d'argan pour l'hydratation.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Sublime Sun</subject>
+        <predicate>belongsToBrand</predicate>
+        <object>L'Oréal Paris</object>
+      </Relation>
+        <Relation id="r2">
+            <subject>Sublime Sun</subject>
+            <predicate>hasComponent</predicate>
+            <object>SkinElixir</object>
+        </Relation>
+        <Relation id="r3">
+            <subject>Sublime Sun</subject>
+            <predicate>hasComponent</predicate>
+            <object>Mexoryl sX</object>
+        </Relation>
+        <Relation id="r4">
+            <subject>Sublime Sun</subject>
+            <predicate>hasComponent</predicate>
+            <object>Xl</object>
+        </Relation>
+        <Relation id="r5">
+            <subject>Sublime Sun</subject>
+            <predicate>hasComponent</predicate>
+            <object>micronacres dorées</object>
+        </Relation>
+        <Relation id="r6">
+            <subject>Sublime Sun</subject>
+            <predicate>hasComponent</predicate>
+            <object>huile d'argan</object>
+        </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s321">
+    <text>Vendus en GMs, le lait bronzage idéal 200 ml est proposé en spF 20, 30 et 50 (de 13,20€ à 14,90€ ce mois-ci), le spray 200 ml en février en spF 15, 30, 50+ (de 13,40€ à 14,90€) tout comme l'Huile sèche Bronzage mythique 150 ml (spF 15, 20, 30, de 10,70€ à 12,40€) qui ne contient pas, quant à elle, de SkinElixir.</text>
+  </sentence>
+  <sentence id="s322">
+    <text>S'y ajoute une BB cream solaire 75 ml (spF 30, 11,90€).</text>
+  </sentence>
+  <sentence id="s323">
+    <text>Les produits sont parfumés : aloe vera et lait de coco en tête, ylang-ylang et pivoine en coeur, lait de figuier et fève tonka en fond.</text>
+  </sentence>
+  <sentence id="s324">
+    <text>Une campagne presse et affichage avec Doutzen Kroes comme égérie est prévue en juin et juillet.</text>
+  </sentence>
+  <sentence id="s325">
+    <text>L'Oréal Paris revendique 10,6% de pdM en valeur (cumul courant 2012), autobronzants compris.</text>
+  </sentence>
+  <sentence id="s326">
+    <text>Titre: CosmétiqueStar; Une soirée festive.</text>
+  </sentence>
+  <sentence id="s327">
+    <text>Le 25 septembre, sur la péniche La Plateforme à Lyon, 250 conseiller(e)s de beauté ont assisté à la sixième édition des CosmétiqueStar.</text>
+  </sentence>
+  <sentence id="s328">
+    <text>Une soirée organisée par CosmétiqueMag en partenariat avec les marques Hello Kitty, Kimmi (Koto Parfums), John Galliano (Perfume Holding) et Lancôme (L'Oréal Luxe).</text>
+    <Relations>
+        <Relation id="r1">
+            <subject>Kimmi</subject>
+            <predicate>belongsToDivision</predicate>
+            <object>Koto Parfums</object>
+        </Relation>
+        <Relation id="r2">
+            <subject>John Galliano</subject>
+            <predicate>belongsToDivision</predicate>
+            <object>Perfume Holding</object>
+        </Relation>
+        <Relation id="r3">
+            <subject>Lancôme</subject>
+            <predicate>belongsToDivision</predicate>
+            <object>L'Oréal Luxe</object>
+        </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s329">
+    <text>Les temps forts en images.Les marques partenaires ont reçu les conseillères sur leur stand pour évoquer leurs grands lancementssur scène, Un tirage au sort a mis en jeu des lots prestigieux</text>
+  </sentence>
+  <sentence id="s330">
+    <text>Titre: communication; Cacharel fête la Saint-Valentin sur Facebook.</text>
+  </sentence>
+  <sentence id="s331">
+    <text>Amor Amor de Cacharel, l'un des parfums les plus vendus de L'Oréal Luxe, a organisé un concours sur Facebook pour illustrer le coffret Saint-Valentin 2013, sur le thème «Love is everywhere».</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Amor Amor</subject>
+        <predicate>belongsToBrand</predicate>
+        <object>Cacharel</object>
+      </Relation>
+      <Relation id="r2">
+          <subject>Cacharel</subject>
+          <predicate>belongsToDivision</predicate>
+          <object>L'Oréal Luxe</object>
+      </Relation>
+  </Relations>
+  </sentence>
+  <sentence id="s332">
+    <text>Mille trois cents créations ont été postées du monde entier, dont 500 pour la France, et ont généré plus de 220 000 votes.</text>
+  </sentence>
+  <sentence id="s333">
+    <text>La marque a retenu 20 créations parmi les 100 plus populaires et les prénoms des lauréates se retrouvent apposés sur cette édition limitée Amor Amor by fans, mise en vente en février.</text>
+  </sentence>
+  <sentence id="s334">
+    <text>La saga de cette cocréation sera relatée sur la page Facebook d'Amor Amor.</text>
+  </sentence>
+  <sentence id="s335">
+    <text>Titre: [soin] hommes; Vichy purifie....</text>
+  </sentence>
+  <sentence id="s336">
+    <text>La marque de L'Oréal Cosmé-tique active propose une offre baptisée Code Pureté.</text>
+    <Relations>
+      <Relation id="r1">
+        <subject>Code Pureté</subject>
+        <predicate>belongsToBrand</predicate>
+        <object>L'Oréal Cosmé-tique</object>
+      </Relation>
+    </Relations>
+  </sentence>
+  <sentence id="s337">
+    <text>Comme son nom l'indique, celle-ci s'attaque à la peau grasse, aux imperfections et plus particulièrement à la folliculite, autrement dit les poils de barbe incarnés.</text>
+  </sentence>
+  <sentence id="s338">
+    <text>Trois produits composent la ligne : un gel nettoyant, une mousse de rasage et un fluide hydratant.</text>
+  </sentence>
+  <sentence id="s339">
+    <text>Ils contiennent une formule à effet peeling brevetée mêlant LHA, acide salicylique et acide glycolique.promesse</text>
+  </sentence>
+  <sentence id="s340">
+    <text>Une peau purifiée et des imperfections atténuées.communication</text>
+  </sentence>
+  <sentence id="s341">
+    <text>Vitrines en magasins.distribution</text>
+  </sentence>
+  <sentence id="s342">
+    <text>Pharmacies, parapharmacies.</text>
+  </sentence>
+  <sentence id="s343">
+    <text>En novembre</text>
+  </sentence>
+    <sentence id="s344">
+        <text>Après Giò (1992) et Acqua di Giò Femme (1995), L'Oréal lance Mania, un "encens frais" composé par Jacques Cavallier, dans un flacon minimaliste de Fabien Baron.</text>
+        <Relations>
+            <Relation id="r1">
+                <subject>Mania</subject>
+                <predicate>hasFragranceCreator</predicate>
+                <object>Jacques Cavallier</object>
+            </Relation>
+        </Relations>
+    </sentence>
+    <sentence id="s345">
+        <text>Un masculin suivra en 2002.</text>
+    </sentence>
+    <sentence id="s346">
+        <text>La division Produits de luxe de L'Oréal s'enrichit d'une signature de mode luxueuse et épurée.</text>
+        <Relations>
+            <Relation id="r1">
+                <subject>Produits de luxe</subject>
+                <predicate>belongsToGroup</predicate>
+                <object>L'Oréal</object>
+            </Relation>
+        </Relations>
+    </sentence>
+    <sentence id="s347">
+        <text>Après l'annonce de la prochaine acquisition d'Yves Saint Laurent, le numéro un mondial renforce ses positions dans les parfums "couture".</text>
+    </sentence>
+    <sentence id="s348">
+        <text>Ambassadrices de Lancôme, les actrices Laura Morante et Juliette Binoche nous livrent leur point de vue sur la beauté.</text>
+        <Relations>
+            <Relation id="r1">
+                <subject>Lancôme</subject>
+                <predicate>hasRepresentative</predicate>
+                <object>Laura Morante</object>
+            </Relation>
+            <Relation id="r2">
+                <subject>Lancôme</subject>
+                <predicate>hasRepresentative</predicate>
+                <object>Juliette Binoche</object>
+            </Relation>
+        </Relations>
+    </sentence>
+    <sentence id="s349">
+        <text>La marque des Produits grand public de L'Oréal, qui a opté pour le slogan "Prends soin de toi", renforce son propos dans sa communication.</text>
+        <Relations>
+            <Relation id="r1">
+                <subject>Produits grand public</subject>
+                <predicate>belongsToGroup</predicate>
+                <object>L'Oréal</object>
+            </Relation>
+        </Relations>
+    </sentence>
+    <sentence id="ss350">
+        <text>Formulé à base du Dermobiotique et de vitamine B 8, co-enzyme qui renforce l'énergie cellulaire, CelléBiotic revendique une texture confort longue durée.</text>
+        <Relations>
+            <Relation id="r1">
+                <subject>CelléBiotic</subject>
+                <predicate>hasComponent</predicate>
+                <object>Dermobiotique</object>
+            </Relation>
+            <Relation id="r2">
+                <subject>CelléBiotic</subject>
+                <predicate>hasComponent</predicate>
+                <object>vitamine B 8</object>
+            </Relation>
+            <Relation id="r3">
+                <subject>CelléBiotic</subject>
+                <predicate>hasComponent</predicate>
+                <object>co-enzyme</object>
+            </Relation>
+        </Relations>
+    </sentence>
+    <sentence id="s351">
+        <text>Pour ce faire L'Oréal Paris compte sur ses égéries, plus que jamais choisies pour exprimer la beauté dans sa diversité, comme Rachida Brakni et tout dernièrement la Chinoise Zilin Zhang, Miss Monde 2007, qui sera l'ambassadrice de la marque en Asie (hors Japon).</text>
+        <Relations>
+            <Relation id="r1">
+                <subject>L'Oréal Paris</subject>
+                <predicate>hasRepresentative</predicate>
+                <object>Rachida Brakni</object>
+            </Relation>
+            <Relation id="r2">
+                <subject>L'Oréal Paris</subject>
+                <predicate>hasRepresentative</predicate>
+                <object>Zilin Zhang</object>
+            </Relation>
+        </Relations>
+    </sentence>
+    <sentence id="s352">
+        <text>La marque de L'Oréal lance Parisienne en eau de toilette retravaillée par Sophia Grojsman et Sophie Labbé (IFF) dans une version allégée qui lui donne un côté fusant et frais, le tout dans un flacon plus élancé (50 et 90 ml, 62€ et 79€).</text>
+        <Relations>
+            <Relation id="r1">
+                <subject>Parisienne</subject>
+                <predicate>hasFragranceCreator</predicate>
+                <object>Sophia Grojsman</object>
+            </Relation>
+            <Relation id="r2">
+                <subject>Parisienne</subject>
+                <predicate>hasFragranceCreator</predicate>
+                <object>Sophie Labbé</object>
+            </Relation>
+        </Relations>
+    </sentence>
+    <sentence id="s353">
+        <text>Par ailleurs, Paris fait l'objet d'une nouvelle déclinaison éphémère autour de la rose - signée Sophia Grojsman et Dominique Ropion (I FF).</text>
+        <Relations>
+            <Relation id="r1">
+                <subject>Paris</subject>
+                <predicate>hasFragranceCreator</predicate>
+                <object>Sophia Grojsman</object>
+            </Relation>
+            <Relation id="r2">
+                <subject>Paris</subject>
+                <predicate>hasFragranceCreator</predicate>
+                <object>Dominique Ropion</object>
+            </Relation>
+            <Relation id="r3">
+                <subject>Paris</subject>
+                <predicate>hasComponent</predicate>
+                <object>rose</object>
+            </Relation>
+        </Relations>
+    </sentence>
+    <sentence id="s354">
+        <text>La licence de L'Oréal DPL s'enrichira en juin dAcqua di Gioia (EdP 30, 50 et 100 ml, 35€, 53€ et ,5€).</text>
+        <Relations>
+            <Relation id="r1">
+                <subject>test</subject>
+                <predicate>hasFragranceCreator</predicate>
+                <object>test</object>
+            </Relation>
+        </Relations>
+    </sentence>
+    <sentence id="s355">
+        <text>Signé par Dominique Ropion, Anne Flipo et Loc Dong (IFF), ce jus qui s'ouvre sur des notes mentholées et zestées est inspiré par la mer et la terre, d'où le jasmin d'eau pour sa facette aquatique et un fond Cèdre Coeur de LMR (I FF) avec du sucre roux et du labdanum.</text>
+    </sentence>
+    <sentence id="s356">
+        <text>Le lancement sera soutenu dans la presse, sur internet et avec de l'affichage.</text>
+    </sentence>
+    <sentence id="s357">
+        <text>En 2009, Olivier Polge, 35 ans, a notamment cosigné Only the Brave de Diesel avec Aliénor Massenet et Pierre Wargnye ainsi que Eau Mega de Viktor &amp; Rolf avec Carlos Benaïm.</text>
+        <Relations>
+            <Relation id="r1">
+                <subject>Only the Brave de Diesel</subject>
+                <predicate>hasFragranceCreator</predicate>
+                <object>Olivier Polge</object>
+            </Relation>
+            <Relation id="r2">
+                <subject>Only the Brave de Diesel</subject>
+                <predicate>hasFragranceCreator</predicate>
+                <object>Aliénor Massenet</object>
+            </Relation>
+            <Relation id="r3">
+                <subject>Only the Brave de Diesel</subject>
+                <predicate>hasFragranceCreator</predicate>
+                <object>Pierre Wargnye</object>
+            </Relation>
+            <Relation id="r4">
+                <subject>Only the Brave de Diesel</subject>
+                <predicate>belongsToBrand</predicate>
+                <object>Diesel</object>
+            </Relation>
+            <Relation id="r5">
+                <subject>Eau Mega</subject>
+                <predicate>belongsToBrand</predicate>
+                <object>Viktor &amp; Rolf</object>
+            </Relation>
+            <Relation id="r6">
+                <subject>Eau Mega</subject>
+                <predicate>hasFragranceCreator</predicate>
+                <object>Olivier Polge</object>
+            </Relation>
+            <Relation id="r7">
+                <subject>Eau Mega</subject>
+                <predicate>hasFragranceCreator</predicate>
+                <object>Carlos Benaïm</object>
+            </Relation>
+
+        </Relations>
+    </sentence>
+    <sentence id="s358">
+        <text>Cette année, Allergan, découvreur du botox, lance Latisse (3), incarné par Brooke Shields.</text>
+        <Relations>
+            <Relation id="r1">
+                <subject>Latisse</subject>
+                <predicate>hasRepresentative</predicate>
+                <object>Brooke Shields</object>
+            </Relation>
+        </Relations>
+    </sentence>
+    <sentence id="s359">
+        <text>Love Etc la prochaine EdP de The Body Shop (fin octobre, 28€ les 50 ml et 20€ les 30 ml) a été conçue par Dominique Ropion (IFF) avec un jasmin très présent associé en fond à la vanille et au santal.</text>
+        <Relations>
+            <Relation id="r1">
+                <subject>Love Etc</subject>
+                <predicate>hasFragranceCreator</predicate>
+                <object>Dominique Ropion</object>
+            </Relation>
+            <Relation id="r2">
+                <subject>Love Etc</subject>
+                <predicate>hasComponent</predicate>
+                <object>vanille</object>
+            </Relation>
+            <Relation id="r3">
+                <subject>Love Etc</subject>
+                <predicate>hasComponent</predicate>
+                <object>jasmin</object>
+            </Relation>
+        </Relations>
+    </sentence>
+    <sentence id="s360">
+        <text>Monica Bellucci reste l'égérie de Rouge Dior sous l'objectif de Tyen.</text>
+        <Relations>
+            <Relation id="r1">
+                <subject>Rouge Dior</subject>
+                <predicate>hasRepresentative</predicate>
+                <object>Monica Bellucci</object>
+            </Relation>
+        </Relations>
+    </sentence>
+    <sentence id="s361">
+        <text>Ils intègrent la gamme Color Riche Sérum anti-âge grâce au Pro-Xylane et à l'acide hyaluronique symbolisée par Linda Evangelista et destinée aux quadras.</text>
+        <Relations>
+            <Relation id="r1">
+                <subject>Color Riche Sérum</subject>
+                <predicate>hasRepresentative</predicate>
+                <object>Linda Evangelista</object>
+            </Relation>
+            <Relation id="r2">
+                <subject>Color Riche Sérum</subject>
+                <predicate>hasComponent</predicate>
+                <object>Pro-Xylane</object>
+            </Relation>
+            <Relation id="r3">
+                <subject>Color Riche Sérum</subject>
+                <predicate>hasComponent</predicate>
+                <object>acide hyaluronique</object>
+            </Relation>
+
+        </Relations>
+    </sentence>
+    <sentence id="s362">
+        <text>Dans le championnat 2010 des déos qui promet d'être disputé, Men Expert (L'Oréal Paris) fait entrer sa nouvelle recrue, un certain Eric Cantona..., époux par ailleurs d'une autre égérie de la maison, Rachida Brakni.</text>
+        <Relations>
+            <Relation id="r1">
+                <subject>Men Expert</subject>
+                <predicate>hasRepresentative</predicate>
+                <object>Eric Cantona</object>
+            </Relation>
+            <Relation id="r2">
+                <subject>L'Oréal Paris</subject>
+                <predicate>hasRepresentative</predicate>
+                <object>Eric Cantona</object>
+            </Relation>
+            <Relation id="r3">
+                <subject>Men Expert</subject>
+                <predicate>belongsToBrand</predicate>
+                <object>L'Oréal Paris</object>
+            </Relation>
+        </Relations>
+    </sentence>
+    <sentence id="s363">
+        <text>Elle a la bouche de son père, les yeux de sa mère et de l'énergie à revendre.</text>
+        <Relations>
+            <Relation id="r1">
+                <subject>test</subject>
+                <predicate>hasFragranceCreator</predicate>
+                <object>test</object>
+            </Relation>
+        </Relations>
+    </sentence>
+    <sentence id="s364">
+        <text>Georgia May Jagger, fille de Mick Jagger et Jerry Hall, est la nouvelle égérie Rimmel, aux côtés de Kate Moss, Sophie Ellis-Bextor, Lily Cole et Coco Rocha.</text>
+        <Relations>
+            <Relation id="r1">
+                <subject>Rimmel</subject>
+                <predicate>hasRepresentative</predicate>
+                <object>Georgia May Jagger</object>
+            </Relation>
+            <Relation id="r2">
+                <subject>Rimmel</subject>
+                <predicate>hasRepresentative</predicate>
+                <object>Kate Moss</object>
+            </Relation>
+            <Relation id="r3">
+                <subject>Rimmel</subject>
+                <predicate>hasRepresentative</predicate>
+                <object>Sophie Ellis-Bextor</object>
+            </Relation>
+            <Relation id="r4">
+                <subject>Rimmel</subject>
+                <predicate>hasRepresentative</predicate>
+                <object>Lily Cole</object>
+            </Relation>
+            <Relation id="r5">
+                <subject>Rimmel</subject>
+                <predicate>hasRepresentative</predicate>
+                <object>Coco Rocha</object>
+            </Relation>
+        </Relations>
+    </sentence>
+    <sentence id="s365">
+        <text>Autre force, ses égéries : outre le partenariat historique (2001) avec la désormais très parisienne Kate Moss, Rimmel mise sur des ambassadrices icônes, ou en passe de le devenir, comme en témoignent les signatures 2010 : la top Coco Rocha et Georgia MayJagger, "fille de".</text>
+        <Relations>
+            <Relation id="r1">
+                <subject>Rimmel</subject>
+                <predicate>hasRepresentative</predicate>
+                <object>Kate Moss</object>
+            </Relation>
+            <Relation id="r2">
+                <subject>Rimmel</subject>
+                <predicate>hasRepresentative</predicate>
+                <object>Coco Rocha</object>
+            </Relation>
+            <Relation id="r3">
+                <subject>Rimmel</subject>
+                <predicate>hasRepresentative</predicate>
+                <object>Georgia May Jagger</object>
+            </Relation>
+
+        </Relations>
+    </sentence>
+    <sentence id="s366">
+        <text>Perfect Slim Coach Minceur de L'Oréal Paris contient de la caféine, qui accélère la dégrada- tion des graisses, et un complexe Cicaplex réducteur de vergetures.</text>
+        <Relations>
+            <Relation id="r1">
+                <subject>Perfect Slim Coach Minceur</subject>
+                <predicate>hasComponent</predicate>
+                <object>caféine</object>
+            </Relation>
+            <Relation id="r2">
+                <subject>Perfect Slim Coach Minceur</subject>
+                <predicate>hasComponent</predicate>
+                <object>Cicaplex</object>
+            </Relation>
+            <Relation id="r3">
+                <subject>Perfect Slim Coach Minceur</subject>
+                <predicate>belongsToBrand</predicate>
+                <object>L'Oréal Paris</object>
+            </Relation>
+        </Relations>
+    </sentence>
+    <sentence id="s367">
+        <text>Les rayons des GMS proposent maintenant également, dans une galénique mousseuse, Mat'Morphose de L'Oréal Paris avec Diane Kruger pour égérie, la dernière porte-parole recrutée par la marque.</text>
+        <Relations>
+            <Relation id="r1">
+                <subject>Mat'Morphose</subject>
+                <predicate>belongsToBrand</predicate>
+                <object>L'Oréal Paris</object>
+            </Relation>
+            <Relation id="r2">
+                <subject>Mat'Morphose</subject>
+                <predicate>hasRepresentative</predicate>
+                <object>Diane Kruger</object>
+            </Relation>
+            <Relation id="r3">
+                <subject>L'Oréal Paris</subject>
+                <predicate>hasRepresentative</predicate>
+                <object>Diane Kruger</object>
+            </Relation>
+        </Relations>
+    </sentence>
+    <sentence id="s368">
+        <text>Le chiffre d'affaires de la division Produits grand public du groupe L'Oréal croît de 1% à données comparables.</text>
+        <Relations>
+            <Relation id="r1">
+                <subject>Produits grand public</subject>
+                <predicate>belongsToGroup</predicate>
+                <object>L'Oréal</object>
+            </Relation>
+        </Relations>
+    </sentence>
+    <sentence id="s369">
+        <text>Lancôme met en pratique ces résultats à travers une nouvelle gamme luxueuse, Absolue Precious Cells.</text>
+        <Relations>
+            <Relation id="r1">
+                <subject>Absolue Precious Cells</subject>
+                <predicate>belongsToBrand</predicate>
+                <object>Lancôme</object>
+            </Relation>
+        </Relations>
+    </sentence>
+    <sentence id="s370">
+        <text>Kate Moss chez YSL, Uma Thurman chez Givenchy...</text>
+        <Relations>
+            <Relation id="r1">
+                <subject>YSL</subject>
+                <predicate>hasRepresentative</predicate>
+                <object>Kate Moss</object>
+            </Relation>
+            <Relation id="r2">
+                <subject>Givenchy</subject>
+                <predicate>hasRepresentative</predicate>
+                <object>Uma Thurman </object>
+            </Relation>
+        </Relations>
+    </sentence>
+    <sentence id="s371">
+        <text>Les lancements féminins se poursuivent en beauté.</text>
+    </sentence>
+    <sentence id="s372">
+        <text>Simplement baptisée Parisienne, cette eau de parfum, composée par Sophia Grojsman et Sophie Labbé (IFF), s'ouvre sur un accord vinyle en clin d'oeil au vernis à ongles.</text>
+        <Relations>
+            <Relation id="r1">
+                <subject>Parisienne</subject>
+                <predicate>hasFragranceCreator</predicate>
+                <object>Sophia Grojsman</object>
+            </Relation>
+            <Relation id="r2">
+                <subject>Parisienne</subject>
+                <predicate>hasFragranceCreator</predicate>
+                <object>Sophie Labbé</object>
+            </Relation>
+        </Relations>
+    </sentence>
+    <sentence id="s373">
+        <text>Kate Moss, égérie de la marque, incarne cette Parisienne d'adoption dans un film publicitaire mis en scène par Fabien Baron.</text>
+        <Relations>
+            <Relation id="r1">
+                <subject>Parisienne</subject>
+                <predicate>hasRepresentative</predicate>
+                <object>Kate Moss</object>
+            </Relation>
+        </Relations>
+    </sentence>
+    <sentence id="s374">
+        <text>Eau Mega C'est avec ce joli jeu de mots qui annonce clairement la couleur - un floral très vert à la fraîcheur évidemment aquatique signé Olivier Polge et Carlos Benaïm (IFF) - que L'Oréal Produits de luxe lance, quatre ans après Flowerbomb, sa nouvelle EdT (30, 50 et 75 ml, 52, 72 et 90€).</text>
+        <Relations>
+            <Relation id="r1">
+                <subject>Eau Mega</subject>
+                <predicate>hasFragranceCreator</predicate>
+                <object>Olivier Polge</object>
+            </Relation>
+            <Relation id="r2">
+                <subject>Eau Mega</subject>
+                <predicate>hasFragranceCreator</predicate>
+                <object>Carlos Benaïm</object>
+            </Relation>
+        </Relations>
+    </sentence>
+    <sentence id="s375">
+        <text>La marque a de nouveau fait appel à Sophia Grojsman, la créatrice de Paris en 1983, et à Sophie Labbé (IFF) pour son prochain floral.</text>
+        <Relations>
+            <Relation id="r1">
+                <subject>Paris</subject>
+                <predicate>hasFragranceCreator</predicate>
+                <object>Sophia Grojsman</object>
+            </Relation>
+        </Relations>
+    </sentence>
+    <sentence id="s376">
+        <text>Une campagne d'envergure, à partir du 24 août, en presse, télévision, internet, affichage et sans doute de l'outdoor met en scène une Kate Moss, Parisienne d'adoption dont on devine qu'elle vient de passer une nuit blanche.</text>
+        <Relations>
+            <Relation id="r1">
+                <subject>Parisienne</subject>
+                <predicate>hasRepresentative</predicate>
+                <object>Kate Moss</object>
+            </Relation>
+        </Relations>
+    </sentence>
+    <sentence id="s377">
+        <text>Signée Karine Dubreuil (Mane), c'est une eau de toilette très fraîche grâce au pamplemousse en tête sur un coeur légèrement épicé et un fond boisé ambré (100 ml, 41€).</text>
+        <Relations>
+            <Relation id="r1">
+                <subject>Mane</subject>
+                <predicate>hasFragranceCreator</predicate>
+                <object>Karine Dubreuil</object>
+            </Relation>
+            <Relation id="r2">
+                <subject>Mane</subject>
+                <predicate>hasComponent</predicate>
+                <object>pamplemousse</object>
+            </Relation>
+        </Relations>
+    </sentence>
+    <sentence id="s378">
+        <text>Signée Antoine Lie et Daniela Andrier (Givaudan), Zegna Colonia a la fraîcheur de la bergamote de Sicile en tête mêlée au néroli et à la cardamome, sur un coeur poudré (iris, galbanum) prolongé en fond par un accord musc, benjoin et cèdre.</text>
+        <Relations>
+            <Relation id="r1">
+                <subject>Zegna Colonia</subject>
+                <predicate>hasFragranceCreator</predicate>
+                <object>Antoine Lie</object>
+            </Relation>
+            <Relation id="r2">
+                <subject>Zegna Colonia</subject>
+                <predicate>hasFragranceCreator</predicate>
+                <object>Daniela Andrier</object>
+            </Relation>
+            <Relation id="r3">
+                <subject>Zegna Colonia</subject>
+                <predicate>hasComponent</predicate>
+                <object>bergamote de Sicile</object>
+            </Relation>
+            <Relation id="r4">
+                <subject>Zegna Colonia</subject>
+                <predicate>hasComponent</predicate>
+                <object>néroli</object>
+            </Relation>
+            <Relation id="r5">
+                <subject>Zegna Colonia</subject>
+                <predicate>hasComponent</predicate>
+                <object>cardamome</object>
+            </Relation>
+            <Relation id="r6">
+                <subject>Zegna Colonia</subject>
+                <predicate>hasComponent</predicate>
+                <object>iris</object>
+            </Relation>
+            <Relation id="r7">
+                <subject>Zegna Colonia</subject>
+                <predicate>hasComponent</predicate>
+                <object>galbanum</object>
+            </Relation>
+            <Relation id="r8">
+                <subject>Zegna Colonia</subject>
+                <predicate>hasComponent</predicate>
+                <object>musc</object>
+            </Relation>
+            <Relation id="r9">
+                <subject>Zegna Colonia</subject>
+                <predicate>hasComponent</predicate>
+                <object>benjoin</object>
+            </Relation>
+            <Relation id="r10">
+                <subject>Zegna Colonia</subject>
+                <predicate>hasComponent</predicate>
+                <object>cèdre</object>
+            </Relation>
+        </Relations>
+    </sentence>
+    <sentence id="s379">
+        <text>Après Ladji Doucouré (champion du monde du 110 mètres haies et relais 4 x 100 m) et Nikola Karabatik (champion olympique et du monde de handball) en 2008, la marque de Lascad (L'Oréal DPGP) a choisi le quintuple champion du monde de rallye Sébastien Loeb pour représenter son nouveau Baume énergisant (100 ml, 5,95 € ).</text>
+        <Relations>
+            <Relation id="r1">
+                <subject>Baume</subject>
+                <predicate>hasRepresentative</predicate>
+                <object>Sébastien Loeb</object>
+            </Relation>
+            <Relation id="r2">
+                <subject>Lascad</subject>
+                <predicate>hasRepresentative</predicate>
+                <object>Sébastien Loeb</object>
+            </Relation>
+            <Relation id="r3">
+                <subject>Lascad</subject>
+                <predicate>hasRepresentative</predicate>
+                <object>Nikola Karabatik </object>
+            </Relation>
+            <Relation id="r4">
+                <subject>Lascad</subject>
+                <predicate>hasRepresentative</predicate>
+                <object>Ladji Doucouré</object>
+            </Relation>
+        </Relations>
+    </sentence>
+    <sentence id="s380">
+        <text>L'Absolu Rouge sera incarné par le mannequin Inès Sastre sous l'objectif du photographe anglais Nick Knight.</text>
+        <Relations>
+            <Relation id="r1">
+                <subject>L'Absolu Rouge</subject>
+                <predicate>hasRepresentative</predicate>
+                <object>Inès Sastre</object>
+            </Relation>
+        </Relations>
+    </sentence>
+    <sentence id="s381">
+        <text>Lancôme y allouera des moyens à la hauteur de son ambition et pour l'occasion s'est offert une ambassadrice hollywoodienne, l'actrice américaine Anne Hathaway vue dans Le diable s'habille en Prada</text>
+        <Relations>
+            <Relation id="r1">
+                <subject>Lancôme</subject>
+                <predicate>hasRepresentative</predicate>
+                <object>Anne Hathaway</object>
+            </Relation>
+        </Relations>
+    </sentence>
+    <sentence id="s382">
+        <text>Zilin Zhang, première Chinoise à être couronnée Miss Monde, compte désormais parmi la dream team de L'Oréal Paris.</text>
+        <Relations>
+            <Relation id="r1">
+                <subject>L'Oréal Paris</subject>
+                <predicate>hasRepresentative</predicate>
+                <object>Zilin Zhang</object>
+            </Relation>
+        </Relations>
+    </sentence>
+    <sentence id="s383">
+        <text>Zilin Zhang représentera L'Oréal Paris en Asie, hors Japon.</text>
+        <Relations>
+            <Relation id="r1">
+                <subject>L'Oréal Paris </subject>
+                <predicate>hasRepresentative</predicate>
+                <object>Zilin Zhang</object>
+            </Relation>
+        </Relations>
+    </sentence>
+    <sentence id="s384">
+        <text>Pour ce faire L'Oréal Paris compte sur ses égéries, plus que jamais choisies pour exprimer la beauté dans sa diversité, comme Rachida Brakni et tout dernièrement la Chinoise Zilin Zhang, Miss Monde 2007, qui sera l'ambassadrice de la marque en Asie (hors Japon).</text>
+        <Relations>
+            <Relation id="r1">
+                <subject>L'Oréal Paris</subject>
+                <predicate>hasRepresentative</predicate>
+                <object>Rachida Brakni</object>
+            </Relation>
+            <Relation id="r1">
+                <subject>L'Oréal Paris</subject>
+                <predicate>hasRepresentative</predicate>
+                <object>Zilin Zhang</object>
+            </Relation>
+        </Relations>
+    </sentence>
+    <sentence id="s385">
+        <text>On l'annonçait en mai dernier, Lily-Rose Depp est le nouveau visage de Chanel qui sortira à la rentrée une déclinaison de son parfum iconique, n°5 L'eau.</text>
+        <Relations>
+            <Relation id="r1">
+                <subject>n°5 L'eau</subject>
+                <predicate>hasRepresentative</predicate>
+                <object>Lily-Rose Depp</object>
+            </Relation>
+            <Relation id="r2">
+                <subject>Chanel</subject>
+                <predicate>hasRepresentative</predicate>
+                <object>Lily-Rose Depp</object>
+            </Relation>
+            <Relation id="r3">
+                <subject>n°5 L'eau</subject>
+                <predicate>belongsToBrand</predicate>
+                <object>Chanel</object>
+            </Relation>
+        </Relations>
+    </sentence>
+    <sentence id="s386">
+        <text>Nommée "Private Show", la fragrance se trouve être l’une des plus originales créées par Britney Spears.</text>
+        <Relations>
+            <Relation id="r1">
+                <subject>Private Show</subject>
+                <predicate>hasFragranceCreator</predicate>
+                <object>Britney Spears</object>
+            </Relation>
+        </Relations>
+    </sentence>
+    <sentence id="s387">
+        <text>En 1921, Gabrielle Chanel crée son premier parfum, le N°5.</text>
+        <Relations>
+            <Relation id="r1">
+                <subject>N°5</subject>
+                <predicate>hasFragranceCreator</predicate>
+                <object>Gabrielle Chanel</object>
+            </Relation>
+        </Relations>
+    </sentence>
+    <sentence id="s388">
+        <text>En 1889, Aimé Guerlain a créé Jicky, le premier parfum fabriqué à partir d’éléments de synthèse.</text>
+        <Relations>
+            <Relation id="r1">
+                <subject>Jicky</subject>
+                <predicate>hasFragranceCreator</predicate>
+                <object>Aimé Guerlain</object>
+            </Relation>
+        </Relations>
+    </sentence>
+    <sentence id="s389">
+        <text>"Beauté" est un parfum glamour et girly, avec ses tonalités de rose, créé par le parfumeur Emilie Bouge.</text>
+        <Relations>
+            <Relation id="r1">
+                <subject>Beauté</subject>
+                <predicate>hasFragranceCreator</predicate>
+                <object>Emilie Bouge</object>
+            </Relation>
+        </Relations>
+    </sentence>
+    <sentence id="s390">
+        <text>Le second parfum "Elégance" est une senteur plus florale élaborée par le parfumeur Serge Majoullier.</text>
+        <Relations>
+            <Relation id="r1">
+                <subject>Elégance</subject>
+                <predicate>hasFragranceCreator</predicate>
+                <object>Serge Majoullier</object>
+            </Relation>
+        </Relations>
+    </sentence>
+    <sentence id="s391">
+        <text>Incarner une histoire d’amour tendre et légère, un moment de plénitude à la fois fugace et éternel c’est le défi que c’est donné Thierry Wasser créateur de la dernière fragrance de Guerlain : Idylle.</text>
+        <Relations>
+            <Relation id="r1">
+                <subject>Idylle</subject>
+                <predicate>hasFragranceCreator</predicate>
+                <object>Thierry Wasser</object>
+            </Relation>
+            <Relation id="r1">
+                <subject>Idylle</subject>
+                <predicate>belongsToBrand</predicate>
+                <object>Guerlain</object>
+            </Relation>
+        </Relations>
+    </sentence>
+    <sentence id="s392">
+        <text>Pour François Demachy, parfumeur-créateur pour Dior, Miss Dior Chérie L’Eau s’adresse à une jeune fille d’aujourd’hui, mutine, pleine de vie.</text>
+        <Relations>
+            <Relation id="r1">
+                <subject>Miss Dior Chérie L’Eau</subject>
+                <predicate>hasFragranceCreator</predicate>
+                <object>François Demachy</object>
+            </Relation>
+            <Relation id="r2">
+                <subject>Miss Dior Chérie L’Eau</subject>
+                <predicate>belongsToBrand</predicate>
+                <object>Dior</object>
+            </Relation>
+        </Relations>
+    </sentence>
+</Sentences>
+

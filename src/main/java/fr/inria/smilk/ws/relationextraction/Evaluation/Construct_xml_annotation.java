@@ -33,8 +33,8 @@ import static fr.inria.smilk.ws.relationextraction.ExtractionHelper.elementToTok
 public class Construct_xml_annotation {
 
     static String i="s0";
-    static String folder = "C:/Users/dhouib/Desktop/SMILK_project_devpt/RelationExtractionSMILK/src/resources/input/test";
-    static File folder1 = new File("C:/Users/dhouib/Desktop/SMILK_project_devpt/RelationExtractionSMILK/src/resources/input/test");
+    static String folder = "C:/Users/dhouib/Desktop/SMILK_project_devpt/RelationExtractionSMILK/src/resources/corpus_test2";
+    static File folder1 = new File("C:/Users/dhouib/Desktop/SMILK_project_devpt/RelationExtractionSMILK/src/resources/corpus_test2");
 
     static Element racine = new Element("Sentences");
     static org.jdom.Document document = new Document(racine);
